@@ -44,7 +44,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.openEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -261,23 +260,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Clinic";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(920, 179);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 21);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1623, 864);
             this.ControlBox = false;
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.closeEye);
             this.Controls.Add(this.openEye);
             this.Controls.Add(this.button2);
@@ -290,7 +278,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -323,7 +311,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox closeEye;
         private System.Windows.Forms.PictureBox openEye;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
