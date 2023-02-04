@@ -45,5 +45,10 @@ namespace Clinical_Management_System
             closeEye.Visible = false;
             openEye.Visible = true;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
