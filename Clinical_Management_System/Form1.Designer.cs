@@ -71,7 +71,7 @@
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(1029, 334);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(464, 56);
             this.textBox1.TabIndex = 7;
@@ -83,7 +83,7 @@
             this.textBox2.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox2.Location = new System.Drawing.Point(1029, 436);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(464, 56);
             this.textBox2.TabIndex = 8;
@@ -101,7 +101,7 @@
             "Doctor",
             "Reciption"});
             this.comboBox1.Location = new System.Drawing.Point(1124, 533);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(304, 64);
             this.comboBox1.TabIndex = 9;
@@ -149,7 +149,7 @@
             this.button2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Location = new System.Drawing.Point(1124, 661);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(305, 84);
             this.button2.TabIndex = 11;
@@ -161,7 +161,7 @@
             this.openEye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(147)))), ((int)(((byte)(157)))));
             this.openEye.Image = global::Clinical_Management_System.Properties.Resources._2072001;
             this.openEye.Location = new System.Drawing.Point(1384, 436);
-            this.openEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.openEye.Margin = new System.Windows.Forms.Padding(4);
             this.openEye.Name = "openEye";
             this.openEye.Size = new System.Drawing.Size(109, 55);
             this.openEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +174,7 @@
             this.closeEye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(147)))), ((int)(((byte)(157)))));
             this.closeEye.Image = global::Clinical_Management_System.Properties.Resources._2072002;
             this.closeEye.Location = new System.Drawing.Point(1384, 436);
-            this.closeEye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.closeEye.Margin = new System.Windows.Forms.Padding(4);
             this.closeEye.Name = "closeEye";
             this.closeEye.Size = new System.Drawing.Size(109, 55);
             this.closeEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -186,7 +186,7 @@
             // 
             this.pictureBox2.Image = global::Clinical_Management_System.Properties.Resources.Vector;
             this.pictureBox2.Location = new System.Drawing.Point(1171, 70);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(175, 169);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -202,7 +202,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(-5, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(805, 874);
             this.panel1.TabIndex = 3;
@@ -211,7 +211,7 @@
             // 
             this.pictureBox1.Image = global::Clinical_Management_System.Properties.Resources.ICON_6;
             this.pictureBox1.Location = new System.Drawing.Point(275, 149);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(224, 207);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -279,10 +279,11 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.openEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

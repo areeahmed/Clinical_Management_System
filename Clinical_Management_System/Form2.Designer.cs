@@ -47,6 +47,10 @@ namespace Clinical_Management_System
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -61,7 +65,7 @@ namespace Clinical_Management_System
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 882);
+            this.panel1.Size = new System.Drawing.Size(377, 882);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -69,7 +73,7 @@ namespace Clinical_Management_System
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(6, 375);
+            this.label1.Location = new System.Drawing.Point(12, 339);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 36);
             this.label1.TabIndex = 1;
@@ -78,9 +82,9 @@ namespace Clinical_Management_System
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Clinical_Management_System.Properties.Resources.Capture;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(389, 309);
+            this.pictureBox1.Size = new System.Drawing.Size(371, 309);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -88,9 +92,9 @@ namespace Clinical_Management_System
             // 
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(409, 0);
+            this.panel2.Location = new System.Drawing.Point(377, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1111, 50);
+            this.panel2.Size = new System.Drawing.Size(1143, 50);
             this.panel2.TabIndex = 1;
             // 
             // label2
@@ -163,7 +167,7 @@ namespace Clinical_Management_System
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 36);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Adresee";
+            this.label5.Text = "Address";
             // 
             // label6
             // 
@@ -237,11 +241,42 @@ namespace Clinical_Management_System
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label9.Location = new System.Drawing.Point(1016, 393);
+            this.label9.Location = new System.Drawing.Point(892, 414);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(190, 36);
             this.label9.TabIndex = 21;
             this.label9.Text = "Patients List";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Location = new System.Drawing.Point(741, 339);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 42);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button3.Location = new System.Drawing.Point(898, 339);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(151, 42);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.Location = new System.Drawing.Point(1055, 339);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(151, 42);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
@@ -249,6 +284,9 @@ namespace Clinical_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1520, 882);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label8);
@@ -301,5 +339,9 @@ namespace Clinical_Management_System
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }
