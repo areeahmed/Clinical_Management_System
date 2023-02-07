@@ -10,9 +10,12 @@ using System.Windows.Forms;
 
 namespace Clinical_Management_System
 {
-    public partial class Form1 : Form
+    public partial class Login_Form : Form
     {
-        public Form1()
+        private Point mouseLocation;
+        private bool isMouseDown = false;
+
+        public Login_Form()
         {
             InitializeComponent();
             label1.BackColor = System.Drawing.Color.FromKnownColor(System.Drawing.KnownColor.Transparent);
@@ -49,6 +52,33 @@ namespace Clinical_Management_System
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMouseDown = true;
+            mouseLocation = e.Location;
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMouseDown = false;
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - mouseLocation.X) + e.X, (this.Location.Y - mouseLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
