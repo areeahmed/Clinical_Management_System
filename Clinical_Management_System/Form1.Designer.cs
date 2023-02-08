@@ -36,16 +36,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.openEye = new System.Windows.Forms.PictureBox();
             this.closeEye = new System.Windows.Forms.PictureBox();
+            this.openEye = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.openEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeEye)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.openEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -149,22 +149,10 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // openEye
-            // 
-            this.openEye.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.openEye.Image = global::Clinical_Management_System.Properties.Resources._2072001;
-            this.openEye.Location = new System.Drawing.Point(1038, 354);
-            this.openEye.Name = "openEye";
-            this.openEye.Size = new System.Drawing.Size(82, 45);
-            this.openEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.openEye.TabIndex = 12;
-            this.openEye.TabStop = false;
-            this.openEye.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // closeEye
             // 
             this.closeEye.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.closeEye.Image = global::Clinical_Management_System.Properties.Resources._2072002;
+            this.closeEye.Image = global::Clinical_Management_System.Properties.Resources.invisible;
             this.closeEye.Location = new System.Drawing.Point(1038, 354);
             this.closeEye.Name = "closeEye";
             this.closeEye.Size = new System.Drawing.Size(82, 45);
@@ -172,6 +160,18 @@
             this.closeEye.TabIndex = 12;
             this.closeEye.TabStop = false;
             this.closeEye.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // openEye
+            // 
+            this.openEye.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.openEye.Image = global::Clinical_Management_System.Properties.Resources.eye;
+            this.openEye.Location = new System.Drawing.Point(1038, 354);
+            this.openEye.Name = "openEye";
+            this.openEye.Size = new System.Drawing.Size(82, 45);
+            this.openEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.openEye.TabIndex = 12;
+            this.openEye.TabStop = false;
+            this.openEye.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox2
             // 
@@ -238,7 +238,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Calibri", 40F);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(58, 322);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 66);
@@ -263,7 +263,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -271,8 +270,8 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.openEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeEye)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.openEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

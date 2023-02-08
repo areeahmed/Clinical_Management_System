@@ -121,6 +121,9 @@
   <data name="2072001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2072001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Vector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vector1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2072002" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2072002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,13 +136,16 @@
   <data name="clinic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clinic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="invisible" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invisible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Vector1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
