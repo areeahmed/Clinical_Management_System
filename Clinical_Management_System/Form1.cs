@@ -18,17 +18,6 @@ namespace Clinical_Management_System
         public Login_Form()
         {
             InitializeComponent();
-            label1.BackColor = System.Drawing.Color.FromKnownColor(System.Drawing.KnownColor.Transparent);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
 
         // hide password
