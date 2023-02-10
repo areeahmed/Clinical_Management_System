@@ -116,17 +116,17 @@
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(796, 4);
+            this.panel2.Location = new System.Drawing.Point(845, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(308, 57);
+            this.panel2.Size = new System.Drawing.Size(192, 40);
             this.panel2.TabIndex = 17;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Clinical_Management_System.Properties.Resources.close__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(253, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(163, 8);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(47, 48);
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
@@ -135,9 +135,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Clinical_Management_System.Properties.Resources.fullscreen;
-            this.pictureBox5.Location = new System.Drawing.Point(199, 3);
+            this.pictureBox5.Location = new System.Drawing.Point(132, 8);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
@@ -146,9 +146,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Clinical_Management_System.Properties.Resources.remove;
-            this.pictureBox4.Location = new System.Drawing.Point(146, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(101, 8);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(47, 48);
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
@@ -395,145 +395,145 @@
             // 
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(122, 377);
+            this.dataGridView1.Location = new System.Drawing.Point(100, 377);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(225, 333);
+            this.dataGridView1.Size = new System.Drawing.Size(225, 291);
             this.dataGridView1.TabIndex = 19;
             // 
             // dataGridView2
             // 
             this.dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(364, 377);
+            this.dataGridView2.Location = new System.Drawing.Point(342, 377);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(225, 333);
+            this.dataGridView2.Size = new System.Drawing.Size(225, 291);
             this.dataGridView2.TabIndex = 20;
             // 
             // dataGridView3
             // 
             this.dataGridView3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(604, 377);
+            this.dataGridView3.Location = new System.Drawing.Point(582, 377);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(225, 333);
+            this.dataGridView3.Size = new System.Drawing.Size(225, 291);
             this.dataGridView3.TabIndex = 21;
             // 
             // dataGridView4
             // 
             this.dataGridView4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(844, 377);
+            this.dataGridView4.Location = new System.Drawing.Point(822, 377);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(225, 333);
+            this.dataGridView4.Size = new System.Drawing.Size(225, 291);
             this.dataGridView4.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(181, 35);
+            this.label2.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(77, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 39);
+            this.label2.Size = new System.Drawing.Size(72, 35);
             this.label2.TabIndex = 0;
             this.label2.Text = ":دکتۆر";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(173, 86);
+            this.label3.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(69, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 39);
+            this.label3.Size = new System.Drawing.Size(79, 35);
             this.label3.TabIndex = 1;
             this.label3.Text = ":سکتێر";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("RudawRegular", 20F);
-            this.label4.Location = new System.Drawing.Point(173, 138);
+            this.label4.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(69, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 39);
+            this.label4.Size = new System.Drawing.Size(79, 35);
             this.label4.TabIndex = 2;
             this.label4.Text = ":ئادمین";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("RudawRegular", 20F);
-            this.label5.Location = new System.Drawing.Point(160, 194);
+            this.label5.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(56, 193);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 39);
+            this.label5.Size = new System.Drawing.Size(91, 35);
             this.label5.TabIndex = 3;
             this.label5.Text = ":نۆرینگە";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("RudawRegular", 20F);
-            this.label6.Location = new System.Drawing.Point(464, 35);
+            this.label6.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(360, 34);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(163, 39);
+            this.label6.Size = new System.Drawing.Size(145, 35);
             this.label6.TabIndex = 4;
             this.label6.Text = ":داهاتی ئەمڕۆ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("RudawRegular", 20F);
-            this.label7.Location = new System.Drawing.Point(451, 86);
+            this.label7.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(347, 85);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(176, 39);
+            this.label7.Size = new System.Drawing.Size(156, 35);
             this.label7.TabIndex = 5;
             this.label7.Text = ":داهاتی گشتی";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("RudawRegular", 20F);
-            this.label8.Location = new System.Drawing.Point(434, 138);
+            this.label8.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(330, 137);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(193, 39);
+            this.label8.Size = new System.Drawing.Size(173, 35);
             this.label8.TabIndex = 6;
             this.label8.Text = ":ژ. نەخۆش ئەمڕۆ";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("RudawRegular", 20F);
-            this.label9.Location = new System.Drawing.Point(402, 194);
+            this.label9.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(298, 193);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(225, 39);
+            this.label9.Size = new System.Drawing.Size(176, 30);
             this.label9.TabIndex = 7;
             this.label9.Text = ":ژ. نەخۆشی گشتی";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(199, 89);
+            this.label10.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(169, 94);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 39);
+            this.label10.Size = new System.Drawing.Size(44, 35);
             this.label10.TabIndex = 8;
             this.label10.Text = ":ناو";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(199, 26);
+            this.label11.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(169, 31);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 39);
+            this.label11.Size = new System.Drawing.Size(79, 35);
             this.label11.TabIndex = 9;
             this.label11.Text = ":زنجیرە";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(199, 141);
+            this.label12.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(169, 146);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 39);
+            this.label12.Size = new System.Drawing.Size(54, 35);
             this.label12.TabIndex = 10;
             this.label12.Text = ":ڕۆڵ";
             // 
@@ -542,7 +542,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(154, 338);
+            this.label13.Location = new System.Drawing.Point(132, 338);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(193, 35);
             this.label13.TabIndex = 11;
@@ -553,7 +553,7 @@
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(397, 336);
+            this.label14.Location = new System.Drawing.Point(375, 336);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(191, 35);
             this.label14.TabIndex = 25;
@@ -564,7 +564,7 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(630, 333);
+            this.label15.Location = new System.Drawing.Point(608, 333);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(198, 35);
             this.label15.TabIndex = 26;
@@ -575,7 +575,7 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(869, 336);
+            this.label16.Location = new System.Drawing.Point(847, 336);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(199, 35);
             this.label16.TabIndex = 27;
@@ -591,7 +591,7 @@
             "نۆرینگەی هەناو",
             "نۆرینگەی ئێسک",
             "نۆرینگەی چاو"});
-            this.comboBox1.Location = new System.Drawing.Point(122, 291);
+            this.comboBox1.Location = new System.Drawing.Point(100, 291);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBox1.Size = new System.Drawing.Size(225, 43);
@@ -601,120 +601,120 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(165, 26);
+            this.label17.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(139, 34);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label17.Size = new System.Drawing.Size(28, 35);
+            this.label17.Size = new System.Drawing.Size(24, 30);
             this.label17.TabIndex = 11;
             this.label17.Text = "1";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(13, 89);
+            this.label18.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(5, 97);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label18.Size = new System.Drawing.Size(180, 35);
+            this.label18.Size = new System.Drawing.Size(158, 30);
             this.label18.TabIndex = 12;
             this.label18.Text = "ئاری احمد ابراهیم";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(118, 144);
+            this.label19.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(96, 145);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label19.Size = new System.Drawing.Size(75, 35);
+            this.label19.Size = new System.Drawing.Size(67, 30);
             this.label19.TabIndex = 13;
             this.label19.Text = "ئادمین";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(134, 38);
+            this.label20.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(30, 37);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 35);
+            this.label20.Size = new System.Drawing.Size(35, 30);
             this.label20.TabIndex = 14;
             this.label20.Text = "10";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(139, 89);
+            this.label21.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(35, 88);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label21.Size = new System.Drawing.Size(41, 35);
+            this.label21.Size = new System.Drawing.Size(35, 30);
             this.label21.TabIndex = 15;
             this.label21.Text = "10";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(140, 141);
+            this.label22.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(36, 140);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label22.Size = new System.Drawing.Size(28, 35);
+            this.label22.Size = new System.Drawing.Size(25, 30);
             this.label22.TabIndex = 16;
             this.label22.Text = "2";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(139, 197);
+            this.label23.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(35, 196);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label23.Size = new System.Drawing.Size(28, 35);
+            this.label23.Size = new System.Drawing.Size(24, 30);
             this.label23.TabIndex = 17;
             this.label23.Text = "7";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(360, 39);
+            this.label24.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(256, 38);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label24.Size = new System.Drawing.Size(98, 35);
+            this.label24.Size = new System.Drawing.Size(84, 30);
             this.label24.TabIndex = 18;
             this.label24.Text = "500,000";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(329, 86);
+            this.label25.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(225, 85);
             this.label25.Name = "label25";
             this.label25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label25.Size = new System.Drawing.Size(116, 35);
+            this.label25.Size = new System.Drawing.Size(98, 30);
             this.label25.TabIndex = 19;
             this.label25.Text = "1,000,000";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(387, 141);
+            this.label26.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(283, 140);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label26.Size = new System.Drawing.Size(41, 35);
+            this.label26.Size = new System.Drawing.Size(36, 30);
             this.label26.TabIndex = 20;
             this.label26.Text = "20";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(327, 197);
+            this.label27.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(223, 196);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label27.Size = new System.Drawing.Size(85, 35);
+            this.label27.Size = new System.Drawing.Size(72, 30);
             this.label27.TabIndex = 21;
             this.label27.Text = "40,000";
             // 
@@ -738,9 +738,9 @@
             this.panel9.Controls.Add(this.label4);
             this.panel9.Controls.Add(this.label3);
             this.panel9.Controls.Add(this.label2);
-            this.panel9.Location = new System.Drawing.Point(441, 76);
+            this.panel9.Location = new System.Drawing.Point(381, 76);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(639, 245);
+            this.panel9.Size = new System.Drawing.Size(505, 245);
             this.panel9.TabIndex = 24;
             // 
             // panel8
@@ -753,19 +753,19 @@
             this.panel8.Controls.Add(this.label12);
             this.panel8.Controls.Add(this.label11);
             this.panel8.Controls.Add(this.label10);
-            this.panel8.Location = new System.Drawing.Point(122, 76);
+            this.panel8.Location = new System.Drawing.Point(100, 76);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(300, 195);
+            this.panel8.Size = new System.Drawing.Size(252, 195);
             this.panel8.TabIndex = 23;
             // 
             // label28
             // 
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(36, 7);
+            this.label28.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(21, 5);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(101, 42);
+            this.label28.Size = new System.Drawing.Size(74, 30);
             this.label28.TabIndex = 14;
             this.label28.Text = "سەرەتا";
             // 
@@ -773,7 +773,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 722);
+            this.ClientSize = new System.Drawing.Size(1067, 722);
             this.ControlBox = false;
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.comboBox1);
