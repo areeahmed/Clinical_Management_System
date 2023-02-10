@@ -31,24 +31,30 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.StartButton = new System.Windows.Forms.Button();
-            this.ClinicButton = new System.Windows.Forms.Button();
-            this.AdminButton = new System.Windows.Forms.Button();
-            this.DoctorButton = new System.Windows.Forms.Button();
-            this.ReciptionButton = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.StartButton = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.ClinicButton = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.AdminButton = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.DoctorButton = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.ReciptionButton = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.time = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.WeekDay = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.DayWeekYear = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -83,24 +89,18 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
-            this.time = new System.Windows.Forms.Label();
-            this.WeekDay = new System.Windows.Forms.Label();
-            this.DayWeekYear = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -112,13 +112,47 @@
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.label28);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(1241, 2);
+            this.panel2.Location = new System.Drawing.Point(770, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(195, 57);
+            this.panel2.Size = new System.Drawing.Size(308, 57);
             this.panel2.TabIndex = 17;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Clinical_Management_System.Properties.Resources.close__2_;
+            this.pictureBox3.Location = new System.Drawing.Point(253, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(47, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Clinical_Management_System.Properties.Resources.fullscreen;
+            this.pictureBox5.Location = new System.Drawing.Point(199, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.TabIndex = 15;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Clinical_Management_System.Properties.Resources.remove;
+            this.pictureBox4.Location = new System.Drawing.Point(146, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(47, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // sidebar
             // 
@@ -152,6 +186,18 @@
             this.panel1.Size = new System.Drawing.Size(227, 92);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Clinical_Management_System.Properties.Resources.menu;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -171,55 +217,6 @@
             this.panel3.Size = new System.Drawing.Size(227, 63);
             this.panel3.TabIndex = 19;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.ClinicButton);
-            this.panel4.Location = new System.Drawing.Point(3, 170);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(227, 63);
-            this.panel4.TabIndex = 20;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.AdminButton);
-            this.panel5.Location = new System.Drawing.Point(3, 239);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(227, 63);
-            this.panel5.TabIndex = 21;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.DoctorButton);
-            this.panel6.Location = new System.Drawing.Point(3, 308);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(227, 63);
-            this.panel6.TabIndex = 22;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.ReciptionButton);
-            this.panel7.Location = new System.Drawing.Point(3, 377);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(227, 63);
-            this.panel7.TabIndex = 22;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 10;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Clinical_Management_System.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // StartButton
             // 
             this.StartButton.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -235,6 +232,14 @@
             this.StartButton.Text = "   سەرەتا";
             this.StartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.StartButton.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.ClinicButton);
+            this.panel4.Location = new System.Drawing.Point(3, 170);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(227, 63);
+            this.panel4.TabIndex = 20;
             // 
             // ClinicButton
             // 
@@ -252,6 +257,14 @@
             this.ClinicButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ClinicButton.UseVisualStyleBackColor = false;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.AdminButton);
+            this.panel5.Location = new System.Drawing.Point(3, 239);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(227, 63);
+            this.panel5.TabIndex = 21;
+            // 
             // AdminButton
             // 
             this.AdminButton.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -267,6 +280,14 @@
             this.AdminButton.Text = "   ئادمین";
             this.AdminButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AdminButton.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.DoctorButton);
+            this.panel6.Location = new System.Drawing.Point(3, 308);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(227, 63);
+            this.panel6.TabIndex = 22;
             // 
             // DoctorButton
             // 
@@ -284,6 +305,14 @@
             this.DoctorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.DoctorButton.UseVisualStyleBackColor = false;
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.ReciptionButton);
+            this.panel7.Location = new System.Drawing.Point(3, 377);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(227, 63);
+            this.panel7.TabIndex = 22;
+            // 
             // ReciptionButton
             // 
             this.ReciptionButton.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -300,73 +329,102 @@
             this.ReciptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ReciptionButton.UseVisualStyleBackColor = false;
             // 
-            // pictureBox3
+            // panel10
             // 
-            this.pictureBox3.Image = global::Clinical_Management_System.Properties.Resources.close__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(132, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(47, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.panel10.Location = new System.Drawing.Point(3, 446);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(199, 62);
+            this.panel10.TabIndex = 32;
             // 
-            // pictureBox5
+            // time
             // 
-            this.pictureBox5.Image = global::Clinical_Management_System.Properties.Resources.fullscreen;
-            this.pictureBox5.Location = new System.Drawing.Point(78, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 15;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.time.AutoSize = true;
+            this.time.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.ForeColor = System.Drawing.Color.White;
+            this.time.Location = new System.Drawing.Point(3, 511);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(70, 21);
+            this.time.TabIndex = 29;
+            this.time.Text = "10:15 PM";
+            this.time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox4
+            // panel11
             // 
-            this.pictureBox4.Image = global::Clinical_Management_System.Properties.Resources.remove;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(47, 48);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.panel11.Location = new System.Drawing.Point(3, 535);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(235, 10);
+            this.panel11.TabIndex = 33;
+            // 
+            // WeekDay
+            // 
+            this.WeekDay.AutoSize = true;
+            this.WeekDay.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeekDay.ForeColor = System.Drawing.Color.White;
+            this.WeekDay.Location = new System.Drawing.Point(3, 548);
+            this.WeekDay.Name = "WeekDay";
+            this.WeekDay.Size = new System.Drawing.Size(61, 21);
+            this.WeekDay.TabIndex = 30;
+            this.WeekDay.Text = "Day: Sat";
+            this.WeekDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel12
+            // 
+            this.panel12.Location = new System.Drawing.Point(3, 572);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(227, 10);
+            this.panel12.TabIndex = 34;
+            // 
+            // DayWeekYear
+            // 
+            this.DayWeekYear.AutoSize = true;
+            this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayWeekYear.ForeColor = System.Drawing.Color.White;
+            this.DayWeekYear.Location = new System.Drawing.Point(3, 585);
+            this.DayWeekYear.Name = "DayWeekYear";
+            this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
+            this.DayWeekYear.TabIndex = 31;
+            this.DayWeekYear.Text = "9/2/23";
+            this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // dataGridView1
             // 
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(131, 377);
+            this.dataGridView1.Location = new System.Drawing.Point(122, 377);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(307, 333);
+            this.dataGridView1.Size = new System.Drawing.Size(225, 333);
             this.dataGridView1.TabIndex = 19;
             // 
             // dataGridView2
             // 
             this.dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(456, 377);
+            this.dataGridView2.Location = new System.Drawing.Point(364, 377);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(307, 333);
+            this.dataGridView2.Size = new System.Drawing.Size(225, 333);
             this.dataGridView2.TabIndex = 20;
             // 
             // dataGridView3
             // 
             this.dataGridView3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(786, 377);
+            this.dataGridView3.Location = new System.Drawing.Point(604, 377);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(307, 333);
+            this.dataGridView3.Size = new System.Drawing.Size(225, 333);
             this.dataGridView3.TabIndex = 21;
             // 
             // dataGridView4
             // 
             this.dataGridView4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(1113, 377);
+            this.dataGridView4.Location = new System.Drawing.Point(844, 377);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(307, 333);
+            this.dataGridView4.Size = new System.Drawing.Size(225, 333);
             this.dataGridView4.TabIndex = 22;
             // 
             // label2
@@ -453,7 +511,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(516, 88);
+            this.label10.Location = new System.Drawing.Point(199, 89);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 39);
             this.label10.TabIndex = 8;
@@ -463,7 +521,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(516, 25);
+            this.label11.Location = new System.Drawing.Point(199, 26);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(90, 39);
             this.label11.TabIndex = 9;
@@ -473,7 +531,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(516, 140);
+            this.label12.Location = new System.Drawing.Point(199, 141);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(61, 39);
             this.label12.TabIndex = 10;
@@ -484,7 +542,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(245, 339);
+            this.label13.Location = new System.Drawing.Point(154, 338);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(193, 35);
             this.label13.TabIndex = 11;
@@ -495,7 +553,7 @@
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(572, 336);
+            this.label14.Location = new System.Drawing.Point(397, 336);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(191, 35);
             this.label14.TabIndex = 25;
@@ -506,7 +564,7 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(895, 338);
+            this.label15.Location = new System.Drawing.Point(630, 333);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(198, 35);
             this.label15.TabIndex = 26;
@@ -517,7 +575,7 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1221, 339);
+            this.label16.Location = new System.Drawing.Point(869, 336);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(199, 35);
             this.label16.TabIndex = 27;
@@ -533,10 +591,10 @@
             "نۆرینگەی هەناو",
             "نۆرینگەی ئێسک",
             "نۆرینگەی چاو"});
-            this.comboBox1.Location = new System.Drawing.Point(131, 293);
+            this.comboBox1.Location = new System.Drawing.Point(122, 291);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox1.Size = new System.Drawing.Size(307, 43);
+            this.comboBox1.Size = new System.Drawing.Size(225, 43);
             this.comboBox1.TabIndex = 28;
             this.comboBox1.Text = "نۆرینگەکان";
             // 
@@ -544,7 +602,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(482, 25);
+            this.label17.Location = new System.Drawing.Point(165, 26);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label17.Size = new System.Drawing.Size(28, 35);
@@ -555,7 +613,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(330, 88);
+            this.label18.Location = new System.Drawing.Point(13, 89);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label18.Size = new System.Drawing.Size(180, 35);
@@ -566,7 +624,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(435, 143);
+            this.label19.Location = new System.Drawing.Point(118, 144);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label19.Size = new System.Drawing.Size(75, 35);
@@ -680,7 +738,7 @@
             this.panel9.Controls.Add(this.label4);
             this.panel9.Controls.Add(this.label3);
             this.panel9.Controls.Add(this.label2);
-            this.panel9.Location = new System.Drawing.Point(786, 71);
+            this.panel9.Location = new System.Drawing.Point(441, 76);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(639, 245);
             this.panel9.TabIndex = 24;
@@ -695,9 +753,9 @@
             this.panel8.Controls.Add(this.label12);
             this.panel8.Controls.Add(this.label11);
             this.panel8.Controls.Add(this.label10);
-            this.panel8.Location = new System.Drawing.Point(131, 71);
+            this.panel8.Location = new System.Drawing.Point(122, 76);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(632, 195);
+            this.panel8.Size = new System.Drawing.Size(300, 195);
             this.panel8.TabIndex = 23;
             // 
             // label28
@@ -705,76 +763,18 @@
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(1134, 9);
+            this.label28.Location = new System.Drawing.Point(36, 7);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(101, 42);
             this.label28.TabIndex = 14;
             this.label28.Text = "سەرەتا";
             // 
-            // time
-            // 
-            this.time.AutoSize = true;
-            this.time.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time.ForeColor = System.Drawing.Color.White;
-            this.time.Location = new System.Drawing.Point(3, 511);
-            this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(70, 21);
-            this.time.TabIndex = 29;
-            this.time.Text = "10:15 PM";
-            this.time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // WeekDay
-            // 
-            this.WeekDay.AutoSize = true;
-            this.WeekDay.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeekDay.ForeColor = System.Drawing.Color.White;
-            this.WeekDay.Location = new System.Drawing.Point(3, 548);
-            this.WeekDay.Name = "WeekDay";
-            this.WeekDay.Size = new System.Drawing.Size(61, 21);
-            this.WeekDay.TabIndex = 30;
-            this.WeekDay.Text = "Day: Sat";
-            this.WeekDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DayWeekYear
-            // 
-            this.DayWeekYear.AutoSize = true;
-            this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DayWeekYear.ForeColor = System.Drawing.Color.White;
-            this.DayWeekYear.Location = new System.Drawing.Point(3, 585);
-            this.DayWeekYear.Name = "DayWeekYear";
-            this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
-            this.DayWeekYear.TabIndex = 31;
-            this.DayWeekYear.Text = "9/2/23";
-            this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel10
-            // 
-            this.panel10.Location = new System.Drawing.Point(3, 446);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(199, 62);
-            this.panel10.TabIndex = 32;
-            // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(3, 535);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(235, 10);
-            this.panel11.TabIndex = 33;
-            // 
-            // panel12
-            // 
-            this.panel12.Location = new System.Drawing.Point(3, 572);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(227, 10);
-            this.panel12.TabIndex = 34;
-            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1437, 722);
+            this.ClientSize = new System.Drawing.Size(1110, 722);
             this.ControlBox = false;
-            this.Controls.Add(this.label28);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label16);
@@ -796,19 +796,20 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AdminDashboard_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AdminDashboard_MouseUp);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.sidebar.ResumeLayout(false);
             this.sidebar.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
