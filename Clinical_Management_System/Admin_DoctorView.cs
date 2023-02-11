@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Clinical_Management_System
 {
-    public partial class AdminDashboard : Form
+    public partial class Admin_DoctorView : Form
     {
         private Point mouseLocation;
         private bool isMouseDown = false;
         bool sideBarExpand = false;
-        public AdminDashboard()
+        public Admin_DoctorView()
         {
             InitializeComponent();
         }
@@ -73,21 +73,20 @@ namespace Clinical_Management_System
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            
         }
 
-        private void AdminDashboard_MouseDown(object sender, MouseEventArgs e)
+        private void Admin_DoctorView_MouseDown(object sender, MouseEventArgs e)
         {
             isMouseDown = true;
             mouseLocation = e.Location;
         }
 
-        private void AdminDashboard_MouseUp(object sender, MouseEventArgs e)
+        private void Admin_DoctorView_MouseUp(object sender, MouseEventArgs e)
         {
             isMouseDown = false;
         }
 
-        private void AdminDashboard_MouseMove(object sender, MouseEventArgs e)
+        private void Admin_DoctorView_MouseMove(object sender, MouseEventArgs e)
         {
             if (isMouseDown)
             {
@@ -98,21 +97,16 @@ namespace Clinical_Management_System
             }
         }
 
-        private void AdminDashboard_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void DoctorButton_Click(object sender, EventArgs e)
         {
-            Admin_DoctorView doctorForm = new Admin_DoctorView();
-            doctorForm.Show();
-            this.Hide();
+            MessageBox.Show("فۆڕمەکە کرایتەوە", "ئاگاداری", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("فۆڕمەکە کرایتەوە", "ئاگاداری", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            AdminDashboard adminDashboard = new AdminDashboard();
+            adminDashboard.Show();
+            this.Hide();
         }
     }
 }

@@ -243,6 +243,7 @@
             this.StartButton.Text = "   سەرەتا";
             this.StartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.StartButton.UseVisualStyleBackColor = false;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // panel4
             // 
@@ -315,6 +316,7 @@
             this.DoctorButton.Text = "   دکتۆر";
             this.DoctorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.DoctorButton.UseVisualStyleBackColor = false;
+            this.DoctorButton.Click += new System.EventHandler(this.DoctorButton_Click);
             // 
             // panel7
             // 
@@ -773,7 +775,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1276, 702);
+            this.ClientSize = new System.Drawing.Size(1276, 725);
             this.ControlBox = false;
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.comboBox1);
@@ -791,7 +793,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1292, 741);
             this.Name = "AdminDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AdminDashboard_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AdminDashboard_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AdminDashboard_MouseUp);

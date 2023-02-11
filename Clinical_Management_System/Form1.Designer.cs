@@ -35,11 +35,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.closeEye = new System.Windows.Forms.PictureBox();
             this.openEye = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -49,11 +49,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.openEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,12 +66,11 @@
             this.textBox1.AccessibleDescription = "سلاو";
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("RudawRegular", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.textBox1.Location = new System.Drawing.Point(680, 271);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(348, 55);
+            this.textBox1.Size = new System.Drawing.Size(348, 62);
             this.textBox1.TabIndex = 7;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -79,12 +78,11 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("RudawRegular", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.textBox2.Location = new System.Drawing.Point(680, 350);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(348, 55);
+            this.textBox2.Size = new System.Drawing.Size(348, 62);
             this.textBox2.TabIndex = 8;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.UseSystemPasswordChar = true;
@@ -144,28 +142,6 @@
             this.panel2.Size = new System.Drawing.Size(195, 57);
             this.panel2.TabIndex = 16;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox7.Image = global::Clinical_Management_System.Properties.Resources.user;
-            this.pictureBox7.Location = new System.Drawing.Point(635, 274);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(39, 42);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox7.TabIndex = 19;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox6.Image = global::Clinical_Management_System.Properties.Resources.password;
-            this.pictureBox6.Location = new System.Drawing.Point(635, 356);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox6.TabIndex = 17;
-            this.pictureBox6.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Clinical_Management_System.Properties.Resources.close__2_;
@@ -199,12 +175,34 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox7.Image = global::Clinical_Management_System.Properties.Resources.user;
+            this.pictureBox7.Location = new System.Drawing.Point(635, 274);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(39, 42);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox7.TabIndex = 19;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox6.Image = global::Clinical_Management_System.Properties.Resources.password;
+            this.pictureBox6.Location = new System.Drawing.Point(635, 356);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox6.TabIndex = 17;
+            this.pictureBox6.TabStop = false;
+            // 
             // closeEye
             // 
             this.closeEye.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.closeEye.BackColor = System.Drawing.Color.White;
             this.closeEye.Image = global::Clinical_Management_System.Properties.Resources.invisible1;
-            this.closeEye.Location = new System.Drawing.Point(980, 359);
+            this.closeEye.Location = new System.Drawing.Point(971, 363);
             this.closeEye.Name = "closeEye";
             this.closeEye.Size = new System.Drawing.Size(48, 36);
             this.closeEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +215,7 @@
             this.openEye.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.openEye.BackColor = System.Drawing.Color.White;
             this.openEye.Image = global::Clinical_Management_System.Properties.Resources.eye1;
-            this.openEye.Location = new System.Drawing.Point(980, 359);
+            this.openEye.Location = new System.Drawing.Point(971, 363);
             this.openEye.Name = "openEye";
             this.openEye.Size = new System.Drawing.Size(48, 36);
             this.openEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -335,11 +333,11 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.openEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
