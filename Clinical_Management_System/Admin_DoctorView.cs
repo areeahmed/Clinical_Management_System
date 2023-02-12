@@ -17,7 +17,6 @@ namespace Clinical_Management_System
         bool sideBarExpand = false;
         bool isFormOpened = false;
         bool isBarcodeOpen = false;
-        
         public Admin_DoctorView()
         {
             InitializeComponent();
@@ -171,6 +170,7 @@ namespace Clinical_Management_System
             // for making it fraggable
             ControlExtension.Draggable(doctor_barcode_panel, true);
             ControlExtension.Draggable(Adding_Doctor_Form_panel, true);
+            dateTimeTimer.Start();
         }
 
         // Barcode timer tik
@@ -208,6 +208,13 @@ namespace Clinical_Management_System
         {
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
+        }
+
+        private void dateTimeTimer_Tick(object sender, EventArgs e)
+        {
+            time.Text = DateTime.Now.ToShortTimeString();
+            WeekDay.Text = DateTime.Now.DayOfWeek.ToString();
+            DayWeekYear.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString(); 
         }
     }
 }

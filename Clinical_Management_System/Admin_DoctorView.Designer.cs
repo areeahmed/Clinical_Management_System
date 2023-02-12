@@ -114,6 +114,7 @@
             this.deleteDocBtn = new System.Windows.Forms.Button();
             this.copyDocBtn = new System.Windows.Forms.Button();
             this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
+            this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -388,11 +389,11 @@
             // DayWeekYear
             // 
             this.DayWeekYear.AutoSize = true;
-            this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DayWeekYear.ForeColor = System.Drawing.Color.White;
             this.DayWeekYear.Location = new System.Drawing.Point(3, 660);
             this.DayWeekYear.Name = "DayWeekYear";
-            this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
+            this.DayWeekYear.Size = new System.Drawing.Size(46, 18);
             this.DayWeekYear.TabIndex = 31;
             this.DayWeekYear.Text = "9/2/23";
             this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1156,6 +1157,11 @@
             this.barcodeTimer.Interval = 1;
             this.barcodeTimer.Tick += new System.EventHandler(this.barcodeTimer_Tick);
             // 
+            // dateTimeTimer
+            // 
+            this.dateTimeTimer.Interval = 1000;
+            this.dateTimeTimer.Tick += new System.EventHandler(this.dateTimeTimer_Tick);
+            // 
             // Admin_DoctorView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1305,5 +1311,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Timer barcodeTimer;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Timer dateTimeTimer;
     }
 }
