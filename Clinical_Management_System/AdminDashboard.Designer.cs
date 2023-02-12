@@ -49,6 +49,8 @@
             this.DoctorButton = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.ReciptionButton = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.time = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -89,8 +91,6 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -103,13 +103,13 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -345,6 +345,30 @@
             this.ReciptionButton.Text = "   سکرتێر";
             this.ReciptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ReciptionButton.UseVisualStyleBackColor = false;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.button1);
+            this.panel13.Location = new System.Drawing.Point(3, 446);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(241, 69);
+            this.panel13.TabIndex = 36;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Clinical_Management_System.Properties.Resources.patient;
+            this.button1.Location = new System.Drawing.Point(-10, -10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(245, 82);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "  نەخۆش";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
@@ -775,30 +799,6 @@
             this.dataGridView4.Size = new System.Drawing.Size(268, 293);
             this.dataGridView4.TabIndex = 19;
             // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.button1);
-            this.panel13.Location = new System.Drawing.Point(3, 446);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(241, 69);
-            this.panel13.TabIndex = 36;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("RudawRegular", 16F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Clinical_Management_System.Properties.Resources.patient;
-            this.button1.Location = new System.Drawing.Point(-10, -12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 82);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "  نەخۆش";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -842,6 +842,7 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -850,7 +851,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.panel13.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

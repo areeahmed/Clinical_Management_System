@@ -51,8 +51,8 @@
             this.WeekDay = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.DayWeekYear = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
+            this.docListDGV = new System.Windows.Forms.DataGridView();
+            this.DoctorListLbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -60,7 +60,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.docPersonalinfoPanel = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -69,8 +69,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.clinicCombo = new System.Windows.Forms.ComboBox();
+            this.docGeneralinfoPanel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -109,10 +109,10 @@
             this.label33 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.barcodeDocBtn = new System.Windows.Forms.Button();
+            this.editDocBtn = new System.Windows.Forms.Button();
+            this.deleteDocBtn = new System.Windows.Forms.Button();
+            this.copyDocBtn = new System.Windows.Forms.Button();
             this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -123,13 +123,13 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.docPersonalinfoPanel.SuspendLayout();
+            this.docGeneralinfoPanel.SuspendLayout();
             this.Adding_Doctor_Form_panel1.SuspendLayout();
             this.Adding_Doctor_Form_panel.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -397,25 +397,25 @@
             this.DayWeekYear.Text = "9/2/23";
             this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // docListDGV
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(115, 423);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1123, 296);
-            this.dataGridView1.TabIndex = 20;
+            this.docListDGV.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.docListDGV.Location = new System.Drawing.Point(115, 423);
+            this.docListDGV.Name = "docListDGV";
+            this.docListDGV.Size = new System.Drawing.Size(1123, 296);
+            this.docListDGV.TabIndex = 20;
             // 
-            // label15
+            // DoctorListLbl
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1047, 384);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(191, 35);
-            this.label15.TabIndex = 27;
-            this.label15.Text = ":لیستی دکتۆرەکان";
+            this.DoctorListLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.DoctorListLbl.AutoSize = true;
+            this.DoctorListLbl.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoctorListLbl.Location = new System.Drawing.Point(1047, 384);
+            this.DoctorListLbl.Name = "DoctorListLbl";
+            this.DoctorListLbl.Size = new System.Drawing.Size(191, 35);
+            this.DoctorListLbl.TabIndex = 27;
+            this.DoctorListLbl.Text = ":لیستی دکتۆرەکان";
             // 
             // panel2
             // 
@@ -424,9 +424,9 @@
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(1047, 3);
+            this.panel2.Location = new System.Drawing.Point(962, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(226, 53);
+            this.panel2.Size = new System.Drawing.Size(311, 53);
             this.panel2.TabIndex = 28;
             // 
             // label28
@@ -434,7 +434,7 @@
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(6, 5);
+            this.label28.Location = new System.Drawing.Point(89, 6);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(81, 42);
             this.label28.TabIndex = 14;
@@ -443,7 +443,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Clinical_Management_System.Properties.Resources.close__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(183, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(265, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(39, 38);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -454,7 +454,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Clinical_Management_System.Properties.Resources.fullscreen;
-            this.pictureBox5.Location = new System.Drawing.Point(136, 6);
+            this.pictureBox5.Location = new System.Drawing.Point(218, 6);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(41, 38);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -465,7 +465,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Clinical_Management_System.Properties.Resources.remove;
-            this.pictureBox4.Location = new System.Drawing.Point(94, 8);
+            this.pictureBox4.Location = new System.Drawing.Point(176, 8);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(36, 35);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -489,22 +489,22 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "دکتۆر";
             // 
-            // panel8
+            // docPersonalinfoPanel
             // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel8.Controls.Add(this.textBox1);
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.label8);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.label23);
-            this.panel8.Controls.Add(this.label22);
-            this.panel8.Controls.Add(this.label21);
-            this.panel8.Controls.Add(this.label6);
-            this.panel8.Location = new System.Drawing.Point(783, 60);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(455, 299);
-            this.panel8.TabIndex = 29;
+            this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docPersonalinfoPanel.Controls.Add(this.textBox1);
+            this.docPersonalinfoPanel.Controls.Add(this.label2);
+            this.docPersonalinfoPanel.Controls.Add(this.label9);
+            this.docPersonalinfoPanel.Controls.Add(this.label8);
+            this.docPersonalinfoPanel.Controls.Add(this.label7);
+            this.docPersonalinfoPanel.Controls.Add(this.label23);
+            this.docPersonalinfoPanel.Controls.Add(this.label22);
+            this.docPersonalinfoPanel.Controls.Add(this.label21);
+            this.docPersonalinfoPanel.Controls.Add(this.label6);
+            this.docPersonalinfoPanel.Location = new System.Drawing.Point(783, 60);
+            this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
+            this.docPersonalinfoPanel.Size = new System.Drawing.Size(455, 299);
+            this.docPersonalinfoPanel.TabIndex = 29;
             // 
             // textBox1
             // 
@@ -592,41 +592,41 @@
             this.label6.TabIndex = 27;
             this.label6.Text = ":زنجیرە";
             // 
-            // comboBox1
+            // clinicCombo
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.clinicCombo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.clinicCombo.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clinicCombo.FormattingEnabled = true;
+            this.clinicCombo.Items.AddRange(new object[] {
             "کلینیکی ددان",
             "کلینیکی هەناو",
             "کلینیکی ئێسک"});
-            this.comboBox1.Location = new System.Drawing.Point(667, 365);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox1.Size = new System.Drawing.Size(268, 43);
-            this.comboBox1.TabIndex = 29;
-            this.comboBox1.Text = "          کلینیکەکان";
+            this.clinicCombo.Location = new System.Drawing.Point(667, 365);
+            this.clinicCombo.Name = "clinicCombo";
+            this.clinicCombo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.clinicCombo.Size = new System.Drawing.Size(268, 43);
+            this.clinicCombo.TabIndex = 29;
+            this.clinicCombo.Text = "          کلینیکەکان";
             // 
-            // panel9
+            // docGeneralinfoPanel
             // 
-            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel9.Controls.Add(this.label3);
-            this.panel9.Controls.Add(this.label4);
-            this.panel9.Controls.Add(this.label13);
-            this.panel9.Controls.Add(this.label12);
-            this.panel9.Controls.Add(this.label19);
-            this.panel9.Controls.Add(this.label18);
-            this.panel9.Controls.Add(this.label17);
-            this.panel9.Controls.Add(this.label16);
-            this.panel9.Controls.Add(this.label14);
-            this.panel9.Controls.Add(this.label11);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Controls.Add(this.label5);
-            this.panel9.Location = new System.Drawing.Point(114, 60);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(651, 295);
-            this.panel9.TabIndex = 29;
+            this.docGeneralinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docGeneralinfoPanel.Controls.Add(this.label3);
+            this.docGeneralinfoPanel.Controls.Add(this.label4);
+            this.docGeneralinfoPanel.Controls.Add(this.label13);
+            this.docGeneralinfoPanel.Controls.Add(this.label12);
+            this.docGeneralinfoPanel.Controls.Add(this.label19);
+            this.docGeneralinfoPanel.Controls.Add(this.label18);
+            this.docGeneralinfoPanel.Controls.Add(this.label17);
+            this.docGeneralinfoPanel.Controls.Add(this.label16);
+            this.docGeneralinfoPanel.Controls.Add(this.label14);
+            this.docGeneralinfoPanel.Controls.Add(this.label11);
+            this.docGeneralinfoPanel.Controls.Add(this.label10);
+            this.docGeneralinfoPanel.Controls.Add(this.label5);
+            this.docGeneralinfoPanel.Location = new System.Drawing.Point(114, 60);
+            this.docGeneralinfoPanel.Name = "docGeneralinfoPanel";
+            this.docGeneralinfoPanel.Size = new System.Drawing.Size(651, 295);
+            this.docGeneralinfoPanel.TabIndex = 29;
             // 
             // label3
             // 
@@ -762,7 +762,7 @@
             // 
             // Adding_Doctor_Form_panel1
             // 
-            this.Adding_Doctor_Form_panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.Adding_Doctor_Form_panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Adding_Doctor_Form_panel1.Controls.Add(this.docAddressTxt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.docPhoneTxt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.cancel_Form_Button);
@@ -1019,10 +1019,10 @@
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(83, 52);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(770, 109);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 51);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 43);
             this.doctor_barcode_panel.TabIndex = 31;
             // 
             // panel15
@@ -1047,7 +1047,7 @@
             // 
             // panel16
             // 
-            this.panel16.BackColor = System.Drawing.SystemColors.Control;
+            this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel16.Controls.Add(this.button7);
             this.panel16.Location = new System.Drawing.Point(0, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
@@ -1077,79 +1077,79 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button6
+            // barcodeDocBtn
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
-            this.button6.Location = new System.Drawing.Point(530, 362);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(127, 50);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "   بارکۆد";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            this.barcodeDocBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.barcodeDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.barcodeDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.barcodeDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.barcodeDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barcodeDocBtn.ForeColor = System.Drawing.Color.White;
+            this.barcodeDocBtn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
+            this.barcodeDocBtn.Location = new System.Drawing.Point(530, 362);
+            this.barcodeDocBtn.Name = "barcodeDocBtn";
+            this.barcodeDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.barcodeDocBtn.TabIndex = 30;
+            this.barcodeDocBtn.Text = "   بارکۆد";
+            this.barcodeDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.barcodeDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.barcodeDocBtn.UseVisualStyleBackColor = false;
+            this.barcodeDocBtn.Click += new System.EventHandler(this.button6_Click_1);
             // 
-            // button3
+            // editDocBtn
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Clinical_Management_System.Properties.Resources.edit;
-            this.button3.Location = new System.Drawing.Point(250, 361);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 50);
-            this.button3.TabIndex = 30;
-            this.button3.Text = "   گۆڕانکاری";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.editDocBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.editDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.editDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editDocBtn.ForeColor = System.Drawing.Color.White;
+            this.editDocBtn.Image = global::Clinical_Management_System.Properties.Resources.edit;
+            this.editDocBtn.Location = new System.Drawing.Point(250, 361);
+            this.editDocBtn.Name = "editDocBtn";
+            this.editDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.editDocBtn.TabIndex = 30;
+            this.editDocBtn.Text = "   گۆڕانکاری";
+            this.editDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.editDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.editDocBtn.UseVisualStyleBackColor = false;
+            this.editDocBtn.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // deleteDocBtn
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Clinical_Management_System.Properties.Resources.delete;
-            this.button2.Location = new System.Drawing.Point(117, 361);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 50);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "   سڕینەوە";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.deleteDocBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.deleteDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.deleteDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteDocBtn.ForeColor = System.Drawing.Color.White;
+            this.deleteDocBtn.Image = global::Clinical_Management_System.Properties.Resources.delete;
+            this.deleteDocBtn.Location = new System.Drawing.Point(117, 361);
+            this.deleteDocBtn.Name = "deleteDocBtn";
+            this.deleteDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.deleteDocBtn.TabIndex = 30;
+            this.deleteDocBtn.Text = "   سڕینەوە";
+            this.deleteDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.deleteDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.deleteDocBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // copyDocBtn
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Clinical_Management_System.Properties.Resources.printer;
-            this.button1.Location = new System.Drawing.Point(383, 363);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 48);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "   کۆپی کردن";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.copyDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.copyDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.copyDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.copyDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyDocBtn.ForeColor = System.Drawing.Color.White;
+            this.copyDocBtn.Image = global::Clinical_Management_System.Properties.Resources.printer;
+            this.copyDocBtn.Location = new System.Drawing.Point(383, 363);
+            this.copyDocBtn.Name = "copyDocBtn";
+            this.copyDocBtn.Size = new System.Drawing.Size(141, 48);
+            this.copyDocBtn.TabIndex = 30;
+            this.copyDocBtn.Text = "   کۆپی کردن";
+            this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.copyDocBtn.UseVisualStyleBackColor = false;
             // 
             // barcodeTimer
             // 
@@ -1165,16 +1165,16 @@
             this.Controls.Add(this.doctor_barcode_panel);
             this.Controls.Add(this.Adding_Doctor_Form_panel);
             this.Controls.Add(this.sidebar);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.barcodeDocBtn);
+            this.Controls.Add(this.editDocBtn);
+            this.Controls.Add(this.deleteDocBtn);
+            this.Controls.Add(this.copyDocBtn);
+            this.Controls.Add(this.clinicCombo);
+            this.Controls.Add(this.docGeneralinfoPanel);
+            this.Controls.Add(this.docPersonalinfoPanel);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DoctorListLbl);
+            this.Controls.Add(this.docListDGV);
             this.MinimumSize = new System.Drawing.Size(1292, 783);
             this.Name = "Admin_DoctorView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1194,16 +1194,16 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.docPersonalinfoPanel.ResumeLayout(false);
+            this.docPersonalinfoPanel.PerformLayout();
+            this.docGeneralinfoPanel.ResumeLayout(false);
+            this.docGeneralinfoPanel.PerformLayout();
             this.Adding_Doctor_Form_panel1.ResumeLayout(false);
             this.Adding_Doctor_Form_panel1.PerformLayout();
             this.Adding_Doctor_Form_panel.ResumeLayout(false);
@@ -1240,8 +1240,8 @@
         private System.Windows.Forms.Label WeekDay;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label DayWeekYear;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DataGridView docListDGV;
+        private System.Windows.Forms.Label DoctorListLbl;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -1249,16 +1249,16 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel docPersonalinfoPanel;
+        private System.Windows.Forms.ComboBox clinicCombo;
+        private System.Windows.Forms.Button copyDocBtn;
+        private System.Windows.Forms.Panel docGeneralinfoPanel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button deleteDocBtn;
+        private System.Windows.Forms.Button editDocBtn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -1297,7 +1297,7 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button barcodeDocBtn;
         private System.Windows.Forms.FlowLayoutPanel doctor_barcode_panel;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label33;
