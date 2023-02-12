@@ -89,6 +89,8 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -107,6 +109,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -174,6 +177,7 @@
             this.sidebar.Controls.Add(this.panel5);
             this.sidebar.Controls.Add(this.panel6);
             this.sidebar.Controls.Add(this.panel7);
+            this.sidebar.Controls.Add(this.panel13);
             this.sidebar.Controls.Add(this.panel10);
             this.sidebar.Controls.Add(this.time);
             this.sidebar.Controls.Add(this.panel11);
@@ -344,7 +348,7 @@
             // 
             // panel10
             // 
-            this.panel10.Location = new System.Drawing.Point(3, 446);
+            this.panel10.Location = new System.Drawing.Point(3, 521);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(199, 62);
             this.panel10.TabIndex = 32;
@@ -354,7 +358,7 @@
             this.time.AutoSize = true;
             this.time.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.time.ForeColor = System.Drawing.Color.White;
-            this.time.Location = new System.Drawing.Point(3, 511);
+            this.time.Location = new System.Drawing.Point(3, 586);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(70, 21);
             this.time.TabIndex = 29;
@@ -363,7 +367,7 @@
             // 
             // panel11
             // 
-            this.panel11.Location = new System.Drawing.Point(3, 535);
+            this.panel11.Location = new System.Drawing.Point(3, 610);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(235, 10);
             this.panel11.TabIndex = 33;
@@ -373,7 +377,7 @@
             this.WeekDay.AutoSize = true;
             this.WeekDay.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WeekDay.ForeColor = System.Drawing.Color.White;
-            this.WeekDay.Location = new System.Drawing.Point(3, 548);
+            this.WeekDay.Location = new System.Drawing.Point(3, 623);
             this.WeekDay.Name = "WeekDay";
             this.WeekDay.Size = new System.Drawing.Size(61, 21);
             this.WeekDay.TabIndex = 30;
@@ -382,7 +386,7 @@
             // 
             // panel12
             // 
-            this.panel12.Location = new System.Drawing.Point(3, 572);
+            this.panel12.Location = new System.Drawing.Point(3, 647);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(227, 10);
             this.panel12.TabIndex = 34;
@@ -392,7 +396,7 @@
             this.DayWeekYear.AutoSize = true;
             this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DayWeekYear.ForeColor = System.Drawing.Color.White;
-            this.DayWeekYear.Location = new System.Drawing.Point(3, 585);
+            this.DayWeekYear.Location = new System.Drawing.Point(3, 660);
             this.DayWeekYear.Name = "DayWeekYear";
             this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
             this.DayWeekYear.TabIndex = 31;
@@ -771,6 +775,30 @@
             this.dataGridView4.Size = new System.Drawing.Size(268, 293);
             this.dataGridView4.TabIndex = 19;
             // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.button1);
+            this.panel13.Location = new System.Drawing.Point(3, 446);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(241, 69);
+            this.panel13.TabIndex = 36;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Clinical_Management_System.Properties.Resources.patient;
+            this.button1.Location = new System.Drawing.Point(-10, -12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(245, 82);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "  نەخۆش";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -822,6 +850,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.panel13.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -888,5 +917,7 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Button button1;
     }
 }
