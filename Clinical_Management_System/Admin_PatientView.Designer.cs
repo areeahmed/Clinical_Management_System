@@ -370,7 +370,7 @@
             // 
             // docListDGV
             // 
-            this.docListDGV.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docListDGV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.docListDGV.Location = new System.Drawing.Point(97, 410);
             this.docListDGV.Name = "docListDGV";
@@ -379,7 +379,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(711, 410);
             this.dataGridView1.Name = "dataGridView1";
@@ -388,7 +388,7 @@
             // 
             // clinicCombo
             // 
-            this.clinicCombo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.clinicCombo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.clinicCombo.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clinicCombo.FormattingEnabled = true;
             this.clinicCombo.Items.AddRange(new object[] {
@@ -404,7 +404,7 @@
             // 
             // DoctorListLbl
             // 
-            this.DoctorListLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.DoctorListLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DoctorListLbl.AutoSize = true;
             this.DoctorListLbl.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorListLbl.Location = new System.Drawing.Point(422, 367);
@@ -415,7 +415,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(968, 367);
@@ -426,7 +426,7 @@
             // 
             // docPersonalinfoPanel
             // 
-            this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docPersonalinfoPanel.Controls.Add(this.textBox1);
             this.docPersonalinfoPanel.Controls.Add(this.label3);
             this.docPersonalinfoPanel.Controls.Add(this.label18);
@@ -644,7 +644,7 @@
             // 
             // docGeneralinfoPanel
             // 
-            this.docGeneralinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docGeneralinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docGeneralinfoPanel.Controls.Add(this.label16);
             this.docGeneralinfoPanel.Controls.Add(this.label13);
             this.docGeneralinfoPanel.Controls.Add(this.label4);
