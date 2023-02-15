@@ -10,29 +10,25 @@ using System.Windows.Forms;
 
 namespace Clinical_Management_System
 {
-    public partial class Admin_DoctorView : Form
+    public partial class Admin_AdminView : Form
     {
+        
         private Point mouseLocation;
         private bool isMouseDown = false;
         bool sideBarExpand = false;
         bool isFormOpened = false;
         bool isBarcodeOpen = false;
-
-        // the argument is to share the common windows status between forms
-        public Admin_DoctorView(FormWindowState windowState)
+        public Admin_AdminView(FormWindowState windowState)
         {
             InitializeComponent();
             this.WindowState = windowState;
         }
 
-
-        // application exit
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        // maximize and normal windows state
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
@@ -45,13 +41,11 @@ namespace Clinical_Management_System
             }
         }
 
-        // minimizing the windows
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        // the process of expanding sidebar
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (sideBarExpand)
@@ -80,25 +74,23 @@ namespace Clinical_Management_System
             }
         }
 
-        // to expand the sidebar
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             timer1.Start();
         }
 
-        // from here the program is to move the form
-        private void Admin_DoctorView_MouseDown(object sender, MouseEventArgs e)
+        private void Admin_AdminView_MouseDown(object sender, MouseEventArgs e)
         {
             isMouseDown = true;
             mouseLocation = e.Location;
         }
 
-        private void Admin_DoctorView_MouseUp(object sender, MouseEventArgs e)
+        private void Admin_AdminView_MouseUp(object sender, MouseEventArgs e)
         {
             isMouseDown = false;
         }
 
-        private void Admin_DoctorView_MouseMove(object sender, MouseEventArgs e)
+        private void Admin_AdminView_MouseMove(object sender, MouseEventArgs e)
         {
             if (isMouseDown)
             {
@@ -108,19 +100,19 @@ namespace Clinical_Management_System
                 this.Update();
             }
         }
-        //
-        //
-        // Until Here is for moving main form even if there is not tool for movement
-        //
-        //
 
-        // warning user that he/she is now in current form that he/she want to open and not to open again
         private void DoctorButton_Click(object sender, EventArgs e)
+        {
+            Admin_DoctorView doctorForm = new Admin_DoctorView(windowState: this.WindowState);
+            doctorForm.Show();
+            this.Hide();
+        }
+
+        private void AdminButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("فۆڕمەکە کرایتەوە", "ئاگاداری", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        // go to admin dashboard
         private void StartButton_Click(object sender, EventArgs e)
         {
             AdminDashboard adminDashboard = new AdminDashboard(windowState: this.WindowState);
@@ -128,8 +120,7 @@ namespace Clinical_Management_System
             this.Hide();
         }
 
-        // cancel form and Hide it
-        private void button6_Click(object sender, EventArgs e)
+        private void cancel_Form_Button_Click(object sender, EventArgs e)
         {
             openFormTimer.Start();
             docIDtxt.Clear();
@@ -140,11 +131,10 @@ namespace Clinical_Management_System
             docAddressTxt.Clear();
             Adding_Doctor_Form_panel.Visible = true;
         }
-        
-        // the functionality of showing and Hidding Adding Doctor Form 
+
         private void openFormTimer_Tick(object sender, EventArgs e)
         {
-            if(isFormOpened)
+            if (isFormOpened)
             {
                 Adding_Doctor_Form_panel.Height -= 30;
                 if (Adding_Doctor_Form_panel.Height == Adding_Doctor_Form_panel.MinimumSize.Height)
@@ -164,16 +154,13 @@ namespace Clinical_Management_System
             }
         }
 
-        // show and hide Adding Doctor Form
-        private void button3_Click(object sender, EventArgs e)
+        private void editDocBtn_Click(object sender, EventArgs e)
         {
             openFormTimer.Start();
             Adding_Doctor_Form_panel.Visible = true;
         }
 
-
-        // form load
-        private void Admin_DoctorView_Load(object sender, EventArgs e)
+        private void Admin_AdminView_Load(object sender, EventArgs e)
         {
             Adding_Doctor_Form_panel.Visible = false;
             doctor_barcode_panel.Visible = false;
@@ -183,7 +170,6 @@ namespace Clinical_Management_System
             dateTimeTimer.Start();
         }
 
-        // Barcode timer tik
         private void barcodeTimer_Tick(object sender, EventArgs e)
         {
             if (isBarcodeOpen)
@@ -206,14 +192,12 @@ namespace Clinical_Management_System
             }
         }
 
-        // open barcode panel
-        private void button6_Click_1(object sender, EventArgs e)
+        private void barcodeDocBtn_Click(object sender, EventArgs e)
         {
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
         }
 
-        // DONE USING BARCODE FORM
         private void button7_Click(object sender, EventArgs e)
         {
             barcodeTimer.Start();
@@ -224,17 +208,10 @@ namespace Clinical_Management_System
         {
             time.Text = DateTime.Now.ToShortTimeString();
             WeekDay.Text = DateTime.Now.DayOfWeek.ToString();
-            DayWeekYear.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString(); 
+            DayWeekYear.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
         }
 
-        private void AdminButton_Click(object sender, EventArgs e)
-        {
-            Admin_AdminView admin_AdminView = new Admin_AdminView(windowState: this.WindowState);
-            admin_AdminView.Show();
-            this.Hide();
-        }
-
-        private void ReciptionButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Admin_PatientView admin_PatientView = new Admin_PatientView(windowState: this.WindowState);
             admin_PatientView.Show();

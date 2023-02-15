@@ -10,15 +10,22 @@ using System.Windows.Forms;
 
 namespace Clinical_Management_System
 {
-    public partial class AdminDashboard : Form
+    public partial class Admin_PatientView : Form
     {
         private Point mouseLocation;
         private bool isMouseDown = false;
         bool sideBarExpand = false;
-        public AdminDashboard(FormWindowState windowState)
+        public Admin_PatientView(FormWindowState windowState)
         {
             InitializeComponent();
             this.WindowState = windowState;
+        }
+
+        private void Admin_PatientView_Load(object sender, EventArgs e)
+        {
+            // using this code to make a panel movable later and for creating report
+            // ControlExtension.Draggable(Adding_Doctor_Form_panel, true);
+            dateTimeTimer.Start();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -74,21 +81,20 @@ namespace Clinical_Management_System
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            
         }
 
-        private void AdminDashboard_MouseDown(object sender, MouseEventArgs e)
+        private void Admin_PatientView_MouseDown(object sender, MouseEventArgs e)
         {
             isMouseDown = true;
             mouseLocation = e.Location;
         }
 
-        private void AdminDashboard_MouseUp(object sender, MouseEventArgs e)
+        private void Admin_PatientView_MouseUp(object sender, MouseEventArgs e)
         {
             isMouseDown = false;
         }
 
-        private void AdminDashboard_MouseMove(object sender, MouseEventArgs e)
+        private void Admin_PatientView_MouseMove(object sender, MouseEventArgs e)
         {
             if (isMouseDown)
             {
@@ -99,35 +105,29 @@ namespace Clinical_Management_System
             }
         }
 
-        // form loading
-        private void AdminDashboard_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            dateTimeTimer.Start();
-        }
-
-        private void DoctorButton_Click(object sender, EventArgs e)
-        {
-            Admin_DoctorView doctorForm = new Admin_DoctorView(windowState: this.WindowState);
-            doctorForm.Show();
-            this.Hide();
+            MessageBox.Show("فۆڕمەکە کرایتەوە", "ئاگاداری", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("فۆڕمەکە کرایتەوە", "ئاگاداری", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            AdminDashboard adminDashboard = new AdminDashboard(windowState: this.WindowState);
+            adminDashboard.Show();
+            this.Hide();
         }
 
         private void AdminButton_Click(object sender, EventArgs e)
         {
             Admin_AdminView admin_AdminView = new Admin_AdminView(windowState: this.WindowState);
-            this.Hide();
             admin_AdminView.Show();
+            this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void DoctorButton_Click(object sender, EventArgs e)
         {
-            Admin_PatientView admin_PatientView = new Admin_PatientView(windowState: this.WindowState);
-            admin_PatientView.Show();
+            Admin_DoctorView admin_DoctorView = new Admin_DoctorView(windowState: this.WindowState);
+            admin_DoctorView.Show();
             this.Hide();
         }
 
@@ -136,13 +136,6 @@ namespace Clinical_Management_System
             time.Text = DateTime.Now.ToShortTimeString();
             WeekDay.Text = DateTime.Now.DayOfWeek.ToString();
             DayWeekYear.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
-        }
-
-        private void ReciptionButton_Click(object sender, EventArgs e)
-        {
-            Admin_ReciptionView admin_ReciptionView = new Admin_ReciptionView(this.WindowState);
-            admin_ReciptionView.Show();
-            this.Hide();
         }
     }
 }

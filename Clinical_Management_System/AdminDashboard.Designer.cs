@@ -91,6 +91,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -296,6 +297,7 @@
             this.AdminButton.Text = "   ئادمین";
             this.AdminButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AdminButton.UseVisualStyleBackColor = false;
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // panel6
             // 
@@ -345,6 +347,7 @@
             this.ReciptionButton.Text = "   سکرتێر";
             this.ReciptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ReciptionButton.UseVisualStyleBackColor = false;
+            this.ReciptionButton.Click += new System.EventHandler(this.ReciptionButton_Click);
             // 
             // panel13
             // 
@@ -369,6 +372,7 @@
             this.button1.Text = "  نەخۆش";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel10
             // 
@@ -799,6 +803,10 @@
             this.dataGridView4.Size = new System.Drawing.Size(268, 293);
             this.dataGridView4.TabIndex = 19;
             // 
+            // dateTimeTimer
+            // 
+            this.dateTimeTimer.Tick += new System.EventHandler(this.dateTimeTimer_Tick);
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -919,5 +927,6 @@
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer dateTimeTimer;
     }
 }
