@@ -59,7 +59,6 @@
             this.DayWeekYear = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -442,17 +441,10 @@
             // 
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name});
             this.dataGridView1.Location = new System.Drawing.Point(427, 436);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(253, 293);
             this.dataGridView1.TabIndex = 19;
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
             // 
             // label2
             // 
@@ -820,7 +812,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1276, 748);
+            this.ClientSize = new System.Drawing.Size(1276, 771);
             this.ControlBox = false;
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.comboBox1);
@@ -937,6 +929,5 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer dateTimeTimer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
     }
 }
