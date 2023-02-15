@@ -209,6 +209,7 @@
             this.ClinicButton.Text = "   نۆرینگە";
             this.ClinicButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ClinicButton.UseVisualStyleBackColor = false;
+            this.ClinicButton.Click += new System.EventHandler(this.ClinicButton_Click);
             // 
             // panel5
             // 
@@ -283,6 +284,7 @@
             this.ReciptionButton.Text = "   سکرتێر";
             this.ReciptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ReciptionButton.UseVisualStyleBackColor = false;
+            this.ReciptionButton.Click += new System.EventHandler(this.ReciptionButton_Click);
             // 
             // panel13
             // 
@@ -734,6 +736,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // dateTimeTimer
@@ -746,6 +749,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 748);
             this.ControlBox = false;
+            this.Controls.Add(this.sidebar);
             this.Controls.Add(this.docGeneralinfoPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.docPersonalinfoPanel);
@@ -754,7 +758,6 @@
             this.Controls.Add(this.clinicCombo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.docListDGV);
-            this.Controls.Add(this.sidebar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1292, 764);
             this.Name = "Admin_PatientView";

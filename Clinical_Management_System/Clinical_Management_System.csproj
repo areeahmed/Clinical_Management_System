@@ -61,6 +61,12 @@
     <Compile Include="Admin_AdminView.Designer.cs">
       <DependentUpon>Admin_AdminView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_ClinicView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ClinicView.Designer.cs">
+      <DependentUpon>Admin_ClinicView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_DoctorView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_AdminView.resx">
       <DependentUpon>Admin_AdminView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ClinicView.resx">
+      <DependentUpon>Admin_ClinicView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_DoctorView.resx">
       <DependentUpon>Admin_DoctorView.cs</DependentUpon>

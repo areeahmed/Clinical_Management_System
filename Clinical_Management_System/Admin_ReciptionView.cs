@@ -87,7 +87,9 @@ namespace Clinical_Management_System
 
         private void ClinicButton_Click(object sender, EventArgs e)
         {
-            // clinic
+            Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
+            admin_ClinicView.Show();
+            this.Hide();
         }
 
         private void AdminButton_Click(object sender, EventArgs e)

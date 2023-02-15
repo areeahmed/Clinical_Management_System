@@ -273,6 +273,7 @@
             this.ClinicButton.Text = "   نۆرینگە";
             this.ClinicButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ClinicButton.UseVisualStyleBackColor = false;
+            this.ClinicButton.Click += new System.EventHandler(this.ClinicButton_Click);
             // 
             // panel5
             // 

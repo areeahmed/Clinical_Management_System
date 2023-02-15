@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_AdminView));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -226,6 +227,7 @@
             this.ClinicButton.Text = "   نۆرینگە";
             this.ClinicButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ClinicButton.UseVisualStyleBackColor = false;
+            this.ClinicButton.Click += new System.EventHandler(this.ClinicButton_Click);
             // 
             // panel5
             // 
@@ -300,6 +302,7 @@
             this.ReciptionButton.Text = "   سکرتێر";
             this.ReciptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ReciptionButton.UseVisualStyleBackColor = false;
+            this.ReciptionButton.Click += new System.EventHandler(this.ReciptionButton_Click);
             // 
             // panel13
             // 
@@ -959,8 +962,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1276, 748);
             this.ControlBox = false;
+            this.Controls.Add(this.sidebar);
             this.Controls.Add(this.Adding_Doctor_Form_panel);
             this.Controls.Add(this.doctor_barcode_panel);
             this.Controls.Add(this.DoctorListLbl);
@@ -971,7 +976,7 @@
             this.Controls.Add(this.copyDocBtn);
             this.Controls.Add(this.docPersonalinfoPanel);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.sidebar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1292, 764);
             this.Name = "Admin_AdminView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

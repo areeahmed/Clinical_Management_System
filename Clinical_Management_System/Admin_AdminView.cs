@@ -217,5 +217,19 @@ namespace Clinical_Management_System
             admin_PatientView.Show();
             this.Hide();
         }
+
+        private void ReciptionButton_Click(object sender, EventArgs e)
+        {
+            Admin_ReciptionView admin_ReciptionView = new Admin_ReciptionView(this.WindowState);
+            admin_ReciptionView.Show();
+            this.Hide();
+        }
+
+        private void ClinicButton_Click(object sender, EventArgs e)
+        {
+            Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
+            admin_ClinicView.Show();
+            this.Hide();
+        }
     }
 }

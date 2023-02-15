@@ -137,5 +137,19 @@ namespace Clinical_Management_System
             WeekDay.Text = DateTime.Now.DayOfWeek.ToString();
             DayWeekYear.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
         }
+
+        private void ReciptionButton_Click(object sender, EventArgs e)
+        {
+            Admin_ReciptionView admin_ReciptionView = new Admin_ReciptionView(WindowState);
+            admin_ReciptionView.Show();
+            this.Hide();
+        }
+
+        private void ClinicButton_Click(object sender, EventArgs e)
+        {
+            Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
+            admin_ClinicView.Show();
+            this.Hide();
+        }
     }
 }
