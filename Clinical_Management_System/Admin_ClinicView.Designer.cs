@@ -1003,7 +1003,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1276, 748);
+            this.ClientSize = new System.Drawing.Size(1276, 771);
             this.ControlBox = false;
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.Adding_Doctor_Form_panel);
