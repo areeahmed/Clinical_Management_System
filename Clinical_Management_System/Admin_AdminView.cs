@@ -162,11 +162,21 @@ namespace Clinical_Management_System
 
         private void Admin_AdminView_Load(object sender, EventArgs e)
         {
+            // this part of code is for making picture look like circle
+            System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
+            obj.AddEllipse(0, 0, pictureBox2.Width, pictureBox2.Height);
+            Region region = new Region(obj);
+            pictureBox2.Region = region;
+            // until here is for profile picture circing
+
+            // invisibling the panels at first
             Adding_Doctor_Form_panel.Visible = false;
             doctor_barcode_panel.Visible = false;
             // for making it fraggable
             ControlExtension.Draggable(doctor_barcode_panel, true);
             ControlExtension.Draggable(Adding_Doctor_Form_panel, true);
+
+            // timer for the date time
             dateTimeTimer.Start();
         }
 
@@ -230,6 +240,14 @@ namespace Clinical_Management_System
             Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
             admin_ClinicView.Show();
             this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox2.ImageLocation = openFileDialog1.FileNames[0];
+            }
         }
     }
 }

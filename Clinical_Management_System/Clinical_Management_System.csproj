@@ -264,5 +264,14 @@
   <ItemGroup>
     <None Include="Resources\check-mark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female unknown picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male unknown picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

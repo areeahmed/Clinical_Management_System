@@ -175,6 +175,10 @@ namespace Clinical_Management_System
         // form load
         private void Admin_DoctorView_Load(object sender, EventArgs e)
         {
+            System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
+            obj.AddEllipse(0, 0, pictureBox2.Width, pictureBox2.Height);
+            Region region = new Region(obj);
+            pictureBox2.Region = region;
             Adding_Doctor_Form_panel.Visible = false;
             doctor_barcode_panel.Visible = false;
             // for making it fraggable
@@ -253,6 +257,14 @@ namespace Clinical_Management_System
             Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
             admin_ClinicView.Show();
             this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox2.ImageLocation = openFileDialog1.FileNames[0];
+            }
         }
     }
 }

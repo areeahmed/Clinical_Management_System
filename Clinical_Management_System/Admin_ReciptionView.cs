@@ -127,6 +127,10 @@ namespace Clinical_Management_System
 
         private void Admin_ReciptionView_Load(object sender, EventArgs e)
         {
+            System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
+            obj.AddEllipse(0, 0, pictureBox2.Width, pictureBox2.Height);
+            Region region = new Region(obj);
+            pictureBox2.Region = region;
             Adding_Doctor_Form_panel.Visible = false;
             doctor_barcode_panel.Visible = false;
             // for making it fraggable
@@ -229,6 +233,14 @@ namespace Clinical_Management_System
         {
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox2.ImageLocation = openFileDialog1.FileNames[0];
+            }
         }
     }
 }

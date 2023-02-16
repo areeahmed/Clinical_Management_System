@@ -56,20 +56,11 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
             this.Adding_Doctor_Form_panel1 = new System.Windows.Forms.Panel();
-            this.docAddressTxt = new System.Windows.Forms.TextBox();
-            this.docPhoneTxt = new System.Windows.Forms.TextBox();
             this.cancel_Form_Button = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.Add_user_button = new System.Windows.Forms.Button();
-            this.docPasswordTxt = new System.Windows.Forms.TextBox();
-            this.docFullNameTxt = new System.Windows.Forms.TextBox();
             this.docUsernameTxt = new System.Windows.Forms.TextBox();
             this.docIDtxt = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -398,7 +389,7 @@
             this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(127, 15);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(500, 729);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 45);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 47);
             this.Adding_Doctor_Form_panel.TabIndex = 40;
             // 
             // panel14
@@ -424,20 +415,11 @@
             // Adding_Doctor_Form_panel1
             // 
             this.Adding_Doctor_Form_panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.docAddressTxt);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.docPhoneTxt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.cancel_Form_Button);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.button5);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.Add_user_button);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.docPasswordTxt);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.docFullNameTxt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.docUsernameTxt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.docIDtxt);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.label25);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.label31);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.label30);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.label29);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.label27);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label26);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label24);
             this.Adding_Doctor_Form_panel1.Location = new System.Drawing.Point(0, 48);
@@ -446,23 +428,6 @@
             this.Adding_Doctor_Form_panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Adding_Doctor_Form_panel1.Size = new System.Drawing.Size(497, 686);
             this.Adding_Doctor_Form_panel1.TabIndex = 28;
-            // 
-            // docAddressTxt
-            // 
-            this.docAddressTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docAddressTxt.Location = new System.Drawing.Point(67, 417);
-            this.docAddressTxt.Multiline = true;
-            this.docAddressTxt.Name = "docAddressTxt";
-            this.docAddressTxt.Size = new System.Drawing.Size(396, 158);
-            this.docAddressTxt.TabIndex = 0;
-            // 
-            // docPhoneTxt
-            // 
-            this.docPhoneTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docPhoneTxt.Location = new System.Drawing.Point(67, 329);
-            this.docPhoneTxt.Name = "docPhoneTxt";
-            this.docPhoneTxt.Size = new System.Drawing.Size(314, 35);
-            this.docPhoneTxt.TabIndex = 0;
             // 
             // cancel_Form_Button
             // 
@@ -473,7 +438,7 @@
             this.cancel_Form_Button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancel_Form_Button.ForeColor = System.Drawing.Color.White;
             this.cancel_Form_Button.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
-            this.cancel_Form_Button.Location = new System.Drawing.Point(342, 589);
+            this.cancel_Form_Button.Location = new System.Drawing.Point(342, 523);
             this.cancel_Form_Button.Name = "cancel_Form_Button";
             this.cancel_Form_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cancel_Form_Button.Size = new System.Drawing.Size(121, 50);
@@ -492,7 +457,7 @@
             this.button5.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Clinical_Management_System.Properties.Resources.add1;
-            this.button5.Location = new System.Drawing.Point(67, 591);
+            this.button5.Location = new System.Drawing.Point(67, 525);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button5.Size = new System.Drawing.Size(121, 50);
@@ -510,7 +475,7 @@
             this.Add_user_button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_user_button.ForeColor = System.Drawing.Color.White;
             this.Add_user_button.Image = global::Clinical_Management_System.Properties.Resources.updating;
-            this.Add_user_button.Location = new System.Drawing.Point(208, 589);
+            this.Add_user_button.Location = new System.Drawing.Point(208, 523);
             this.Add_user_button.Name = "Add_user_button";
             this.Add_user_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Add_user_button.Size = new System.Drawing.Size(121, 50);
@@ -520,26 +485,10 @@
             this.Add_user_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Add_user_button.UseVisualStyleBackColor = false;
             // 
-            // docPasswordTxt
-            // 
-            this.docPasswordTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docPasswordTxt.Location = new System.Drawing.Point(67, 273);
-            this.docPasswordTxt.Name = "docPasswordTxt";
-            this.docPasswordTxt.Size = new System.Drawing.Size(280, 35);
-            this.docPasswordTxt.TabIndex = 0;
-            // 
-            // docFullNameTxt
-            // 
-            this.docFullNameTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docFullNameTxt.Location = new System.Drawing.Point(67, 217);
-            this.docFullNameTxt.Name = "docFullNameTxt";
-            this.docFullNameTxt.Size = new System.Drawing.Size(280, 35);
-            this.docFullNameTxt.TabIndex = 0;
-            // 
             // docUsernameTxt
             // 
             this.docUsernameTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docUsernameTxt.Location = new System.Drawing.Point(67, 169);
+            this.docUsernameTxt.Location = new System.Drawing.Point(60, 273);
             this.docUsernameTxt.Name = "docUsernameTxt";
             this.docUsernameTxt.Size = new System.Drawing.Size(262, 35);
             this.docUsernameTxt.TabIndex = 0;
@@ -547,76 +496,17 @@
             // docIDtxt
             // 
             this.docIDtxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docIDtxt.Location = new System.Drawing.Point(67, 112);
+            this.docIDtxt.Location = new System.Drawing.Point(60, 216);
             this.docIDtxt.Name = "docIDtxt";
             this.docIDtxt.Size = new System.Drawing.Size(324, 35);
             this.docIDtxt.TabIndex = 0;
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(302, 30);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(174, 39);
-            this.label25.TabIndex = 14;
-            this.label25.Text = "گۆڕینی زانیاری";
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(369, 384);
-            this.label31.Name = "label31";
-            this.label31.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label31.Size = new System.Drawing.Size(92, 30);
-            this.label31.TabIndex = 27;
-            this.label31.Text = ":ناونیشان";
-            // 
-            // label30
-            // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(379, 335);
-            this.label30.Name = "label30";
-            this.label30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label30.Size = new System.Drawing.Size(82, 30);
-            this.label30.TabIndex = 27;
-            this.label30.Text = ":ژ.مۆبایل";
-            // 
-            // label29
-            // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(345, 278);
-            this.label29.Name = "label29";
-            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label29.Size = new System.Drawing.Size(116, 30);
-            this.label29.TabIndex = 27;
-            this.label29.Text = ":تێپەڕەووشە";
-            // 
-            // label27
-            // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(346, 222);
-            this.label27.Name = "label27";
-            this.label27.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label27.Size = new System.Drawing.Size(115, 30);
-            this.label27.TabIndex = 27;
-            this.label27.Text = ":ناوی تەواوی";
             // 
             // label26
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(322, 174);
+            this.label26.Location = new System.Drawing.Point(315, 278);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label26.Size = new System.Drawing.Size(148, 30);
@@ -628,7 +518,7 @@
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(390, 117);
+            this.label24.Location = new System.Drawing.Point(383, 221);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label24.Size = new System.Drawing.Size(71, 30);
@@ -742,9 +632,9 @@
             this.label21.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(204, 116);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(131, 30);
+            this.label21.Size = new System.Drawing.Size(129, 30);
             this.label21.TabIndex = 27;
-            this.label21.Text = "ئازاد احمد بدر";
+            this.label21.Text = "کلینیکی ددان";
             // 
             // label6
             // 
@@ -1083,20 +973,11 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Panel Adding_Doctor_Form_panel1;
-        private System.Windows.Forms.TextBox docAddressTxt;
-        private System.Windows.Forms.TextBox docPhoneTxt;
         private System.Windows.Forms.Button cancel_Form_Button;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button Add_user_button;
-        private System.Windows.Forms.TextBox docPasswordTxt;
-        private System.Windows.Forms.TextBox docFullNameTxt;
         private System.Windows.Forms.TextBox docUsernameTxt;
         private System.Windows.Forms.TextBox docIDtxt;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel2;

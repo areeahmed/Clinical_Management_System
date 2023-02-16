@@ -450,7 +450,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(167, 42);
+            this.label2.Location = new System.Drawing.Point(169, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 35);
             this.label2.TabIndex = 0;
@@ -460,7 +460,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(160, 89);
+            this.label3.Location = new System.Drawing.Point(162, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 35);
             this.label3.TabIndex = 1;
@@ -470,7 +470,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(160, 137);
+            this.label4.Location = new System.Drawing.Point(162, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 35);
             this.label4.TabIndex = 2;
@@ -480,7 +480,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(148, 190);
+            this.label5.Location = new System.Drawing.Point(150, 161);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 35);
             this.label5.TabIndex = 3;
@@ -490,7 +490,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(516, 42);
+            this.label6.Location = new System.Drawing.Point(518, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(145, 35);
             this.label6.TabIndex = 4;
@@ -500,7 +500,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(516, 89);
+            this.label7.Location = new System.Drawing.Point(518, 60);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(156, 35);
             this.label7.TabIndex = 5;
@@ -510,7 +510,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(516, 139);
+            this.label8.Location = new System.Drawing.Point(518, 110);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(173, 35);
             this.label8.TabIndex = 6;
@@ -520,7 +520,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(513, 193);
+            this.label9.Location = new System.Drawing.Point(515, 164);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(176, 30);
             this.label9.TabIndex = 7;
@@ -654,7 +654,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(119, 45);
+            this.label20.Location = new System.Drawing.Point(121, 16);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(35, 30);
             this.label20.TabIndex = 14;
@@ -664,7 +664,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(119, 94);
+            this.label21.Location = new System.Drawing.Point(121, 65);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label21.Size = new System.Drawing.Size(35, 30);
@@ -675,7 +675,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(129, 140);
+            this.label22.Location = new System.Drawing.Point(131, 111);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label22.Size = new System.Drawing.Size(25, 30);
@@ -686,7 +686,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(129, 193);
+            this.label23.Location = new System.Drawing.Point(131, 164);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label23.Size = new System.Drawing.Size(24, 30);
@@ -697,7 +697,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(426, 42);
+            this.label24.Location = new System.Drawing.Point(428, 13);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label24.Size = new System.Drawing.Size(84, 30);
@@ -708,7 +708,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(413, 92);
+            this.label25.Location = new System.Drawing.Point(415, 63);
             this.label25.Name = "label25";
             this.label25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label25.Size = new System.Drawing.Size(98, 30);
@@ -719,7 +719,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(474, 142);
+            this.label26.Location = new System.Drawing.Point(476, 113);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label26.Size = new System.Drawing.Size(36, 30);
@@ -730,7 +730,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(435, 193);
+            this.label27.Location = new System.Drawing.Point(437, 164);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label27.Size = new System.Drawing.Size(72, 30);
