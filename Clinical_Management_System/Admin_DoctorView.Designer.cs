@@ -89,6 +89,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Adding_Doctor_Form_panel1 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.docAddressTxt = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -417,7 +418,7 @@
             // 
             // docListDGV
             // 
-            this.docListDGV.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docListDGV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.docListDGV.Location = new System.Drawing.Point(117, 461);
             this.docListDGV.Name = "docListDGV";
@@ -426,7 +427,7 @@
             // 
             // DoctorListLbl
             // 
-            this.DoctorListLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.DoctorListLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DoctorListLbl.AutoSize = true;
             this.DoctorListLbl.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorListLbl.Location = new System.Drawing.Point(1049, 377);
@@ -509,7 +510,7 @@
             // 
             // docPersonalinfoPanel
             // 
-            this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docPersonalinfoPanel.Controls.Add(this.pictureBox2);
             this.docPersonalinfoPanel.Controls.Add(this.label2);
             this.docPersonalinfoPanel.Controls.Add(this.label35);
@@ -652,7 +653,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(932, 558);
             this.textBox1.Name = "textBox1";
@@ -662,7 +663,7 @@
             // 
             // clinicCombo
             // 
-            this.clinicCombo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.clinicCombo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.clinicCombo.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clinicCombo.FormattingEnabled = true;
             this.clinicCombo.Items.AddRange(new object[] {
@@ -680,7 +681,7 @@
             // 
             // docGeneralinfoPanel
             // 
-            this.docGeneralinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.docGeneralinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docGeneralinfoPanel.Controls.Add(this.label3);
             this.docGeneralinfoPanel.Controls.Add(this.label4);
             this.docGeneralinfoPanel.Controls.Add(this.label13);
@@ -833,6 +834,7 @@
             // Adding_Doctor_Form_panel1
             // 
             this.Adding_Doctor_Form_panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Adding_Doctor_Form_panel1.Controls.Add(this.checkBox1);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.comboBox1);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.docAddressTxt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.textBox3);
@@ -860,6 +862,17 @@
             this.Adding_Doctor_Form_panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Adding_Doctor_Form_panel1.Size = new System.Drawing.Size(497, 686);
             this.Adding_Doctor_Form_panel1.TabIndex = 28;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(138, 567);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(227, 34);
+            this.checkBox1.TabIndex = 32;
+            this.checkBox1.Text = "زیاد کردنی زانیاری نوێ";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -995,6 +1008,7 @@
             this.docIDtxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.docIDtxt.Location = new System.Drawing.Point(67, 38);
             this.docIDtxt.Name = "docIDtxt";
+            this.docIDtxt.ReadOnly = true;
             this.docIDtxt.Size = new System.Drawing.Size(324, 35);
             this.docIDtxt.TabIndex = 0;
             // 
@@ -1121,7 +1135,7 @@
             this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(94, 21);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(500, 729);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 48);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 45);
             this.Adding_Doctor_Form_panel.TabIndex = 31;
             // 
             // panel14
@@ -1225,7 +1239,7 @@
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1244,7 +1258,7 @@
             // 
             // barcodeDocBtn
             // 
-            this.barcodeDocBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.barcodeDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.barcodeDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
             this.barcodeDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.barcodeDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1263,7 +1277,7 @@
             // 
             // editDocBtn
             // 
-            this.editDocBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.editDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.editDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
             this.editDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.editDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1282,7 +1296,7 @@
             // 
             // deleteDocBtn
             // 
-            this.deleteDocBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.deleteDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.deleteDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
             this.deleteDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1300,7 +1314,7 @@
             // 
             // copyDocBtn
             // 
-            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.copyDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
             this.copyDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.copyDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1481,5 +1495,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

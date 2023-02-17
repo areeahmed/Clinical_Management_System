@@ -58,7 +58,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.docPersonalinfoPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -69,6 +68,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -418,7 +418,6 @@
             // 
             this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docPersonalinfoPanel.Controls.Add(this.pictureBox2);
-            this.docPersonalinfoPanel.Controls.Add(this.textBox1);
             this.docPersonalinfoPanel.Controls.Add(this.label3);
             this.docPersonalinfoPanel.Controls.Add(this.label18);
             this.docPersonalinfoPanel.Controls.Add(this.label17);
@@ -429,6 +428,7 @@
             this.docPersonalinfoPanel.Controls.Add(this.label20);
             this.docPersonalinfoPanel.Controls.Add(this.label19);
             this.docPersonalinfoPanel.Controls.Add(this.label22);
+            this.docPersonalinfoPanel.Controls.Add(this.label11);
             this.docPersonalinfoPanel.Controls.Add(this.label21);
             this.docPersonalinfoPanel.Controls.Add(this.label6);
             this.docPersonalinfoPanel.Location = new System.Drawing.Point(563, 65);
@@ -448,15 +448,6 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.WaitOnLoad = true;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(121, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(250, 35);
-            this.textBox1.TabIndex = 41;
             // 
             // label3
             // 
@@ -567,6 +558,17 @@
             this.label22.Size = new System.Drawing.Size(154, 30);
             this.label22.TabIndex = 38;
             this.label22.Text = "0750 333 3434";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(347, 55);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(24, 30);
+            this.label11.TabIndex = 39;
+            this.label11.Text = "1";
             // 
             // label21
             // 
@@ -768,9 +770,12 @@
             this.clinicCombo.Items.AddRange(new object[] {
             "زنجیرە",
             "ناو",
-            "شاەزایی",
-            "بڕوانامە",
-            "کلینیک"});
+            "کلینیک",
+            "ناونیشان",
+            "تەمەن",
+            "ڕەگەز",
+            "ڕێژەی سەردانی کردن",
+            "هەستیاری"});
             this.clinicCombo.Location = new System.Drawing.Point(97, 387);
             this.clinicCombo.Name = "clinicCombo";
             this.clinicCombo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -898,7 +903,6 @@
         private System.Windows.Forms.Panel docGeneralinfoPanel;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer dateTimeTimer;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
@@ -924,5 +928,6 @@
         private System.Windows.Forms.ComboBox clinicCombo;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label11;
     }
 }

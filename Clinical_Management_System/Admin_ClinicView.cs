@@ -154,6 +154,7 @@ namespace Clinical_Management_System
 
         private void Admin_ClinicView_Load(object sender, EventArgs e)
         {
+            
             Adding_Doctor_Form_panel.Visible = false;
             // for making it fraggable
             ControlExtension.Draggable(Adding_Doctor_Form_panel, true);
