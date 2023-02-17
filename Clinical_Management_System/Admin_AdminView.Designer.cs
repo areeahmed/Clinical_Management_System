@@ -62,8 +62,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.admin_Phone = new System.Windows.Forms.Label();
+            this.admin_Name = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.docListDGV = new System.Windows.Forms.DataGridView();
@@ -105,6 +105,8 @@
             this.deleteDocBtn = new System.Windows.Forms.Button();
             this.copyDocBtn = new System.Windows.Forms.Button();
             this.clinicCombo = new System.Windows.Forms.ComboBox();
+            this.admin_ID = new System.Windows.Forms.Label();
+            this.admin_QrPic = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -127,6 +129,7 @@
             this.Adding_Doctor_Form_panel.SuspendLayout();
             this.panel14.SuspendLayout();
             this.Adding_Doctor_Form_panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.admin_QrPic)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -459,8 +462,9 @@
             this.docPersonalinfoPanel.Controls.Add(this.pictureBox2);
             this.docPersonalinfoPanel.Controls.Add(this.label3);
             this.docPersonalinfoPanel.Controls.Add(this.label7);
-            this.docPersonalinfoPanel.Controls.Add(this.label4);
-            this.docPersonalinfoPanel.Controls.Add(this.label21);
+            this.docPersonalinfoPanel.Controls.Add(this.admin_Phone);
+            this.docPersonalinfoPanel.Controls.Add(this.admin_ID);
+            this.docPersonalinfoPanel.Controls.Add(this.admin_Name);
             this.docPersonalinfoPanel.Controls.Add(this.label6);
             this.docPersonalinfoPanel.Controls.Add(this.label2);
             this.docPersonalinfoPanel.Location = new System.Drawing.Point(673, 72);
@@ -503,27 +507,27 @@
             this.label7.TabIndex = 31;
             this.label7.Text = ":ناو";
             // 
-            // label4
+            // admin_Phone
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(117, 168);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 30);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "0750 222 3344";
+            this.admin_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.admin_Phone.AutoSize = true;
+            this.admin_Phone.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_Phone.Location = new System.Drawing.Point(117, 168);
+            this.admin_Phone.Name = "admin_Phone";
+            this.admin_Phone.Size = new System.Drawing.Size(154, 30);
+            this.admin_Phone.TabIndex = 32;
+            this.admin_Phone.Text = "0750 222 3344";
             // 
-            // label21
+            // admin_Name
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(142, 119);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(131, 30);
-            this.label21.TabIndex = 33;
-            this.label21.Text = "ئازاد احمد بدر";
+            this.admin_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.admin_Name.AutoSize = true;
+            this.admin_Name.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_Name.Location = new System.Drawing.Point(142, 119);
+            this.admin_Name.Name = "admin_Name";
+            this.admin_Name.Size = new System.Drawing.Size(131, 30);
+            this.admin_Name.TabIndex = 33;
+            this.admin_Name.Text = "ئازاد احمد بدر";
             // 
             // label6
             // 
@@ -603,6 +607,7 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel16.Controls.Add(this.admin_QrPic);
             this.panel16.Controls.Add(this.button7);
             this.panel16.Location = new System.Drawing.Point(0, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
@@ -1020,6 +1025,25 @@
             this.clinicCombo.TabIndex = 40;
             this.clinicCombo.Text = "گەڕان بەپێی";
             // 
+            // admin_ID
+            // 
+            this.admin_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.admin_ID.AutoSize = true;
+            this.admin_ID.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_ID.Location = new System.Drawing.Point(253, 71);
+            this.admin_ID.Name = "admin_ID";
+            this.admin_ID.Size = new System.Drawing.Size(23, 30);
+            this.admin_ID.TabIndex = 33;
+            this.admin_ID.Text = "#";
+            // 
+            // admin_QrPic
+            // 
+            this.admin_QrPic.Location = new System.Drawing.Point(121, 91);
+            this.admin_QrPic.Name = "admin_QrPic";
+            this.admin_QrPic.Size = new System.Drawing.Size(260, 271);
+            this.admin_QrPic.TabIndex = 32;
+            this.admin_QrPic.TabStop = false;
+            // 
             // Admin_AdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1078,6 +1102,7 @@
             this.panel14.PerformLayout();
             this.Adding_Doctor_Form_panel1.ResumeLayout(false);
             this.Adding_Doctor_Form_panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.admin_QrPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1152,13 +1177,15 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label admin_Phone;
+        private System.Windows.Forms.Label admin_Name;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox clinicCombo;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label admin_ID;
+        private System.Windows.Forms.PictureBox admin_QrPic;
     }
 }

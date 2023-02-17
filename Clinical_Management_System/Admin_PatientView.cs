@@ -15,6 +15,7 @@ namespace Clinical_Management_System
         private Point mouseLocation;
         private bool isMouseDown = false;
         bool sideBarExpand = false;
+        bool isBarcodeOpen = false;
         public Admin_PatientView(FormWindowState windowState)
         {
             InitializeComponent();
@@ -23,12 +24,13 @@ namespace Clinical_Management_System
 
         private void Admin_PatientView_Load(object sender, EventArgs e)
         {
+            doctor_barcode_panel.Visible = false;
             System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
             obj.AddEllipse(0, 0, pictureBox2.Width, pictureBox2.Height);
             Region region = new Region(obj);
             pictureBox2.Region = region;
             // using this code to make a panel movable later and for creating report
-            // ControlExtension.Draggable(Adding_Doctor_Form_panel, true);
+            ControlExtension.Draggable(doctor_barcode_panel, true);
             dateTimeTimer.Start();
         }
 
@@ -162,6 +164,51 @@ namespace Clinical_Management_System
             {
                 pictureBox2.ImageLocation = openFileDialog1.FileNames[0];
             }
+        }
+
+        private void barcodeDocBtn_Click(object sender, EventArgs e)
+        {
+            if (pay_ID.Text == "#")
+            {
+                MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+                pay_QrPic.SizeMode = PictureBoxSizeMode.AutoSize;
+                Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+                pay_QrPic.Image = codeQr.Draw(pay_ID.Text, 200);
+
+                barcodeTimer.Start();
+                doctor_barcode_panel.Visible = true;
+            }
+        }
+
+        private void barcodeTimer_Tick(object sender, EventArgs e)
+        {
+            if (isBarcodeOpen)
+            {
+                doctor_barcode_panel.Height -= 30;
+                if (doctor_barcode_panel.Height == doctor_barcode_panel.MinimumSize.Height)
+                {
+                    isBarcodeOpen = false;
+                    barcodeTimer.Stop();
+                }
+            }
+            else
+            {
+                doctor_barcode_panel.Height += 30;
+                if (doctor_barcode_panel.Height == doctor_barcode_panel.MaximumSize.Height)
+                {
+                    isBarcodeOpen = true;
+                    barcodeTimer.Stop();
+                }
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            barcodeTimer.Start();
+            doctor_barcode_panel.Visible = true;
         }
     }
 }

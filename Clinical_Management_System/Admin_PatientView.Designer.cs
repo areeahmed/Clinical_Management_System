@@ -64,12 +64,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.pay_Address = new System.Windows.Forms.Label();
+            this.pay_Gender = new System.Windows.Forms.Label();
+            this.pay_Age = new System.Windows.Forms.Label();
+            this.pay_Phone = new System.Windows.Forms.Label();
+            this.pay_ID = new System.Windows.Forms.Label();
+            this.pay_Name = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
@@ -91,6 +91,14 @@
             this.clinicCombo = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.barcodeDocBtn = new System.Windows.Forms.Button();
+            this.doctor_barcode_panel = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.pay_QrPic = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,6 +117,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.docGeneralinfoPanel.SuspendLayout();
+            this.doctor_barcode_panel.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_QrPic)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -424,12 +436,12 @@
             this.docPersonalinfoPanel.Controls.Add(this.label9);
             this.docPersonalinfoPanel.Controls.Add(this.label8);
             this.docPersonalinfoPanel.Controls.Add(this.label7);
-            this.docPersonalinfoPanel.Controls.Add(this.label23);
-            this.docPersonalinfoPanel.Controls.Add(this.label20);
-            this.docPersonalinfoPanel.Controls.Add(this.label19);
-            this.docPersonalinfoPanel.Controls.Add(this.label22);
-            this.docPersonalinfoPanel.Controls.Add(this.label11);
-            this.docPersonalinfoPanel.Controls.Add(this.label21);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Address);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Gender);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Age);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Phone);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_ID);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Name);
             this.docPersonalinfoPanel.Controls.Add(this.label6);
             this.docPersonalinfoPanel.Location = new System.Drawing.Point(563, 65);
             this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
@@ -515,71 +527,71 @@
             this.label7.TabIndex = 34;
             this.label7.Text = ":ناو";
             // 
-            // label23
+            // pay_Address
             // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(169, 185);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(208, 30);
-            this.label23.TabIndex = 35;
-            this.label23.Text = "هەولێر - گەڕەکی منارە";
+            this.pay_Address.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Address.AutoSize = true;
+            this.pay_Address.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Address.Location = new System.Drawing.Point(169, 185);
+            this.pay_Address.Name = "pay_Address";
+            this.pay_Address.Size = new System.Drawing.Size(208, 30);
+            this.pay_Address.TabIndex = 35;
+            this.pay_Address.Text = "هەولێر - گەڕەکی منارە";
             // 
-            // label20
+            // pay_Gender
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(172, 234);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 30);
-            this.label20.TabIndex = 36;
-            this.label20.Text = "نێر";
+            this.pay_Gender.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Gender.AutoSize = true;
+            this.pay_Gender.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Gender.Location = new System.Drawing.Point(172, 234);
+            this.pay_Gender.Name = "pay_Gender";
+            this.pay_Gender.Size = new System.Drawing.Size(36, 30);
+            this.pay_Gender.TabIndex = 36;
+            this.pay_Gender.Text = "نێر";
             // 
-            // label19
+            // pay_Age
             // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(351, 234);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(27, 30);
-            this.label19.TabIndex = 37;
-            this.label19.Text = "٢١";
+            this.pay_Age.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Age.AutoSize = true;
+            this.pay_Age.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Age.Location = new System.Drawing.Point(351, 234);
+            this.pay_Age.Name = "pay_Age";
+            this.pay_Age.Size = new System.Drawing.Size(27, 30);
+            this.pay_Age.TabIndex = 37;
+            this.pay_Age.Text = "٢١";
             // 
-            // label22
+            // pay_Phone
             // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(214, 142);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(154, 30);
-            this.label22.TabIndex = 38;
-            this.label22.Text = "0750 333 3434";
+            this.pay_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Phone.AutoSize = true;
+            this.pay_Phone.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Phone.Location = new System.Drawing.Point(214, 142);
+            this.pay_Phone.Name = "pay_Phone";
+            this.pay_Phone.Size = new System.Drawing.Size(154, 30);
+            this.pay_Phone.TabIndex = 38;
+            this.pay_Phone.Text = "0750 333 3434";
             // 
-            // label11
+            // pay_ID
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(347, 55);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 30);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "1";
+            this.pay_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_ID.AutoSize = true;
+            this.pay_ID.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_ID.Location = new System.Drawing.Point(347, 55);
+            this.pay_ID.Name = "pay_ID";
+            this.pay_ID.Size = new System.Drawing.Size(24, 30);
+            this.pay_ID.TabIndex = 39;
+            this.pay_ID.Text = "1";
             // 
-            // label21
+            // pay_Name
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(214, 98);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(162, 30);
-            this.label21.TabIndex = 39;
-            this.label21.Text = "کارزان ڕەشید عمر";
+            this.pay_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Name.AutoSize = true;
+            this.pay_Name.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Name.Location = new System.Drawing.Point(214, 98);
+            this.pay_Name.Name = "pay_Name";
+            this.pay_Name.Size = new System.Drawing.Size(162, 30);
+            this.pay_Name.TabIndex = 39;
+            this.pay_Name.Text = "کارزان ڕەشید عمر";
             // 
             // label6
             // 
@@ -811,12 +823,112 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // barcodeDocBtn
+            // 
+            this.barcodeDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.barcodeDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.barcodeDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.barcodeDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.barcodeDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barcodeDocBtn.ForeColor = System.Drawing.Color.White;
+            this.barcodeDocBtn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
+            this.barcodeDocBtn.Location = new System.Drawing.Point(613, 486);
+            this.barcodeDocBtn.Name = "barcodeDocBtn";
+            this.barcodeDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.barcodeDocBtn.TabIndex = 53;
+            this.barcodeDocBtn.Text = "   بارکۆد";
+            this.barcodeDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.barcodeDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.barcodeDocBtn.UseVisualStyleBackColor = false;
+            this.barcodeDocBtn.Click += new System.EventHandler(this.barcodeDocBtn_Click);
+            // 
+            // doctor_barcode_panel
+            // 
+            this.doctor_barcode_panel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.doctor_barcode_panel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.doctor_barcode_panel.Controls.Add(this.panel15);
+            this.doctor_barcode_panel.Controls.Add(this.panel16);
+            this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(285, 12);
+            this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
+            this.doctor_barcode_panel.Name = "doctor_barcode_panel";
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 47);
+            this.doctor_barcode_panel.TabIndex = 54;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.label33);
+            this.panel15.Location = new System.Drawing.Point(290, 3);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(207, 39);
+            this.panel15.TabIndex = 29;
+            // 
+            // label33
+            // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label33.Location = new System.Drawing.Point(14, 5);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(175, 30);
+            this.label33.TabIndex = 14;
+            this.label33.Text = "بارکۆدی بەکارهێنەر";
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel16.Controls.Add(this.pay_QrPic);
+            this.panel16.Controls.Add(this.button7);
+            this.panel16.Location = new System.Drawing.Point(0, 48);
+            this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
+            this.panel16.MinimumSize = new System.Drawing.Size(497, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panel16.Size = new System.Drawing.Size(497, 686);
+            this.panel16.TabIndex = 28;
+            // 
+            // pay_QrPic
+            // 
+            this.pay_QrPic.Location = new System.Drawing.Point(121, 91);
+            this.pay_QrPic.Name = "pay_QrPic";
+            this.pay_QrPic.Size = new System.Drawing.Size(260, 271);
+            this.pay_QrPic.TabIndex = 32;
+            this.pay_QrPic.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Image = global::Clinical_Management_System.Properties.Resources.check_mark;
+            this.button7.Location = new System.Drawing.Point(184, 455);
+            this.button7.Name = "button7";
+            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button7.Size = new System.Drawing.Size(121, 50);
+            this.button7.TabIndex = 30;
+            this.button7.Text = "   تەواو";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // barcodeTimer
+            // 
+            this.barcodeTimer.Interval = 10;
+            this.barcodeTimer.Tick += new System.EventHandler(this.barcodeTimer_Tick);
+            // 
             // Admin_PatientView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 748);
             this.ControlBox = false;
+            this.Controls.Add(this.doctor_barcode_panel);
+            this.Controls.Add(this.barcodeDocBtn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.clinicCombo);
             this.Controls.Add(this.textBox2);
@@ -861,6 +973,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.docGeneralinfoPanel.ResumeLayout(false);
             this.docGeneralinfoPanel.PerformLayout();
+            this.doctor_barcode_panel.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pay_QrPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -909,11 +1026,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label pay_Address;
+        private System.Windows.Forms.Label pay_Gender;
+        private System.Windows.Forms.Label pay_Age;
+        private System.Windows.Forms.Label pay_Phone;
+        private System.Windows.Forms.Label pay_Name;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label13;
@@ -928,6 +1045,14 @@
         private System.Windows.Forms.ComboBox clinicCombo;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label pay_ID;
+        private System.Windows.Forms.Button barcodeDocBtn;
+        private System.Windows.Forms.FlowLayoutPanel doctor_barcode_panel;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.PictureBox pay_QrPic;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Timer barcodeTimer;
     }
 }

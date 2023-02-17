@@ -213,8 +213,19 @@ namespace Clinical_Management_System
         // open barcode panel
         private void button6_Click_1(object sender, EventArgs e)
         {
-            barcodeTimer.Start();
-            doctor_barcode_panel.Visible = true;
+            if (doc_ID.Text == "#")
+            {
+                MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+                doc_QrPic.SizeMode = PictureBoxSizeMode.AutoSize;
+                Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+                doc_QrPic.Image = codeQr.Draw(doc_ID.Text, 200);
+
+                barcodeTimer.Start();
+                doctor_barcode_panel.Visible = true;
+            }
         }
 
         // DONE USING BARCODE FORM

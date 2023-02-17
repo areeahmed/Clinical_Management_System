@@ -101,11 +101,11 @@
             this.docPersonalinfoPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.pa_Clinic = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.pa_Address = new System.Windows.Forms.Label();
+            this.pa_Phone = new System.Windows.Forms.Label();
+            this.pa_Name = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -116,6 +116,8 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.pa_QrPic = new System.Windows.Forms.PictureBox();
+            this.pa_ID = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -139,6 +141,7 @@
             this.docGeneralinfoPanel.SuspendLayout();
             this.docPersonalinfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pa_QrPic)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -753,7 +756,7 @@
             this.doctor_barcode_panel.Location = new System.Drawing.Point(586, 5);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 51);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 50);
             this.doctor_barcode_panel.TabIndex = 33;
             // 
             // panel15
@@ -779,6 +782,7 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel16.Controls.Add(this.pa_QrPic);
             this.panel16.Controls.Add(this.button7);
             this.panel16.Location = new System.Drawing.Point(0, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
@@ -994,11 +998,12 @@
             this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.docPersonalinfoPanel.Controls.Add(this.pictureBox2);
             this.docPersonalinfoPanel.Controls.Add(this.label35);
-            this.docPersonalinfoPanel.Controls.Add(this.label36);
+            this.docPersonalinfoPanel.Controls.Add(this.pa_Clinic);
             this.docPersonalinfoPanel.Controls.Add(this.label7);
-            this.docPersonalinfoPanel.Controls.Add(this.label5);
-            this.docPersonalinfoPanel.Controls.Add(this.label4);
-            this.docPersonalinfoPanel.Controls.Add(this.label21);
+            this.docPersonalinfoPanel.Controls.Add(this.pa_Address);
+            this.docPersonalinfoPanel.Controls.Add(this.pa_Phone);
+            this.docPersonalinfoPanel.Controls.Add(this.pa_ID);
+            this.docPersonalinfoPanel.Controls.Add(this.pa_Name);
             this.docPersonalinfoPanel.Controls.Add(this.label6);
             this.docPersonalinfoPanel.Controls.Add(this.label8);
             this.docPersonalinfoPanel.Controls.Add(this.label9);
@@ -1031,16 +1036,16 @@
             this.label35.TabIndex = 51;
             this.label35.Text = ":کلینیک";
             // 
-            // label36
+            // pa_Clinic
             // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(269, 186);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(58, 30);
-            this.label36.TabIndex = 52;
-            this.label36.Text = "هەناو";
+            this.pa_Clinic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pa_Clinic.AutoSize = true;
+            this.pa_Clinic.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_Clinic.Location = new System.Drawing.Point(269, 186);
+            this.pa_Clinic.Name = "pa_Clinic";
+            this.pa_Clinic.Size = new System.Drawing.Size(58, 30);
+            this.pa_Clinic.TabIndex = 52;
+            this.pa_Clinic.Text = "هەناو";
             // 
             // label7
             // 
@@ -1053,38 +1058,38 @@
             this.label7.TabIndex = 43;
             this.label7.Text = ":ناو";
             // 
-            // label5
+            // pa_Address
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(189, 148);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 30);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "هەولێر - کوران";
+            this.pa_Address.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pa_Address.AutoSize = true;
+            this.pa_Address.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_Address.Location = new System.Drawing.Point(189, 148);
+            this.pa_Address.Name = "pa_Address";
+            this.pa_Address.Size = new System.Drawing.Size(138, 30);
+            this.pa_Address.TabIndex = 44;
+            this.pa_Address.Text = "هەولێر - کوران";
             // 
-            // label4
+            // pa_Phone
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(175, 111);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 30);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "0750 123 4567";
+            this.pa_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pa_Phone.AutoSize = true;
+            this.pa_Phone.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_Phone.Location = new System.Drawing.Point(175, 111);
+            this.pa_Phone.Name = "pa_Phone";
+            this.pa_Phone.Size = new System.Drawing.Size(152, 30);
+            this.pa_Phone.TabIndex = 45;
+            this.pa_Phone.Text = "0750 123 4567";
             // 
-            // label21
+            // pa_Name
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(204, 68);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(123, 30);
-            this.label21.TabIndex = 46;
-            this.label21.Text = "عومەر دزەیی";
+            this.pa_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pa_Name.AutoSize = true;
+            this.pa_Name.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_Name.Location = new System.Drawing.Point(204, 68);
+            this.pa_Name.Name = "pa_Name";
+            this.pa_Name.Size = new System.Drawing.Size(123, 30);
+            this.pa_Name.TabIndex = 46;
+            this.pa_Name.Text = "عومەر دزەیی";
             // 
             // label6
             // 
@@ -1179,6 +1184,25 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // pa_QrPic
+            // 
+            this.pa_QrPic.Location = new System.Drawing.Point(120, 81);
+            this.pa_QrPic.Name = "pa_QrPic";
+            this.pa_QrPic.Size = new System.Drawing.Size(260, 271);
+            this.pa_QrPic.TabIndex = 34;
+            this.pa_QrPic.TabStop = false;
+            // 
+            // pa_ID
+            // 
+            this.pa_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pa_ID.AutoSize = true;
+            this.pa_ID.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_ID.Location = new System.Drawing.Point(303, 23);
+            this.pa_ID.Name = "pa_ID";
+            this.pa_ID.Size = new System.Drawing.Size(24, 30);
+            this.pa_ID.TabIndex = 46;
+            this.pa_ID.Text = "1";
+            // 
             // Admin_ReciptionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1240,6 +1264,7 @@
             this.docPersonalinfoPanel.ResumeLayout(false);
             this.docPersonalinfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pa_QrPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1321,11 +1346,11 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label pa_Clinic;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label pa_Address;
+        private System.Windows.Forms.Label pa_Phone;
+        private System.Windows.Forms.Label pa_Name;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -1333,5 +1358,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.PictureBox pa_QrPic;
+        private System.Windows.Forms.Label pa_ID;
     }
 }

@@ -204,8 +204,19 @@ namespace Clinical_Management_System
 
         private void barcodeDocBtn_Click(object sender, EventArgs e)
         {
-            barcodeTimer.Start();
-            doctor_barcode_panel.Visible = true;
+            if(admin_ID.Text == "#")
+            {
+                MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+                admin_QrPic.SizeMode = PictureBoxSizeMode.AutoSize;
+                Zen.Barcode.CodeQrBarcodeDraw codeQr =  Zen.Barcode.BarcodeDrawFactory.CodeQr;
+                admin_QrPic.Image = codeQr.Draw(admin_ID.Text, 200);
+
+                barcodeTimer.Start();
+                doctor_barcode_panel.Visible = true;
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
