@@ -164,9 +164,9 @@ namespace Clinical_Management_System
         {
             // this part of code is for making picture look like circle
             System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
-            obj.AddEllipse(0, 0, pictureBox2.Width, pictureBox2.Height);
+            obj.AddEllipse(0, 0, print_admin_prof_pic.Width, print_admin_prof_pic.Height);
             Region region = new Region(obj);
-            pictureBox2.Region = region;
+            print_admin_prof_pic.Region = region;
             // until here is for profile picture circing
 
             // invisibling the panels at first
@@ -257,8 +257,61 @@ namespace Clinical_Management_System
         {
             if(openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                pictureBox2.ImageLocation = openFileDialog1.FileNames[0];
+                print_admin_prof_pic.ImageLocation = openFileDialog1.FileNames[0];
             }
+        }
+
+        private void copyDocBtn_Click(object sender, EventArgs e)
+        {
+            if(printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
+            obj.AddEllipse(0, 0, print_admin_prof_pic.Width, print_admin_prof_pic.Height);
+            Region region = new Region(obj);
+            print_admin_prof_pic.Region = region;
+            e.Graphics.DrawImage(picLogoPrint.Image, 10, 10, 100, 100);
+            e.Graphics.DrawString(print_krd_lbl.Text, new Font("RudawRegular", 24), Brushes.Gray, 125, 30);
+            e.Graphics.DrawString(print_hl_lbl.Text, new Font("RudawRegular", 20), Brushes.Gray, 125, 60);
+            e.Graphics.DrawString(print_cr_lbl.Text, new Font("RudawRegular", 20), Brushes.ForestGreen, 200, 60);
+            e.Graphics.DrawString(print_admin_lbl.Text, new Font("RudawRegular", 25), Brushes.Black, 700, 30);
+            e.Graphics.DrawImage(print_pic_op.Image, 180, 300, 500, 500);
+            e.Graphics.DrawImage(print_admin_prof_pic.Image, 320, 150, 200, 200);
+
+            // ID
+            // ID res
+            e.Graphics.DrawString(admin_ID.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 500);
+            // ID lbl
+            e.Graphics.DrawString(print_admin_ID_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 500);
+
+            // NAME
+            // Name res
+            e.Graphics.DrawString(admin_Name.Text, new Font("RudawRegular", 24), Brushes.Black, 480, 550);
+            // Name lbl
+            e.Graphics.DrawString(print_admin_name_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 550);
+            
+            // PHONE
+            // Phone res
+            e.Graphics.DrawString(admin_Phone.Text, new Font("RudawRegular", 24), Brushes.Black, 440, 600);
+            // Phone lbl
+            e.Graphics.DrawString(print_admin_phone_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 600);
+            
+            // GENDER
+            // Gender res
+            e.Graphics.DrawString(admin_gn.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 650);
+            // Gender lbl
+            e.Graphics.DrawString(print_admin_gn_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 650);
+            
+            // ADDRESS
+            // address res
+            e.Graphics.DrawString(admin_addr.Text, new Font("RudawRegular", 24), Brushes.Black, 450, 700);
+            // address lbl
+            e.Graphics.DrawString(print_admin_addr_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 700);
         }
     }
 }
