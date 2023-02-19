@@ -16,7 +16,7 @@ namespace Clinical_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminDashboard(windowState: FormWindowState.Normal));
+            Application.Run(new Form2(windowState: FormWindowState.Normal));
         }
     }
 }

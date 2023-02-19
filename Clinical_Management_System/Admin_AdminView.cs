@@ -18,6 +18,9 @@ namespace Clinical_Management_System
         bool sideBarExpand = false;
         bool isFormOpened = false;
         bool isBarcodeOpen = false;
+
+        public object ControlExtension { get; private set; }
+
         public Admin_AdminView(FormWindowState windowState)
         {
             InitializeComponent();

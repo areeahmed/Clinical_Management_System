@@ -141,28 +141,31 @@
             this.sidebar.Controls.Add(this.DayWeekYear);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(230, 1080);
-            this.sidebar.MinimumSize = new System.Drawing.Size(77, 1080);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(4);
+            this.sidebar.MaximumSize = new System.Drawing.Size(307, 1329);
+            this.sidebar.MinimumSize = new System.Drawing.Size(103, 1329);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(77, 1080);
+            this.sidebar.Size = new System.Drawing.Size(170, 1329);
             this.sidebar.TabIndex = 19;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(227, 92);
+            this.panel1.Size = new System.Drawing.Size(303, 113);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Clinical_Management_System.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 38);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(45, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
@@ -173,18 +176,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(73, 31);
+            this.label1.Location = new System.Drawing.Point(97, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 39);
+            this.label1.Size = new System.Drawing.Size(107, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "ئادمین";
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.StartButton);
-            this.panel3.Location = new System.Drawing.Point(3, 101);
+            this.panel3.Location = new System.Drawing.Point(4, 125);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(227, 63);
+            this.panel3.Size = new System.Drawing.Size(303, 78);
             this.panel3.TabIndex = 19;
             // 
             // StartButton
@@ -195,9 +200,10 @@
             this.StartButton.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartButton.ForeColor = System.Drawing.Color.White;
             this.StartButton.Image = global::Clinical_Management_System.Properties.Resources.start;
-            this.StartButton.Location = new System.Drawing.Point(-10, -8);
+            this.StartButton.Location = new System.Drawing.Point(-13, -10);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(4);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(245, 82);
+            this.StartButton.Size = new System.Drawing.Size(327, 101);
             this.StartButton.TabIndex = 0;
             this.StartButton.Text = "   سەرەتا";
             this.StartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -207,9 +213,10 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.ClinicButton);
-            this.panel4.Location = new System.Drawing.Point(3, 170);
+            this.panel4.Location = new System.Drawing.Point(4, 211);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(227, 63);
+            this.panel4.Size = new System.Drawing.Size(303, 78);
             this.panel4.TabIndex = 20;
             // 
             // ClinicButton
@@ -220,9 +227,10 @@
             this.ClinicButton.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClinicButton.ForeColor = System.Drawing.Color.White;
             this.ClinicButton.Image = global::Clinical_Management_System.Properties.Resources.Clinic_icon;
-            this.ClinicButton.Location = new System.Drawing.Point(-10, -6);
+            this.ClinicButton.Location = new System.Drawing.Point(-13, -7);
+            this.ClinicButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClinicButton.Name = "ClinicButton";
-            this.ClinicButton.Size = new System.Drawing.Size(245, 82);
+            this.ClinicButton.Size = new System.Drawing.Size(327, 101);
             this.ClinicButton.TabIndex = 19;
             this.ClinicButton.Text = "   نۆرینگە";
             this.ClinicButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -232,9 +240,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.AdminButton);
-            this.panel5.Location = new System.Drawing.Point(3, 239);
+            this.panel5.Location = new System.Drawing.Point(4, 297);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(227, 63);
+            this.panel5.Size = new System.Drawing.Size(303, 78);
             this.panel5.TabIndex = 21;
             // 
             // AdminButton
@@ -245,9 +254,10 @@
             this.AdminButton.Font = new System.Drawing.Font("RudawRegular", 16F);
             this.AdminButton.ForeColor = System.Drawing.Color.White;
             this.AdminButton.Image = global::Clinical_Management_System.Properties.Resources.admin;
-            this.AdminButton.Location = new System.Drawing.Point(-10, -10);
+            this.AdminButton.Location = new System.Drawing.Point(-13, -12);
+            this.AdminButton.Margin = new System.Windows.Forms.Padding(4);
             this.AdminButton.Name = "AdminButton";
-            this.AdminButton.Size = new System.Drawing.Size(245, 82);
+            this.AdminButton.Size = new System.Drawing.Size(327, 101);
             this.AdminButton.TabIndex = 20;
             this.AdminButton.Text = "   ئادمین";
             this.AdminButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -257,9 +267,10 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.DoctorButton);
-            this.panel6.Location = new System.Drawing.Point(3, 308);
+            this.panel6.Location = new System.Drawing.Point(4, 383);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(227, 63);
+            this.panel6.Size = new System.Drawing.Size(303, 78);
             this.panel6.TabIndex = 22;
             // 
             // DoctorButton
@@ -270,9 +281,10 @@
             this.DoctorButton.Font = new System.Drawing.Font("RudawRegular", 16F);
             this.DoctorButton.ForeColor = System.Drawing.Color.White;
             this.DoctorButton.Image = global::Clinical_Management_System.Properties.Resources.doctor;
-            this.DoctorButton.Location = new System.Drawing.Point(-13, -17);
+            this.DoctorButton.Location = new System.Drawing.Point(-17, -21);
+            this.DoctorButton.Margin = new System.Windows.Forms.Padding(4);
             this.DoctorButton.Name = "DoctorButton";
-            this.DoctorButton.Size = new System.Drawing.Size(245, 82);
+            this.DoctorButton.Size = new System.Drawing.Size(327, 101);
             this.DoctorButton.TabIndex = 21;
             this.DoctorButton.Text = "   دکتۆر";
             this.DoctorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -282,9 +294,10 @@
             // panel7
             // 
             this.panel7.Controls.Add(this.ReciptionButton);
-            this.panel7.Location = new System.Drawing.Point(3, 377);
+            this.panel7.Location = new System.Drawing.Point(4, 469);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(227, 63);
+            this.panel7.Size = new System.Drawing.Size(303, 78);
             this.panel7.TabIndex = 22;
             // 
             // ReciptionButton
@@ -295,9 +308,10 @@
             this.ReciptionButton.Font = new System.Drawing.Font("RudawRegular", 16F);
             this.ReciptionButton.ForeColor = System.Drawing.Color.White;
             this.ReciptionButton.Image = global::Clinical_Management_System.Properties.Resources.Secrtary;
-            this.ReciptionButton.Location = new System.Drawing.Point(-12, -10);
+            this.ReciptionButton.Location = new System.Drawing.Point(-16, -12);
+            this.ReciptionButton.Margin = new System.Windows.Forms.Padding(4);
             this.ReciptionButton.Name = "ReciptionButton";
-            this.ReciptionButton.Size = new System.Drawing.Size(245, 82);
+            this.ReciptionButton.Size = new System.Drawing.Size(327, 101);
             this.ReciptionButton.TabIndex = 22;
             this.ReciptionButton.Text = "   سکرتێر";
             this.ReciptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -307,9 +321,10 @@
             // panel13
             // 
             this.panel13.Controls.Add(this.button1);
-            this.panel13.Location = new System.Drawing.Point(3, 446);
+            this.panel13.Location = new System.Drawing.Point(4, 555);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(241, 69);
+            this.panel13.Size = new System.Drawing.Size(321, 85);
             this.panel13.TabIndex = 36;
             // 
             // button1
@@ -320,9 +335,10 @@
             this.button1.Font = new System.Drawing.Font("RudawRegular", 16F);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Clinical_Management_System.Properties.Resources.patient;
-            this.button1.Location = new System.Drawing.Point(-10, -10);
+            this.button1.Location = new System.Drawing.Point(-13, -12);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 82);
+            this.button1.Size = new System.Drawing.Size(327, 101);
             this.button1.TabIndex = 22;
             this.button1.Text = "  نەخۆش";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -331,9 +347,10 @@
             // 
             // panel10
             // 
-            this.panel10.Location = new System.Drawing.Point(3, 521);
+            this.panel10.Location = new System.Drawing.Point(4, 648);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(199, 62);
+            this.panel10.Size = new System.Drawing.Size(265, 76);
             this.panel10.TabIndex = 32;
             // 
             // time
@@ -341,18 +358,20 @@
             this.time.AutoSize = true;
             this.time.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.time.ForeColor = System.Drawing.Color.White;
-            this.time.Location = new System.Drawing.Point(3, 586);
+            this.time.Location = new System.Drawing.Point(4, 728);
+            this.time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(70, 21);
+            this.time.Size = new System.Drawing.Size(86, 27);
             this.time.TabIndex = 29;
             this.time.Text = "10:15 PM";
             this.time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
             // 
-            this.panel11.Location = new System.Drawing.Point(3, 610);
+            this.panel11.Location = new System.Drawing.Point(4, 759);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(235, 10);
+            this.panel11.Size = new System.Drawing.Size(313, 12);
             this.panel11.TabIndex = 33;
             // 
             // WeekDay
@@ -360,18 +379,20 @@
             this.WeekDay.AutoSize = true;
             this.WeekDay.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WeekDay.ForeColor = System.Drawing.Color.White;
-            this.WeekDay.Location = new System.Drawing.Point(3, 623);
+            this.WeekDay.Location = new System.Drawing.Point(4, 775);
+            this.WeekDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WeekDay.Name = "WeekDay";
-            this.WeekDay.Size = new System.Drawing.Size(61, 21);
+            this.WeekDay.Size = new System.Drawing.Size(77, 27);
             this.WeekDay.TabIndex = 30;
             this.WeekDay.Text = "Day: Sat";
             this.WeekDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel12
             // 
-            this.panel12.Location = new System.Drawing.Point(3, 647);
+            this.panel12.Location = new System.Drawing.Point(4, 806);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(227, 10);
+            this.panel12.Size = new System.Drawing.Size(303, 12);
             this.panel12.TabIndex = 34;
             // 
             // DayWeekYear
@@ -379,9 +400,10 @@
             this.DayWeekYear.AutoSize = true;
             this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DayWeekYear.ForeColor = System.Drawing.Color.White;
-            this.DayWeekYear.Location = new System.Drawing.Point(3, 660);
+            this.DayWeekYear.Location = new System.Drawing.Point(4, 822);
+            this.DayWeekYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DayWeekYear.Name = "DayWeekYear";
-            this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
+            this.DayWeekYear.Size = new System.Drawing.Size(68, 27);
             this.DayWeekYear.TabIndex = 31;
             this.DayWeekYear.Text = "9/2/23";
             this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -393,9 +415,10 @@
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(1049, 3);
+            this.panel2.Location = new System.Drawing.Point(1399, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(226, 46);
+            this.panel2.Size = new System.Drawing.Size(301, 57);
             this.panel2.TabIndex = 20;
             // 
             // label28
@@ -403,18 +426,20 @@
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(14, 8);
+            this.label28.Location = new System.Drawing.Point(19, 10);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(67, 30);
+            this.label28.Size = new System.Drawing.Size(85, 39);
             this.label28.TabIndex = 14;
             this.label28.Text = "ئادمین";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Clinical_Management_System.Properties.Resources.close__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(183, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(244, 6);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 38);
+            this.pictureBox3.Size = new System.Drawing.Size(52, 47);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
@@ -423,9 +448,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Clinical_Management_System.Properties.Resources.fullscreen;
-            this.pictureBox5.Location = new System.Drawing.Point(136, 6);
+            this.pictureBox5.Location = new System.Drawing.Point(181, 7);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(41, 38);
+            this.pictureBox5.Size = new System.Drawing.Size(55, 47);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
@@ -434,9 +460,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Clinical_Management_System.Properties.Resources.remove;
-            this.pictureBox4.Location = new System.Drawing.Point(94, 8);
+            this.pictureBox4.Location = new System.Drawing.Point(125, 10);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox4.Size = new System.Drawing.Size(48, 43);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
@@ -457,18 +484,20 @@
             this.docPersonalinfoPanel.Controls.Add(this.label4);
             this.docPersonalinfoPanel.Controls.Add(this.label21);
             this.docPersonalinfoPanel.Controls.Add(this.label6);
-            this.docPersonalinfoPanel.Location = new System.Drawing.Point(795, 72);
+            this.docPersonalinfoPanel.Location = new System.Drawing.Point(1060, 89);
+            this.docPersonalinfoPanel.Margin = new System.Windows.Forms.Padding(4);
             this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
-            this.docPersonalinfoPanel.Size = new System.Drawing.Size(455, 299);
+            this.docPersonalinfoPanel.Size = new System.Drawing.Size(607, 368);
             this.docPersonalinfoPanel.TabIndex = 31;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(88, 65);
+            this.textBox1.Location = new System.Drawing.Point(117, 80);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(250, 35);
+            this.textBox1.Size = new System.Drawing.Size(332, 42);
             this.textBox1.TabIndex = 28;
             // 
             // label2
@@ -476,9 +505,10 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(365, 5);
+            this.label2.Location = new System.Drawing.Point(487, 6);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 39);
+            this.label2.Size = new System.Drawing.Size(107, 49);
             this.label2.TabIndex = 14;
             this.label2.Text = "ئادمین";
             // 
@@ -487,9 +517,10 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(343, 167);
+            this.label3.Location = new System.Drawing.Point(457, 206);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 30);
+            this.label3.Size = new System.Drawing.Size(106, 39);
             this.label3.TabIndex = 27;
             this.label3.Text = ":ژ.مۆبایل";
             // 
@@ -498,9 +529,10 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(345, 118);
+            this.label7.Location = new System.Drawing.Point(460, 145);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 30);
+            this.label7.Size = new System.Drawing.Size(50, 39);
             this.label7.TabIndex = 27;
             this.label7.Text = ":ناو";
             // 
@@ -509,9 +541,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(179, 167);
+            this.label4.Location = new System.Drawing.Point(239, 206);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 30);
+            this.label4.Size = new System.Drawing.Size(198, 39);
             this.label4.TabIndex = 27;
             this.label4.Text = "0750 222 3344";
             // 
@@ -520,9 +553,10 @@
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(204, 118);
+            this.label21.Location = new System.Drawing.Point(272, 145);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(131, 30);
+            this.label21.Size = new System.Drawing.Size(166, 39);
             this.label21.TabIndex = 27;
             this.label21.Text = "ئازاد احمد بدر";
             // 
@@ -531,9 +565,10 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(344, 70);
+            this.label6.Location = new System.Drawing.Point(459, 86);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 30);
+            this.label6.Size = new System.Drawing.Size(90, 39);
             this.label6.TabIndex = 27;
             this.label6.Text = ":زنجیرە";
             // 
@@ -541,9 +576,11 @@
             // 
             this.docListDGV.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.docListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.docListDGV.Location = new System.Drawing.Point(127, 417);
+            this.docListDGV.Location = new System.Drawing.Point(169, 513);
+            this.docListDGV.Margin = new System.Windows.Forms.Padding(4);
             this.docListDGV.Name = "docListDGV";
-            this.docListDGV.Size = new System.Drawing.Size(1123, 296);
+            this.docListDGV.RowHeadersWidth = 51;
+            this.docListDGV.Size = new System.Drawing.Size(1497, 364);
             this.docListDGV.TabIndex = 36;
             // 
             // DoctorListLbl
@@ -551,9 +588,10 @@
             this.DoctorListLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.DoctorListLbl.AutoSize = true;
             this.DoctorListLbl.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DoctorListLbl.Location = new System.Drawing.Point(1059, 379);
+            this.DoctorListLbl.Location = new System.Drawing.Point(1412, 466);
+            this.DoctorListLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DoctorListLbl.Name = "DoctorListLbl";
-            this.DoctorListLbl.Size = new System.Drawing.Size(191, 35);
+            this.DoctorListLbl.Size = new System.Drawing.Size(240, 44);
             this.DoctorListLbl.TabIndex = 37;
             this.DoctorListLbl.Text = ":لیستی دکتۆرەکان";
             // 
@@ -564,18 +602,20 @@
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(236, 129);
-            this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(315, 159);
+            this.doctor_barcode_panel.Margin = new System.Windows.Forms.Padding(4);
+            this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(667, 695);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 43);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(667, 53);
             this.doctor_barcode_panel.TabIndex = 38;
             // 
             // panel15
             // 
             this.panel15.Controls.Add(this.label33);
-            this.panel15.Location = new System.Drawing.Point(290, 3);
+            this.panel15.Location = new System.Drawing.Point(387, 4);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(207, 39);
+            this.panel15.Size = new System.Drawing.Size(276, 48);
             this.panel15.TabIndex = 29;
             // 
             // label33
@@ -584,9 +624,10 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label33.Location = new System.Drawing.Point(14, 5);
+            this.label33.Location = new System.Drawing.Point(19, 6);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(175, 30);
+            this.label33.Size = new System.Drawing.Size(221, 39);
             this.label33.TabIndex = 14;
             this.label33.Text = "بارکۆدی بەکارهێنەر";
             // 
@@ -594,12 +635,13 @@
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel16.Controls.Add(this.button7);
-            this.panel16.Location = new System.Drawing.Point(0, 48);
-            this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
-            this.panel16.MinimumSize = new System.Drawing.Size(497, 0);
+            this.panel16.Location = new System.Drawing.Point(0, 60);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4);
+            this.panel16.MaximumSize = new System.Drawing.Size(663, 844);
+            this.panel16.MinimumSize = new System.Drawing.Size(663, 0);
             this.panel16.Name = "panel16";
             this.panel16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.panel16.Size = new System.Drawing.Size(497, 686);
+            this.panel16.Size = new System.Drawing.Size(663, 844);
             this.panel16.TabIndex = 28;
             // 
             // button7
@@ -611,10 +653,11 @@
             this.button7.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = global::Clinical_Management_System.Properties.Resources.check_mark;
-            this.button7.Location = new System.Drawing.Point(184, 455);
+            this.button7.Location = new System.Drawing.Point(245, 560);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button7.Size = new System.Drawing.Size(121, 50);
+            this.button7.Size = new System.Drawing.Size(161, 62);
             this.button7.TabIndex = 30;
             this.button7.Text = "   تەواو";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -629,18 +672,20 @@
             this.Adding_Doctor_Form_panel.Controls.Add(this.panel14);
             this.Adding_Doctor_Form_panel.Controls.Add(this.Adding_Doctor_Form_panel1);
             this.Adding_Doctor_Form_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(236, 62);
-            this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(500, 729);
+            this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(315, 76);
+            this.Adding_Doctor_Form_panel.Margin = new System.Windows.Forms.Padding(4);
+            this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(667, 897);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 54);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(667, 66);
             this.Adding_Doctor_Form_panel.TabIndex = 39;
             // 
             // panel14
             // 
             this.panel14.Controls.Add(this.label32);
-            this.panel14.Location = new System.Drawing.Point(362, 3);
+            this.panel14.Location = new System.Drawing.Point(483, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(135, 39);
+            this.panel14.Size = new System.Drawing.Size(180, 48);
             this.panel14.TabIndex = 29;
             // 
             // label32
@@ -649,9 +694,10 @@
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label32.Location = new System.Drawing.Point(1, 4);
+            this.label32.Location = new System.Drawing.Point(1, 5);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(129, 30);
+            this.label32.Size = new System.Drawing.Size(166, 39);
             this.label32.TabIndex = 14;
             this.label32.Text = "فۆڕمی زانیاری";
             // 
@@ -674,28 +720,31 @@
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label27);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label26);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label24);
-            this.Adding_Doctor_Form_panel1.Location = new System.Drawing.Point(0, 48);
-            this.Adding_Doctor_Form_panel1.MaximumSize = new System.Drawing.Size(520, 686);
+            this.Adding_Doctor_Form_panel1.Location = new System.Drawing.Point(0, 60);
+            this.Adding_Doctor_Form_panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.Adding_Doctor_Form_panel1.MaximumSize = new System.Drawing.Size(693, 844);
             this.Adding_Doctor_Form_panel1.Name = "Adding_Doctor_Form_panel1";
             this.Adding_Doctor_Form_panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Adding_Doctor_Form_panel1.Size = new System.Drawing.Size(497, 686);
+            this.Adding_Doctor_Form_panel1.Size = new System.Drawing.Size(663, 844);
             this.Adding_Doctor_Form_panel1.TabIndex = 28;
             // 
             // docAddressTxt
             // 
             this.docAddressTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docAddressTxt.Location = new System.Drawing.Point(67, 417);
+            this.docAddressTxt.Location = new System.Drawing.Point(89, 513);
+            this.docAddressTxt.Margin = new System.Windows.Forms.Padding(4);
             this.docAddressTxt.Multiline = true;
             this.docAddressTxt.Name = "docAddressTxt";
-            this.docAddressTxt.Size = new System.Drawing.Size(396, 158);
+            this.docAddressTxt.Size = new System.Drawing.Size(527, 194);
             this.docAddressTxt.TabIndex = 0;
             // 
             // docPhoneTxt
             // 
             this.docPhoneTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docPhoneTxt.Location = new System.Drawing.Point(67, 329);
+            this.docPhoneTxt.Location = new System.Drawing.Point(89, 405);
+            this.docPhoneTxt.Margin = new System.Windows.Forms.Padding(4);
             this.docPhoneTxt.Name = "docPhoneTxt";
-            this.docPhoneTxt.Size = new System.Drawing.Size(314, 35);
+            this.docPhoneTxt.Size = new System.Drawing.Size(417, 42);
             this.docPhoneTxt.TabIndex = 0;
             // 
             // cancel_Form_Button
@@ -707,10 +756,11 @@
             this.cancel_Form_Button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancel_Form_Button.ForeColor = System.Drawing.Color.White;
             this.cancel_Form_Button.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
-            this.cancel_Form_Button.Location = new System.Drawing.Point(342, 589);
+            this.cancel_Form_Button.Location = new System.Drawing.Point(456, 725);
+            this.cancel_Form_Button.Margin = new System.Windows.Forms.Padding(4);
             this.cancel_Form_Button.Name = "cancel_Form_Button";
             this.cancel_Form_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cancel_Form_Button.Size = new System.Drawing.Size(121, 50);
+            this.cancel_Form_Button.Size = new System.Drawing.Size(161, 62);
             this.cancel_Form_Button.TabIndex = 30;
             this.cancel_Form_Button.Text = "   نەخێر";
             this.cancel_Form_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -726,10 +776,11 @@
             this.button5.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Clinical_Management_System.Properties.Resources.add1;
-            this.button5.Location = new System.Drawing.Point(67, 591);
+            this.button5.Location = new System.Drawing.Point(89, 727);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(121, 50);
+            this.button5.Size = new System.Drawing.Size(161, 62);
             this.button5.TabIndex = 30;
             this.button5.Text = "  زیادکردن";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -744,10 +795,11 @@
             this.Add_user_button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_user_button.ForeColor = System.Drawing.Color.White;
             this.Add_user_button.Image = global::Clinical_Management_System.Properties.Resources.updating;
-            this.Add_user_button.Location = new System.Drawing.Point(208, 589);
+            this.Add_user_button.Location = new System.Drawing.Point(277, 725);
+            this.Add_user_button.Margin = new System.Windows.Forms.Padding(4);
             this.Add_user_button.Name = "Add_user_button";
             this.Add_user_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Add_user_button.Size = new System.Drawing.Size(121, 50);
+            this.Add_user_button.Size = new System.Drawing.Size(161, 62);
             this.Add_user_button.TabIndex = 30;
             this.Add_user_button.Text = "   گۆڕین";
             this.Add_user_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -757,33 +809,37 @@
             // docPasswordTxt
             // 
             this.docPasswordTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docPasswordTxt.Location = new System.Drawing.Point(67, 273);
+            this.docPasswordTxt.Location = new System.Drawing.Point(89, 336);
+            this.docPasswordTxt.Margin = new System.Windows.Forms.Padding(4);
             this.docPasswordTxt.Name = "docPasswordTxt";
-            this.docPasswordTxt.Size = new System.Drawing.Size(280, 35);
+            this.docPasswordTxt.Size = new System.Drawing.Size(372, 42);
             this.docPasswordTxt.TabIndex = 0;
             // 
             // docFullNameTxt
             // 
             this.docFullNameTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docFullNameTxt.Location = new System.Drawing.Point(67, 217);
+            this.docFullNameTxt.Location = new System.Drawing.Point(89, 267);
+            this.docFullNameTxt.Margin = new System.Windows.Forms.Padding(4);
             this.docFullNameTxt.Name = "docFullNameTxt";
-            this.docFullNameTxt.Size = new System.Drawing.Size(280, 35);
+            this.docFullNameTxt.Size = new System.Drawing.Size(372, 42);
             this.docFullNameTxt.TabIndex = 0;
             // 
             // docUsernameTxt
             // 
             this.docUsernameTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docUsernameTxt.Location = new System.Drawing.Point(67, 169);
+            this.docUsernameTxt.Location = new System.Drawing.Point(89, 208);
+            this.docUsernameTxt.Margin = new System.Windows.Forms.Padding(4);
             this.docUsernameTxt.Name = "docUsernameTxt";
-            this.docUsernameTxt.Size = new System.Drawing.Size(262, 35);
+            this.docUsernameTxt.Size = new System.Drawing.Size(348, 42);
             this.docUsernameTxt.TabIndex = 0;
             // 
             // docIDtxt
             // 
             this.docIDtxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docIDtxt.Location = new System.Drawing.Point(67, 112);
+            this.docIDtxt.Location = new System.Drawing.Point(89, 138);
+            this.docIDtxt.Margin = new System.Windows.Forms.Padding(4);
             this.docIDtxt.Name = "docIDtxt";
-            this.docIDtxt.Size = new System.Drawing.Size(324, 35);
+            this.docIDtxt.Size = new System.Drawing.Size(431, 42);
             this.docIDtxt.TabIndex = 0;
             // 
             // label25
@@ -791,9 +847,10 @@
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(302, 30);
+            this.label25.Location = new System.Drawing.Point(403, 37);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(174, 39);
+            this.label25.Size = new System.Drawing.Size(219, 49);
             this.label25.TabIndex = 14;
             this.label25.Text = "گۆڕینی زانیاری";
             // 
@@ -802,10 +859,11 @@
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(369, 384);
+            this.label31.Location = new System.Drawing.Point(492, 473);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label31.Size = new System.Drawing.Size(92, 30);
+            this.label31.Size = new System.Drawing.Size(117, 39);
             this.label31.TabIndex = 27;
             this.label31.Text = ":ناونیشان";
             // 
@@ -814,10 +872,11 @@
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(379, 335);
+            this.label30.Location = new System.Drawing.Point(505, 412);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
             this.label30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label30.Size = new System.Drawing.Size(82, 30);
+            this.label30.Size = new System.Drawing.Size(106, 39);
             this.label30.TabIndex = 27;
             this.label30.Text = ":ژ.مۆبایل";
             // 
@@ -826,10 +885,11 @@
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(345, 278);
+            this.label29.Location = new System.Drawing.Point(460, 342);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label29.Size = new System.Drawing.Size(116, 30);
+            this.label29.Size = new System.Drawing.Size(151, 39);
             this.label29.TabIndex = 27;
             this.label29.Text = ":تێپەڕەووشە";
             // 
@@ -838,10 +898,11 @@
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(346, 222);
+            this.label27.Location = new System.Drawing.Point(461, 273);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label27.Size = new System.Drawing.Size(115, 30);
+            this.label27.Size = new System.Drawing.Size(148, 39);
             this.label27.TabIndex = 27;
             this.label27.Text = ":ناوی تەواوی";
             // 
@@ -850,10 +911,11 @@
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(322, 174);
+            this.label26.Location = new System.Drawing.Point(429, 214);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label26.Size = new System.Drawing.Size(148, 30);
+            this.label26.Size = new System.Drawing.Size(187, 39);
             this.label26.TabIndex = 27;
             this.label26.Text = ":ناوی بەکارهێنەر";
             // 
@@ -862,10 +924,11 @@
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(390, 117);
+            this.label24.Location = new System.Drawing.Point(520, 144);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label24.Size = new System.Drawing.Size(71, 30);
+            this.label24.Size = new System.Drawing.Size(90, 39);
             this.label24.TabIndex = 27;
             this.label24.Text = ":زنجیرە";
             // 
@@ -893,9 +956,10 @@
             this.barcodeDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barcodeDocBtn.ForeColor = System.Drawing.Color.White;
             this.barcodeDocBtn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
-            this.barcodeDocBtn.Location = new System.Drawing.Point(541, 361);
+            this.barcodeDocBtn.Location = new System.Drawing.Point(721, 444);
+            this.barcodeDocBtn.Margin = new System.Windows.Forms.Padding(4);
             this.barcodeDocBtn.Name = "barcodeDocBtn";
-            this.barcodeDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.barcodeDocBtn.Size = new System.Drawing.Size(169, 62);
             this.barcodeDocBtn.TabIndex = 32;
             this.barcodeDocBtn.Text = "   بارکۆد";
             this.barcodeDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -912,9 +976,10 @@
             this.editDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editDocBtn.ForeColor = System.Drawing.Color.White;
             this.editDocBtn.Image = global::Clinical_Management_System.Properties.Resources.edit;
-            this.editDocBtn.Location = new System.Drawing.Point(261, 360);
+            this.editDocBtn.Location = new System.Drawing.Point(348, 443);
+            this.editDocBtn.Margin = new System.Windows.Forms.Padding(4);
             this.editDocBtn.Name = "editDocBtn";
-            this.editDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.editDocBtn.Size = new System.Drawing.Size(169, 62);
             this.editDocBtn.TabIndex = 33;
             this.editDocBtn.Text = "   گۆڕانکاری";
             this.editDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -931,9 +996,10 @@
             this.deleteDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteDocBtn.ForeColor = System.Drawing.Color.White;
             this.deleteDocBtn.Image = global::Clinical_Management_System.Properties.Resources.delete;
-            this.deleteDocBtn.Location = new System.Drawing.Point(128, 360);
+            this.deleteDocBtn.Location = new System.Drawing.Point(171, 443);
+            this.deleteDocBtn.Margin = new System.Windows.Forms.Padding(4);
             this.deleteDocBtn.Name = "deleteDocBtn";
-            this.deleteDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.deleteDocBtn.Size = new System.Drawing.Size(169, 62);
             this.deleteDocBtn.TabIndex = 34;
             this.deleteDocBtn.Text = "   سڕینەوە";
             this.deleteDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -949,9 +1015,10 @@
             this.copyDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyDocBtn.ForeColor = System.Drawing.Color.White;
             this.copyDocBtn.Image = global::Clinical_Management_System.Properties.Resources.printer;
-            this.copyDocBtn.Location = new System.Drawing.Point(394, 362);
+            this.copyDocBtn.Location = new System.Drawing.Point(525, 446);
+            this.copyDocBtn.Margin = new System.Windows.Forms.Padding(4);
             this.copyDocBtn.Name = "copyDocBtn";
-            this.copyDocBtn.Size = new System.Drawing.Size(141, 48);
+            this.copyDocBtn.Size = new System.Drawing.Size(188, 59);
             this.copyDocBtn.TabIndex = 35;
             this.copyDocBtn.Text = "   کۆپی کردن";
             this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -960,10 +1027,10 @@
             // 
             // Admin_AdminView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1276, 748);
+            this.ClientSize = new System.Drawing.Size(1701, 921);
             this.ControlBox = false;
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.Adding_Doctor_Form_panel);
@@ -977,7 +1044,8 @@
             this.Controls.Add(this.docPersonalinfoPanel);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1292, 764);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(1717, 929);
             this.Name = "Admin_AdminView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
