@@ -99,6 +99,7 @@
             this.pay_QrPic = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
+            this.copyDocBtn = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -814,9 +815,9 @@
             this.button2.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Clinical_Management_System.Properties.Resources.search_icon;
-            this.button2.Location = new System.Drawing.Point(613, 542);
+            this.button2.Location = new System.Drawing.Point(604, 542);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 50);
+            this.button2.Size = new System.Drawing.Size(141, 50);
             this.button2.TabIndex = 52;
             this.button2.Text = "   گەڕان";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -832,9 +833,9 @@
             this.barcodeDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barcodeDocBtn.ForeColor = System.Drawing.Color.White;
             this.barcodeDocBtn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
-            this.barcodeDocBtn.Location = new System.Drawing.Point(613, 486);
+            this.barcodeDocBtn.Location = new System.Drawing.Point(604, 486);
             this.barcodeDocBtn.Name = "barcodeDocBtn";
-            this.barcodeDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.barcodeDocBtn.Size = new System.Drawing.Size(141, 50);
             this.barcodeDocBtn.TabIndex = 53;
             this.barcodeDocBtn.Text = "   بارکۆد";
             this.barcodeDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -921,12 +922,31 @@
             this.barcodeTimer.Interval = 10;
             this.barcodeTimer.Tick += new System.EventHandler(this.barcodeTimer_Tick);
             // 
+            // copyDocBtn
+            // 
+            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.copyDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.copyDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.copyDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.copyDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyDocBtn.ForeColor = System.Drawing.Color.White;
+            this.copyDocBtn.Image = global::Clinical_Management_System.Properties.Resources.printer;
+            this.copyDocBtn.Location = new System.Drawing.Point(604, 598);
+            this.copyDocBtn.Name = "copyDocBtn";
+            this.copyDocBtn.Size = new System.Drawing.Size(141, 48);
+            this.copyDocBtn.TabIndex = 55;
+            this.copyDocBtn.Text = "   کۆپی کردن";
+            this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.copyDocBtn.UseVisualStyleBackColor = false;
+            // 
             // Admin_PatientView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 748);
             this.ControlBox = false;
+            this.Controls.Add(this.copyDocBtn);
             this.Controls.Add(this.doctor_barcode_panel);
             this.Controls.Add(this.barcodeDocBtn);
             this.Controls.Add(this.button2);
@@ -1054,5 +1074,6 @@
         private System.Windows.Forms.PictureBox pay_QrPic;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Timer barcodeTimer;
+        private System.Windows.Forms.Button copyDocBtn;
     }
 }

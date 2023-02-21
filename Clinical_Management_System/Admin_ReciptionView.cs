@@ -128,9 +128,9 @@ namespace Clinical_Management_System
         private void Admin_ReciptionView_Load(object sender, EventArgs e)
         {
             System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
-            obj.AddEllipse(0, 0, pictureBox2.Width, pictureBox2.Height);
+            obj.AddEllipse(0, 0, recp_profile_pic.Width, recp_profile_pic.Height);
             Region region = new Region(obj);
-            pictureBox2.Region = region;
+            recp_profile_pic.Region = region;
             Adding_Doctor_Form_panel.Visible = false;
             doctor_barcode_panel.Visible = false;
             // for making it fraggable
@@ -225,7 +225,7 @@ namespace Clinical_Management_System
 
         private void barcodeDocBtn_Click(object sender, EventArgs e)
         {
-            if (pa_ID.Text == "#")
+            if (recp_ID.Text == "#")
             {
                 MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
@@ -233,7 +233,7 @@ namespace Clinical_Management_System
             {
                 pa_QrPic.SizeMode = PictureBoxSizeMode.AutoSize;
                 Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                pa_QrPic.Image = codeQr.Draw(pa_ID.Text, 200);
+                pa_QrPic.Image = codeQr.Draw(recp_ID.Text, 200);
 
                 barcodeTimer.Start();
                 doctor_barcode_panel.Visible = true;
@@ -250,7 +250,57 @@ namespace Clinical_Management_System
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                pictureBox2.ImageLocation = openFileDialog1.FileNames[0];
+                recp_profile_pic.ImageLocation = openFileDialog1.FileNames[0];
+            }
+        }
+
+        private void copyDocBtn_Click(object sender, EventArgs e)
+        {
+            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(picLogoPrint.Image, 10, 10, 100, 100);
+            e.Graphics.DrawString(print_krd_lbl.Text, new Font("RudawRegular", 24), Brushes.Gray, 125, 30);
+            e.Graphics.DrawString(print_hl_lbl.Text, new Font("RudawRegular", 20), Brushes.Gray, 125, 60);
+            e.Graphics.DrawString(print_cr_lbl.Text, new Font("RudawRegular", 20), Brushes.ForestGreen, 200, 60);
+            e.Graphics.DrawString(recp_lbl.Text, new Font("RudawRegular", 25), Brushes.Black, 700, 30);
+            e.Graphics.DrawImage(print_pic_op.Image, 180, 300, 500, 500);
+            e.Graphics.DrawImage(recp_profile_pic.Image, 320, 150, 200, 200);
+
+
+
+
+            // ID
+            e.Graphics.DrawString(recp_ID.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 500);
+            e.Graphics.DrawString(recp_ID_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 500);
+
+            // NAME
+            e.Graphics.DrawString(recp_Name.Text, new Font("RudawRegular", 24), Brushes.Black, 480, 550);
+            e.Graphics.DrawString(recp_Name_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 550);
+
+            // PHONE
+            e.Graphics.DrawString(recp_Phone.Text, new Font("RudawRegular", 24), Brushes.Black, 440, 600);
+            e.Graphics.DrawString(recp_phone_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 600);
+
+            // CLINIC
+            e.Graphics.DrawString(recp_clinic.Text, new Font("RudawRegular", 24), Brushes.Black, 550, 650);
+            e.Graphics.DrawString(recp_clinic_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 650);
+
+            // ADDRESS
+            e.Graphics.DrawString(recp_address.Text, new Font("RudawRegular", 24), Brushes.Black, 450, 700);
+            e.Graphics.DrawString(recp_address_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 700);
+        }
+
+        private void recp_profile_pic_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                recp_profile_pic.ImageLocation = openFileDialog1.FileNames[0];
             }
         }
     }
