@@ -198,6 +198,7 @@ namespace Clinical_Management_System
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+
             // system logo picture
             e.Graphics.DrawImage(picLogoPrint.Image, 10, 10, 100, 100);
             // Kurdistan Label
