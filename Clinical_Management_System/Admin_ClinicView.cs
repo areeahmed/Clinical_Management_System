@@ -187,5 +187,68 @@ namespace Clinical_Management_System
                 this.Update();
             }
         }
+
+        private void copyDocBtn_Click(object sender, EventArgs e)
+        {
+            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            // system logo picture
+            e.Graphics.DrawImage(picLogoPrint.Image, 10, 10, 100, 100);
+            // Kurdistan Label
+            e.Graphics.DrawString(print_krd_lbl.Text, new Font("RudawRegular", 24), Brushes.Gray, 125, 30);
+            // health label
+            e.Graphics.DrawString(print_hl_lbl.Text, new Font("RudawRegular", 20), Brushes.Gray, 125, 60);
+            // care label
+            e.Graphics.DrawString(print_cr_lbl.Text, new Font("RudawRegular", 20), Brushes.ForestGreen, 200, 60);
+            // clinic word label
+            e.Graphics.DrawString(clinic_lbl.Text, new Font("RudawRegular", 25), Brushes.Black, 700, 30);
+            // system logo picture low opacity
+            e.Graphics.DrawImage(print_pic_op.Image, 180, 300, 500, 500);
+
+
+            //
+            // Until here location and some coponent will be same for all forms that have print button
+            //
+
+
+
+            // ID
+            e.Graphics.DrawString(clinic_ID.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 400);
+            e.Graphics.DrawString(clinic_ID_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 400);
+
+            // NAME
+            e.Graphics.DrawString(clinic_Name.Text, new Font("RudawRegular", 24), Brushes.Black, 480, 450);
+            e.Graphics.DrawString(clinic_Name_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 450);
+
+            // INCOME
+            e.Graphics.DrawString(Income_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 340, 550);
+            // TODAY
+            e.Graphics.DrawString(today_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 650);
+            e.Graphics.DrawString(today_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 650);
+            // TOTAL
+            e.Graphics.DrawString(total_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 700);
+            e.Graphics.DrawString(total_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 700);
+
+
+
+            // PATIENT
+            e.Graphics.DrawString(Patient_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 550);
+            // DONE
+            e.Graphics.DrawString(Done_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 650);
+            e.Graphics.DrawString(Done_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 650);
+            // REMAIN
+            e.Graphics.DrawString(remain_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 700);
+            e.Graphics.DrawString(remain_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 700);
+            // OTHER DAY
+            e.Graphics.DrawString(otherDay_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 750);
+            e.Graphics.DrawString(otherDay_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 750);
+
+        }
     }
 }

@@ -487,16 +487,16 @@
             this.docPersonalinfoPanel.Controls.Add(this.picLogoPrint);
             this.docPersonalinfoPanel.Controls.Add(this.admin_addr);
             this.docPersonalinfoPanel.Controls.Add(this.print_admin_addr_lbl);
-            this.docPersonalinfoPanel.Location = new System.Drawing.Point(673, 60);
+            this.docPersonalinfoPanel.Location = new System.Drawing.Point(658, 60);
             this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
-            this.docPersonalinfoPanel.Size = new System.Drawing.Size(577, 268);
+            this.docPersonalinfoPanel.Size = new System.Drawing.Size(592, 268);
             this.docPersonalinfoPanel.TabIndex = 31;
             // 
             // print_admin_prof_pic
             // 
             this.print_admin_prof_pic.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
             this.print_admin_prof_pic.Image = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.print_admin_prof_pic.Location = new System.Drawing.Point(412, 54);
+            this.print_admin_prof_pic.Location = new System.Drawing.Point(418, 51);
             this.print_admin_prof_pic.Name = "print_admin_prof_pic";
             this.print_admin_prof_pic.Size = new System.Drawing.Size(135, 135);
             this.print_admin_prof_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -510,7 +510,7 @@
             this.print_admin_phone_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.print_admin_phone_lbl.AutoSize = true;
             this.print_admin_phone_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_admin_phone_lbl.Location = new System.Drawing.Point(282, 124);
+            this.print_admin_phone_lbl.Location = new System.Drawing.Point(290, 124);
             this.print_admin_phone_lbl.Name = "print_admin_phone_lbl";
             this.print_admin_phone_lbl.Size = new System.Drawing.Size(82, 30);
             this.print_admin_phone_lbl.TabIndex = 30;
@@ -521,7 +521,7 @@
             this.print_admin_name_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.print_admin_name_lbl.AutoSize = true;
             this.print_admin_name_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_admin_name_lbl.Location = new System.Drawing.Point(284, 75);
+            this.print_admin_name_lbl.Location = new System.Drawing.Point(292, 75);
             this.print_admin_name_lbl.Name = "print_admin_name_lbl";
             this.print_admin_name_lbl.Size = new System.Drawing.Size(39, 30);
             this.print_admin_name_lbl.TabIndex = 31;
@@ -532,7 +532,7 @@
             this.admin_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.admin_Phone.AutoSize = true;
             this.admin_Phone.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_Phone.Location = new System.Drawing.Point(118, 124);
+            this.admin_Phone.Location = new System.Drawing.Point(126, 124);
             this.admin_Phone.Name = "admin_Phone";
             this.admin_Phone.Size = new System.Drawing.Size(154, 30);
             this.admin_Phone.TabIndex = 32;
@@ -543,7 +543,7 @@
             this.admin_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.admin_ID.AutoSize = true;
             this.admin_ID.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_ID.Location = new System.Drawing.Point(254, 27);
+            this.admin_ID.Location = new System.Drawing.Point(262, 27);
             this.admin_ID.Name = "admin_ID";
             this.admin_ID.Size = new System.Drawing.Size(23, 30);
             this.admin_ID.TabIndex = 33;
@@ -554,7 +554,7 @@
             this.admin_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.admin_Name.AutoSize = true;
             this.admin_Name.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_Name.Location = new System.Drawing.Point(143, 75);
+            this.admin_Name.Location = new System.Drawing.Point(151, 75);
             this.admin_Name.Name = "admin_Name";
             this.admin_Name.Size = new System.Drawing.Size(131, 30);
             this.admin_Name.TabIndex = 33;
@@ -565,7 +565,7 @@
             this.print_admin_ID_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.print_admin_ID_lbl.AutoSize = true;
             this.print_admin_ID_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_admin_ID_lbl.Location = new System.Drawing.Point(283, 27);
+            this.print_admin_ID_lbl.Location = new System.Drawing.Point(291, 27);
             this.print_admin_ID_lbl.Name = "print_admin_ID_lbl";
             this.print_admin_ID_lbl.Size = new System.Drawing.Size(71, 30);
             this.print_admin_ID_lbl.TabIndex = 34;
@@ -576,7 +576,7 @@
             this.print_admin_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.print_admin_lbl.AutoSize = true;
             this.print_admin_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_admin_lbl.Location = new System.Drawing.Point(487, 5);
+            this.print_admin_lbl.Location = new System.Drawing.Point(502, 5);
             this.print_admin_lbl.Name = "print_admin_lbl";
             this.print_admin_lbl.Size = new System.Drawing.Size(85, 39);
             this.print_admin_lbl.TabIndex = 14;
@@ -587,7 +587,7 @@
             this.admin_gn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.admin_gn.AutoSize = true;
             this.admin_gn.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_gn.Location = new System.Drawing.Point(254, 175);
+            this.admin_gn.Location = new System.Drawing.Point(262, 175);
             this.admin_gn.Name = "admin_gn";
             this.admin_gn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.admin_gn.Size = new System.Drawing.Size(36, 30);
@@ -599,7 +599,7 @@
             this.print_admin_gn_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.print_admin_gn_lbl.AutoSize = true;
             this.print_admin_gn_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_admin_gn_lbl.Location = new System.Drawing.Point(289, 175);
+            this.print_admin_gn_lbl.Location = new System.Drawing.Point(297, 175);
             this.print_admin_gn_lbl.Name = "print_admin_gn_lbl";
             this.print_admin_gn_lbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.print_admin_gn_lbl.Size = new System.Drawing.Size(65, 30);
@@ -610,7 +610,7 @@
             // 
             this.print_pic_op.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
             this.print_pic_op.Image = global::Clinical_Management_System.Properties.Resources._7502672_1;
-            this.print_pic_op.Location = new System.Drawing.Point(412, 54);
+            this.print_pic_op.Location = new System.Drawing.Point(418, 51);
             this.print_pic_op.Name = "print_pic_op";
             this.print_pic_op.Size = new System.Drawing.Size(135, 135);
             this.print_pic_op.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -623,7 +623,7 @@
             // 
             this.picLogoPrint.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
             this.picLogoPrint.Image = global::Clinical_Management_System.Properties.Resources._7502672;
-            this.picLogoPrint.Location = new System.Drawing.Point(412, 56);
+            this.picLogoPrint.Location = new System.Drawing.Point(418, 51);
             this.picLogoPrint.Name = "picLogoPrint";
             this.picLogoPrint.Size = new System.Drawing.Size(135, 135);
             this.picLogoPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -637,7 +637,7 @@
             this.admin_addr.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.admin_addr.AutoSize = true;
             this.admin_addr.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_addr.Location = new System.Drawing.Point(143, 217);
+            this.admin_addr.Location = new System.Drawing.Point(151, 217);
             this.admin_addr.Name = "admin_addr";
             this.admin_addr.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.admin_addr.Size = new System.Drawing.Size(148, 30);
@@ -649,7 +649,7 @@
             this.print_admin_addr_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.print_admin_addr_lbl.AutoSize = true;
             this.print_admin_addr_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_admin_addr_lbl.Location = new System.Drawing.Point(289, 217);
+            this.print_admin_addr_lbl.Location = new System.Drawing.Point(297, 217);
             this.print_admin_addr_lbl.Name = "print_admin_addr_lbl";
             this.print_admin_addr_lbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.print_admin_addr_lbl.Size = new System.Drawing.Size(92, 30);

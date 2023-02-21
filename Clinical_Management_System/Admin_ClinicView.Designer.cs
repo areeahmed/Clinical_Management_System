@@ -70,11 +70,11 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.docPersonalinfoPanel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.clinic_lbl = new System.Windows.Forms.Label();
+            this.clinic_Name_lbl = new System.Windows.Forms.Label();
+            this.clinic_ID = new System.Windows.Forms.Label();
+            this.clinic_Name = new System.Windows.Forms.Label();
+            this.clinic_ID_lbl = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.DoctorListLbl = new System.Windows.Forms.Label();
             this.docListDGV = new System.Windows.Forms.DataGridView();
@@ -82,23 +82,31 @@
             this.deleteDocBtn = new System.Windows.Forms.Button();
             this.copyDocBtn = new System.Windows.Forms.Button();
             this.docGeneralinfoPanel = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Patient_lbl = new System.Windows.Forms.Label();
+            this.Income_lbl = new System.Windows.Forms.Label();
+            this.total_income_lbl = new System.Windows.Forms.Label();
+            this.today_income_lbl = new System.Windows.Forms.Label();
+            this.total_income = new System.Windows.Forms.Label();
+            this.today_income = new System.Windows.Forms.Label();
+            this.otherDay_pt = new System.Windows.Forms.Label();
+            this.remain_pt = new System.Windows.Forms.Label();
+            this.Done_pt = new System.Windows.Forms.Label();
+            this.otherDay_pt_lbl = new System.Windows.Forms.Label();
+            this.remain_pt_lbl = new System.Windows.Forms.Label();
+            this.Done_pt_lbl = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.openFormTimer = new System.Windows.Forms.Timer(this.components);
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.clinicCombo = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.picLogoPrint = new System.Windows.Forms.PictureBox();
+            this.print_pic_op = new System.Windows.Forms.PictureBox();
+            this.print_hl_lbl = new System.Windows.Forms.Label();
+            this.print_cr_lbl = new System.Windows.Forms.Label();
+            this.print_krd_lbl = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -118,6 +126,8 @@
             this.docPersonalinfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).BeginInit();
             this.docGeneralinfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -393,7 +403,7 @@
             this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(127, 15);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(500, 729);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 40);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 44);
             this.Adding_Doctor_Form_panel.TabIndex = 40;
             // 
             // panel14
@@ -601,70 +611,75 @@
             // docPersonalinfoPanel
             // 
             this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.docPersonalinfoPanel.Controls.Add(this.label2);
-            this.docPersonalinfoPanel.Controls.Add(this.label7);
-            this.docPersonalinfoPanel.Controls.Add(this.label3);
-            this.docPersonalinfoPanel.Controls.Add(this.label21);
-            this.docPersonalinfoPanel.Controls.Add(this.label6);
+            this.docPersonalinfoPanel.Controls.Add(this.print_hl_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.print_pic_op);
+            this.docPersonalinfoPanel.Controls.Add(this.print_cr_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.clinic_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.print_krd_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.clinic_Name_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.clinic_ID);
+            this.docPersonalinfoPanel.Controls.Add(this.clinic_Name);
+            this.docPersonalinfoPanel.Controls.Add(this.clinic_ID_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.picLogoPrint);
             this.docPersonalinfoPanel.Location = new System.Drawing.Point(784, 78);
             this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
             this.docPersonalinfoPanel.Size = new System.Drawing.Size(455, 201);
             this.docPersonalinfoPanel.TabIndex = 42;
             // 
-            // label2
+            // clinic_lbl
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(365, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 39);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "کلینیک";
+            this.clinic_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.clinic_lbl.AutoSize = true;
+            this.clinic_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clinic_lbl.Location = new System.Drawing.Point(365, 5);
+            this.clinic_lbl.Name = "clinic_lbl";
+            this.clinic_lbl.Size = new System.Drawing.Size(87, 39);
+            this.clinic_lbl.TabIndex = 14;
+            this.clinic_lbl.Text = "کلینیک";
             // 
-            // label7
+            // clinic_Name_lbl
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(337, 112);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 30);
-            this.label7.TabIndex = 27;
-            this.label7.Text = ":ناو";
+            this.clinic_Name_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.clinic_Name_lbl.AutoSize = true;
+            this.clinic_Name_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clinic_Name_lbl.Location = new System.Drawing.Point(337, 112);
+            this.clinic_Name_lbl.Name = "clinic_Name_lbl";
+            this.clinic_Name_lbl.Size = new System.Drawing.Size(39, 30);
+            this.clinic_Name_lbl.TabIndex = 27;
+            this.clinic_Name_lbl.Text = ":ناو";
             // 
-            // label3
+            // clinic_ID
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(306, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 30);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "1";
+            this.clinic_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.clinic_ID.AutoSize = true;
+            this.clinic_ID.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clinic_ID.Location = new System.Drawing.Point(306, 64);
+            this.clinic_ID.Name = "clinic_ID";
+            this.clinic_ID.Size = new System.Drawing.Size(24, 30);
+            this.clinic_ID.TabIndex = 27;
+            this.clinic_ID.Text = "1";
             // 
-            // label21
+            // clinic_Name
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(210, 111);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(129, 30);
-            this.label21.TabIndex = 27;
-            this.label21.Text = "کلینیکی ددان";
+            this.clinic_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.clinic_Name.AutoSize = true;
+            this.clinic_Name.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clinic_Name.Location = new System.Drawing.Point(210, 111);
+            this.clinic_Name.Name = "clinic_Name";
+            this.clinic_Name.Size = new System.Drawing.Size(129, 30);
+            this.clinic_Name.TabIndex = 27;
+            this.clinic_Name.Text = "کلینیکی ددان";
             // 
-            // label6
+            // clinic_ID_lbl
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(336, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 30);
-            this.label6.TabIndex = 27;
-            this.label6.Text = ":زنجیرە";
+            this.clinic_ID_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.clinic_ID_lbl.AutoSize = true;
+            this.clinic_ID_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clinic_ID_lbl.Location = new System.Drawing.Point(336, 64);
+            this.clinic_ID_lbl.Name = "clinic_ID_lbl";
+            this.clinic_ID_lbl.Size = new System.Drawing.Size(71, 30);
+            this.clinic_ID_lbl.TabIndex = 27;
+            this.clinic_ID_lbl.Text = ":زنجیرە";
             // 
             // textBox1
             // 
@@ -750,158 +765,159 @@
             this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.copyDocBtn.UseVisualStyleBackColor = false;
+            this.copyDocBtn.Click += new System.EventHandler(this.copyDocBtn_Click);
             // 
             // docGeneralinfoPanel
             // 
             this.docGeneralinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.docGeneralinfoPanel.Controls.Add(this.label5);
-            this.docGeneralinfoPanel.Controls.Add(this.label8);
-            this.docGeneralinfoPanel.Controls.Add(this.label13);
-            this.docGeneralinfoPanel.Controls.Add(this.label12);
-            this.docGeneralinfoPanel.Controls.Add(this.label19);
-            this.docGeneralinfoPanel.Controls.Add(this.label18);
-            this.docGeneralinfoPanel.Controls.Add(this.label17);
-            this.docGeneralinfoPanel.Controls.Add(this.label16);
-            this.docGeneralinfoPanel.Controls.Add(this.label14);
-            this.docGeneralinfoPanel.Controls.Add(this.label11);
-            this.docGeneralinfoPanel.Controls.Add(this.label10);
-            this.docGeneralinfoPanel.Controls.Add(this.label9);
+            this.docGeneralinfoPanel.Controls.Add(this.Patient_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.Income_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.total_income_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.today_income_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.total_income);
+            this.docGeneralinfoPanel.Controls.Add(this.today_income);
+            this.docGeneralinfoPanel.Controls.Add(this.otherDay_pt);
+            this.docGeneralinfoPanel.Controls.Add(this.remain_pt);
+            this.docGeneralinfoPanel.Controls.Add(this.Done_pt);
+            this.docGeneralinfoPanel.Controls.Add(this.otherDay_pt_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.remain_pt_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.Done_pt_lbl);
             this.docGeneralinfoPanel.Location = new System.Drawing.Point(116, 78);
             this.docGeneralinfoPanel.Name = "docGeneralinfoPanel";
             this.docGeneralinfoPanel.Size = new System.Drawing.Size(651, 203);
             this.docGeneralinfoPanel.TabIndex = 49;
             // 
-            // label5
+            // Patient_lbl
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(518, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 42);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "نەخۆش";
+            this.Patient_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Patient_lbl.AutoSize = true;
+            this.Patient_lbl.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patient_lbl.Location = new System.Drawing.Point(518, 15);
+            this.Patient_lbl.Name = "Patient_lbl";
+            this.Patient_lbl.Size = new System.Drawing.Size(102, 42);
+            this.Patient_lbl.TabIndex = 28;
+            this.Patient_lbl.Text = "نەخۆش";
             // 
-            // label8
+            // Income_lbl
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(309, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 42);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "داهات";
+            this.Income_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Income_lbl.AutoSize = true;
+            this.Income_lbl.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Income_lbl.Location = new System.Drawing.Point(309, 15);
+            this.Income_lbl.Name = "Income_lbl";
+            this.Income_lbl.Size = new System.Drawing.Size(86, 42);
+            this.Income_lbl.TabIndex = 29;
+            this.Income_lbl.Text = "داهات";
             // 
-            // label13
+            // total_income_lbl
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(267, 113);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(138, 30);
-            this.label13.TabIndex = 30;
-            this.label13.Text = ":داهاتی گشتی";
+            this.total_income_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.total_income_lbl.AutoSize = true;
+            this.total_income_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_income_lbl.Location = new System.Drawing.Point(267, 113);
+            this.total_income_lbl.Name = "total_income_lbl";
+            this.total_income_lbl.Size = new System.Drawing.Size(138, 30);
+            this.total_income_lbl.TabIndex = 30;
+            this.total_income_lbl.Text = ":داهاتی گشتی";
             // 
-            // label12
+            // today_income_lbl
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(267, 68);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 30);
-            this.label12.TabIndex = 31;
-            this.label12.Text = ":داهاتی ئەمڕۆ";
+            this.today_income_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.today_income_lbl.AutoSize = true;
+            this.today_income_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.today_income_lbl.Location = new System.Drawing.Point(267, 68);
+            this.today_income_lbl.Name = "today_income_lbl";
+            this.today_income_lbl.Size = new System.Drawing.Size(128, 30);
+            this.today_income_lbl.TabIndex = 31;
+            this.today_income_lbl.Text = ":داهاتی ئەمڕۆ";
             // 
-            // label19
+            // total_income
             // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(171, 113);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(90, 27);
-            this.label19.TabIndex = 32;
-            this.label19.Text = "2,000,000";
+            this.total_income.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.total_income.AutoSize = true;
+            this.total_income.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_income.Location = new System.Drawing.Point(171, 113);
+            this.total_income.Name = "total_income";
+            this.total_income.Size = new System.Drawing.Size(90, 27);
+            this.total_income.TabIndex = 32;
+            this.total_income.Text = "2,000,000";
             // 
-            // label18
+            // today_income
             // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(195, 71);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(66, 27);
-            this.label18.TabIndex = 33;
-            this.label18.Text = "20,000";
+            this.today_income.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.today_income.AutoSize = true;
+            this.today_income.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.today_income.Location = new System.Drawing.Point(195, 71);
+            this.today_income.Name = "today_income";
+            this.today_income.Size = new System.Drawing.Size(66, 27);
+            this.today_income.TabIndex = 33;
+            this.today_income.Text = "20,000";
             // 
-            // label17
+            // otherDay_pt
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(482, 159);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(32, 27);
-            this.label17.TabIndex = 34;
-            this.label17.Text = "20";
+            this.otherDay_pt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.otherDay_pt.AutoSize = true;
+            this.otherDay_pt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherDay_pt.Location = new System.Drawing.Point(482, 159);
+            this.otherDay_pt.Name = "otherDay_pt";
+            this.otherDay_pt.Size = new System.Drawing.Size(32, 27);
+            this.otherDay_pt.TabIndex = 34;
+            this.otherDay_pt.Text = "20";
             // 
-            // label16
+            // remain_pt
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(482, 116);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(32, 27);
-            this.label16.TabIndex = 35;
-            this.label16.Text = "25";
+            this.remain_pt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.remain_pt.AutoSize = true;
+            this.remain_pt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remain_pt.Location = new System.Drawing.Point(482, 116);
+            this.remain_pt.Name = "remain_pt";
+            this.remain_pt.Size = new System.Drawing.Size(32, 27);
+            this.remain_pt.TabIndex = 35;
+            this.remain_pt.Text = "25";
             // 
-            // label14
+            // Done_pt
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(492, 71);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(22, 27);
-            this.label14.TabIndex = 36;
-            this.label14.Text = "5";
+            this.Done_pt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Done_pt.AutoSize = true;
+            this.Done_pt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Done_pt.Location = new System.Drawing.Point(492, 71);
+            this.Done_pt.Name = "Done_pt";
+            this.Done_pt.Size = new System.Drawing.Size(22, 27);
+            this.Done_pt.TabIndex = 36;
+            this.Done_pt.Text = "5";
             // 
-            // label11
+            // otherDay_pt_lbl
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(520, 157);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 30);
-            this.label11.TabIndex = 37;
-            this.label11.Text = ":ڕۆژانی تر";
+            this.otherDay_pt_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.otherDay_pt_lbl.AutoSize = true;
+            this.otherDay_pt_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherDay_pt_lbl.Location = new System.Drawing.Point(520, 157);
+            this.otherDay_pt_lbl.Name = "otherDay_pt_lbl";
+            this.otherDay_pt_lbl.Size = new System.Drawing.Size(95, 30);
+            this.otherDay_pt_lbl.TabIndex = 37;
+            this.otherDay_pt_lbl.Text = ":ڕۆژانی تر";
             // 
-            // label10
+            // remain_pt_lbl
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(520, 113);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 30);
-            this.label10.TabIndex = 38;
-            this.label10.Text = ":ماوە";
+            this.remain_pt_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.remain_pt_lbl.AutoSize = true;
+            this.remain_pt_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remain_pt_lbl.Location = new System.Drawing.Point(520, 113);
+            this.remain_pt_lbl.Name = "remain_pt_lbl";
+            this.remain_pt_lbl.Size = new System.Drawing.Size(51, 30);
+            this.remain_pt_lbl.TabIndex = 38;
+            this.remain_pt_lbl.Text = ":ماوە";
             // 
-            // label9
+            // Done_pt_lbl
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(520, 68);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 30);
-            this.label9.TabIndex = 39;
-            this.label9.Text = ":بەڕێکراو";
+            this.Done_pt_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Done_pt_lbl.AutoSize = true;
+            this.Done_pt_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Done_pt_lbl.Location = new System.Drawing.Point(520, 68);
+            this.Done_pt_lbl.Name = "Done_pt_lbl";
+            this.Done_pt_lbl.Size = new System.Drawing.Size(85, 30);
+            this.Done_pt_lbl.TabIndex = 39;
+            this.Done_pt_lbl.Text = ":بەڕێکراو";
             // 
             // timer1
             // 
@@ -950,6 +966,84 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.Document = this.printDocument1;
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // picLogoPrint
+            // 
+            this.picLogoPrint.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.picLogoPrint.Image = global::Clinical_Management_System.Properties.Resources._7502672;
+            this.picLogoPrint.Location = new System.Drawing.Point(-11, -138);
+            this.picLogoPrint.Name = "picLogoPrint";
+            this.picLogoPrint.Size = new System.Drawing.Size(135, 135);
+            this.picLogoPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoPrint.TabIndex = 53;
+            this.picLogoPrint.TabStop = false;
+            this.picLogoPrint.WaitOnLoad = true;
+            // 
+            // print_pic_op
+            // 
+            this.print_pic_op.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.print_pic_op.Image = global::Clinical_Management_System.Properties.Resources._7502672_1;
+            this.print_pic_op.Location = new System.Drawing.Point(0, -147);
+            this.print_pic_op.Name = "print_pic_op";
+            this.print_pic_op.Size = new System.Drawing.Size(135, 135);
+            this.print_pic_op.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.print_pic_op.TabIndex = 54;
+            this.print_pic_op.TabStop = false;
+            this.print_pic_op.WaitOnLoad = true;
+            // 
+            // print_hl_lbl
+            // 
+            this.print_hl_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_hl_lbl.AutoSize = true;
+            this.print_hl_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_hl_lbl.Location = new System.Drawing.Point(53, -36);
+            this.print_hl_lbl.Name = "print_hl_lbl";
+            this.print_hl_lbl.Size = new System.Drawing.Size(68, 30);
+            this.print_hl_lbl.TabIndex = 53;
+            this.print_hl_lbl.Text = "Health";
+            // 
+            // print_cr_lbl
+            // 
+            this.print_cr_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_cr_lbl.AutoSize = true;
+            this.print_cr_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_cr_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.print_cr_lbl.Location = new System.Drawing.Point(120, -36);
+            this.print_cr_lbl.Name = "print_cr_lbl";
+            this.print_cr_lbl.Size = new System.Drawing.Size(53, 30);
+            this.print_cr_lbl.TabIndex = 54;
+            this.print_cr_lbl.Text = "Care";
+            // 
+            // print_krd_lbl
+            // 
+            this.print_krd_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_krd_lbl.AutoSize = true;
+            this.print_krd_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_krd_lbl.Location = new System.Drawing.Point(51, -63);
+            this.print_krd_lbl.Name = "print_krd_lbl";
+            this.print_krd_lbl.Size = new System.Drawing.Size(125, 39);
+            this.print_krd_lbl.TabIndex = 55;
+            this.print_krd_lbl.Text = "Kurdistan";
             // 
             // Admin_ClinicView
             // 
@@ -1005,6 +1099,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).EndInit();
             this.docGeneralinfoPanel.ResumeLayout(false);
             this.docGeneralinfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1052,10 +1148,10 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel docPersonalinfoPanel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label clinic_lbl;
+        private System.Windows.Forms.Label clinic_Name_lbl;
+        private System.Windows.Forms.Label clinic_Name;
+        private System.Windows.Forms.Label clinic_ID_lbl;
         private System.Windows.Forms.Label DoctorListLbl;
         private System.Windows.Forms.DataGridView docListDGV;
         private System.Windows.Forms.Button editDocBtn;
@@ -1065,21 +1161,29 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer openFormTimer;
         private System.Windows.Forms.Timer dateTimeTimer;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Patient_lbl;
+        private System.Windows.Forms.Label Income_lbl;
+        private System.Windows.Forms.Label total_income_lbl;
+        private System.Windows.Forms.Label today_income_lbl;
+        private System.Windows.Forms.Label total_income;
+        private System.Windows.Forms.Label today_income;
+        private System.Windows.Forms.Label otherDay_pt;
+        private System.Windows.Forms.Label remain_pt;
+        private System.Windows.Forms.Label Done_pt;
+        private System.Windows.Forms.Label otherDay_pt_lbl;
+        private System.Windows.Forms.Label remain_pt_lbl;
+        private System.Windows.Forms.Label Done_pt_lbl;
         private System.Windows.Forms.ComboBox clinicCombo;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label clinic_ID;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.PictureBox picLogoPrint;
+        private System.Windows.Forms.PictureBox print_pic_op;
+        private System.Windows.Forms.Label print_hl_lbl;
+        private System.Windows.Forms.Label print_cr_lbl;
+        private System.Windows.Forms.Label print_krd_lbl;
     }
 }

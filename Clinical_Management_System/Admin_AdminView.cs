@@ -271,10 +271,6 @@ namespace Clinical_Management_System
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
-            obj.AddEllipse(0, 0, print_admin_prof_pic.Width, print_admin_prof_pic.Height);
-            Region region = new Region(obj);
-            print_admin_prof_pic.Region = region;
             e.Graphics.DrawImage(picLogoPrint.Image, 10, 10, 100, 100);
             e.Graphics.DrawString(print_krd_lbl.Text, new Font("RudawRegular", 24), Brushes.Gray, 125, 30);
             e.Graphics.DrawString(print_hl_lbl.Text, new Font("RudawRegular", 20), Brushes.Gray, 125, 60);
