@@ -89,17 +89,29 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.clinicCombo = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pa_search_txt = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.barcodeDocBtn = new System.Windows.Forms.Button();
             this.doctor_barcode_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.pay_QrPic = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.pa_qr_pic = new System.Windows.Forms.PictureBox();
             this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
             this.copyDocBtn = new System.Windows.Forms.Button();
+            this.admin_show_qr_pl = new System.Windows.Forms.Panel();
+            this.admin_read_qr_pl = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.admin_read_QR_pic = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.run_cam_qr = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -121,7 +133,10 @@
             this.doctor_barcode_panel.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pay_QrPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).BeginInit();
+            this.admin_show_qr_pl.SuspendLayout();
+            this.admin_read_qr_pl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -796,15 +811,15 @@
             this.clinicCombo.TabIndex = 51;
             this.clinicCombo.Text = "گەڕان بەپێی";
             // 
-            // textBox2
+            // pa_search_txt
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(334, 392);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox2.Size = new System.Drawing.Size(258, 38);
-            this.textBox2.TabIndex = 50;
+            this.pa_search_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pa_search_txt.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_search_txt.Location = new System.Drawing.Point(334, 392);
+            this.pa_search_txt.Name = "pa_search_txt";
+            this.pa_search_txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pa_search_txt.Size = new System.Drawing.Size(258, 38);
+            this.pa_search_txt.TabIndex = 50;
             // 
             // button2
             // 
@@ -850,10 +865,10 @@
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(285, 12);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(92, 18);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 47);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.TabIndex = 54;
             // 
             // panel15
@@ -879,8 +894,11 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel16.Controls.Add(this.pay_QrPic);
+            this.panel16.Controls.Add(this.button3);
+            this.panel16.Controls.Add(this.button4);
             this.panel16.Controls.Add(this.button7);
+            this.panel16.Controls.Add(this.admin_show_qr_pl);
+            this.panel16.Controls.Add(this.admin_read_qr_pl);
             this.panel16.Location = new System.Drawing.Point(0, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
             this.panel16.MinimumSize = new System.Drawing.Size(497, 0);
@@ -889,33 +907,13 @@
             this.panel16.Size = new System.Drawing.Size(497, 686);
             this.panel16.TabIndex = 28;
             // 
-            // pay_QrPic
+            // pa_qr_pic
             // 
-            this.pay_QrPic.Location = new System.Drawing.Point(121, 91);
-            this.pay_QrPic.Name = "pay_QrPic";
-            this.pay_QrPic.Size = new System.Drawing.Size(260, 271);
-            this.pay_QrPic.TabIndex = 32;
-            this.pay_QrPic.TabStop = false;
-            // 
-            // button7
-            // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button7.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = global::Clinical_Management_System.Properties.Resources.check_mark;
-            this.button7.Location = new System.Drawing.Point(184, 455);
-            this.button7.Name = "button7";
-            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button7.Size = new System.Drawing.Size(121, 50);
-            this.button7.TabIndex = 30;
-            this.button7.Text = "   تەواو";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.pa_qr_pic.Location = new System.Drawing.Point(92, 61);
+            this.pa_qr_pic.Name = "pa_qr_pic";
+            this.pa_qr_pic.Size = new System.Drawing.Size(260, 271);
+            this.pa_qr_pic.TabIndex = 32;
+            this.pa_qr_pic.TabStop = false;
             // 
             // barcodeTimer
             // 
@@ -939,6 +937,132 @@
             this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.copyDocBtn.UseVisualStyleBackColor = false;
+            this.copyDocBtn.Click += new System.EventHandler(this.copyDocBtn_Click);
+            // 
+            // admin_show_qr_pl
+            // 
+            this.admin_show_qr_pl.Controls.Add(this.pa_qr_pic);
+            this.admin_show_qr_pl.Location = new System.Drawing.Point(20, 14);
+            this.admin_show_qr_pl.Name = "admin_show_qr_pl";
+            this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 420);
+            this.admin_show_qr_pl.TabIndex = 33;
+            // 
+            // admin_read_qr_pl
+            // 
+            this.admin_read_qr_pl.Controls.Add(this.comboBox1);
+            this.admin_read_qr_pl.Controls.Add(this.admin_read_QR_pic);
+            this.admin_read_qr_pl.Controls.Add(this.label11);
+            this.admin_read_qr_pl.Location = new System.Drawing.Point(23, 17);
+            this.admin_read_qr_pl.Name = "admin_read_qr_pl";
+            this.admin_read_qr_pl.Size = new System.Drawing.Size(451, 420);
+            this.admin_read_qr_pl.TabIndex = 34;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(86, 310);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(247, 21);
+            this.comboBox1.TabIndex = 34;
+            // 
+            // admin_read_QR_pic
+            // 
+            this.admin_read_QR_pic.Location = new System.Drawing.Point(86, 21);
+            this.admin_read_QR_pic.Name = "admin_read_QR_pic";
+            this.admin_read_QR_pic.Size = new System.Drawing.Size(260, 271);
+            this.admin_read_QR_pic.TabIndex = 33;
+            this.admin_read_QR_pic.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(339, 312);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label11.Size = new System.Drawing.Size(46, 23);
+            this.label11.TabIndex = 37;
+            this.label11.Text = ":کامێرا";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
+            this.button3.Location = new System.Drawing.Point(28, 452);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button3.Size = new System.Drawing.Size(133, 50);
+            this.button3.TabIndex = 35;
+            this.button3.Text = "   خوێندنەوە";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
+            this.button4.Location = new System.Drawing.Point(167, 452);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button4.Size = new System.Drawing.Size(121, 50);
+            this.button4.TabIndex = 36;
+            this.button4.Text = "   تەواو";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
+            this.button7.Location = new System.Drawing.Point(294, 452);
+            this.button7.Name = "button7";
+            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button7.Size = new System.Drawing.Size(127, 50);
+            this.button7.TabIndex = 37;
+            this.button7.Text = "   نیشاندان";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // run_cam_qr
+            // 
+            this.run_cam_qr.Interval = 1000;
+            this.run_cam_qr.Tick += new System.EventHandler(this.run_cam_qr_Tick);
             // 
             // Admin_PatientView
             // 
@@ -951,7 +1075,7 @@
             this.Controls.Add(this.barcodeDocBtn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.clinicCombo);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.pa_search_txt);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.docGeneralinfoPanel);
@@ -997,7 +1121,11 @@
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pay_QrPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).EndInit();
+            this.admin_show_qr_pl.ResumeLayout(false);
+            this.admin_read_qr_pl.ResumeLayout(false);
+            this.admin_read_qr_pl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1063,7 +1191,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox clinicCombo;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox pa_search_txt;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label pay_ID;
         private System.Windows.Forms.Button barcodeDocBtn;
@@ -1071,9 +1199,21 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.PictureBox pay_QrPic;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.PictureBox pa_qr_pic;
         private System.Windows.Forms.Timer barcodeTimer;
         private System.Windows.Forms.Button copyDocBtn;
+        private System.Windows.Forms.Panel admin_show_qr_pl;
+        private System.Windows.Forms.Panel admin_read_qr_pl;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox admin_read_QR_pic;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Timer run_cam_qr_timer;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Timer run_cam_qr;
     }
 }

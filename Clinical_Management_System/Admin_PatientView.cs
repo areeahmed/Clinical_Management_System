@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
 
 namespace Clinical_Management_System
 {
@@ -16,6 +20,8 @@ namespace Clinical_Management_System
         private bool isMouseDown = false;
         bool sideBarExpand = false;
         bool isBarcodeOpen = false;
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice CaptureDevice;
         public Admin_PatientView(FormWindowState windowState)
         {
             InitializeComponent();
@@ -24,6 +30,14 @@ namespace Clinical_Management_System
 
         private void Admin_PatientView_Load(object sender, EventArgs e)
         {
+            // for reading barcode
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterInfoCollection)
+            {
+                comboBox1.Items.Add(filterInfo.Name);
+                comboBox1.SelectedIndex = 0;
+            }
+
             doctor_barcode_panel.Visible = false;
             System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
             obj.AddEllipse(0, 0, pictureBox2.Width, pictureBox2.Height);
@@ -36,6 +50,7 @@ namespace Clinical_Management_System
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            run_cam_qr_timer.Stop();
             Application.Exit();
         }
 
@@ -174,9 +189,9 @@ namespace Clinical_Management_System
             }
             else
             {
-                pay_QrPic.SizeMode = PictureBoxSizeMode.AutoSize;
+                pa_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
                 Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                pay_QrPic.Image = codeQr.Draw(pay_ID.Text, 200);
+                pa_qr_pic.Image = codeQr.Draw(pay_ID.Text, 200);
 
                 barcodeTimer.Start();
                 doctor_barcode_panel.Visible = true;
@@ -209,6 +224,82 @@ namespace Clinical_Management_System
         {
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
+        }
+
+        private void copyDocBtn_Click(object sender, EventArgs e)
+        {
+            if (pay_ID.Text == "#")
+            {
+                MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+                pa_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+                Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+                pa_qr_pic.Image = codeQr.Draw(pay_ID.Text, 200);
+                if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    printDocument1.Print();
+                }
+
+            }
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            pa_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+            Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            pa_qr_pic.Image = codeQr.Draw(pay_ID.Text, 200);
+            admin_show_qr_pl.Visible = true;
+            admin_read_qr_pl.Visible = false;
+        }
+
+        // check if the button pressed for first time or not
+        bool isFirst = true;
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (isFirst)
+            {
+                admin_show_qr_pl.Visible = false;
+                admin_read_qr_pl.Visible = true;
+                isFirst = false;
+            }
+            else
+            {
+                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox1.SelectedIndex].MonikerString);
+                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+                CaptureDevice.Start();
+                run_cam_qr_timer.Start();
+                isFirst = false;
+            }
+        }
+
+        /// <summary>
+        /// this part of code will get the result from qr code.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventArgs"></param>
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            admin_read_QR_pic.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void run_cam_qr_Tick(object sender, EventArgs e)
+        {
+            if (admin_read_QR_pic.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)admin_read_QR_pic.Image);
+                if (result != null)
+                {
+                    pa_search_txt.Text = result.ToString();
+                    CaptureDevice.Stop();
+                    barcodeTimer.Start();
+
+                    run_cam_qr_timer.Stop();
+
+                }
+            }
         }
     }
 }
