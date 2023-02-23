@@ -251,5 +251,20 @@ namespace Clinical_Management_System
             e.Graphics.DrawString(otherDay_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 750);
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Adding_Doctor_Form_panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
