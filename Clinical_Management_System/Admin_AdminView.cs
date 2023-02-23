@@ -649,7 +649,6 @@ namespace Clinical_Management_System
             // address lbl
             e.Graphics.DrawString(print_admin_addr_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 700);
         }
-
         ///
         /// 
         /// 

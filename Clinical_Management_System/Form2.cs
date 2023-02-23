@@ -10,24 +10,68 @@ using System.Windows.Forms;
 
 namespace Clinical_Management_System
 {
-    public partial class Form2: Form
+    public partial class patient: Form
     {
-        public Form2()
+        private FormWindowState windowState;
+
+        public patient()
         {
             InitializeComponent();
+            this.WindowState = windowState;
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+
+       
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
