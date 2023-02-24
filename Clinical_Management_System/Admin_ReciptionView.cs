@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
 
 namespace Clinical_Management_System
 {
@@ -17,6 +20,9 @@ namespace Clinical_Management_System
         bool sideBarExpand = false;
         bool isFormOpened = false;
         bool isBarcodeOpen = false;
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice CaptureDevice;
+        bool capDev = false;
         public Admin_ReciptionView(FormWindowState formWindowState)
         {
             InitializeComponent();
@@ -231,9 +237,9 @@ namespace Clinical_Management_System
             }
             else
             {
-                pa_QrPic.SizeMode = PictureBoxSizeMode.AutoSize;
+                recp_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
                 Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                pa_QrPic.Image = codeQr.Draw(recp_ID.Text, 200);
+                recp_qr_pic.Image = codeQr.Draw(recp_ID.Text, 200);
 
                 barcodeTimer.Start();
                 doctor_barcode_panel.Visible = true;
@@ -244,6 +250,10 @@ namespace Clinical_Management_System
         {
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -302,6 +312,46 @@ namespace Clinical_Management_System
             {
                 recp_profile_pic.ImageLocation = openFileDialog1.FileNames[0];
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            recp_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+            Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            recp_qr_pic.Image = codeQr.Draw(recp_ID.Text, 200);
+            admin_show_qr_pl.Visible = true;
+            admin_read_qr_pl.Visible = false;
+        }
+
+        // check if the button pressed for first time or not
+        bool isFirst = true;
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (isFirst)
+            {
+                admin_show_qr_pl.Visible = false;
+                admin_read_qr_pl.Visible = true;
+                isFirst = false;
+            }
+            else
+            {
+                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox1.SelectedIndex].MonikerString);
+                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+                CaptureDevice.Start();
+                run_cam_qr_timer.Start();
+                capDev = true;
+                isFirst = false;
+            }
+        }
+
+        /// <summary>
+        /// this part of code will get the result from qr code.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventArgs"></param>
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            admin_read_QR_pic.Image = (Bitmap)eventArgs.Frame.Clone();
         }
     }
 }

@@ -84,7 +84,7 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.pa_QrPic = new System.Windows.Forms.PictureBox();
+            this.recp_qr_pic = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.barcodeDocBtn = new System.Windows.Forms.Button();
             this.editDocBtn = new System.Windows.Forms.Button();
@@ -126,6 +126,15 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.admin_show_qr_pl = new System.Windows.Forms.Panel();
+            this.admin_read_qr_pl = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.admin_read_QR_pic = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.run_cam_qr = new System.Windows.Forms.Timer(this.components);
+            this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -145,13 +154,16 @@
             this.doctor_barcode_panel.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pa_QrPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recp_qr_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).BeginInit();
             this.docGeneralinfoPanel.SuspendLayout();
             this.docPersonalinfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recp_profile_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).BeginInit();
+            this.admin_show_qr_pl.SuspendLayout();
+            this.admin_read_qr_pl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -763,10 +775,10 @@
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(586, 5);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(86, 69);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 50);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.TabIndex = 33;
             // 
             // panel15
@@ -792,8 +804,11 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel16.Controls.Add(this.pa_QrPic);
+            this.panel16.Controls.Add(this.button3);
+            this.panel16.Controls.Add(this.button4);
+            this.panel16.Controls.Add(this.admin_show_qr_pl);
             this.panel16.Controls.Add(this.button7);
+            this.panel16.Controls.Add(this.admin_read_qr_pl);
             this.panel16.Location = new System.Drawing.Point(0, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
             this.panel16.MinimumSize = new System.Drawing.Size(497, 0);
@@ -802,13 +817,13 @@
             this.panel16.Size = new System.Drawing.Size(497, 686);
             this.panel16.TabIndex = 28;
             // 
-            // pa_QrPic
+            // recp_qr_pic
             // 
-            this.pa_QrPic.Location = new System.Drawing.Point(120, 81);
-            this.pa_QrPic.Name = "pa_QrPic";
-            this.pa_QrPic.Size = new System.Drawing.Size(260, 271);
-            this.pa_QrPic.TabIndex = 34;
-            this.pa_QrPic.TabStop = false;
+            this.recp_qr_pic.Location = new System.Drawing.Point(91, 69);
+            this.recp_qr_pic.Name = "recp_qr_pic";
+            this.recp_qr_pic.Size = new System.Drawing.Size(260, 271);
+            this.recp_qr_pic.TabIndex = 34;
+            this.recp_qr_pic.TabStop = false;
             // 
             // button7
             // 
@@ -1299,6 +1314,100 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // admin_show_qr_pl
+            // 
+            this.admin_show_qr_pl.Controls.Add(this.recp_qr_pic);
+            this.admin_show_qr_pl.Location = new System.Drawing.Point(24, 21);
+            this.admin_show_qr_pl.Name = "admin_show_qr_pl";
+            this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 420);
+            this.admin_show_qr_pl.TabIndex = 51;
+            // 
+            // admin_read_qr_pl
+            // 
+            this.admin_read_qr_pl.Controls.Add(this.comboBox2);
+            this.admin_read_qr_pl.Controls.Add(this.admin_read_QR_pic);
+            this.admin_read_qr_pl.Controls.Add(this.label2);
+            this.admin_read_qr_pl.Location = new System.Drawing.Point(14, 18);
+            this.admin_read_qr_pl.Name = "admin_read_qr_pl";
+            this.admin_read_qr_pl.Size = new System.Drawing.Size(451, 420);
+            this.admin_read_qr_pl.TabIndex = 52;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(86, 310);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(247, 21);
+            this.comboBox2.TabIndex = 34;
+            // 
+            // admin_read_QR_pic
+            // 
+            this.admin_read_QR_pic.Location = new System.Drawing.Point(86, 21);
+            this.admin_read_QR_pic.Name = "admin_read_QR_pic";
+            this.admin_read_QR_pic.Size = new System.Drawing.Size(260, 271);
+            this.admin_read_QR_pic.TabIndex = 33;
+            this.admin_read_QR_pic.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(339, 312);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(46, 23);
+            this.label2.TabIndex = 37;
+            this.label2.Text = ":کامێرا";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
+            this.button3.Location = new System.Drawing.Point(45, 455);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button3.Size = new System.Drawing.Size(133, 50);
+            this.button3.TabIndex = 53;
+            this.button3.Text = "   خوێندنەوە";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
+            this.button4.Location = new System.Drawing.Point(311, 455);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button4.Size = new System.Drawing.Size(127, 50);
+            this.button4.TabIndex = 54;
+            this.button4.Text = "   نیشاندان";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // run_cam_qr
+            // 
+            this.run_cam_qr.Interval = 1000;
+            // 
+            // run_cam_qr_timer
+            // 
+            this.run_cam_qr_timer.Interval = 1000;
+            // 
             // Admin_ReciptionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1354,7 +1463,7 @@
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pa_QrPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recp_qr_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).EndInit();
             this.docGeneralinfoPanel.ResumeLayout(false);
             this.docGeneralinfoPanel.PerformLayout();
@@ -1363,6 +1472,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.recp_profile_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).EndInit();
+            this.admin_show_qr_pl.ResumeLayout(false);
+            this.admin_read_qr_pl.ResumeLayout(false);
+            this.admin_read_qr_pl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1456,7 +1569,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.PictureBox pa_QrPic;
+        private System.Windows.Forms.PictureBox recp_qr_pic;
         private System.Windows.Forms.Label recp_ID;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
@@ -1466,5 +1579,14 @@
         private System.Windows.Forms.Label print_hl_lbl;
         private System.Windows.Forms.Label print_cr_lbl;
         private System.Windows.Forms.Label print_krd_lbl;
+        private System.Windows.Forms.Panel admin_show_qr_pl;
+        private System.Windows.Forms.Panel admin_read_qr_pl;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.PictureBox admin_read_QR_pic;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Timer run_cam_qr;
+        private System.Windows.Forms.Timer run_cam_qr_timer;
     }
 }
