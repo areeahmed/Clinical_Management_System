@@ -116,7 +116,6 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.run_cam_qr = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1001,9 +1000,8 @@
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(123, 10);
-            this.doctor_barcode_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(667, 695);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(92, 8);
+            this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
             this.doctor_barcode_panel.Size = new System.Drawing.Size(667, 695);
             this.doctor_barcode_panel.TabIndex = 54;
@@ -1077,8 +1075,7 @@
             this.button4.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
-            this.button4.Location = new System.Drawing.Point(223, 556);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Location = new System.Drawing.Point(167, 452);
             this.button4.Name = "button4";
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button4.Size = new System.Drawing.Size(161, 62);
@@ -1195,6 +1192,10 @@
             this.copyDocBtn.UseVisualStyleBackColor = false;
             this.copyDocBtn.Click += new System.EventHandler(this.copyDocBtn_Click);
             // 
+            // run_cam_qr_timer
+            // 
+            this.run_cam_qr_timer.Tick += new System.EventHandler(this.run_cam_qr_timer_Tick);
+            // 
             // printDialog1
             // 
             this.printDialog1.Document = this.printDocument1;
@@ -1214,11 +1215,6 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            // 
-            // run_cam_qr
-            // 
-            this.run_cam_qr.Interval = 1000;
-            this.run_cam_qr.Tick += new System.EventHandler(this.run_cam_qr_Tick);
             // 
             // Admin_PatientView
             // 
@@ -1373,7 +1369,6 @@
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
-        private System.Windows.Forms.Timer run_cam_qr;
         private System.Windows.Forms.Label print_hl_lbl;
         private System.Windows.Forms.Label print_cr_lbl;
         private System.Windows.Forms.Label print_krd_lbl;

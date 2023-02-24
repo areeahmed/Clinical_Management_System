@@ -23,6 +23,8 @@ namespace Clinical_Management_System
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice CaptureDevice;
         bool capDev = false;
+        // check if the button pressed for first time or not
+        bool isFirst = true;
         public Admin_PatientView(FormWindowState windowState)
         {
             InitializeComponent();
@@ -257,16 +259,18 @@ namespace Clinical_Management_System
             pa_qr_pic.Image = codeQr.Draw(pay_ID.Text, 200);
             admin_show_qr_pl.Visible = true;
             admin_read_qr_pl.Visible = false;
+            isFirst = true;
+            capDev = true;
         }
 
-        // check if the button pressed for first time or not
-        bool isFirst = true;
+        
         private void button3_Click(object sender, EventArgs e)
         {
             if (isFirst)
             {
                 admin_show_qr_pl.Visible = false;
                 admin_read_qr_pl.Visible = true;
+
                 isFirst = false;
             }
             else
@@ -275,8 +279,7 @@ namespace Clinical_Management_System
                 CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();
                 run_cam_qr_timer.Start();
-                capDev = true;
-                isFirst = false;
+                isFirst = true;
             }
         }
 
@@ -292,19 +295,16 @@ namespace Clinical_Management_System
 
         private void run_cam_qr_Tick(object sender, EventArgs e)
         {
+            BarcodeReader barcodeReader = new BarcodeReader();
+            Result result = barcodeReader.Decode((Bitmap)admin_read_QR_pic.Image);
             if (admin_read_QR_pic.Image != null)
             {
-                BarcodeReader barcodeReader = new BarcodeReader();
-                Result result = barcodeReader.Decode((Bitmap)admin_read_QR_pic.Image);
+                
                 if (result != null)
                 {
                     pa_search_txt.Text = result.ToString();
-                    CaptureDevice.Stop();
-                    barcodeTimer.Start();
-
-                    run_cam_qr_timer.Stop();
-
                 }
+
             }
         }
 
@@ -317,6 +317,24 @@ namespace Clinical_Management_System
             e.Graphics.DrawString(pa_lbl.Text, new Font("RudawRegular", 25), Brushes.Black, 700, 30);
             e.Graphics.DrawImage(print_pic_op.Image, 180, 300, 500, 500);
             e.Graphics.DrawImage(pa_profile_pic.Image, 320, 150, 200, 200);
+        }
+
+        private void run_cam_qr_timer_Tick(object sender, EventArgs e)
+        {
+            if (admin_read_QR_pic.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)admin_read_QR_pic.Image);
+                if (result != null)
+                {
+                    pa_search_txt.Text = result.ToString();
+                    CaptureDevice.Stop();
+                    barcodeTimer.Start();
+                    isFirst = true;
+                    run_cam_qr_timer.Stop();
+
+                }
+            }
         }
     }
 }
