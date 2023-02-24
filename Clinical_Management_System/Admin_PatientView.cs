@@ -23,8 +23,6 @@ namespace Clinical_Management_System
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice CaptureDevice;
         bool capDev = false;
-        // check if the button pressed for first time or not
-        bool isFirst = true;
         public Admin_PatientView(FormWindowState windowState)
         {
             InitializeComponent();
@@ -225,12 +223,9 @@ namespace Clinical_Management_System
 
         private void button7_Click(object sender, EventArgs e)
         {
+            CaptureDevice.Stop();
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
-            if(capDev)
-            {
-                CaptureDevice.Stop();
-            }
         }
 
         private void copyDocBtn_Click(object sender, EventArgs e)
@@ -259,28 +254,21 @@ namespace Clinical_Management_System
             pa_qr_pic.Image = codeQr.Draw(pay_ID.Text, 200);
             admin_show_qr_pl.Visible = true;
             admin_read_qr_pl.Visible = false;
-            isFirst = true;
             capDev = true;
         }
 
-        
+        private void Show_QRcode_reader(object sender, EventArgs e)
+        {
+            admin_show_qr_pl.Visible = false;
+            admin_read_qr_pl.Visible = true;
+        }
         private void button3_Click(object sender, EventArgs e)
         {
-            if (isFirst)
-            {
-                admin_show_qr_pl.Visible = false;
-                admin_read_qr_pl.Visible = true;
-
-                isFirst = false;
-            }
-            else
-            {
-                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox1.SelectedIndex].MonikerString);
-                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
-                CaptureDevice.Start();
-                run_cam_qr_timer.Start();
-                isFirst = true;
-            }
+            CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox1.SelectedIndex].MonikerString);
+            CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+            CaptureDevice.Start();
+            run_cam_qr_timer.Start();
+            capDev = true;
         }
 
         /// <summary>
@@ -291,21 +279,6 @@ namespace Clinical_Management_System
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             admin_read_QR_pic.Image = (Bitmap)eventArgs.Frame.Clone();
-        }
-
-        private void run_cam_qr_Tick(object sender, EventArgs e)
-        {
-            BarcodeReader barcodeReader = new BarcodeReader();
-            Result result = barcodeReader.Decode((Bitmap)admin_read_QR_pic.Image);
-            if (admin_read_QR_pic.Image != null)
-            {
-                
-                if (result != null)
-                {
-                    pa_search_txt.Text = result.ToString();
-                }
-
-            }
         }
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
@@ -330,9 +303,8 @@ namespace Clinical_Management_System
                     pa_search_txt.Text = result.ToString();
                     CaptureDevice.Stop();
                     barcodeTimer.Start();
-                    isFirst = true;
                     run_cam_qr_timer.Stop();
-
+                    CaptureDevice.Start();
                 }
             }
         }
