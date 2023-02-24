@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Clinical_Management_System
 {
-    public partial class Form3 : Form
+    public partial class appointment : Form
     {
-        public Form3()
+        public appointment()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

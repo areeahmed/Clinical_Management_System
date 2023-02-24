@@ -78,7 +78,8 @@ namespace Clinical_Management_System
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            appointment f3 = new appointment();
+            f3.Show();
         }
     }
 }
