@@ -40,9 +40,9 @@ namespace Clinical_Management_System
 
             doctor_barcode_panel.Visible = false;
             System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
-            obj.AddEllipse(0, 0, pictureBox2.Width, pictureBox2.Height);
+            obj.AddEllipse(0, 0, pa_profile_pic.Width, pa_profile_pic.Height);
             Region region = new Region(obj);
-            pictureBox2.Region = region;
+            pa_profile_pic.Region = region;
             // using this code to make a panel movable later and for creating report
             ControlExtension.Draggable(doctor_barcode_panel, true);
             dateTimeTimer.Start();
@@ -177,7 +177,7 @@ namespace Clinical_Management_System
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                pictureBox2.ImageLocation = openFileDialog1.FileNames[0];
+                pa_profile_pic.ImageLocation = openFileDialog1.FileNames[0];
             }
         }
 
@@ -300,6 +300,17 @@ namespace Clinical_Management_System
 
                 }
             }
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(picLogoPrint.Image, 10, 10, 100, 100);
+            e.Graphics.DrawString(print_krd_lbl.Text, new Font("RudawRegular", 24), Brushes.Gray, 125, 30);
+            e.Graphics.DrawString(print_hl_lbl.Text, new Font("RudawRegular", 20), Brushes.Gray, 125, 60);
+            e.Graphics.DrawString(print_cr_lbl.Text, new Font("RudawRegular", 20), Brushes.ForestGreen, 200, 60);
+            e.Graphics.DrawString(pa_lbl.Text, new Font("RudawRegular", 25), Brushes.Black, 700, 30);
+            e.Graphics.DrawImage(print_pic_op.Image, 180, 300, 500, 500);
+            e.Graphics.DrawImage(pa_profile_pic.Image, 320, 150, 200, 200);
         }
     }
 }

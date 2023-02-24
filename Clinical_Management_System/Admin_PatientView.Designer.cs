@@ -57,8 +57,8 @@
             this.DoctorListLbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.docPersonalinfoPanel = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pa_profile_pic = new System.Windows.Forms.PictureBox();
+            this.pa_lbl = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -96,22 +96,27 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.pa_qr_pic = new System.Windows.Forms.PictureBox();
-            this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
-            this.copyDocBtn = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.admin_show_qr_pl = new System.Windows.Forms.Panel();
+            this.pa_qr_pic = new System.Windows.Forms.PictureBox();
             this.admin_read_qr_pl = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.admin_read_QR_pic = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
+            this.copyDocBtn = new System.Windows.Forms.Button();
             this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.run_cam_qr = new System.Windows.Forms.Timer(this.components);
+            this.print_hl_lbl = new System.Windows.Forms.Label();
+            this.print_cr_lbl = new System.Windows.Forms.Label();
+            this.print_krd_lbl = new System.Windows.Forms.Label();
+            this.print_pic_op = new System.Windows.Forms.PictureBox();
+            this.picLogoPrint = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,7 +129,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.docPersonalinfoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pa_profile_pic)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -133,10 +138,12 @@
             this.doctor_barcode_panel.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).BeginInit();
             this.admin_show_qr_pl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).BeginInit();
             this.admin_read_qr_pl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -445,8 +452,13 @@
             // docPersonalinfoPanel
             // 
             this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.docPersonalinfoPanel.Controls.Add(this.pictureBox2);
-            this.docPersonalinfoPanel.Controls.Add(this.label3);
+            this.docPersonalinfoPanel.Controls.Add(this.pa_profile_pic);
+            this.docPersonalinfoPanel.Controls.Add(this.print_pic_op);
+            this.docPersonalinfoPanel.Controls.Add(this.picLogoPrint);
+            this.docPersonalinfoPanel.Controls.Add(this.print_hl_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.print_cr_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.print_krd_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.pa_lbl);
             this.docPersonalinfoPanel.Controls.Add(this.label18);
             this.docPersonalinfoPanel.Controls.Add(this.label17);
             this.docPersonalinfoPanel.Controls.Add(this.label9);
@@ -464,29 +476,29 @@
             this.docPersonalinfoPanel.Size = new System.Drawing.Size(680, 283);
             this.docPersonalinfoPanel.TabIndex = 46;
             // 
-            // pictureBox2
+            // pa_profile_pic
             // 
-            this.pictureBox2.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.pictureBox2.Image = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.pictureBox2.Location = new System.Drawing.Point(511, 85);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(135, 135);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 42;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.WaitOnLoad = true;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pa_profile_pic.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.pa_profile_pic.Image = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.pa_profile_pic.Location = new System.Drawing.Point(510, 66);
+            this.pa_profile_pic.Name = "pa_profile_pic";
+            this.pa_profile_pic.Size = new System.Drawing.Size(135, 135);
+            this.pa_profile_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pa_profile_pic.TabIndex = 42;
+            this.pa_profile_pic.TabStop = false;
+            this.pa_profile_pic.WaitOnLoad = true;
+            this.pa_profile_pic.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // label3
+            // pa_lbl
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(568, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 39);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "نەخۆش";
+            this.pa_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pa_lbl.AutoSize = true;
+            this.pa_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_lbl.Location = new System.Drawing.Point(568, 11);
+            this.pa_lbl.Name = "pa_lbl";
+            this.pa_lbl.Size = new System.Drawing.Size(97, 39);
+            this.pa_lbl.TabIndex = 29;
+            this.pa_lbl.Text = "نەخۆش";
             // 
             // label18
             // 
@@ -865,10 +877,10 @@
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(92, 18);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(92, 8);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 565);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 51);
             this.doctor_barcode_panel.TabIndex = 54;
             // 
             // panel15
@@ -906,84 +918,6 @@
             this.panel16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel16.Size = new System.Drawing.Size(497, 686);
             this.panel16.TabIndex = 28;
-            // 
-            // pa_qr_pic
-            // 
-            this.pa_qr_pic.Location = new System.Drawing.Point(92, 61);
-            this.pa_qr_pic.Name = "pa_qr_pic";
-            this.pa_qr_pic.Size = new System.Drawing.Size(260, 271);
-            this.pa_qr_pic.TabIndex = 32;
-            this.pa_qr_pic.TabStop = false;
-            // 
-            // barcodeTimer
-            // 
-            this.barcodeTimer.Interval = 10;
-            this.barcodeTimer.Tick += new System.EventHandler(this.barcodeTimer_Tick);
-            // 
-            // copyDocBtn
-            // 
-            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.copyDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.copyDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.copyDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.copyDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copyDocBtn.ForeColor = System.Drawing.Color.White;
-            this.copyDocBtn.Image = global::Clinical_Management_System.Properties.Resources.printer;
-            this.copyDocBtn.Location = new System.Drawing.Point(604, 598);
-            this.copyDocBtn.Name = "copyDocBtn";
-            this.copyDocBtn.Size = new System.Drawing.Size(141, 48);
-            this.copyDocBtn.TabIndex = 55;
-            this.copyDocBtn.Text = "   کۆپی کردن";
-            this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.copyDocBtn.UseVisualStyleBackColor = false;
-            this.copyDocBtn.Click += new System.EventHandler(this.copyDocBtn_Click);
-            // 
-            // admin_show_qr_pl
-            // 
-            this.admin_show_qr_pl.Controls.Add(this.pa_qr_pic);
-            this.admin_show_qr_pl.Location = new System.Drawing.Point(20, 14);
-            this.admin_show_qr_pl.Name = "admin_show_qr_pl";
-            this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 420);
-            this.admin_show_qr_pl.TabIndex = 33;
-            // 
-            // admin_read_qr_pl
-            // 
-            this.admin_read_qr_pl.Controls.Add(this.comboBox1);
-            this.admin_read_qr_pl.Controls.Add(this.admin_read_QR_pic);
-            this.admin_read_qr_pl.Controls.Add(this.label11);
-            this.admin_read_qr_pl.Location = new System.Drawing.Point(23, 17);
-            this.admin_read_qr_pl.Name = "admin_read_qr_pl";
-            this.admin_read_qr_pl.Size = new System.Drawing.Size(451, 420);
-            this.admin_read_qr_pl.TabIndex = 34;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(86, 310);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(247, 21);
-            this.comboBox1.TabIndex = 34;
-            // 
-            // admin_read_QR_pic
-            // 
-            this.admin_read_QR_pic.Location = new System.Drawing.Point(86, 21);
-            this.admin_read_QR_pic.Name = "admin_read_QR_pic";
-            this.admin_read_QR_pic.Size = new System.Drawing.Size(260, 271);
-            this.admin_read_QR_pic.TabIndex = 33;
-            this.admin_read_QR_pic.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(339, 312);
-            this.label11.Name = "label11";
-            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label11.Size = new System.Drawing.Size(46, 23);
-            this.label11.TabIndex = 37;
-            this.label11.Text = ":کامێرا";
             // 
             // button3
             // 
@@ -1045,15 +979,99 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
+            // admin_show_qr_pl
+            // 
+            this.admin_show_qr_pl.Controls.Add(this.pa_qr_pic);
+            this.admin_show_qr_pl.Location = new System.Drawing.Point(20, 14);
+            this.admin_show_qr_pl.Name = "admin_show_qr_pl";
+            this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 420);
+            this.admin_show_qr_pl.TabIndex = 33;
+            // 
+            // pa_qr_pic
+            // 
+            this.pa_qr_pic.Location = new System.Drawing.Point(92, 61);
+            this.pa_qr_pic.Name = "pa_qr_pic";
+            this.pa_qr_pic.Size = new System.Drawing.Size(260, 271);
+            this.pa_qr_pic.TabIndex = 32;
+            this.pa_qr_pic.TabStop = false;
+            // 
+            // admin_read_qr_pl
+            // 
+            this.admin_read_qr_pl.Controls.Add(this.comboBox1);
+            this.admin_read_qr_pl.Controls.Add(this.admin_read_QR_pic);
+            this.admin_read_qr_pl.Controls.Add(this.label11);
+            this.admin_read_qr_pl.Location = new System.Drawing.Point(23, 17);
+            this.admin_read_qr_pl.Name = "admin_read_qr_pl";
+            this.admin_read_qr_pl.Size = new System.Drawing.Size(451, 420);
+            this.admin_read_qr_pl.TabIndex = 34;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(86, 310);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(247, 21);
+            this.comboBox1.TabIndex = 34;
+            // 
+            // admin_read_QR_pic
+            // 
+            this.admin_read_QR_pic.Location = new System.Drawing.Point(86, 21);
+            this.admin_read_QR_pic.Name = "admin_read_QR_pic";
+            this.admin_read_QR_pic.Size = new System.Drawing.Size(260, 271);
+            this.admin_read_QR_pic.TabIndex = 33;
+            this.admin_read_QR_pic.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(339, 312);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label11.Size = new System.Drawing.Size(46, 23);
+            this.label11.TabIndex = 37;
+            this.label11.Text = ":کامێرا";
+            // 
+            // barcodeTimer
+            // 
+            this.barcodeTimer.Interval = 10;
+            this.barcodeTimer.Tick += new System.EventHandler(this.barcodeTimer_Tick);
+            // 
+            // copyDocBtn
+            // 
+            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.copyDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.copyDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.copyDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.copyDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyDocBtn.ForeColor = System.Drawing.Color.White;
+            this.copyDocBtn.Image = global::Clinical_Management_System.Properties.Resources.printer;
+            this.copyDocBtn.Location = new System.Drawing.Point(604, 598);
+            this.copyDocBtn.Name = "copyDocBtn";
+            this.copyDocBtn.Size = new System.Drawing.Size(141, 48);
+            this.copyDocBtn.TabIndex = 55;
+            this.copyDocBtn.Text = "   کۆپی کردن";
+            this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.copyDocBtn.UseVisualStyleBackColor = false;
+            this.copyDocBtn.Click += new System.EventHandler(this.copyDocBtn_Click);
+            // 
             // printDialog1
             // 
+            this.printDialog1.Document = this.printDocument1;
             this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // printPreviewDialog1
             // 
             this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
             this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
             this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
             this.printPreviewDialog1.Enabled = true;
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
@@ -1063,6 +1081,64 @@
             // 
             this.run_cam_qr.Interval = 1000;
             this.run_cam_qr.Tick += new System.EventHandler(this.run_cam_qr_Tick);
+            // 
+            // print_hl_lbl
+            // 
+            this.print_hl_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_hl_lbl.AutoSize = true;
+            this.print_hl_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_hl_lbl.Location = new System.Drawing.Point(42, -32);
+            this.print_hl_lbl.Name = "print_hl_lbl";
+            this.print_hl_lbl.Size = new System.Drawing.Size(68, 30);
+            this.print_hl_lbl.TabIndex = 59;
+            this.print_hl_lbl.Text = "Health";
+            // 
+            // print_cr_lbl
+            // 
+            this.print_cr_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_cr_lbl.AutoSize = true;
+            this.print_cr_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_cr_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.print_cr_lbl.Location = new System.Drawing.Point(109, -32);
+            this.print_cr_lbl.Name = "print_cr_lbl";
+            this.print_cr_lbl.Size = new System.Drawing.Size(53, 30);
+            this.print_cr_lbl.TabIndex = 60;
+            this.print_cr_lbl.Text = "Care";
+            // 
+            // print_krd_lbl
+            // 
+            this.print_krd_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_krd_lbl.AutoSize = true;
+            this.print_krd_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_krd_lbl.Location = new System.Drawing.Point(40, -59);
+            this.print_krd_lbl.Name = "print_krd_lbl";
+            this.print_krd_lbl.Size = new System.Drawing.Size(125, 39);
+            this.print_krd_lbl.TabIndex = 61;
+            this.print_krd_lbl.Text = "Kurdistan";
+            // 
+            // print_pic_op
+            // 
+            this.print_pic_op.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.print_pic_op.Image = global::Clinical_Management_System.Properties.Resources._7502672_1;
+            this.print_pic_op.Location = new System.Drawing.Point(510, 66);
+            this.print_pic_op.Name = "print_pic_op";
+            this.print_pic_op.Size = new System.Drawing.Size(135, 135);
+            this.print_pic_op.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.print_pic_op.TabIndex = 62;
+            this.print_pic_op.TabStop = false;
+            this.print_pic_op.WaitOnLoad = true;
+            // 
+            // picLogoPrint
+            // 
+            this.picLogoPrint.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.picLogoPrint.Image = global::Clinical_Management_System.Properties.Resources._7502672;
+            this.picLogoPrint.Location = new System.Drawing.Point(510, 66);
+            this.picLogoPrint.Name = "picLogoPrint";
+            this.picLogoPrint.Size = new System.Drawing.Size(135, 135);
+            this.picLogoPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoPrint.TabIndex = 63;
+            this.picLogoPrint.TabStop = false;
+            this.picLogoPrint.WaitOnLoad = true;
             // 
             // Admin_PatientView
             // 
@@ -1074,7 +1150,6 @@
             this.Controls.Add(this.doctor_barcode_panel);
             this.Controls.Add(this.barcodeDocBtn);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.clinicCombo);
             this.Controls.Add(this.pa_search_txt);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.sidebar);
@@ -1085,6 +1160,7 @@
             this.Controls.Add(this.DoctorListLbl);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.docListDGV);
+            this.Controls.Add(this.clinicCombo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1292, 764);
             this.Name = "Admin_PatientView";
@@ -1109,7 +1185,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.docPersonalinfoPanel.ResumeLayout(false);
             this.docPersonalinfoPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pa_profile_pic)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1121,11 +1197,13 @@
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).EndInit();
             this.admin_show_qr_pl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).EndInit();
             this.admin_read_qr_pl.ResumeLayout(false);
             this.admin_read_qr_pl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1168,7 +1246,7 @@
         private System.Windows.Forms.Panel docGeneralinfoPanel;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer dateTimeTimer;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label pa_lbl;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label9;
@@ -1187,7 +1265,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pa_profile_pic;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox clinicCombo;
@@ -1215,5 +1293,10 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.Timer run_cam_qr;
+        private System.Windows.Forms.Label print_hl_lbl;
+        private System.Windows.Forms.Label print_cr_lbl;
+        private System.Windows.Forms.Label print_krd_lbl;
+        private System.Windows.Forms.PictureBox print_pic_op;
+        private System.Windows.Forms.PictureBox picLogoPrint;
     }
 }
