@@ -22,6 +22,7 @@ namespace Clinical_Management_System
         bool isBarcodeOpen = false;
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice CaptureDevice;
+        bool capDev = false;
         public Admin_PatientView(FormWindowState windowState)
         {
             InitializeComponent();
@@ -224,6 +225,10 @@ namespace Clinical_Management_System
         {
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
+            if(capDev)
+            {
+                CaptureDevice.Stop();
+            }
         }
 
         private void copyDocBtn_Click(object sender, EventArgs e)
@@ -270,6 +275,7 @@ namespace Clinical_Management_System
                 CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();
                 run_cam_qr_timer.Start();
+                capDev = true;
                 isFirst = false;
             }
         }

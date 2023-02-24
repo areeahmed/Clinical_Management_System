@@ -58,6 +58,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.docPersonalinfoPanel = new System.Windows.Forms.Panel();
             this.pa_profile_pic = new System.Windows.Forms.PictureBox();
+            this.print_pic_op = new System.Windows.Forms.PictureBox();
+            this.picLogoPrint = new System.Windows.Forms.PictureBox();
+            this.print_hl_lbl = new System.Windows.Forms.Label();
+            this.print_cr_lbl = new System.Windows.Forms.Label();
+            this.print_krd_lbl = new System.Windows.Forms.Label();
             this.pa_lbl = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -112,11 +117,6 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.run_cam_qr = new System.Windows.Forms.Timer(this.components);
-            this.print_hl_lbl = new System.Windows.Forms.Label();
-            this.print_cr_lbl = new System.Windows.Forms.Label();
-            this.print_krd_lbl = new System.Windows.Forms.Label();
-            this.print_pic_op = new System.Windows.Forms.PictureBox();
-            this.picLogoPrint = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -130,6 +130,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.docPersonalinfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pa_profile_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -142,8 +144,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).BeginInit();
             this.admin_read_qr_pl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -488,6 +488,64 @@
             this.pa_profile_pic.TabStop = false;
             this.pa_profile_pic.WaitOnLoad = true;
             this.pa_profile_pic.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // print_pic_op
+            // 
+            this.print_pic_op.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.print_pic_op.Image = global::Clinical_Management_System.Properties.Resources._7502672_1;
+            this.print_pic_op.Location = new System.Drawing.Point(510, 66);
+            this.print_pic_op.Name = "print_pic_op";
+            this.print_pic_op.Size = new System.Drawing.Size(135, 135);
+            this.print_pic_op.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.print_pic_op.TabIndex = 62;
+            this.print_pic_op.TabStop = false;
+            this.print_pic_op.WaitOnLoad = true;
+            // 
+            // picLogoPrint
+            // 
+            this.picLogoPrint.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.picLogoPrint.Image = global::Clinical_Management_System.Properties.Resources._7502672;
+            this.picLogoPrint.Location = new System.Drawing.Point(510, 66);
+            this.picLogoPrint.Name = "picLogoPrint";
+            this.picLogoPrint.Size = new System.Drawing.Size(135, 135);
+            this.picLogoPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoPrint.TabIndex = 63;
+            this.picLogoPrint.TabStop = false;
+            this.picLogoPrint.WaitOnLoad = true;
+            // 
+            // print_hl_lbl
+            // 
+            this.print_hl_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_hl_lbl.AutoSize = true;
+            this.print_hl_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_hl_lbl.Location = new System.Drawing.Point(42, -32);
+            this.print_hl_lbl.Name = "print_hl_lbl";
+            this.print_hl_lbl.Size = new System.Drawing.Size(68, 30);
+            this.print_hl_lbl.TabIndex = 59;
+            this.print_hl_lbl.Text = "Health";
+            // 
+            // print_cr_lbl
+            // 
+            this.print_cr_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_cr_lbl.AutoSize = true;
+            this.print_cr_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_cr_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.print_cr_lbl.Location = new System.Drawing.Point(109, -32);
+            this.print_cr_lbl.Name = "print_cr_lbl";
+            this.print_cr_lbl.Size = new System.Drawing.Size(53, 30);
+            this.print_cr_lbl.TabIndex = 60;
+            this.print_cr_lbl.Text = "Care";
+            // 
+            // print_krd_lbl
+            // 
+            this.print_krd_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.print_krd_lbl.AutoSize = true;
+            this.print_krd_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_krd_lbl.Location = new System.Drawing.Point(40, -59);
+            this.print_krd_lbl.Name = "print_krd_lbl";
+            this.print_krd_lbl.Size = new System.Drawing.Size(125, 39);
+            this.print_krd_lbl.TabIndex = 61;
+            this.print_krd_lbl.Text = "Kurdistan";
             // 
             // pa_lbl
             // 
@@ -880,7 +938,7 @@
             this.doctor_barcode_panel.Location = new System.Drawing.Point(92, 8);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 51);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.TabIndex = 54;
             // 
             // panel15
@@ -1082,64 +1140,6 @@
             this.run_cam_qr.Interval = 1000;
             this.run_cam_qr.Tick += new System.EventHandler(this.run_cam_qr_Tick);
             // 
-            // print_hl_lbl
-            // 
-            this.print_hl_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.print_hl_lbl.AutoSize = true;
-            this.print_hl_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_hl_lbl.Location = new System.Drawing.Point(42, -32);
-            this.print_hl_lbl.Name = "print_hl_lbl";
-            this.print_hl_lbl.Size = new System.Drawing.Size(68, 30);
-            this.print_hl_lbl.TabIndex = 59;
-            this.print_hl_lbl.Text = "Health";
-            // 
-            // print_cr_lbl
-            // 
-            this.print_cr_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.print_cr_lbl.AutoSize = true;
-            this.print_cr_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_cr_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.print_cr_lbl.Location = new System.Drawing.Point(109, -32);
-            this.print_cr_lbl.Name = "print_cr_lbl";
-            this.print_cr_lbl.Size = new System.Drawing.Size(53, 30);
-            this.print_cr_lbl.TabIndex = 60;
-            this.print_cr_lbl.Text = "Care";
-            // 
-            // print_krd_lbl
-            // 
-            this.print_krd_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.print_krd_lbl.AutoSize = true;
-            this.print_krd_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_krd_lbl.Location = new System.Drawing.Point(40, -59);
-            this.print_krd_lbl.Name = "print_krd_lbl";
-            this.print_krd_lbl.Size = new System.Drawing.Size(125, 39);
-            this.print_krd_lbl.TabIndex = 61;
-            this.print_krd_lbl.Text = "Kurdistan";
-            // 
-            // print_pic_op
-            // 
-            this.print_pic_op.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.print_pic_op.Image = global::Clinical_Management_System.Properties.Resources._7502672_1;
-            this.print_pic_op.Location = new System.Drawing.Point(510, 66);
-            this.print_pic_op.Name = "print_pic_op";
-            this.print_pic_op.Size = new System.Drawing.Size(135, 135);
-            this.print_pic_op.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.print_pic_op.TabIndex = 62;
-            this.print_pic_op.TabStop = false;
-            this.print_pic_op.WaitOnLoad = true;
-            // 
-            // picLogoPrint
-            // 
-            this.picLogoPrint.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.picLogoPrint.Image = global::Clinical_Management_System.Properties.Resources._7502672;
-            this.picLogoPrint.Location = new System.Drawing.Point(510, 66);
-            this.picLogoPrint.Name = "picLogoPrint";
-            this.picLogoPrint.Size = new System.Drawing.Size(135, 135);
-            this.picLogoPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogoPrint.TabIndex = 63;
-            this.picLogoPrint.TabStop = false;
-            this.picLogoPrint.WaitOnLoad = true;
-            // 
             // Admin_PatientView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1186,6 +1186,8 @@
             this.docPersonalinfoPanel.ResumeLayout(false);
             this.docPersonalinfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pa_profile_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1202,8 +1204,6 @@
             this.admin_read_qr_pl.ResumeLayout(false);
             this.admin_read_qr_pl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
