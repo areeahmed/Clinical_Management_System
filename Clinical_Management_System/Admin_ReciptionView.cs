@@ -292,6 +292,9 @@ namespace Clinical_Management_System
 
         private void copyDocBtn_Click(object sender, EventArgs e)
         {
+            admin_show_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+            Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            admin_show_qr_pic.Image = codeQr.Draw(recp_ID.Text, 200);
             if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
                 printDocument1.Print();
@@ -308,8 +311,8 @@ namespace Clinical_Management_System
             e.Graphics.DrawImage(print_pic_op.Image, 180, 300, 500, 500);
             e.Graphics.DrawImage(recp_profile_pic.Image, 320, 150, 200, 200);
 
-
-
+            // QR Code
+            e.Graphics.DrawImage(admin_show_qr_pic.Image, 70, 900, 150, 150);
 
             // ID
             e.Graphics.DrawString(recp_ID.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 500);

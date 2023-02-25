@@ -47,11 +47,11 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.PatientButton = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.DayWeekYear = new System.Windows.Forms.Label();
+            this.time = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.WeekDay = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.time = new System.Windows.Forms.Label();
+            this.DayWeekYear = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.AppExit = new System.Windows.Forms.PictureBox();
             this.Maximize = new System.Windows.Forms.PictureBox();
@@ -369,17 +369,17 @@
             this.panel10.Size = new System.Drawing.Size(199, 62);
             this.panel10.TabIndex = 32;
             // 
-            // DayWeekYear
+            // time
             // 
-            this.DayWeekYear.AutoSize = true;
-            this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DayWeekYear.ForeColor = System.Drawing.Color.White;
-            this.DayWeekYear.Location = new System.Drawing.Point(3, 660);
-            this.DayWeekYear.Name = "DayWeekYear";
-            this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
-            this.DayWeekYear.TabIndex = 31;
-            this.DayWeekYear.Text = "9/2/23";
-            this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.time.AutoSize = true;
+            this.time.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.ForeColor = System.Drawing.Color.White;
+            this.time.Location = new System.Drawing.Point(3, 586);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(70, 21);
+            this.time.TabIndex = 29;
+            this.time.Text = "10:15 PM";
+            this.time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel12
             // 
@@ -407,17 +407,17 @@
             this.panel11.Size = new System.Drawing.Size(235, 10);
             this.panel11.TabIndex = 33;
             // 
-            // time
+            // DayWeekYear
             // 
-            this.time.AutoSize = true;
-            this.time.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time.ForeColor = System.Drawing.Color.White;
-            this.time.Location = new System.Drawing.Point(3, 586);
-            this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(70, 21);
-            this.time.TabIndex = 29;
-            this.time.Text = "10:15 PM";
-            this.time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DayWeekYear.AutoSize = true;
+            this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayWeekYear.ForeColor = System.Drawing.Color.White;
+            this.DayWeekYear.Location = new System.Drawing.Point(3, 660);
+            this.DayWeekYear.Name = "DayWeekYear";
+            this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
+            this.DayWeekYear.TabIndex = 31;
+            this.DayWeekYear.Text = "9/2/23";
+            this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 

@@ -64,31 +64,31 @@
             this.print_cr_lbl = new System.Windows.Forms.Label();
             this.print_krd_lbl = new System.Windows.Forms.Label();
             this.pa_lbl = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.pay_Gender_lbl = new System.Windows.Forms.Label();
+            this.pay_Age_lbl = new System.Windows.Forms.Label();
+            this.pay_Address_lbl = new System.Windows.Forms.Label();
+            this.pay_Phone_lbl = new System.Windows.Forms.Label();
+            this.pay_Name_lbl = new System.Windows.Forms.Label();
             this.pay_Address = new System.Windows.Forms.Label();
             this.pay_Gender = new System.Windows.Forms.Label();
             this.pay_Age = new System.Windows.Forms.Label();
             this.pay_Phone = new System.Windows.Forms.Label();
             this.pay_ID = new System.Windows.Forms.Label();
             this.pay_Name = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.pay_ID_lbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.docGeneralinfoPanel = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.pay_sensitivity = new System.Windows.Forms.Label();
+            this.pay_sensitivity_lbl = new System.Windows.Forms.Label();
+            this.pa_MoreInfo_lbl = new System.Windows.Forms.Label();
+            this.pay_visited_clinic = new System.Windows.Forms.Label();
+            this.pay_visited_count = new System.Windows.Forms.Label();
+            this.pay_visited_clinic_lbl = new System.Windows.Forms.Label();
+            this.pay_visited_count_lbl = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -462,18 +462,18 @@
             this.docPersonalinfoPanel.Controls.Add(this.print_cr_lbl);
             this.docPersonalinfoPanel.Controls.Add(this.print_krd_lbl);
             this.docPersonalinfoPanel.Controls.Add(this.pa_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.label18);
-            this.docPersonalinfoPanel.Controls.Add(this.label17);
-            this.docPersonalinfoPanel.Controls.Add(this.label9);
-            this.docPersonalinfoPanel.Controls.Add(this.label8);
-            this.docPersonalinfoPanel.Controls.Add(this.label7);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Gender_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Age_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Address_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Phone_lbl);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_Name_lbl);
             this.docPersonalinfoPanel.Controls.Add(this.pay_Address);
             this.docPersonalinfoPanel.Controls.Add(this.pay_Gender);
             this.docPersonalinfoPanel.Controls.Add(this.pay_Age);
             this.docPersonalinfoPanel.Controls.Add(this.pay_Phone);
             this.docPersonalinfoPanel.Controls.Add(this.pay_ID);
             this.docPersonalinfoPanel.Controls.Add(this.pay_Name);
-            this.docPersonalinfoPanel.Controls.Add(this.label6);
+            this.docPersonalinfoPanel.Controls.Add(this.pay_ID_lbl);
             this.docPersonalinfoPanel.Location = new System.Drawing.Point(563, 74);
             this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
             this.docPersonalinfoPanel.Size = new System.Drawing.Size(680, 283);
@@ -561,60 +561,60 @@
             this.pa_lbl.TabIndex = 29;
             this.pa_lbl.Text = "نەخۆش";
             // 
-            // label18
+            // pay_Gender_lbl
             // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(214, 234);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 30);
-            this.label18.TabIndex = 30;
-            this.label18.Text = ":ڕەگەز";
+            this.pay_Gender_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Gender_lbl.AutoSize = true;
+            this.pay_Gender_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Gender_lbl.Location = new System.Drawing.Point(214, 234);
+            this.pay_Gender_lbl.Name = "pay_Gender_lbl";
+            this.pay_Gender_lbl.Size = new System.Drawing.Size(65, 30);
+            this.pay_Gender_lbl.TabIndex = 30;
+            this.pay_Gender_lbl.Text = ":ڕەگەز";
             // 
-            // label17
+            // pay_Age_lbl
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(378, 234);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(70, 30);
-            this.label17.TabIndex = 31;
-            this.label17.Text = ":تەمەن";
+            this.pay_Age_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Age_lbl.AutoSize = true;
+            this.pay_Age_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Age_lbl.Location = new System.Drawing.Point(378, 234);
+            this.pay_Age_lbl.Name = "pay_Age_lbl";
+            this.pay_Age_lbl.Size = new System.Drawing.Size(70, 30);
+            this.pay_Age_lbl.TabIndex = 31;
+            this.pay_Age_lbl.Text = ":تەمەن";
             // 
-            // label9
+            // pay_Address_lbl
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(377, 185);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 30);
-            this.label9.TabIndex = 32;
-            this.label9.Text = ":ناونیشان";
+            this.pay_Address_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Address_lbl.AutoSize = true;
+            this.pay_Address_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Address_lbl.Location = new System.Drawing.Point(377, 185);
+            this.pay_Address_lbl.Name = "pay_Address_lbl";
+            this.pay_Address_lbl.Size = new System.Drawing.Size(92, 30);
+            this.pay_Address_lbl.TabIndex = 32;
+            this.pay_Address_lbl.Text = ":ناونیشان";
             // 
-            // label8
+            // pay_Phone_lbl
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(377, 142);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 30);
-            this.label8.TabIndex = 33;
-            this.label8.Text = ":ژ.مۆبایل";
+            this.pay_Phone_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Phone_lbl.AutoSize = true;
+            this.pay_Phone_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Phone_lbl.Location = new System.Drawing.Point(377, 142);
+            this.pay_Phone_lbl.Name = "pay_Phone_lbl";
+            this.pay_Phone_lbl.Size = new System.Drawing.Size(82, 30);
+            this.pay_Phone_lbl.TabIndex = 33;
+            this.pay_Phone_lbl.Text = ":ژ.مۆبایل";
             // 
-            // label7
+            // pay_Name_lbl
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(377, 98);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 30);
-            this.label7.TabIndex = 34;
-            this.label7.Text = ":ناو";
+            this.pay_Name_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_Name_lbl.AutoSize = true;
+            this.pay_Name_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_Name_lbl.Location = new System.Drawing.Point(377, 98);
+            this.pay_Name_lbl.Name = "pay_Name_lbl";
+            this.pay_Name_lbl.Size = new System.Drawing.Size(39, 30);
+            this.pay_Name_lbl.TabIndex = 34;
+            this.pay_Name_lbl.Text = ":ناو";
             // 
             // pay_Address
             // 
@@ -682,16 +682,16 @@
             this.pay_Name.TabIndex = 39;
             this.pay_Name.Text = "کارزان ڕەشید عمر";
             // 
-            // label6
+            // pay_ID_lbl
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(377, 55);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 30);
-            this.label6.TabIndex = 40;
-            this.label6.Text = ":زنجیرە";
+            this.pay_ID_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_ID_lbl.AutoSize = true;
+            this.pay_ID_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_ID_lbl.Location = new System.Drawing.Point(377, 55);
+            this.pay_ID_lbl.Name = "pay_ID_lbl";
+            this.pay_ID_lbl.Size = new System.Drawing.Size(71, 30);
+            this.pay_ID_lbl.TabIndex = 40;
+            this.pay_ID_lbl.Text = ":زنجیرە";
             // 
             // panel2
             // 
@@ -752,94 +752,94 @@
             // docGeneralinfoPanel
             // 
             this.docGeneralinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.docGeneralinfoPanel.Controls.Add(this.label16);
-            this.docGeneralinfoPanel.Controls.Add(this.label13);
-            this.docGeneralinfoPanel.Controls.Add(this.label4);
-            this.docGeneralinfoPanel.Controls.Add(this.label10);
-            this.docGeneralinfoPanel.Controls.Add(this.label14);
-            this.docGeneralinfoPanel.Controls.Add(this.label5);
-            this.docGeneralinfoPanel.Controls.Add(this.label15);
+            this.docGeneralinfoPanel.Controls.Add(this.pay_sensitivity);
+            this.docGeneralinfoPanel.Controls.Add(this.pay_sensitivity_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.pa_MoreInfo_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.pay_visited_clinic);
+            this.docGeneralinfoPanel.Controls.Add(this.pay_visited_count);
+            this.docGeneralinfoPanel.Controls.Add(this.pay_visited_clinic_lbl);
+            this.docGeneralinfoPanel.Controls.Add(this.pay_visited_count_lbl);
             this.docGeneralinfoPanel.Location = new System.Drawing.Point(97, 74);
             this.docGeneralinfoPanel.Name = "docGeneralinfoPanel";
             this.docGeneralinfoPanel.Size = new System.Drawing.Size(444, 283);
             this.docGeneralinfoPanel.TabIndex = 48;
             // 
-            // label16
+            // pay_sensitivity
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(144, 192);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(87, 27);
-            this.label16.TabIndex = 49;
-            this.label16.Text = "ئەنسۆلین";
+            this.pay_sensitivity.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_sensitivity.AutoSize = true;
+            this.pay_sensitivity.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_sensitivity.Location = new System.Drawing.Point(144, 192);
+            this.pay_sensitivity.Name = "pay_sensitivity";
+            this.pay_sensitivity.Size = new System.Drawing.Size(87, 27);
+            this.pay_sensitivity.TabIndex = 49;
+            this.pay_sensitivity.Text = "ئەنسۆلین";
             // 
-            // label13
+            // pay_sensitivity_lbl
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(237, 190);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(175, 30);
-            this.label13.TabIndex = 50;
-            this.label13.Text = ":هەستیاری هەیە بە";
+            this.pay_sensitivity_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_sensitivity_lbl.AutoSize = true;
+            this.pay_sensitivity_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_sensitivity_lbl.Location = new System.Drawing.Point(237, 190);
+            this.pay_sensitivity_lbl.Name = "pay_sensitivity_lbl";
+            this.pay_sensitivity_lbl.Size = new System.Drawing.Size(175, 30);
+            this.pay_sensitivity_lbl.TabIndex = 50;
+            this.pay_sensitivity_lbl.Text = ":هەستیاری هەیە بە";
             // 
-            // label4
+            // pa_MoreInfo_lbl
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(269, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 42);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "زانیاری زیاتر";
+            this.pa_MoreInfo_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pa_MoreInfo_lbl.AutoSize = true;
+            this.pa_MoreInfo_lbl.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_MoreInfo_lbl.Location = new System.Drawing.Point(269, 62);
+            this.pa_MoreInfo_lbl.Name = "pa_MoreInfo_lbl";
+            this.pa_MoreInfo_lbl.Size = new System.Drawing.Size(147, 42);
+            this.pa_MoreInfo_lbl.TabIndex = 44;
+            this.pa_MoreInfo_lbl.Text = "زانیاری زیاتر";
             // 
-            // label10
+            // pay_visited_clinic
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 148);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(22, 27);
-            this.label10.TabIndex = 45;
-            this.label10.Text = "5";
+            this.pay_visited_clinic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_visited_clinic.AutoSize = true;
+            this.pay_visited_clinic.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_visited_clinic.Location = new System.Drawing.Point(29, 148);
+            this.pay_visited_clinic.Name = "pay_visited_clinic";
+            this.pay_visited_clinic.Size = new System.Drawing.Size(22, 27);
+            this.pay_visited_clinic.TabIndex = 45;
+            this.pay_visited_clinic.Text = "5";
             // 
-            // label14
+            // pay_visited_count
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(183, 108);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(22, 27);
-            this.label14.TabIndex = 46;
-            this.label14.Text = "5";
+            this.pay_visited_count.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_visited_count.AutoSize = true;
+            this.pay_visited_count.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_visited_count.Location = new System.Drawing.Point(183, 108);
+            this.pay_visited_count.Name = "pay_visited_count";
+            this.pay_visited_count.Size = new System.Drawing.Size(22, 27);
+            this.pay_visited_count.TabIndex = 46;
+            this.pay_visited_count.Text = "5";
             // 
-            // label5
+            // pay_visited_clinic_lbl
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(57, 151);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(355, 30);
-            this.label5.TabIndex = 47;
-            this.label5.Text = ":ژمارەی ئەو کلینیکانەی سەردانی کردووە";
+            this.pay_visited_clinic_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_visited_clinic_lbl.AutoSize = true;
+            this.pay_visited_clinic_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_visited_clinic_lbl.Location = new System.Drawing.Point(57, 151);
+            this.pay_visited_clinic_lbl.Name = "pay_visited_clinic_lbl";
+            this.pay_visited_clinic_lbl.Size = new System.Drawing.Size(355, 30);
+            this.pay_visited_clinic_lbl.TabIndex = 47;
+            this.pay_visited_clinic_lbl.Text = ":ژمارەی ئەو کلینیکانەی سەردانی کردووە";
             // 
-            // label15
+            // pay_visited_count_lbl
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(211, 108);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(201, 30);
-            this.label15.TabIndex = 48;
-            this.label15.Text = ":ڕێژەی سەردانی کردن";
+            this.pay_visited_count_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_visited_count_lbl.AutoSize = true;
+            this.pay_visited_count_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_visited_count_lbl.Location = new System.Drawing.Point(211, 108);
+            this.pay_visited_count_lbl.Name = "pay_visited_count_lbl";
+            this.pay_visited_count_lbl.Size = new System.Drawing.Size(201, 30);
+            this.pay_visited_count_lbl.TabIndex = 48;
+            this.pay_visited_count_lbl.Text = ":ڕێژەی سەردانی کردن";
             // 
             // timer1
             // 
@@ -921,11 +921,10 @@
             this.barcodeDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barcodeDocBtn.ForeColor = System.Drawing.Color.White;
             this.barcodeDocBtn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
-            this.barcodeDocBtn.Location = new System.Drawing.Point(604, 495);
+            this.barcodeDocBtn.Location = new System.Drawing.Point(604, 446);
             this.barcodeDocBtn.Name = "barcodeDocBtn";
-            this.barcodeDocBtn.Size = new System.Drawing.Size(141, 50);
+            this.barcodeDocBtn.Size = new System.Drawing.Size(141, 99);
             this.barcodeDocBtn.TabIndex = 53;
-            this.barcodeDocBtn.Text = "   بارکۆد";
             this.barcodeDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.barcodeDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.barcodeDocBtn.UseVisualStyleBackColor = false;
@@ -942,7 +941,7 @@
             this.doctor_barcode_panel.Margin = new System.Windows.Forms.Padding(2);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(494, 572);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(494, 572);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(494, 48);
             this.doctor_barcode_panel.TabIndex = 54;
             // 
             // panel15
@@ -1285,24 +1284,24 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer dateTimeTimer;
         private System.Windows.Forms.Label pa_lbl;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label pay_Gender_lbl;
+        private System.Windows.Forms.Label pay_Age_lbl;
+        private System.Windows.Forms.Label pay_Address_lbl;
+        private System.Windows.Forms.Label pay_Phone_lbl;
+        private System.Windows.Forms.Label pay_Name_lbl;
         private System.Windows.Forms.Label pay_Address;
         private System.Windows.Forms.Label pay_Gender;
         private System.Windows.Forms.Label pay_Age;
         private System.Windows.Forms.Label pay_Phone;
         private System.Windows.Forms.Label pay_Name;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label pay_ID_lbl;
+        private System.Windows.Forms.Label pay_sensitivity;
+        private System.Windows.Forms.Label pay_sensitivity_lbl;
+        private System.Windows.Forms.Label pa_MoreInfo_lbl;
+        private System.Windows.Forms.Label pay_visited_clinic;
+        private System.Windows.Forms.Label pay_visited_count;
+        private System.Windows.Forms.Label pay_visited_clinic_lbl;
+        private System.Windows.Forms.Label pay_visited_count_lbl;
         private System.Windows.Forms.PictureBox pa_profile_pic;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

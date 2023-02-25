@@ -333,6 +333,7 @@ namespace Clinical_Management_System
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+            // Designing Part
             e.Graphics.DrawImage(picLogoPrint.Image, 10, 10, 100, 100);
             e.Graphics.DrawString(print_krd_lbl.Text, new Font("RudawRegular", 24), Brushes.Gray, 125, 30);
             e.Graphics.DrawString(print_hl_lbl.Text, new Font("RudawRegular", 20), Brushes.Gray, 125, 60);
@@ -364,9 +365,9 @@ namespace Clinical_Management_System
             // CLINIC
             e.Graphics.DrawString(doc_clinic.Text, new Font("RudawRegular", 24), Brushes.Black, 560, 650);
             e.Graphics.DrawString(doc_clinic_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 650);
-
-
-
+            
+            // QR CODE
+            e.Graphics.DrawImage(doc_qr_show_pic.Image, 70, 500, 150, 150);
 
 
             // INCOME
@@ -395,6 +396,9 @@ namespace Clinical_Management_System
 
         private void copyDocBtn_Click(object sender, EventArgs e)
         {
+            doc_qr_show_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+            Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            doc_qr_show_pic.Image = codeQr.Draw(doc_ID.Text, 200);
             if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
                 printDocument1.Print();

@@ -936,7 +936,7 @@
             this.doctor_barcode_panel.Location = new System.Drawing.Point(94, 72);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 548);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 37);
             this.doctor_barcode_panel.TabIndex = 31;
             // 
             // panel15

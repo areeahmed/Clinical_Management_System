@@ -333,7 +333,7 @@ namespace Clinical_Management_System
             
         }
 
-
+        
         // new frame needed for the even above
         /// <summary>
         /// this part of code will get the result from qr code.
@@ -354,6 +354,47 @@ namespace Clinical_Management_System
             e.Graphics.DrawString(pa_lbl.Text, new Font("RudawRegular", 25), Brushes.Black, 700, 30);
             e.Graphics.DrawImage(print_pic_op.Image, 180, 300, 500, 500);
             e.Graphics.DrawImage(pa_profile_pic.Image, 320, 150, 200, 200);
+
+
+            // ID
+            // ID res
+            e.Graphics.DrawString(pay_ID.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 500);
+            // ID lbl
+            e.Graphics.DrawString(pay_ID_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 500);
+
+            // NAME
+            // Name res
+            e.Graphics.DrawString(pay_Name.Text, new Font("RudawRegular", 24), Brushes.Black, 380, 550);
+            // Name lbl
+            e.Graphics.DrawString(pay_Name_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 550);
+
+            // PHONE
+            // Phone res
+            e.Graphics.DrawString(pay_Phone.Text, new Font("RudawRegular", 24), Brushes.Black, 440, 600);
+            // Phone lbl
+            e.Graphics.DrawString(pay_Phone_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 600);
+
+            // GENDER
+            // Gender res
+            e.Graphics.DrawString(pay_Gender.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 650);
+            // Gender lbl
+            e.Graphics.DrawString(pay_Gender_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 650);
+
+            // Age
+            // Age res
+            e.Graphics.DrawString(pay_Age.Text, new Font("RudawRegular", 24), Brushes.Black, 400, 650);
+            // Age lbl
+            e.Graphics.DrawString(pay_Age_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 450, 650);
+
+
+            // ADDRESS
+            // address res
+            e.Graphics.DrawString(pay_Address.Text, new Font("RudawRegular", 24), Brushes.Black, 350, 700);
+            // address lbl
+            e.Graphics.DrawString(pay_Address_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 700);
+
+            // QR Code
+            e.Graphics.DrawImage(pa_qr_pic.Image, 350, 900, 150, 150);
         }
 
         // Timmer tick for capturing the QR Code and returning data to search txt
@@ -372,6 +413,7 @@ namespace Clinical_Management_System
                     admin_read_QR_pic.Image = null;
                     CaptureDevice.Start();
                 }
+
             }
         }
     }
