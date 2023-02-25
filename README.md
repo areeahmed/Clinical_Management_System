@@ -23,4 +23,8 @@ this is a Clinical Management System Desktop applicaton, this desktop can be a f
 
 [x]-admin forms.
 
-[]-admin forms functionality
+[x]-admin forms functionality.
+
+[x]-QR Code.
+
+[x]-Information Form
