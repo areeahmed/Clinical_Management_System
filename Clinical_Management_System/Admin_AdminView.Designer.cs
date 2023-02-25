@@ -129,6 +129,7 @@
             this.deleteDocBtn = new System.Windows.Forms.Button();
             this.copyDocBtn = new System.Windows.Forms.Button();
             this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
+            this.start_qr_code = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -197,7 +198,7 @@
             // 
             this.pictureBox1.Image = global::Clinical_Management_System.Properties.Resources.menu;
             this.pictureBox1.Location = new System.Drawing.Point(19, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -232,7 +233,7 @@
             this.StartButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.StartButton.Image = global::Clinical_Management_System.Properties.Resources.start;
             this.StartButton.Location = new System.Drawing.Point(-9, -14);
-            this.StartButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(2);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(250, 95);
             this.StartButton.TabIndex = 0;
@@ -256,7 +257,7 @@
             this.ClinicButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClinicButton.Image = global::Clinical_Management_System.Properties.Resources.Clinic_icon;
             this.ClinicButton.Location = new System.Drawing.Point(-9, -18);
-            this.ClinicButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClinicButton.Margin = new System.Windows.Forms.Padding(2);
             this.ClinicButton.Name = "ClinicButton";
             this.ClinicButton.Size = new System.Drawing.Size(244, 94);
             this.ClinicButton.TabIndex = 0;
@@ -280,7 +281,7 @@
             this.AdminButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AdminButton.Image = global::Clinical_Management_System.Properties.Resources.admin;
             this.AdminButton.Location = new System.Drawing.Point(-9, -4);
-            this.AdminButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AdminButton.Margin = new System.Windows.Forms.Padding(2);
             this.AdminButton.Name = "AdminButton";
             this.AdminButton.Size = new System.Drawing.Size(259, 72);
             this.AdminButton.TabIndex = 0;
@@ -304,7 +305,7 @@
             this.DoctorButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.DoctorButton.Image = global::Clinical_Management_System.Properties.Resources.doctor;
             this.DoctorButton.Location = new System.Drawing.Point(-9, -17);
-            this.DoctorButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DoctorButton.Margin = new System.Windows.Forms.Padding(2);
             this.DoctorButton.Name = "DoctorButton";
             this.DoctorButton.Size = new System.Drawing.Size(244, 94);
             this.DoctorButton.TabIndex = 0;
@@ -328,7 +329,7 @@
             this.ReciptionButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ReciptionButton.Image = global::Clinical_Management_System.Properties.Resources.Secrtary;
             this.ReciptionButton.Location = new System.Drawing.Point(-9, -8);
-            this.ReciptionButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ReciptionButton.Margin = new System.Windows.Forms.Padding(2);
             this.ReciptionButton.Name = "ReciptionButton";
             this.ReciptionButton.Size = new System.Drawing.Size(244, 76);
             this.ReciptionButton.TabIndex = 0;
@@ -352,7 +353,7 @@
             this.PatientButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PatientButton.Image = global::Clinical_Management_System.Properties.Resources.patient;
             this.PatientButton.Location = new System.Drawing.Point(-9, -10);
-            this.PatientButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PatientButton.Margin = new System.Windows.Forms.Padding(2);
             this.PatientButton.Name = "PatientButton";
             this.PatientButton.Size = new System.Drawing.Size(236, 88);
             this.PatientButton.TabIndex = 0;
@@ -496,7 +497,7 @@
             this.docPersonalinfoPanel.Controls.Add(this.print_admin_gn_lbl);
             this.docPersonalinfoPanel.Controls.Add(this.admin_addr);
             this.docPersonalinfoPanel.Controls.Add(this.print_admin_addr_lbl);
-            this.docPersonalinfoPanel.Location = new System.Drawing.Point(658, 69);
+            this.docPersonalinfoPanel.Location = new System.Drawing.Point(627, 80);
             this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
             this.docPersonalinfoPanel.Size = new System.Drawing.Size(592, 268);
             this.docPersonalinfoPanel.TabIndex = 31;
@@ -691,10 +692,10 @@
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(118, 32);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(118, 57);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 565);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 47);
             this.doctor_barcode_panel.TabIndex = 38;
             // 
             // panel15
@@ -736,14 +737,14 @@
             // admin_show_QR_pl
             // 
             this.admin_show_QR_pl.Controls.Add(this.admin_show_QR_pic);
-            this.admin_show_QR_pl.Location = new System.Drawing.Point(3, 52);
+            this.admin_show_QR_pl.Location = new System.Drawing.Point(8, 14);
             this.admin_show_QR_pl.Name = "admin_show_QR_pl";
-            this.admin_show_QR_pl.Size = new System.Drawing.Size(489, 378);
+            this.admin_show_QR_pl.Size = new System.Drawing.Size(470, 416);
             this.admin_show_QR_pl.TabIndex = 34;
             // 
             // admin_show_QR_pic
             // 
-            this.admin_show_QR_pic.Location = new System.Drawing.Point(72, 34);
+            this.admin_show_QR_pic.Location = new System.Drawing.Point(93, 73);
             this.admin_show_QR_pic.Name = "admin_show_QR_pic";
             this.admin_show_QR_pic.Size = new System.Drawing.Size(280, 254);
             this.admin_show_QR_pic.TabIndex = 0;
@@ -752,16 +753,17 @@
             // admin_read_QR_pl
             // 
             this.admin_read_QR_pl.Controls.Add(this.comboBox2);
+            this.admin_read_QR_pl.Controls.Add(this.start_qr_code);
             this.admin_read_QR_pl.Controls.Add(this.admin_read_QR_pic);
-            this.admin_read_QR_pl.Location = new System.Drawing.Point(9, 52);
+            this.admin_read_QR_pl.Location = new System.Drawing.Point(9, 14);
             this.admin_read_QR_pl.Name = "admin_read_QR_pl";
-            this.admin_read_QR_pl.Size = new System.Drawing.Size(461, 378);
+            this.admin_read_QR_pl.Size = new System.Drawing.Size(470, 416);
             this.admin_read_QR_pl.TabIndex = 33;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(111, 348);
+            this.comboBox2.Location = new System.Drawing.Point(116, 326);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(227, 21);
             this.comboBox2.TabIndex = 44;
@@ -770,7 +772,7 @@
             // 
             this.admin_read_QR_pic.Location = new System.Drawing.Point(14, 12);
             this.admin_read_QR_pic.Name = "admin_read_QR_pic";
-            this.admin_read_QR_pic.Size = new System.Drawing.Size(438, 329);
+            this.admin_read_QR_pic.Size = new System.Drawing.Size(438, 305);
             this.admin_read_QR_pic.TabIndex = 43;
             this.admin_read_QR_pic.TabStop = false;
             // 
@@ -860,7 +862,7 @@
             this.Adding_Doctor_Form_panel.Controls.Add(this.panel14);
             this.Adding_Doctor_Form_panel.Controls.Add(this.Adding_Doctor_Form_panel1);
             this.Adding_Doctor_Form_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(118, 84);
+            this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(118, 9);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(500, 729);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
             this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 44);
@@ -958,7 +960,7 @@
             this.cancel_Form_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cancel_Form_Button.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
             this.cancel_Form_Button.Location = new System.Drawing.Point(327, 578);
-            this.cancel_Form_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancel_Form_Button.Margin = new System.Windows.Forms.Padding(2);
             this.cancel_Form_Button.Name = "cancel_Form_Button";
             this.cancel_Form_Button.Size = new System.Drawing.Size(127, 75);
             this.cancel_Form_Button.TabIndex = 33;
@@ -975,7 +977,7 @@
             this.edit_user_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.edit_user_button.Image = global::Clinical_Management_System.Properties.Resources.updating;
             this.edit_user_button.Location = new System.Drawing.Point(186, 578);
-            this.edit_user_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edit_user_button.Margin = new System.Windows.Forms.Padding(2);
             this.edit_user_button.Name = "edit_user_button";
             this.edit_user_button.Size = new System.Drawing.Size(132, 75);
             this.edit_user_button.TabIndex = 34;
@@ -991,7 +993,7 @@
             this.Add_user_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Add_user_button.Image = global::Clinical_Management_System.Properties.Resources.check_mark;
             this.Add_user_button.Location = new System.Drawing.Point(50, 578);
-            this.Add_user_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_user_button.Margin = new System.Windows.Forms.Padding(2);
             this.Add_user_button.Name = "Add_user_button";
             this.Add_user_button.Size = new System.Drawing.Size(132, 75);
             this.Add_user_button.TabIndex = 35;
@@ -1294,6 +1296,25 @@
             this.run_cam_qr_timer.Interval = 1000;
             this.run_cam_qr_timer.Tick += new System.EventHandler(this.run_cam_qr_Tick);
             // 
+            // start_qr_code
+            // 
+            this.start_qr_code.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.start_qr_code.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.start_qr_code.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.start_qr_code.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.start_qr_code.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_qr_code.ForeColor = System.Drawing.Color.White;
+            this.start_qr_code.Image = global::Clinical_Management_System.Properties.Resources.barcode;
+            this.start_qr_code.Location = new System.Drawing.Point(163, 355);
+            this.start_qr_code.Name = "start_qr_code";
+            this.start_qr_code.Size = new System.Drawing.Size(131, 50);
+            this.start_qr_code.TabIndex = 32;
+            this.start_qr_code.Text = "   خوێندنەوە";
+            this.start_qr_code.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.start_qr_code.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.start_qr_code.UseVisualStyleBackColor = false;
+            this.start_qr_code.Click += new System.EventHandler(this.start_qr_code_Click);
+            // 
             // Admin_AdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1468,5 +1489,6 @@
         private System.Windows.Forms.PictureBox admin_read_QR_pic;
         private System.Windows.Forms.Panel admin_show_QR_pl;
         private System.Windows.Forms.PictureBox admin_show_QR_pic;
+        private System.Windows.Forms.Button start_qr_code;
     }
 }

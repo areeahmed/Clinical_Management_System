@@ -188,6 +188,10 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void ExitApp_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             run_cam_qr_timer.Stop();
             Application.Exit();
         }
@@ -265,6 +269,7 @@ namespace Clinical_Management_System
         }
 
         /// <summary>
+        /// There is no problem here
         /// barcode generating from user ID
         /// check if user ID is available
         /// </summary>
@@ -304,12 +309,13 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void Close_Barcode_Panel(object sender, EventArgs e)
         {
-            barcodeTimer.Start();
-            doctor_barcode_panel.Visible = false;
-            if(capDev)
+            if (capDev)
             {
+                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
             }
+            barcodeTimer.Start();
+            doctor_barcode_panel.Visible = true;
         }
         ///
         /// Navigation Between forms STARTS here
@@ -322,6 +328,10 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void OpenPatientForm_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_PatientView admin_PatientView = new Admin_PatientView(windowState: this.WindowState);
             admin_PatientView.Show();
             this.Hide();
@@ -334,6 +344,10 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void OpenReciptionForm_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_ReciptionView admin_ReciptionView = new Admin_ReciptionView(this.WindowState);
             admin_ReciptionView.Show();
             this.Hide();
@@ -346,6 +360,10 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void OpenClinicForm_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
             admin_ClinicView.Show();
             this.Hide();
@@ -358,6 +376,10 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void OpenDoctorForm_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_DoctorView doctorForm = new Admin_DoctorView(windowState: this.WindowState);
             doctorForm.Show();
             this.Hide();
@@ -380,6 +402,10 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void OpenDashboardForm_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             AdminDashboard adminDashboard = new AdminDashboard(windowState: this.WindowState);
             adminDashboard.Show();
             this.Hide();
@@ -439,6 +465,7 @@ namespace Clinical_Management_System
             admin_QrPic.Image = codeQr.Draw(admin_ID.Text, 200);
             admin_show_QR_pl.Visible = true;
             admin_read_QR_pic.Visible = false;
+            capDev = true;
         }
 
         /// <summary>
@@ -452,21 +479,10 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void ReadQRCode_Click(object sender, EventArgs e)
         {
-            if (isFirst)
-            {
-                admin_show_QR_pl.Visible = false;
-                admin_read_QR_pic.Visible = true;
-                isFirst = false;
-            }
-            else
-            {
-                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox2.SelectedIndex].MonikerString);
-                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
-                CaptureDevice.Start();
-                run_cam_qr_timer.Start();
-                isFirst = false;
-                capDev = true;
-            }
+           
+            admin_show_QR_pl.Visible = false;
+            admin_read_QR_pic.Visible = true;
+                
         }
 
         /// <summary>
@@ -511,9 +527,9 @@ namespace Clinical_Management_System
                     admin_search_txt.Text = result.ToString();
                     CaptureDevice.Stop();
                     barcodeTimer.Start();
-                    
                     run_cam_qr_timer.Stop();
-                    
+                    admin_read_QR_pic.Image = null;
+                    CaptureDevice.Start();
                 }
             }
         }
@@ -678,6 +694,23 @@ namespace Clinical_Management_System
         private void label28_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void start_qr_code_Click(object sender, EventArgs e)
+        {
+            if(capDev)
+            {
+                CaptureDevice.Stop();
+                capDev = false;
+            }
+            if(!capDev)
+            {
+                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox2.SelectedIndex].MonikerString);
+                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+                CaptureDevice.Start();
+                run_cam_qr_timer.Start();
+                capDev = true;
+            }
         }
 
         ///

@@ -937,11 +937,11 @@
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(428, 15);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(131, 5);
             this.doctor_barcode_panel.Margin = new System.Windows.Forms.Padding(2);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(494, 572);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(494, 572);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(494, 48);
             this.doctor_barcode_panel.TabIndex = 54;
             // 
             // panel15
@@ -1044,7 +1044,7 @@
             // admin_show_qr_pl
             // 
             this.admin_show_qr_pl.Controls.Add(this.pa_qr_pic);
-            this.admin_show_qr_pl.Location = new System.Drawing.Point(26, 14);
+            this.admin_show_qr_pl.Location = new System.Drawing.Point(22, 18);
             this.admin_show_qr_pl.Name = "admin_show_qr_pl";
             this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 420);
             this.admin_show_qr_pl.TabIndex = 33;
@@ -1077,12 +1077,12 @@
             this.button5.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
-            this.button5.Location = new System.Drawing.Point(139, 346);
+            this.button5.Location = new System.Drawing.Point(137, 344);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(133, 50);
+            this.button5.Size = new System.Drawing.Size(149, 61);
             this.button5.TabIndex = 35;
-            this.button5.Text = "   خوێندنەوە";
+            this.button5.Text = "   دەستپێکردن";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
@@ -1098,9 +1098,9 @@
             // 
             // admin_read_QR_pic
             // 
-            this.admin_read_QR_pic.Location = new System.Drawing.Point(86, 21);
+            this.admin_read_QR_pic.Location = new System.Drawing.Point(32, 21);
             this.admin_read_QR_pic.Name = "admin_read_QR_pic";
-            this.admin_read_QR_pic.Size = new System.Drawing.Size(260, 271);
+            this.admin_read_QR_pic.Size = new System.Drawing.Size(393, 271);
             this.admin_read_QR_pic.TabIndex = 33;
             this.admin_read_QR_pic.TabStop = false;
             // 

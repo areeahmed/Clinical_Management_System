@@ -20,9 +20,15 @@ namespace Clinical_Management_System
         private bool isMouseDown = false;
         bool sideBarExpand = false;
         bool isBarcodeOpen = false;
+        //
+        //
+        // Needed for the QR Code Variable + 3 Library
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice CaptureDevice;
         bool capDev = false;
+        //
+        //
+        //
         public Admin_PatientView(FormWindowState windowState)
         {
             InitializeComponent();
@@ -31,7 +37,8 @@ namespace Clinical_Management_System
 
         private void Admin_PatientView_Load(object sender, EventArgs e)
         {
-            // for reading barcode
+
+            // needed for reading QR Code Form Load
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
             {
@@ -49,8 +56,14 @@ namespace Clinical_Management_System
             dateTimeTimer.Start();
         }
 
+
+        // Closing Application Needed for Stoping QR Code
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             run_cam_qr_timer.Stop();
             Application.Exit();
         }
@@ -132,8 +145,13 @@ namespace Clinical_Management_System
             MessageBox.Show("فۆڕمەکە کرایتەوە", "ئاگاداری", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        // ALL navigations 
         private void StartButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             AdminDashboard adminDashboard = new AdminDashboard(windowState: this.WindowState);
             adminDashboard.Show();
             this.Hide();
@@ -141,6 +159,10 @@ namespace Clinical_Management_System
 
         private void AdminButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_AdminView admin_AdminView = new Admin_AdminView(windowState: this.WindowState);
             admin_AdminView.Show();
             this.Hide();
@@ -148,6 +170,10 @@ namespace Clinical_Management_System
 
         private void DoctorButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_DoctorView admin_DoctorView = new Admin_DoctorView(windowState: this.WindowState);
             admin_DoctorView.Show();
             this.Hide();
@@ -162,6 +188,10 @@ namespace Clinical_Management_System
 
         private void ReciptionButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_ReciptionView admin_ReciptionView = new Admin_ReciptionView(WindowState);
             admin_ReciptionView.Show();
             this.Hide();
@@ -169,6 +199,10 @@ namespace Clinical_Management_System
 
         private void ClinicButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
             admin_ClinicView.Show();
             this.Hide();
@@ -182,6 +216,7 @@ namespace Clinical_Management_System
             }
         }
 
+        // First Button Clicked to Open Barcode
         private void barcodeDocBtn_Click(object sender, EventArgs e)
         {
             if (pay_ID.Text == "#")
@@ -199,6 +234,8 @@ namespace Clinical_Management_System
             }
         }
 
+
+        // Timmer tick to open barcode panel
         private void barcodeTimer_Tick(object sender, EventArgs e)
         {
             if (isBarcodeOpen)
@@ -221,9 +258,14 @@ namespace Clinical_Management_System
             }
         }
 
+        // Closing QR Code panel needed to stop QR Code Reader
         private void button7_Click(object sender, EventArgs e)
         {
-            CaptureDevice.Stop();
+            if(capDev)
+            {
+                admin_read_QR_pic.Image = null;
+                CaptureDevice.Stop();
+            }
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
         }
@@ -247,6 +289,7 @@ namespace Clinical_Management_System
             }
         }
 
+        // needed for generating QR Code
         private void button7_Click_1(object sender, EventArgs e)
         {
             pa_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -257,20 +300,34 @@ namespace Clinical_Management_System
             capDev = true;
         }
 
+        // Show the QR Code Reader panel
         private void Show_QRcode_reader(object sender, EventArgs e)
         {
             admin_show_qr_pl.Visible = false;
             admin_read_qr_pl.Visible = true;
         }
+
+        // check closing QR Code if Worked before
         private void button3_Click(object sender, EventArgs e)
         {
-            CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox1.SelectedIndex].MonikerString);
-            CaptureDevice.NewFrame += CaptureDevice_NewFrame;
-            CaptureDevice.Start();
-            run_cam_qr_timer.Start();
-            capDev = true;
+            if(capDev)
+            {
+                CaptureDevice.Stop();
+                capDev = false;
+            }
+            if(!capDev)
+            {
+                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox1.SelectedIndex].MonikerString);
+                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+                CaptureDevice.Start();
+                run_cam_qr_timer.Start();
+                capDev = true;
+            }
+            
         }
 
+
+        // new frame needed for the even above
         /// <summary>
         /// this part of code will get the result from qr code.
         /// </summary>
@@ -292,6 +349,7 @@ namespace Clinical_Management_System
             e.Graphics.DrawImage(pa_profile_pic.Image, 320, 150, 200, 200);
         }
 
+        // Timmer tick for capturing the QR Code and returning data to search txt
         private void run_cam_qr_timer_Tick(object sender, EventArgs e)
         {
             if (admin_read_QR_pic.Image != null)
@@ -304,6 +362,7 @@ namespace Clinical_Management_System
                     CaptureDevice.Stop();
                     barcodeTimer.Start();
                     run_cam_qr_timer.Stop();
+                    admin_read_QR_pic.Image = null;
                     CaptureDevice.Start();
                 }
             }
