@@ -28,9 +28,6 @@ namespace Clinical_Management_System
         /// </summary>
         private Point mouseLocation;
         private bool isMouseDown = false;
-
-        // check if the button pressed for first time or not
-        bool isFirst = true;
         
         // Open Sidebar FlowLayoutPanel
         bool sideBarExpand = false;

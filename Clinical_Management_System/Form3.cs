@@ -21,5 +21,10 @@ namespace Clinical_Management_System
         {
 
         }
+
+        private void appointment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
