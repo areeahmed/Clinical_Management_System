@@ -83,6 +83,7 @@
             this.admin_show_QR_pic = new System.Windows.Forms.PictureBox();
             this.admin_read_QR_pl = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.start_qr_code = new System.Windows.Forms.Button();
             this.admin_read_QR_pic = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -129,7 +130,6 @@
             this.deleteDocBtn = new System.Windows.Forms.Button();
             this.copyDocBtn = new System.Windows.Forms.Button();
             this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
-            this.start_qr_code = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -768,6 +768,25 @@
             this.comboBox2.Size = new System.Drawing.Size(227, 21);
             this.comboBox2.TabIndex = 44;
             // 
+            // start_qr_code
+            // 
+            this.start_qr_code.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.start_qr_code.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.start_qr_code.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.start_qr_code.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.start_qr_code.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_qr_code.ForeColor = System.Drawing.Color.White;
+            this.start_qr_code.Image = global::Clinical_Management_System.Properties.Resources.barcode;
+            this.start_qr_code.Location = new System.Drawing.Point(163, 355);
+            this.start_qr_code.Name = "start_qr_code";
+            this.start_qr_code.Size = new System.Drawing.Size(131, 50);
+            this.start_qr_code.TabIndex = 32;
+            this.start_qr_code.Text = "   خوێندنەوە";
+            this.start_qr_code.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.start_qr_code.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.start_qr_code.UseVisualStyleBackColor = false;
+            this.start_qr_code.Click += new System.EventHandler(this.start_qr_code_Click);
+            // 
             // admin_read_QR_pic
             // 
             this.admin_read_QR_pic.Location = new System.Drawing.Point(14, 12);
@@ -1295,25 +1314,6 @@
             // 
             this.run_cam_qr_timer.Interval = 1000;
             this.run_cam_qr_timer.Tick += new System.EventHandler(this.run_cam_qr_Tick);
-            // 
-            // start_qr_code
-            // 
-            this.start_qr_code.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.start_qr_code.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.start_qr_code.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.start_qr_code.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.start_qr_code.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start_qr_code.ForeColor = System.Drawing.Color.White;
-            this.start_qr_code.Image = global::Clinical_Management_System.Properties.Resources.barcode;
-            this.start_qr_code.Location = new System.Drawing.Point(163, 355);
-            this.start_qr_code.Name = "start_qr_code";
-            this.start_qr_code.Size = new System.Drawing.Size(131, 50);
-            this.start_qr_code.TabIndex = 32;
-            this.start_qr_code.Text = "   خوێندنەوە";
-            this.start_qr_code.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.start_qr_code.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.start_qr_code.UseVisualStyleBackColor = false;
-            this.start_qr_code.Click += new System.EventHandler(this.start_qr_code_Click);
             // 
             // Admin_AdminView
             // 
