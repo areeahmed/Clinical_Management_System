@@ -117,6 +117,7 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.qr_code_is_active_lbl = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -970,6 +971,7 @@
             this.panel16.Controls.Add(this.button3);
             this.panel16.Controls.Add(this.button4);
             this.panel16.Controls.Add(this.button7);
+            this.panel16.Controls.Add(this.admin_show_qr_pl);
             this.panel16.Controls.Add(this.admin_read_qr_pl);
             this.panel16.Location = new System.Drawing.Point(-6, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
@@ -1043,9 +1045,9 @@
             // admin_show_qr_pl
             // 
             this.admin_show_qr_pl.Controls.Add(this.pa_qr_pic);
-            this.admin_show_qr_pl.Location = new System.Drawing.Point(681, 29);
+            this.admin_show_qr_pl.Location = new System.Drawing.Point(21, 15);
             this.admin_show_qr_pl.Name = "admin_show_qr_pl";
-            this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 420);
+            this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 419);
             this.admin_show_qr_pl.TabIndex = 33;
             // 
             // pa_qr_pic
@@ -1163,16 +1165,28 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // qr_code_is_active_lbl
+            // 
+            this.qr_code_is_active_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.qr_code_is_active_lbl.AutoSize = true;
+            this.qr_code_is_active_lbl.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qr_code_is_active_lbl.ForeColor = System.Drawing.Color.Red;
+            this.qr_code_is_active_lbl.Location = new System.Drawing.Point(832, 24);
+            this.qr_code_is_active_lbl.Name = "qr_code_is_active_lbl";
+            this.qr_code_is_active_lbl.Size = new System.Drawing.Size(200, 23);
+            this.qr_code_is_active_lbl.TabIndex = 56;
+            this.qr_code_is_active_lbl.Text = "خوێندنەوەی کیو ئاڕ کۆد چالاکە";
+            // 
             // Admin_PatientView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 767);
             this.ControlBox = false;
+            this.Controls.Add(this.qr_code_is_active_lbl);
             this.Controls.Add(this.copyDocBtn);
             this.Controls.Add(this.doctor_barcode_panel);
             this.Controls.Add(this.barcodeDocBtn);
-            this.Controls.Add(this.admin_show_qr_pl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pa_search_txt);
             this.Controls.Add(this.dateTimePicker1);
@@ -1322,5 +1336,6 @@
         private System.Windows.Forms.PictureBox print_pic_op;
         private System.Windows.Forms.PictureBox picLogoPrint;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label qr_code_is_active_lbl;
     }
 }

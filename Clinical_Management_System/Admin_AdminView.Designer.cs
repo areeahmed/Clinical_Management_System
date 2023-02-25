@@ -79,9 +79,9 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.admin_read_QR_pl = new System.Windows.Forms.Panel();
             this.admin_show_QR_pl = new System.Windows.Forms.Panel();
             this.admin_show_QR_pic = new System.Windows.Forms.PictureBox();
-            this.admin_read_QR_pl = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.start_qr_code = new System.Windows.Forms.Button();
             this.admin_read_QR_pic = new System.Windows.Forms.PictureBox();
@@ -130,6 +130,7 @@
             this.deleteDocBtn = new System.Windows.Forms.Button();
             this.copyDocBtn = new System.Windows.Forms.Button();
             this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
+            this.qr_code_is_active_lbl = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -151,9 +152,9 @@
             this.doctor_barcode_panel.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
+            this.admin_read_QR_pl.SuspendLayout();
             this.admin_show_QR_pl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_show_QR_pic)).BeginInit();
-            this.admin_read_QR_pl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_QrPic)).BeginInit();
             this.Adding_Doctor_Form_panel.SuspendLayout();
@@ -172,11 +173,11 @@
             this.sidebar.Controls.Add(this.panel7);
             this.sidebar.Controls.Add(this.panel13);
             this.sidebar.Controls.Add(this.panel10);
-            this.sidebar.Controls.Add(this.DayWeekYear);
+            this.sidebar.Controls.Add(this.time);
             this.sidebar.Controls.Add(this.panel12);
             this.sidebar.Controls.Add(this.WeekDay);
             this.sidebar.Controls.Add(this.panel11);
-            this.sidebar.Controls.Add(this.time);
+            this.sidebar.Controls.Add(this.DayWeekYear);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(230, 1080);
@@ -373,7 +374,7 @@
             this.DayWeekYear.AutoSize = true;
             this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DayWeekYear.ForeColor = System.Drawing.Color.White;
-            this.DayWeekYear.Location = new System.Drawing.Point(3, 586);
+            this.DayWeekYear.Location = new System.Drawing.Point(3, 660);
             this.DayWeekYear.Name = "DayWeekYear";
             this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
             this.DayWeekYear.TabIndex = 31;
@@ -411,7 +412,7 @@
             this.time.AutoSize = true;
             this.time.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.time.ForeColor = System.Drawing.Color.White;
-            this.time.Location = new System.Drawing.Point(3, 660);
+            this.time.Location = new System.Drawing.Point(3, 586);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(70, 21);
             this.time.TabIndex = 29;
@@ -695,7 +696,7 @@
             this.doctor_barcode_panel.Location = new System.Drawing.Point(118, 57);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 47);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 49);
             this.doctor_barcode_panel.TabIndex = 38;
             // 
             // panel15
@@ -733,6 +734,17 @@
             this.panel16.Size = new System.Drawing.Size(497, 686);
             this.panel16.TabIndex = 28;
             // 
+            // admin_read_QR_pl
+            // 
+            this.admin_read_QR_pl.Controls.Add(this.admin_show_QR_pl);
+            this.admin_read_QR_pl.Controls.Add(this.comboBox2);
+            this.admin_read_QR_pl.Controls.Add(this.start_qr_code);
+            this.admin_read_QR_pl.Controls.Add(this.admin_read_QR_pic);
+            this.admin_read_QR_pl.Location = new System.Drawing.Point(9, 14);
+            this.admin_read_QR_pl.Name = "admin_read_QR_pl";
+            this.admin_read_QR_pl.Size = new System.Drawing.Size(470, 416);
+            this.admin_read_QR_pl.TabIndex = 33;
+            // 
             // admin_show_QR_pl
             // 
             this.admin_show_QR_pl.Controls.Add(this.admin_show_QR_pic);
@@ -748,17 +760,6 @@
             this.admin_show_QR_pic.Size = new System.Drawing.Size(280, 254);
             this.admin_show_QR_pic.TabIndex = 0;
             this.admin_show_QR_pic.TabStop = false;
-            // 
-            // admin_read_QR_pl
-            // 
-            this.admin_read_QR_pl.Controls.Add(this.admin_show_QR_pl);
-            this.admin_read_QR_pl.Controls.Add(this.comboBox2);
-            this.admin_read_QR_pl.Controls.Add(this.start_qr_code);
-            this.admin_read_QR_pl.Controls.Add(this.admin_read_QR_pic);
-            this.admin_read_QR_pl.Location = new System.Drawing.Point(9, 14);
-            this.admin_read_QR_pl.Name = "admin_read_QR_pl";
-            this.admin_read_QR_pl.Size = new System.Drawing.Size(470, 416);
-            this.admin_read_QR_pl.TabIndex = 33;
             // 
             // comboBox2
             // 
@@ -1315,6 +1316,19 @@
             this.run_cam_qr_timer.Interval = 1000;
             this.run_cam_qr_timer.Tick += new System.EventHandler(this.run_cam_qr_Tick);
             // 
+            // qr_code_is_active_lbl
+            // 
+            this.qr_code_is_active_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.qr_code_is_active_lbl.AutoSize = true;
+            this.qr_code_is_active_lbl.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qr_code_is_active_lbl.ForeColor = System.Drawing.Color.Red;
+            this.qr_code_is_active_lbl.Location = new System.Drawing.Point(834, 16);
+            this.qr_code_is_active_lbl.Name = "qr_code_is_active_lbl";
+            this.qr_code_is_active_lbl.Size = new System.Drawing.Size(200, 23);
+            this.qr_code_is_active_lbl.TabIndex = 14;
+            this.qr_code_is_active_lbl.Text = "خوێندنەوەی کیو ئاڕ کۆد چالاکە";
+            this.qr_code_is_active_lbl.Click += new System.EventHandler(this.label28_Click);
+            // 
             // Admin_AdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1325,6 +1339,7 @@
             this.Controls.Add(this.Adding_Doctor_Form_panel);
             this.Controls.Add(this.doctor_barcode_panel);
             this.Controls.Add(this.clinicCombo);
+            this.Controls.Add(this.qr_code_is_active_lbl);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.admin_search_txt);
             this.Controls.Add(this.DoctorListLbl);
@@ -1373,9 +1388,9 @@
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
+            this.admin_read_QR_pl.ResumeLayout(false);
             this.admin_show_QR_pl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.admin_show_QR_pic)).EndInit();
-            this.admin_read_QR_pl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_QrPic)).EndInit();
             this.Adding_Doctor_Form_panel.ResumeLayout(false);
@@ -1490,5 +1505,6 @@
         private System.Windows.Forms.Panel admin_show_QR_pl;
         private System.Windows.Forms.PictureBox admin_show_QR_pic;
         private System.Windows.Forms.Button start_qr_code;
+        private System.Windows.Forms.Label qr_code_is_active_lbl;
     }
 }

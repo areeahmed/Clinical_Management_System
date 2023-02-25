@@ -37,7 +37,7 @@ namespace Clinical_Management_System
 
         private void Admin_PatientView_Load(object sender, EventArgs e)
         {
-
+            qr_code_is_active_lbl.Visible = false;
             // needed for reading QR Code Form Load
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
@@ -219,6 +219,12 @@ namespace Clinical_Management_System
         // First Button Clicked to Open Barcode
         private void barcodeDocBtn_Click(object sender, EventArgs e)
         {
+            qr_code_is_active_lbl.Visible = false;
+            admin_read_QR_pic.Image = null;
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             if (pay_ID.Text == "#")
             {
                 MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -261,10 +267,11 @@ namespace Clinical_Management_System
         // Closing QR Code panel needed to stop QR Code Reader
         private void button7_Click(object sender, EventArgs e)
         {
-            if(capDev)
+            if (capDev)
             {
                 admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
+                qr_code_is_active_lbl.Visible = false;
             }
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
@@ -297,7 +304,6 @@ namespace Clinical_Management_System
             pa_qr_pic.Image = codeQr.Draw(pay_ID.Text, 200);
             admin_show_qr_pl.Visible = true;
             admin_read_qr_pl.Visible = false;
-            capDev = true;
         }
 
         // Show the QR Code Reader panel
@@ -317,6 +323,7 @@ namespace Clinical_Management_System
             }
             if(!capDev)
             {
+                qr_code_is_active_lbl.Visible = true;
                 CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox1.SelectedIndex].MonikerString);
                 CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();

@@ -190,6 +190,7 @@ namespace Clinical_Management_System
         // form load
         private void Admin_DoctorView_Load(object sender, EventArgs e)
         {
+            qr_code_is_active_lbl.Visible = false;
             // needed for reading QR Code Form Load
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
@@ -237,6 +238,12 @@ namespace Clinical_Management_System
         // open barcode panel
         private void button6_Click_1(object sender, EventArgs e)
         {
+            qr_code_is_active_lbl.Visible = false;
+            doc_qr_read_pic.Image = null;
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             if (doc_ID.Text == "#")
             {
                 MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -255,9 +262,10 @@ namespace Clinical_Management_System
         // DONE USING BARCODE FORM
         private void button7_Click(object sender, EventArgs e)
         {
+            qr_code_is_active_lbl.Visible = false;
+            doc_qr_read_pic.Image = null;
             if (capDev)
             {
-                doc_qr_read_pic.Image = null;
                 CaptureDevice.Stop();
             }
             barcodeTimer.Start();
@@ -400,7 +408,6 @@ namespace Clinical_Management_System
             doc_qr_show_pic.Image = codeQr.Draw(doc_ID.Text, 200);
             doc_qr_show_pl.Visible = true;
             doc_qr_read_pl.Visible = false;
-            capDev = true;
         }
 
         private void show_qr_reader_btn_Click(object sender, EventArgs e)
@@ -441,6 +448,7 @@ namespace Clinical_Management_System
             }
             if (!capDev)
             {
+                qr_code_is_active_lbl.Visible = true;
                 CaptureDevice = new VideoCaptureDevice(filterInfoCollection[choosing_cam_cmb.SelectedIndex].MonikerString);
                 CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();

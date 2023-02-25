@@ -81,6 +81,7 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void Admin_AdminView_Load(object sender, EventArgs e)
         {
+            qr_code_is_active_lbl.Visible = false;
             // for reading barcode
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
@@ -190,6 +191,7 @@ namespace Clinical_Management_System
         {
             if (capDev)
             {
+                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
             }
             run_cam_qr_timer.Stop();
@@ -277,6 +279,12 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void ShowBarcode_Click(object sender, EventArgs e)
         {
+            qr_code_is_active_lbl.Visible = false;
+            admin_read_QR_pic.Image = null;
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             if (admin_ID.Text == "#")
             {
                 MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -309,9 +317,10 @@ namespace Clinical_Management_System
         /// <param name="e"></param>
         private void Close_Barcode_Panel(object sender, EventArgs e)
         {
+            qr_code_is_active_lbl.Visible = false;
+            admin_read_QR_pic.Image = null;
             if (capDev)
             {
-                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
             }
             barcodeTimer.Start();
@@ -330,6 +339,7 @@ namespace Clinical_Management_System
         {
             if (capDev)
             {
+                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
             }
             Admin_PatientView admin_PatientView = new Admin_PatientView(windowState: this.WindowState);
@@ -346,6 +356,7 @@ namespace Clinical_Management_System
         {
             if (capDev)
             {
+                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
             }
             Admin_ReciptionView admin_ReciptionView = new Admin_ReciptionView(this.WindowState);
@@ -362,6 +373,7 @@ namespace Clinical_Management_System
         {
             if (capDev)
             {
+                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
             }
             Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
@@ -378,6 +390,7 @@ namespace Clinical_Management_System
         {
             if (capDev)
             {
+                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
             }
             Admin_DoctorView doctorForm = new Admin_DoctorView(windowState: this.WindowState);
@@ -404,6 +417,7 @@ namespace Clinical_Management_System
         {
             if (capDev)
             {
+                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
             }
             AdminDashboard adminDashboard = new AdminDashboard(windowState: this.WindowState);
@@ -465,7 +479,6 @@ namespace Clinical_Management_System
             admin_QrPic.Image = codeQr.Draw(admin_ID.Text, 200);
             admin_show_QR_pl.Visible = true;
             admin_read_QR_pic.Visible = false;
-            capDev = true;
         }
 
         /// <summary>
@@ -555,6 +568,7 @@ namespace Clinical_Management_System
         {
             if (isBarcodeOpen)
             {
+                qr_code_is_active_lbl.Visible = false;
                 doctor_barcode_panel.Height -= 30;
                 if (doctor_barcode_panel.Height == doctor_barcode_panel.MinimumSize.Height)
                 {
@@ -693,18 +707,31 @@ namespace Clinical_Management_System
         // not necessary
         private void label28_Click(object sender, EventArgs e)
         {
-
+            if (admin_ID.Text == "#")
+            {
+                MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+                admin_show_QR_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+                Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+                admin_show_QR_pic.Image = codeQr.Draw(admin_ID.Text, 200);
+                barcodeTimer.Start();
+                doctor_barcode_panel.Visible = true;
+            }
         }
 
         private void start_qr_code_Click(object sender, EventArgs e)
         {
             if(capDev)
             {
+                admin_read_QR_pic.Image = null;
                 CaptureDevice.Stop();
                 capDev = false;
             }
             if(!capDev)
             {
+                qr_code_is_active_lbl.Visible = true;
                 CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox2.SelectedIndex].MonikerString);
                 CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();

@@ -31,6 +31,11 @@ namespace Clinical_Management_System
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
+            run_cam_qr_timer.Stop();
             Application.Exit();
         }
 
@@ -86,6 +91,10 @@ namespace Clinical_Management_System
 
         private void StartButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             AdminDashboard adminDashboard = new AdminDashboard(windowState: this.WindowState);
             adminDashboard.Show();
             this.Hide();
@@ -93,6 +102,10 @@ namespace Clinical_Management_System
 
         private void ClinicButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
             admin_ClinicView.Show();
             this.Hide();
@@ -100,6 +113,10 @@ namespace Clinical_Management_System
 
         private void AdminButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_AdminView admin_AdminView = new Admin_AdminView(windowState: this.WindowState);
             admin_AdminView.Show();
             this.Hide();
@@ -107,6 +124,10 @@ namespace Clinical_Management_System
 
         private void DoctorButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_DoctorView admin_DoctorView = new Admin_DoctorView(WindowState);
             admin_DoctorView.Show();
             this.Hide();
@@ -119,6 +140,10 @@ namespace Clinical_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_PatientView admin_PatientView = new Admin_PatientView(windowState: this.WindowState);
             admin_PatientView.Show();
             this.Hide();
@@ -133,6 +158,13 @@ namespace Clinical_Management_System
 
         private void Admin_ReciptionView_Load(object sender, EventArgs e)
         {
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterInfoCollection)
+            {
+                comboBox2.Items.Add(filterInfo.Name);
+                comboBox2.SelectedIndex = 0;
+            }
+
             System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
             obj.AddEllipse(0, 0, recp_profile_pic.Width, recp_profile_pic.Height);
             Region region = new Region(obj);
@@ -237,9 +269,9 @@ namespace Clinical_Management_System
             }
             else
             {
-                recp_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+                admin_show_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
                 Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                recp_qr_pic.Image = codeQr.Draw(recp_ID.Text, 200);
+                admin_show_qr_pic.Image = codeQr.Draw(recp_ID.Text, 200);
 
                 barcodeTimer.Start();
                 doctor_barcode_panel.Visible = true;
@@ -248,20 +280,14 @@ namespace Clinical_Management_System
 
         private void button7_Click(object sender, EventArgs e)
         {
-            barcodeTimer.Start();
-            doctor_barcode_panel.Visible = true;
             if (capDev)
             {
+                admin_read_qr_pic.Image = null;
                 CaptureDevice.Stop();
             }
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                recp_profile_pic.ImageLocation = openFileDialog1.FileNames[0];
-            }
+            barcodeTimer.Start();
+            doctor_barcode_panel.Visible = true;
+            
         }
 
         private void copyDocBtn_Click(object sender, EventArgs e)
@@ -316,32 +342,18 @@ namespace Clinical_Management_System
 
         private void button4_Click(object sender, EventArgs e)
         {
-            recp_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+            admin_show_qr_pic.SizeMode = PictureBoxSizeMode.AutoSize;
             Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            recp_qr_pic.Image = codeQr.Draw(recp_ID.Text, 200);
+            admin_show_qr_pic.Image = codeQr.Draw(recp_ID.Text, 200);
             admin_show_qr_pl.Visible = true;
             admin_read_qr_pl.Visible = false;
         }
-
-        // check if the button pressed for first time or not
-        bool isFirst = true;
         private void button3_Click(object sender, EventArgs e)
         {
-            if (isFirst)
-            {
-                admin_show_qr_pl.Visible = false;
-                admin_read_qr_pl.Visible = true;
-                isFirst = false;
-            }
-            else
-            {
-                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox1.SelectedIndex].MonikerString);
-                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
-                CaptureDevice.Start();
-                run_cam_qr_timer.Start();
-                capDev = true;
-                isFirst = false;
-            }
+            
+             admin_show_qr_pl.Visible = false;
+             admin_read_qr_pl.Visible = true;
+            
         }
 
         /// <summary>
@@ -351,7 +363,42 @@ namespace Clinical_Management_System
         /// <param name="eventArgs"></param>
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            admin_read_QR_pic.Image = (Bitmap)eventArgs.Frame.Clone();
+            admin_read_qr_pic.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if(capDev)
+            {
+                CaptureDevice.Stop();
+                capDev = false;
+            }
+            if(!capDev)
+            {
+                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBox2.SelectedIndex].MonikerString);
+                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+                CaptureDevice.Start();
+                run_cam_qr_timer.Start();
+                capDev = true;
+            }
+        }
+
+        private void run_cam_qr_timer_Tick(object sender, EventArgs e)
+        {
+            if (admin_read_qr_pic.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)admin_read_qr_pic.Image);
+                if (result != null)
+                {
+                    recp_search_txt.Text = result.ToString();
+                    CaptureDevice.Stop();
+                    barcodeTimer.Start();
+                    run_cam_qr_timer.Stop();
+                    admin_read_qr_pic.Image = null;
+                    CaptureDevice.Start();
+                }
+            }
         }
     }
 }

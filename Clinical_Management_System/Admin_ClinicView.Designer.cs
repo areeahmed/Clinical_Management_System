@@ -406,7 +406,7 @@
             this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(267, 11);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(500, 729);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 47);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 46);
             this.Adding_Doctor_Form_panel.TabIndex = 40;
             // 
             // panel14
@@ -468,7 +468,7 @@
             this.cancel_Form_Button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancel_Form_Button.ForeColor = System.Drawing.Color.White;
             this.cancel_Form_Button.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
-            this.cancel_Form_Button.Location = new System.Drawing.Point(344, 502);
+            this.cancel_Form_Button.Location = new System.Drawing.Point(331, 525);
             this.cancel_Form_Button.Name = "cancel_Form_Button";
             this.cancel_Form_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cancel_Form_Button.Size = new System.Drawing.Size(121, 50);
@@ -505,7 +505,7 @@
             this.Add_user_button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_user_button.ForeColor = System.Drawing.Color.White;
             this.Add_user_button.Image = global::Clinical_Management_System.Properties.Resources.updating;
-            this.Add_user_button.Location = new System.Drawing.Point(208, 523);
+            this.Add_user_button.Location = new System.Drawing.Point(197, 525);
             this.Add_user_button.Name = "Add_user_button";
             this.Add_user_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Add_user_button.Size = new System.Drawing.Size(121, 50);
