@@ -941,7 +941,7 @@
             this.doctor_barcode_panel.Margin = new System.Windows.Forms.Padding(2);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(494, 572);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(494, 48);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(494, 572);
             this.doctor_barcode_panel.TabIndex = 54;
             // 
             // panel15
@@ -970,7 +970,6 @@
             this.panel16.Controls.Add(this.button3);
             this.panel16.Controls.Add(this.button4);
             this.panel16.Controls.Add(this.button7);
-            this.panel16.Controls.Add(this.admin_show_qr_pl);
             this.panel16.Controls.Add(this.admin_read_qr_pl);
             this.panel16.Location = new System.Drawing.Point(-6, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
@@ -1044,7 +1043,7 @@
             // admin_show_qr_pl
             // 
             this.admin_show_qr_pl.Controls.Add(this.pa_qr_pic);
-            this.admin_show_qr_pl.Location = new System.Drawing.Point(22, 18);
+            this.admin_show_qr_pl.Location = new System.Drawing.Point(681, 29);
             this.admin_show_qr_pl.Name = "admin_show_qr_pl";
             this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 420);
             this.admin_show_qr_pl.TabIndex = 33;
@@ -1173,6 +1172,7 @@
             this.Controls.Add(this.copyDocBtn);
             this.Controls.Add(this.doctor_barcode_panel);
             this.Controls.Add(this.barcodeDocBtn);
+            this.Controls.Add(this.admin_show_qr_pl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pa_search_txt);
             this.Controls.Add(this.dateTimePicker1);

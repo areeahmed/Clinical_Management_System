@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
 
 namespace Clinical_Management_System
 {
@@ -17,6 +20,10 @@ namespace Clinical_Management_System
         bool sideBarExpand = false;
         bool isFormOpened = false;
         bool isBarcodeOpen = false;
+        // Needed for the QR Code Variable + 3 Library
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice CaptureDevice;
+        bool capDev = false;
 
         // the argument is to share the common windows status between forms
         public Admin_DoctorView(FormWindowState windowState)
@@ -29,6 +36,10 @@ namespace Clinical_Management_System
         // application exit
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Application.Exit();
         }
 
@@ -123,6 +134,10 @@ namespace Clinical_Management_System
         // go to admin dashboard
         private void StartButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             AdminDashboard adminDashboard = new AdminDashboard(windowState: this.WindowState);
             adminDashboard.Show();
             this.Hide();
@@ -175,6 +190,15 @@ namespace Clinical_Management_System
         // form load
         private void Admin_DoctorView_Load(object sender, EventArgs e)
         {
+            // needed for reading QR Code Form Load
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterInfoCollection)
+            {
+                choosing_cam_cmb.Items.Add(filterInfo.Name);
+                choosing_cam_cmb.SelectedIndex = 0;
+            }
+
+
             System.Drawing.Drawing2D.GraphicsPath obj = new System.Drawing.Drawing2D.GraphicsPath();
             obj.AddEllipse(0, 0, doc_profile_pic.Width, doc_profile_pic.Height);
             Region region = new Region(obj);
@@ -219,9 +243,9 @@ namespace Clinical_Management_System
             }
             else
             {
-                doc_QrPic.SizeMode = PictureBoxSizeMode.AutoSize;
+                doc_qr_show_pic.SizeMode = PictureBoxSizeMode.AutoSize;
                 Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                doc_QrPic.Image = codeQr.Draw(doc_ID.Text, 200);
+                doc_qr_show_pic.Image = codeQr.Draw(doc_ID.Text, 200);
 
                 barcodeTimer.Start();
                 doctor_barcode_panel.Visible = true;
@@ -231,6 +255,11 @@ namespace Clinical_Management_System
         // DONE USING BARCODE FORM
         private void button7_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                doc_qr_read_pic.Image = null;
+                CaptureDevice.Stop();
+            }
             barcodeTimer.Start();
             doctor_barcode_panel.Visible = true;
         }
@@ -244,6 +273,10 @@ namespace Clinical_Management_System
 
         private void AdminButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_AdminView admin_AdminView = new Admin_AdminView(windowState: this.WindowState);
             admin_AdminView.Show();
             this.Hide();
@@ -251,6 +284,10 @@ namespace Clinical_Management_System
 
         private void ReciptionButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_PatientView admin_PatientView = new Admin_PatientView(windowState: this.WindowState);
             admin_PatientView.Show();
             this.Hide();
@@ -258,6 +295,10 @@ namespace Clinical_Management_System
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_ReciptionView admin_ReciptionView = new Admin_ReciptionView(WindowState);
             admin_ReciptionView.Show();
             this.Hide();
@@ -265,6 +306,10 @@ namespace Clinical_Management_System
 
         private void ClinicButton_Click(object sender, EventArgs e)
         {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+            }
             Admin_ClinicView admin_ClinicView = new Admin_ClinicView(this.WindowState);
             admin_ClinicView.Show();
             this.Hide();
@@ -345,6 +390,62 @@ namespace Clinical_Management_System
             if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
                 printDocument1.Print();
+            }
+        }
+
+        private void show_qr_gen_btn_Click(object sender, EventArgs e)
+        {
+            doc_qr_show_pic.SizeMode = PictureBoxSizeMode.AutoSize;
+            Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            doc_qr_show_pic.Image = codeQr.Draw(doc_ID.Text, 200);
+            doc_qr_show_pl.Visible = true;
+            doc_qr_read_pl.Visible = false;
+            capDev = true;
+        }
+
+        private void show_qr_reader_btn_Click(object sender, EventArgs e)
+        {
+            doc_qr_show_pl.Visible = false;
+            doc_qr_read_pl.Visible = true;
+        }
+
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            doc_qr_read_pic.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void run_cam_qr_timer_Tick(object sender, EventArgs e)
+        {
+            if (doc_qr_read_pic.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)doc_qr_read_pic.Image);
+                if (result != null)
+                {
+                    doc_search_txt.Text = result.ToString();
+                    CaptureDevice.Stop();
+                    barcodeTimer.Start();
+                    run_cam_qr_timer.Stop();
+                    doc_qr_read_pic.Image = null;
+                    CaptureDevice.Start();
+                }
+            }
+        }
+
+        private void start_read_qr_btn_Click(object sender, EventArgs e)
+        {
+            if (capDev)
+            {
+                CaptureDevice.Stop();
+                capDev = false;
+            }
+            if (!capDev)
+            {
+                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[choosing_cam_cmb.SelectedIndex].MonikerString);
+                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+                CaptureDevice.Start();
+                run_cam_qr_timer.Start();
+                capDev = true;
             }
         }
     }

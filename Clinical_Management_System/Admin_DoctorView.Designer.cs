@@ -32,20 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_DoctorView));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.StartButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.ClinicButton = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.AdminButton = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.DoctorButton = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.ReciptionButton = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.time = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -56,18 +49,12 @@
             this.DoctorListLbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.doc_lbl = new System.Windows.Forms.Label();
             this.docPersonalinfoPanel = new System.Windows.Forms.Panel();
             this.print_hl_lbl = new System.Windows.Forms.Label();
             this.print_cr_lbl = new System.Windows.Forms.Label();
             this.print_krd_lbl = new System.Windows.Forms.Label();
-            this.doc_profile_pic = new System.Windows.Forms.PictureBox();
-            this.print_pic_op = new System.Windows.Forms.PictureBox();
-            this.picLogoPrint = new System.Windows.Forms.PictureBox();
             this.doc_clinic_lbl = new System.Windows.Forms.Label();
             this.doc_Certify_lbl = new System.Windows.Forms.Label();
             this.doc_Prof_lbl = new System.Windows.Forms.Label();
@@ -78,7 +65,7 @@
             this.doc_ID = new System.Windows.Forms.Label();
             this.doc_Name = new System.Windows.Forms.Label();
             this.doc_ID_lbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.doc_search_txt = new System.Windows.Forms.TextBox();
             this.clinicCombo = new System.Windows.Forms.ComboBox();
             this.docGeneralinfoPanel = new System.Windows.Forms.Panel();
             this.Patient_lbl = new System.Windows.Forms.Label();
@@ -98,16 +85,9 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.doc_QrPic = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
             this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button1 = new System.Windows.Forms.Button();
-            this.barcodeDocBtn = new System.Windows.Forms.Button();
-            this.editDocBtn = new System.Windows.Forms.Button();
-            this.deleteDocBtn = new System.Windows.Forms.Button();
-            this.copyDocBtn = new System.Windows.Forms.Button();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
@@ -118,9 +98,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.docPhoneTxt = new System.Windows.Forms.TextBox();
-            this.cancel_Form_Button = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.Add_user_button = new System.Windows.Forms.Button();
             this.docPasswordTxt = new System.Windows.Forms.TextBox();
             this.docFullNameTxt = new System.Windows.Forms.TextBox();
             this.docUsernameTxt = new System.Windows.Forms.TextBox();
@@ -137,9 +114,40 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
             this.Adding_Doctor_Form_panel = new System.Windows.Forms.FlowLayoutPanel();
+            this.doc_qr_read_pl = new System.Windows.Forms.Panel();
+            this.doc_qr_show_pl = new System.Windows.Forms.Panel();
+            this.choosing_cam_cmb = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.doc_qr_show_pic = new System.Windows.Forms.PictureBox();
+            this.doc_qr_read_pic = new System.Windows.Forms.PictureBox();
+            this.start_read_qr_btn = new System.Windows.Forms.Button();
+            this.show_qr_reader_btn = new System.Windows.Forms.Button();
+            this.show_qr_gen_btn = new System.Windows.Forms.Button();
+            this.close_br_pl_btn = new System.Windows.Forms.Button();
+            this.cancel_Form_Button = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.Add_user_button = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.StartButton = new System.Windows.Forms.Button();
+            this.ClinicButton = new System.Windows.Forms.Button();
+            this.AdminButton = new System.Windows.Forms.Button();
+            this.DoctorButton = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.ReciptionButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.barcodeDocBtn = new System.Windows.Forms.Button();
+            this.editDocBtn = new System.Windows.Forms.Button();
+            this.deleteDocBtn = new System.Windows.Forms.Button();
+            this.copyDocBtn = new System.Windows.Forms.Button();
+            this.doc_profile_pic = new System.Windows.Forms.PictureBox();
+            this.print_pic_op = new System.Windows.Forms.PictureBox();
+            this.picLogoPrint = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -148,21 +156,25 @@
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.docPersonalinfoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doc_profile_pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).BeginInit();
             this.docGeneralinfoPanel.SuspendLayout();
             this.doctor_barcode_panel.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doc_QrPic)).BeginInit();
             this.Adding_Doctor_Form_panel1.SuspendLayout();
             this.panel14.SuspendLayout();
             this.Adding_Doctor_Form_panel.SuspendLayout();
+            this.doc_qr_read_pl.SuspendLayout();
+            this.doc_qr_show_pl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.doc_qr_show_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doc_qr_read_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doc_profile_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -198,18 +210,6 @@
             this.panel1.Size = new System.Drawing.Size(227, 92);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Clinical_Management_System.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -229,23 +229,6 @@
             this.panel3.Size = new System.Drawing.Size(227, 63);
             this.panel3.TabIndex = 19;
             // 
-            // StartButton
-            // 
-            this.StartButton.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.StartButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StartButton.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartButton.ForeColor = System.Drawing.Color.White;
-            this.StartButton.Image = global::Clinical_Management_System.Properties.Resources.start;
-            this.StartButton.Location = new System.Drawing.Point(-10, -8);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(245, 82);
-            this.StartButton.TabIndex = 0;
-            this.StartButton.Text = "   سەرەتا";
-            this.StartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.StartButton.UseVisualStyleBackColor = false;
-            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.ClinicButton);
@@ -253,23 +236,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(227, 63);
             this.panel4.TabIndex = 20;
-            // 
-            // ClinicButton
-            // 
-            this.ClinicButton.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClinicButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClinicButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClinicButton.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClinicButton.ForeColor = System.Drawing.Color.White;
-            this.ClinicButton.Image = global::Clinical_Management_System.Properties.Resources.Clinic_icon;
-            this.ClinicButton.Location = new System.Drawing.Point(-10, -6);
-            this.ClinicButton.Name = "ClinicButton";
-            this.ClinicButton.Size = new System.Drawing.Size(245, 82);
-            this.ClinicButton.TabIndex = 19;
-            this.ClinicButton.Text = "   نۆرینگە";
-            this.ClinicButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ClinicButton.UseVisualStyleBackColor = false;
-            this.ClinicButton.Click += new System.EventHandler(this.ClinicButton_Click);
             // 
             // panel5
             // 
@@ -279,23 +245,6 @@
             this.panel5.Size = new System.Drawing.Size(227, 63);
             this.panel5.TabIndex = 21;
             // 
-            // AdminButton
-            // 
-            this.AdminButton.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.AdminButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AdminButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AdminButton.Font = new System.Drawing.Font("RudawRegular", 16F);
-            this.AdminButton.ForeColor = System.Drawing.Color.White;
-            this.AdminButton.Image = global::Clinical_Management_System.Properties.Resources.admin;
-            this.AdminButton.Location = new System.Drawing.Point(-10, -10);
-            this.AdminButton.Name = "AdminButton";
-            this.AdminButton.Size = new System.Drawing.Size(245, 82);
-            this.AdminButton.TabIndex = 20;
-            this.AdminButton.Text = "   ئادمین";
-            this.AdminButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.AdminButton.UseVisualStyleBackColor = false;
-            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.DoctorButton);
@@ -303,23 +252,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(227, 63);
             this.panel6.TabIndex = 22;
-            // 
-            // DoctorButton
-            // 
-            this.DoctorButton.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.DoctorButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DoctorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DoctorButton.Font = new System.Drawing.Font("RudawRegular", 16F);
-            this.DoctorButton.ForeColor = System.Drawing.Color.White;
-            this.DoctorButton.Image = global::Clinical_Management_System.Properties.Resources.doctor;
-            this.DoctorButton.Location = new System.Drawing.Point(-13, -17);
-            this.DoctorButton.Name = "DoctorButton";
-            this.DoctorButton.Size = new System.Drawing.Size(245, 82);
-            this.DoctorButton.TabIndex = 21;
-            this.DoctorButton.Text = "   دکتۆر";
-            this.DoctorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.DoctorButton.UseVisualStyleBackColor = false;
-            this.DoctorButton.Click += new System.EventHandler(this.DoctorButton_Click);
             // 
             // panel7
             // 
@@ -329,23 +261,6 @@
             this.panel7.Size = new System.Drawing.Size(227, 63);
             this.panel7.TabIndex = 22;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("RudawRegular", 16F);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Clinical_Management_System.Properties.Resources.Secrtary;
-            this.button4.Location = new System.Drawing.Point(-10, -16);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(245, 82);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "   سکرتێر";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // panel13
             // 
             this.panel13.Controls.Add(this.ReciptionButton);
@@ -353,23 +268,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(241, 69);
             this.panel13.TabIndex = 35;
-            // 
-            // ReciptionButton
-            // 
-            this.ReciptionButton.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ReciptionButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ReciptionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ReciptionButton.Font = new System.Drawing.Font("RudawRegular", 16F);
-            this.ReciptionButton.ForeColor = System.Drawing.Color.White;
-            this.ReciptionButton.Image = global::Clinical_Management_System.Properties.Resources.patient;
-            this.ReciptionButton.Location = new System.Drawing.Point(-9, -6);
-            this.ReciptionButton.Name = "ReciptionButton";
-            this.ReciptionButton.Size = new System.Drawing.Size(245, 82);
-            this.ReciptionButton.TabIndex = 22;
-            this.ReciptionButton.Text = "  نەخۆش";
-            this.ReciptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ReciptionButton.UseVisualStyleBackColor = false;
-            this.ReciptionButton.Click += new System.EventHandler(this.ReciptionButton_Click);
             // 
             // panel10
             // 
@@ -472,39 +370,6 @@
             this.label28.TabIndex = 14;
             this.label28.Text = "دکتۆر";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Clinical_Management_System.Properties.Resources.close__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(265, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Clinical_Management_System.Properties.Resources.fullscreen;
-            this.pictureBox5.Location = new System.Drawing.Point(218, 6);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(41, 38);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 15;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Clinical_Management_System.Properties.Resources.remove;
-            this.pictureBox4.Location = new System.Drawing.Point(176, 8);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // timer1
             // 
             this.timer1.Interval = 10;
@@ -579,43 +444,6 @@
             this.print_krd_lbl.Size = new System.Drawing.Size(125, 39);
             this.print_krd_lbl.TabIndex = 58;
             this.print_krd_lbl.Text = "Kurdistan";
-            // 
-            // doc_profile_pic
-            // 
-            this.doc_profile_pic.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.doc_profile_pic.Image = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.doc_profile_pic.Location = new System.Drawing.Point(428, 67);
-            this.doc_profile_pic.Name = "doc_profile_pic";
-            this.doc_profile_pic.Size = new System.Drawing.Size(135, 135);
-            this.doc_profile_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.doc_profile_pic.TabIndex = 37;
-            this.doc_profile_pic.TabStop = false;
-            this.doc_profile_pic.WaitOnLoad = true;
-            this.doc_profile_pic.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // print_pic_op
-            // 
-            this.print_pic_op.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.print_pic_op.Image = global::Clinical_Management_System.Properties.Resources._7502672_1;
-            this.print_pic_op.Location = new System.Drawing.Point(428, 67);
-            this.print_pic_op.Name = "print_pic_op";
-            this.print_pic_op.Size = new System.Drawing.Size(135, 135);
-            this.print_pic_op.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.print_pic_op.TabIndex = 38;
-            this.print_pic_op.TabStop = false;
-            this.print_pic_op.WaitOnLoad = true;
-            // 
-            // picLogoPrint
-            // 
-            this.picLogoPrint.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.picLogoPrint.Image = global::Clinical_Management_System.Properties.Resources._7502672;
-            this.picLogoPrint.Location = new System.Drawing.Point(428, 67);
-            this.picLogoPrint.Name = "picLogoPrint";
-            this.picLogoPrint.Size = new System.Drawing.Size(135, 135);
-            this.picLogoPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogoPrint.TabIndex = 39;
-            this.picLogoPrint.TabStop = false;
-            this.picLogoPrint.WaitOnLoad = true;
             // 
             // doc_clinic_lbl
             // 
@@ -727,15 +555,15 @@
             this.doc_ID_lbl.TabIndex = 27;
             this.doc_ID_lbl.Text = ":زنجیرە";
             // 
-            // textBox1
+            // doc_search_txt
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(932, 558);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(316, 38);
-            this.textBox1.TabIndex = 28;
+            this.doc_search_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.doc_search_txt.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doc_search_txt.Location = new System.Drawing.Point(932, 558);
+            this.doc_search_txt.Name = "doc_search_txt";
+            this.doc_search_txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.doc_search_txt.Size = new System.Drawing.Size(316, 38);
+            this.doc_search_txt.TabIndex = 28;
             // 
             // clinicCombo
             // 
@@ -949,8 +777,11 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel16.Controls.Add(this.doc_QrPic);
-            this.panel16.Controls.Add(this.button7);
+            this.panel16.Controls.Add(this.doc_qr_show_pl);
+            this.panel16.Controls.Add(this.doc_qr_read_pl);
+            this.panel16.Controls.Add(this.show_qr_reader_btn);
+            this.panel16.Controls.Add(this.show_qr_gen_btn);
+            this.panel16.Controls.Add(this.close_br_pl_btn);
             this.panel16.Location = new System.Drawing.Point(0, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
             this.panel16.MinimumSize = new System.Drawing.Size(497, 0);
@@ -958,34 +789,6 @@
             this.panel16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel16.Size = new System.Drawing.Size(497, 686);
             this.panel16.TabIndex = 28;
-            // 
-            // doc_QrPic
-            // 
-            this.doc_QrPic.Location = new System.Drawing.Point(113, 92);
-            this.doc_QrPic.Name = "doc_QrPic";
-            this.doc_QrPic.Size = new System.Drawing.Size(260, 271);
-            this.doc_QrPic.TabIndex = 33;
-            this.doc_QrPic.TabStop = false;
-            // 
-            // button7
-            // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button7.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = global::Clinical_Management_System.Properties.Resources.check_mark;
-            this.button7.Location = new System.Drawing.Point(184, 455);
-            this.button7.Name = "button7";
-            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button7.Size = new System.Drawing.Size(121, 50);
-            this.button7.TabIndex = 30;
-            this.button7.Text = "   تەواو";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // barcodeTimer
             // 
@@ -1000,100 +803,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Clinical_Management_System.Properties.Resources.search_icon;
-            this.button1.Location = new System.Drawing.Point(1031, 628);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 50);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "   گەڕان";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button6_Click_1);
-            // 
-            // barcodeDocBtn
-            // 
-            this.barcodeDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.barcodeDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.barcodeDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.barcodeDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.barcodeDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barcodeDocBtn.ForeColor = System.Drawing.Color.White;
-            this.barcodeDocBtn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
-            this.barcodeDocBtn.Location = new System.Drawing.Point(529, 405);
-            this.barcodeDocBtn.Name = "barcodeDocBtn";
-            this.barcodeDocBtn.Size = new System.Drawing.Size(127, 50);
-            this.barcodeDocBtn.TabIndex = 30;
-            this.barcodeDocBtn.Text = "   بارکۆد";
-            this.barcodeDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.barcodeDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.barcodeDocBtn.UseVisualStyleBackColor = false;
-            this.barcodeDocBtn.Click += new System.EventHandler(this.button6_Click_1);
-            // 
-            // editDocBtn
-            // 
-            this.editDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.editDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.editDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editDocBtn.ForeColor = System.Drawing.Color.White;
-            this.editDocBtn.Image = global::Clinical_Management_System.Properties.Resources.edit;
-            this.editDocBtn.Location = new System.Drawing.Point(249, 404);
-            this.editDocBtn.Name = "editDocBtn";
-            this.editDocBtn.Size = new System.Drawing.Size(127, 50);
-            this.editDocBtn.TabIndex = 30;
-            this.editDocBtn.Text = "   گۆڕانکاری";
-            this.editDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.editDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.editDocBtn.UseVisualStyleBackColor = false;
-            this.editDocBtn.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // deleteDocBtn
-            // 
-            this.deleteDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.deleteDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.deleteDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteDocBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteDocBtn.Image = global::Clinical_Management_System.Properties.Resources.delete;
-            this.deleteDocBtn.Location = new System.Drawing.Point(116, 404);
-            this.deleteDocBtn.Name = "deleteDocBtn";
-            this.deleteDocBtn.Size = new System.Drawing.Size(127, 50);
-            this.deleteDocBtn.TabIndex = 30;
-            this.deleteDocBtn.Text = "   سڕینەوە";
-            this.deleteDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.deleteDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.deleteDocBtn.UseVisualStyleBackColor = false;
-            // 
-            // copyDocBtn
-            // 
-            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.copyDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.copyDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.copyDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.copyDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copyDocBtn.ForeColor = System.Drawing.Color.White;
-            this.copyDocBtn.Image = global::Clinical_Management_System.Properties.Resources.printer;
-            this.copyDocBtn.Location = new System.Drawing.Point(382, 406);
-            this.copyDocBtn.Name = "copyDocBtn";
-            this.copyDocBtn.Size = new System.Drawing.Size(141, 48);
-            this.copyDocBtn.TabIndex = 30;
-            this.copyDocBtn.Text = "   کۆپی کردن";
-            this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.copyDocBtn.UseVisualStyleBackColor = false;
-            this.copyDocBtn.Click += new System.EventHandler(this.copyDocBtn_Click);
             // 
             // printDialog1
             // 
@@ -1206,62 +915,6 @@
             this.docPhoneTxt.Name = "docPhoneTxt";
             this.docPhoneTxt.Size = new System.Drawing.Size(314, 35);
             this.docPhoneTxt.TabIndex = 0;
-            // 
-            // cancel_Form_Button
-            // 
-            this.cancel_Form_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cancel_Form_Button.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.cancel_Form_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancel_Form_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel_Form_Button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_Form_Button.ForeColor = System.Drawing.Color.White;
-            this.cancel_Form_Button.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
-            this.cancel_Form_Button.Location = new System.Drawing.Point(342, 611);
-            this.cancel_Form_Button.Name = "cancel_Form_Button";
-            this.cancel_Form_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cancel_Form_Button.Size = new System.Drawing.Size(121, 50);
-            this.cancel_Form_Button.TabIndex = 30;
-            this.cancel_Form_Button.Text = "   نەخێر";
-            this.cancel_Form_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cancel_Form_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.cancel_Form_Button.UseVisualStyleBackColor = false;
-            this.cancel_Form_Button.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Clinical_Management_System.Properties.Resources.add1;
-            this.button5.Location = new System.Drawing.Point(67, 613);
-            this.button5.Name = "button5";
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(121, 50);
-            this.button5.TabIndex = 30;
-            this.button5.Text = "  زیادکردن";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // Add_user_button
-            // 
-            this.Add_user_button.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Add_user_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_user_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_user_button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_user_button.ForeColor = System.Drawing.Color.White;
-            this.Add_user_button.Image = global::Clinical_Management_System.Properties.Resources.updating;
-            this.Add_user_button.Location = new System.Drawing.Point(208, 611);
-            this.Add_user_button.Name = "Add_user_button";
-            this.Add_user_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Add_user_button.Size = new System.Drawing.Size(121, 50);
-            this.Add_user_button.TabIndex = 30;
-            this.Add_user_button.Text = "   گۆڕین";
-            this.Add_user_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Add_user_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Add_user_button.UseVisualStyleBackColor = false;
             // 
             // docPasswordTxt
             // 
@@ -1437,6 +1090,480 @@
             this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 53);
             this.Adding_Doctor_Form_panel.TabIndex = 31;
             // 
+            // doc_qr_read_pl
+            // 
+            this.doc_qr_read_pl.Controls.Add(this.label11);
+            this.doc_qr_read_pl.Controls.Add(this.choosing_cam_cmb);
+            this.doc_qr_read_pl.Controls.Add(this.doc_qr_read_pic);
+            this.doc_qr_read_pl.Controls.Add(this.start_read_qr_btn);
+            this.doc_qr_read_pl.Location = new System.Drawing.Point(20, 26);
+            this.doc_qr_read_pl.Name = "doc_qr_read_pl";
+            this.doc_qr_read_pl.Size = new System.Drawing.Size(450, 423);
+            this.doc_qr_read_pl.TabIndex = 31;
+            // 
+            // doc_qr_show_pl
+            // 
+            this.doc_qr_show_pl.Controls.Add(this.doc_qr_show_pic);
+            this.doc_qr_show_pl.Location = new System.Drawing.Point(19, 25);
+            this.doc_qr_show_pl.Name = "doc_qr_show_pl";
+            this.doc_qr_show_pl.Size = new System.Drawing.Size(450, 423);
+            this.doc_qr_show_pl.TabIndex = 31;
+            // 
+            // choosing_cam_cmb
+            // 
+            this.choosing_cam_cmb.FormattingEnabled = true;
+            this.choosing_cam_cmb.Location = new System.Drawing.Point(89, 321);
+            this.choosing_cam_cmb.Name = "choosing_cam_cmb";
+            this.choosing_cam_cmb.Size = new System.Drawing.Size(272, 21);
+            this.choosing_cam_cmb.TabIndex = 31;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(367, 320);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label11.Size = new System.Drawing.Size(46, 23);
+            this.label11.TabIndex = 38;
+            this.label11.Text = ":کامێرا";
+            // 
+            // doc_qr_show_pic
+            // 
+            this.doc_qr_show_pic.Location = new System.Drawing.Point(93, 61);
+            this.doc_qr_show_pic.Name = "doc_qr_show_pic";
+            this.doc_qr_show_pic.Size = new System.Drawing.Size(260, 271);
+            this.doc_qr_show_pic.TabIndex = 33;
+            this.doc_qr_show_pic.TabStop = false;
+            // 
+            // doc_qr_read_pic
+            // 
+            this.doc_qr_read_pic.Location = new System.Drawing.Point(30, 37);
+            this.doc_qr_read_pic.Name = "doc_qr_read_pic";
+            this.doc_qr_read_pic.Size = new System.Drawing.Size(393, 251);
+            this.doc_qr_read_pic.TabIndex = 0;
+            this.doc_qr_read_pic.TabStop = false;
+            // 
+            // start_read_qr_btn
+            // 
+            this.start_read_qr_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.start_read_qr_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.start_read_qr_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.start_read_qr_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.start_read_qr_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_read_qr_btn.ForeColor = System.Drawing.Color.White;
+            this.start_read_qr_btn.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
+            this.start_read_qr_btn.Location = new System.Drawing.Point(136, 352);
+            this.start_read_qr_btn.Name = "start_read_qr_btn";
+            this.start_read_qr_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.start_read_qr_btn.Size = new System.Drawing.Size(163, 64);
+            this.start_read_qr_btn.TabIndex = 30;
+            this.start_read_qr_btn.Text = "   دەستپێکردن";
+            this.start_read_qr_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.start_read_qr_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.start_read_qr_btn.UseVisualStyleBackColor = false;
+            this.start_read_qr_btn.Click += new System.EventHandler(this.start_read_qr_btn_Click);
+            // 
+            // show_qr_reader_btn
+            // 
+            this.show_qr_reader_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.show_qr_reader_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.show_qr_reader_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.show_qr_reader_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.show_qr_reader_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.show_qr_reader_btn.ForeColor = System.Drawing.Color.White;
+            this.show_qr_reader_btn.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
+            this.show_qr_reader_btn.Location = new System.Drawing.Point(40, 455);
+            this.show_qr_reader_btn.Name = "show_qr_reader_btn";
+            this.show_qr_reader_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.show_qr_reader_btn.Size = new System.Drawing.Size(131, 50);
+            this.show_qr_reader_btn.TabIndex = 30;
+            this.show_qr_reader_btn.Text = "   خوێندنەوە";
+            this.show_qr_reader_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.show_qr_reader_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.show_qr_reader_btn.UseVisualStyleBackColor = false;
+            this.show_qr_reader_btn.Click += new System.EventHandler(this.show_qr_reader_btn_Click);
+            // 
+            // show_qr_gen_btn
+            // 
+            this.show_qr_gen_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.show_qr_gen_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.show_qr_gen_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.show_qr_gen_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.show_qr_gen_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.show_qr_gen_btn.ForeColor = System.Drawing.Color.White;
+            this.show_qr_gen_btn.Image = global::Clinical_Management_System.Properties.Resources.qr_code1;
+            this.show_qr_gen_btn.Location = new System.Drawing.Point(304, 455);
+            this.show_qr_gen_btn.Name = "show_qr_gen_btn";
+            this.show_qr_gen_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.show_qr_gen_btn.Size = new System.Drawing.Size(139, 50);
+            this.show_qr_gen_btn.TabIndex = 30;
+            this.show_qr_gen_btn.Text = "   نیشاندان";
+            this.show_qr_gen_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.show_qr_gen_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.show_qr_gen_btn.UseVisualStyleBackColor = false;
+            this.show_qr_gen_btn.Click += new System.EventHandler(this.show_qr_gen_btn_Click);
+            // 
+            // close_br_pl_btn
+            // 
+            this.close_br_pl_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.close_br_pl_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.close_br_pl_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close_br_pl_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close_br_pl_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close_br_pl_btn.ForeColor = System.Drawing.Color.White;
+            this.close_br_pl_btn.Image = global::Clinical_Management_System.Properties.Resources.check_mark;
+            this.close_br_pl_btn.Location = new System.Drawing.Point(177, 455);
+            this.close_br_pl_btn.Name = "close_br_pl_btn";
+            this.close_br_pl_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.close_br_pl_btn.Size = new System.Drawing.Size(121, 50);
+            this.close_br_pl_btn.TabIndex = 30;
+            this.close_br_pl_btn.Text = "   تەواو";
+            this.close_br_pl_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.close_br_pl_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.close_br_pl_btn.UseVisualStyleBackColor = false;
+            this.close_br_pl_btn.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // cancel_Form_Button
+            // 
+            this.cancel_Form_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cancel_Form_Button.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.cancel_Form_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancel_Form_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel_Form_Button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_Form_Button.ForeColor = System.Drawing.Color.White;
+            this.cancel_Form_Button.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
+            this.cancel_Form_Button.Location = new System.Drawing.Point(342, 611);
+            this.cancel_Form_Button.Name = "cancel_Form_Button";
+            this.cancel_Form_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cancel_Form_Button.Size = new System.Drawing.Size(121, 50);
+            this.cancel_Form_Button.TabIndex = 30;
+            this.cancel_Form_Button.Text = "   نەخێر";
+            this.cancel_Form_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cancel_Form_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.cancel_Form_Button.UseVisualStyleBackColor = false;
+            this.cancel_Form_Button.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::Clinical_Management_System.Properties.Resources.add1;
+            this.button5.Location = new System.Drawing.Point(67, 613);
+            this.button5.Name = "button5";
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button5.Size = new System.Drawing.Size(121, 50);
+            this.button5.TabIndex = 30;
+            this.button5.Text = "  زیادکردن";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // Add_user_button
+            // 
+            this.Add_user_button.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Add_user_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add_user_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add_user_button.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_user_button.ForeColor = System.Drawing.Color.White;
+            this.Add_user_button.Image = global::Clinical_Management_System.Properties.Resources.updating;
+            this.Add_user_button.Location = new System.Drawing.Point(208, 611);
+            this.Add_user_button.Name = "Add_user_button";
+            this.Add_user_button.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Add_user_button.Size = new System.Drawing.Size(121, 50);
+            this.Add_user_button.TabIndex = 30;
+            this.Add_user_button.Text = "   گۆڕین";
+            this.Add_user_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Add_user_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Add_user_button.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Clinical_Management_System.Properties.Resources.menu;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // StartButton
+            // 
+            this.StartButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.StartButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StartButton.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartButton.ForeColor = System.Drawing.Color.White;
+            this.StartButton.Image = global::Clinical_Management_System.Properties.Resources.start;
+            this.StartButton.Location = new System.Drawing.Point(-10, -8);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(245, 82);
+            this.StartButton.TabIndex = 0;
+            this.StartButton.Text = "   سەرەتا";
+            this.StartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.StartButton.UseVisualStyleBackColor = false;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
+            // ClinicButton
+            // 
+            this.ClinicButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ClinicButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ClinicButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClinicButton.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClinicButton.ForeColor = System.Drawing.Color.White;
+            this.ClinicButton.Image = global::Clinical_Management_System.Properties.Resources.Clinic_icon;
+            this.ClinicButton.Location = new System.Drawing.Point(-10, -6);
+            this.ClinicButton.Name = "ClinicButton";
+            this.ClinicButton.Size = new System.Drawing.Size(245, 82);
+            this.ClinicButton.TabIndex = 19;
+            this.ClinicButton.Text = "   نۆرینگە";
+            this.ClinicButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ClinicButton.UseVisualStyleBackColor = false;
+            this.ClinicButton.Click += new System.EventHandler(this.ClinicButton_Click);
+            // 
+            // AdminButton
+            // 
+            this.AdminButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.AdminButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AdminButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AdminButton.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.AdminButton.ForeColor = System.Drawing.Color.White;
+            this.AdminButton.Image = global::Clinical_Management_System.Properties.Resources.admin;
+            this.AdminButton.Location = new System.Drawing.Point(-10, -10);
+            this.AdminButton.Name = "AdminButton";
+            this.AdminButton.Size = new System.Drawing.Size(245, 82);
+            this.AdminButton.TabIndex = 20;
+            this.AdminButton.Text = "   ئادمین";
+            this.AdminButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.AdminButton.UseVisualStyleBackColor = false;
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
+            // 
+            // DoctorButton
+            // 
+            this.DoctorButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.DoctorButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoctorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DoctorButton.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.DoctorButton.ForeColor = System.Drawing.Color.White;
+            this.DoctorButton.Image = global::Clinical_Management_System.Properties.Resources.doctor;
+            this.DoctorButton.Location = new System.Drawing.Point(-13, -17);
+            this.DoctorButton.Name = "DoctorButton";
+            this.DoctorButton.Size = new System.Drawing.Size(245, 82);
+            this.DoctorButton.TabIndex = 21;
+            this.DoctorButton.Text = "   دکتۆر";
+            this.DoctorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.DoctorButton.UseVisualStyleBackColor = false;
+            this.DoctorButton.Click += new System.EventHandler(this.DoctorButton_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::Clinical_Management_System.Properties.Resources.Secrtary;
+            this.button4.Location = new System.Drawing.Point(-10, -16);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(245, 82);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "   سکرتێر";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // ReciptionButton
+            // 
+            this.ReciptionButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ReciptionButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ReciptionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReciptionButton.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.ReciptionButton.ForeColor = System.Drawing.Color.White;
+            this.ReciptionButton.Image = global::Clinical_Management_System.Properties.Resources.patient;
+            this.ReciptionButton.Location = new System.Drawing.Point(-9, -6);
+            this.ReciptionButton.Name = "ReciptionButton";
+            this.ReciptionButton.Size = new System.Drawing.Size(245, 82);
+            this.ReciptionButton.TabIndex = 22;
+            this.ReciptionButton.Text = "  نەخۆش";
+            this.ReciptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ReciptionButton.UseVisualStyleBackColor = false;
+            this.ReciptionButton.Click += new System.EventHandler(this.ReciptionButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Clinical_Management_System.Properties.Resources.search_icon;
+            this.button1.Location = new System.Drawing.Point(1031, 628);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 50);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "   گەڕان";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // barcodeDocBtn
+            // 
+            this.barcodeDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.barcodeDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.barcodeDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.barcodeDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.barcodeDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barcodeDocBtn.ForeColor = System.Drawing.Color.White;
+            this.barcodeDocBtn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
+            this.barcodeDocBtn.Location = new System.Drawing.Point(529, 405);
+            this.barcodeDocBtn.Name = "barcodeDocBtn";
+            this.barcodeDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.barcodeDocBtn.TabIndex = 30;
+            this.barcodeDocBtn.Text = "   بارکۆد";
+            this.barcodeDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.barcodeDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.barcodeDocBtn.UseVisualStyleBackColor = false;
+            this.barcodeDocBtn.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // editDocBtn
+            // 
+            this.editDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.editDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.editDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editDocBtn.ForeColor = System.Drawing.Color.White;
+            this.editDocBtn.Image = global::Clinical_Management_System.Properties.Resources.edit;
+            this.editDocBtn.Location = new System.Drawing.Point(249, 404);
+            this.editDocBtn.Name = "editDocBtn";
+            this.editDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.editDocBtn.TabIndex = 30;
+            this.editDocBtn.Text = "   گۆڕانکاری";
+            this.editDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.editDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.editDocBtn.UseVisualStyleBackColor = false;
+            this.editDocBtn.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // deleteDocBtn
+            // 
+            this.deleteDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.deleteDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.deleteDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteDocBtn.ForeColor = System.Drawing.Color.White;
+            this.deleteDocBtn.Image = global::Clinical_Management_System.Properties.Resources.delete;
+            this.deleteDocBtn.Location = new System.Drawing.Point(116, 404);
+            this.deleteDocBtn.Name = "deleteDocBtn";
+            this.deleteDocBtn.Size = new System.Drawing.Size(127, 50);
+            this.deleteDocBtn.TabIndex = 30;
+            this.deleteDocBtn.Text = "   سڕینەوە";
+            this.deleteDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.deleteDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.deleteDocBtn.UseVisualStyleBackColor = false;
+            // 
+            // copyDocBtn
+            // 
+            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.copyDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.copyDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.copyDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.copyDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyDocBtn.ForeColor = System.Drawing.Color.White;
+            this.copyDocBtn.Image = global::Clinical_Management_System.Properties.Resources.printer;
+            this.copyDocBtn.Location = new System.Drawing.Point(382, 406);
+            this.copyDocBtn.Name = "copyDocBtn";
+            this.copyDocBtn.Size = new System.Drawing.Size(141, 48);
+            this.copyDocBtn.TabIndex = 30;
+            this.copyDocBtn.Text = "   کۆپی کردن";
+            this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.copyDocBtn.UseVisualStyleBackColor = false;
+            this.copyDocBtn.Click += new System.EventHandler(this.copyDocBtn_Click);
+            // 
+            // doc_profile_pic
+            // 
+            this.doc_profile_pic.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.doc_profile_pic.Image = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.doc_profile_pic.Location = new System.Drawing.Point(428, 67);
+            this.doc_profile_pic.Name = "doc_profile_pic";
+            this.doc_profile_pic.Size = new System.Drawing.Size(135, 135);
+            this.doc_profile_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.doc_profile_pic.TabIndex = 37;
+            this.doc_profile_pic.TabStop = false;
+            this.doc_profile_pic.WaitOnLoad = true;
+            this.doc_profile_pic.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // print_pic_op
+            // 
+            this.print_pic_op.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.print_pic_op.Image = global::Clinical_Management_System.Properties.Resources._7502672_1;
+            this.print_pic_op.Location = new System.Drawing.Point(428, 67);
+            this.print_pic_op.Name = "print_pic_op";
+            this.print_pic_op.Size = new System.Drawing.Size(135, 135);
+            this.print_pic_op.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.print_pic_op.TabIndex = 38;
+            this.print_pic_op.TabStop = false;
+            this.print_pic_op.WaitOnLoad = true;
+            // 
+            // picLogoPrint
+            // 
+            this.picLogoPrint.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
+            this.picLogoPrint.Image = global::Clinical_Management_System.Properties.Resources._7502672;
+            this.picLogoPrint.Location = new System.Drawing.Point(428, 67);
+            this.picLogoPrint.Name = "picLogoPrint";
+            this.picLogoPrint.Size = new System.Drawing.Size(135, 135);
+            this.picLogoPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoPrint.TabIndex = 39;
+            this.picLogoPrint.TabStop = false;
+            this.picLogoPrint.WaitOnLoad = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Clinical_Management_System.Properties.Resources.close__2_;
+            this.pictureBox3.Location = new System.Drawing.Point(265, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(39, 38);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Clinical_Management_System.Properties.Resources.fullscreen;
+            this.pictureBox5.Location = new System.Drawing.Point(218, 6);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(41, 38);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.TabIndex = 15;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Clinical_Management_System.Properties.Resources.remove;
+            this.pictureBox4.Location = new System.Drawing.Point(176, 8);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // run_cam_qr_timer
+            // 
+            this.run_cam_qr_timer.Interval = 1000;
+            this.run_cam_qr_timer.Tick += new System.EventHandler(this.run_cam_qr_timer_Tick);
+            // 
             // Admin_DoctorView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1457,7 +1584,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.DoctorListLbl);
             this.Controls.Add(this.docListDGV);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.doc_search_txt);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1292, 782);
             this.Name = "Admin_DoctorView";
@@ -1471,7 +1598,6 @@
             this.sidebar.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -1481,26 +1607,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.docPersonalinfoPanel.ResumeLayout(false);
             this.docPersonalinfoPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doc_profile_pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).EndInit();
             this.docGeneralinfoPanel.ResumeLayout(false);
             this.docGeneralinfoPanel.PerformLayout();
             this.doctor_barcode_panel.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.doc_QrPic)).EndInit();
             this.Adding_Doctor_Form_panel1.ResumeLayout(false);
             this.Adding_Doctor_Form_panel1.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.Adding_Doctor_Form_panel.ResumeLayout(false);
+            this.doc_qr_read_pl.ResumeLayout(false);
+            this.doc_qr_read_pl.PerformLayout();
+            this.doc_qr_show_pl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.doc_qr_show_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doc_qr_read_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doc_profile_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1558,9 +1689,9 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button close_br_pl_btn;
         private System.Windows.Forms.Timer barcodeTimer;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox doc_search_txt;
         private System.Windows.Forms.Timer dateTimeTimer;
         private System.Windows.Forms.Label doc_clinic_lbl;
         private System.Windows.Forms.Label doc_clinic;
@@ -1580,7 +1711,7 @@
         private System.Windows.Forms.Label doc_ID;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox doc_QrPic;
+        private System.Windows.Forms.PictureBox doc_qr_show_pic;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
@@ -1615,5 +1746,14 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.FlowLayoutPanel Adding_Doctor_Form_panel;
+        private System.Windows.Forms.Panel doc_qr_read_pl;
+        private System.Windows.Forms.ComboBox choosing_cam_cmb;
+        private System.Windows.Forms.PictureBox doc_qr_read_pic;
+        private System.Windows.Forms.Button start_read_qr_btn;
+        private System.Windows.Forms.Panel doc_qr_show_pl;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button show_qr_reader_btn;
+        private System.Windows.Forms.Button show_qr_gen_btn;
+        private System.Windows.Forms.Timer run_cam_qr_timer;
     }
 }

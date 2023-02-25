@@ -721,7 +721,6 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel16.Controls.Add(this.admin_show_QR_pl);
             this.panel16.Controls.Add(this.admin_read_QR_pl);
             this.panel16.Controls.Add(this.button3);
             this.panel16.Controls.Add(this.button2);
@@ -737,7 +736,7 @@
             // admin_show_QR_pl
             // 
             this.admin_show_QR_pl.Controls.Add(this.admin_show_QR_pic);
-            this.admin_show_QR_pl.Location = new System.Drawing.Point(8, 14);
+            this.admin_show_QR_pl.Location = new System.Drawing.Point(0, 0);
             this.admin_show_QR_pl.Name = "admin_show_QR_pl";
             this.admin_show_QR_pl.Size = new System.Drawing.Size(470, 416);
             this.admin_show_QR_pl.TabIndex = 34;
@@ -752,6 +751,7 @@
             // 
             // admin_read_QR_pl
             // 
+            this.admin_read_QR_pl.Controls.Add(this.admin_show_QR_pl);
             this.admin_read_QR_pl.Controls.Add(this.comboBox2);
             this.admin_read_QR_pl.Controls.Add(this.start_qr_code);
             this.admin_read_QR_pl.Controls.Add(this.admin_read_QR_pic);
