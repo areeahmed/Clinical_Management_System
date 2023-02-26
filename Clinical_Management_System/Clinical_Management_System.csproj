@@ -91,6 +91,12 @@
     <Compile Include="Admin_DoctorView.Designer.cs">
       <DependentUpon>Admin_DoctorView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doctor_PatientView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_PatientView.Designer.cs">
+      <DependentUpon>Doctor_PatientView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_PatientView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_DoctorView.resx">
       <DependentUpon>Admin_DoctorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_PatientView.resx">
+      <DependentUpon>Doctor_PatientView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_PatientView.resx">
       <DependentUpon>Admin_PatientView.cs</DependentUpon>
