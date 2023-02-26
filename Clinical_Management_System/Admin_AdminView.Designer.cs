@@ -79,9 +79,9 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.admin_read_QR_pl = new System.Windows.Forms.Panel();
             this.admin_show_QR_pl = new System.Windows.Forms.Panel();
             this.admin_show_QR_pic = new System.Windows.Forms.PictureBox();
+            this.admin_read_QR_pl = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.start_qr_code = new System.Windows.Forms.Button();
             this.admin_read_QR_pic = new System.Windows.Forms.PictureBox();
@@ -152,9 +152,9 @@
             this.doctor_barcode_panel.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.admin_read_QR_pl.SuspendLayout();
             this.admin_show_QR_pl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_show_QR_pic)).BeginInit();
+            this.admin_read_QR_pl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_QrPic)).BeginInit();
             this.Adding_Doctor_Form_panel.SuspendLayout();
@@ -722,6 +722,7 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel16.Controls.Add(this.admin_show_QR_pl);
             this.panel16.Controls.Add(this.admin_read_QR_pl);
             this.panel16.Controls.Add(this.button3);
             this.panel16.Controls.Add(this.button2);
@@ -734,21 +735,10 @@
             this.panel16.Size = new System.Drawing.Size(497, 686);
             this.panel16.TabIndex = 28;
             // 
-            // admin_read_QR_pl
-            // 
-            this.admin_read_QR_pl.Controls.Add(this.admin_show_QR_pl);
-            this.admin_read_QR_pl.Controls.Add(this.comboBox2);
-            this.admin_read_QR_pl.Controls.Add(this.start_qr_code);
-            this.admin_read_QR_pl.Controls.Add(this.admin_read_QR_pic);
-            this.admin_read_QR_pl.Location = new System.Drawing.Point(9, 14);
-            this.admin_read_QR_pl.Name = "admin_read_QR_pl";
-            this.admin_read_QR_pl.Size = new System.Drawing.Size(470, 416);
-            this.admin_read_QR_pl.TabIndex = 33;
-            // 
             // admin_show_QR_pl
             // 
             this.admin_show_QR_pl.Controls.Add(this.admin_show_QR_pic);
-            this.admin_show_QR_pl.Location = new System.Drawing.Point(0, 0);
+            this.admin_show_QR_pl.Location = new System.Drawing.Point(12, 11);
             this.admin_show_QR_pl.Name = "admin_show_QR_pl";
             this.admin_show_QR_pl.Size = new System.Drawing.Size(470, 416);
             this.admin_show_QR_pl.TabIndex = 34;
@@ -760,6 +750,16 @@
             this.admin_show_QR_pic.Size = new System.Drawing.Size(280, 254);
             this.admin_show_QR_pic.TabIndex = 0;
             this.admin_show_QR_pic.TabStop = false;
+            // 
+            // admin_read_QR_pl
+            // 
+            this.admin_read_QR_pl.Controls.Add(this.comboBox2);
+            this.admin_read_QR_pl.Controls.Add(this.start_qr_code);
+            this.admin_read_QR_pl.Controls.Add(this.admin_read_QR_pic);
+            this.admin_read_QR_pl.Location = new System.Drawing.Point(9, 14);
+            this.admin_read_QR_pl.Name = "admin_read_QR_pl";
+            this.admin_read_QR_pl.Size = new System.Drawing.Size(470, 416);
+            this.admin_read_QR_pl.TabIndex = 33;
             // 
             // comboBox2
             // 
@@ -885,7 +885,7 @@
             this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(118, 9);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(500, 729);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 44);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 45);
             this.Adding_Doctor_Form_panel.TabIndex = 39;
             // 
             // panel14
@@ -1388,9 +1388,9 @@
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
-            this.admin_read_QR_pl.ResumeLayout(false);
             this.admin_show_QR_pl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.admin_show_QR_pic)).EndInit();
+            this.admin_read_QR_pl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_QrPic)).EndInit();
             this.Adding_Doctor_Form_panel.ResumeLayout(false);

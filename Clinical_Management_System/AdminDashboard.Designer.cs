@@ -92,6 +92,8 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -766,8 +768,10 @@
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.BackColor = System.Drawing.SystemColors.Control;
+            this.panel8.Controls.Add(this.label30);
             this.panel8.Controls.Add(this.label19);
             this.panel8.Controls.Add(this.label18);
+            this.panel8.Controls.Add(this.label29);
             this.panel8.Controls.Add(this.label17);
             this.panel8.Controls.Add(this.label12);
             this.panel8.Controls.Add(this.label11);
@@ -807,6 +811,27 @@
             // dateTimeTimer
             // 
             this.dateTimeTimer.Tick += new System.EventHandler(this.dateTimeTimer_Tick);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(178, 154);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(75, 35);
+            this.label29.TabIndex = 10;
+            this.label29.Text = ":ڕەگەز";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(136, 157);
+            this.label30.Name = "label30";
+            this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label30.Size = new System.Drawing.Size(36, 30);
+            this.label30.TabIndex = 13;
+            this.label30.Text = "نێر";
             // 
             // AdminDashboard
             // 
@@ -929,5 +954,7 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer dateTimeTimer;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
     }
 }

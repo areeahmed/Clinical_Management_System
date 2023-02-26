@@ -30,6 +30,7 @@ namespace Clinical_Management_System
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(patient));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -40,8 +41,6 @@ namespace Clinical_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.StartButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -57,7 +56,7 @@ namespace Clinical_Management_System
             this.DayWeekYear = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.clinicCombo = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pay_search_txt = new System.Windows.Forms.TextBox();
             this.DoctorListLbl = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.Adding_Doctor_Form_panel1 = new System.Windows.Forms.Panel();
@@ -90,7 +89,7 @@ namespace Clinical_Management_System
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.admin_show_qr_pl = new System.Windows.Forms.Panel();
-            this.pa_qr_pic = new System.Windows.Forms.PictureBox();
+            this.pay_qr_show_pic = new System.Windows.Forms.PictureBox();
             this.admin_read_qr_pl = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -118,6 +117,9 @@ namespace Clinical_Management_System
             this.pay_Name = new System.Windows.Forms.Label();
             this.pay_openForm = new System.Windows.Forms.Timer(this.components);
             this.pay_openQR = new System.Windows.Forms.Timer(this.components);
+            this.qr_code_is_active_lbl = new System.Windows.Forms.Label();
+            this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
+            this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -126,7 +128,6 @@ namespace Clinical_Management_System
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -141,7 +142,7 @@ namespace Clinical_Management_System
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
             this.admin_show_qr_pl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_qr_show_pic)).BeginInit();
             this.admin_read_qr_pl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).BeginInit();
             this.panel8.SuspendLayout();
@@ -225,7 +226,6 @@ namespace Clinical_Management_System
             // 
             this.sidebar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.sidebar.Controls.Add(this.panel1);
-            this.sidebar.Controls.Add(this.panel5);
             this.sidebar.Controls.Add(this.panel4);
             this.sidebar.Controls.Add(this.panel6);
             this.sidebar.Controls.Add(this.flowLayoutPanel2);
@@ -280,37 +280,10 @@ namespace Clinical_Management_System
             this.label3.TabIndex = 55;
             this.label3.Text = "لیستەکان";
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.StartButton);
-            this.panel5.Location = new System.Drawing.Point(4, 108);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(315, 65);
-            this.panel5.TabIndex = 47;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
-            // 
-            // StartButton
-            // 
-            this.StartButton.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.StartButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StartButton.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartButton.ForeColor = System.Drawing.Color.White;
-            this.StartButton.Image = global::Clinical_Management_System.Properties.Resources.start;
-            this.StartButton.Location = new System.Drawing.Point(-31, -4);
-            this.StartButton.Margin = new System.Windows.Forms.Padding(4);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(327, 79);
-            this.StartButton.TabIndex = 35;
-            this.StartButton.Text = "   سەرەتا";
-            this.StartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.StartButton.UseVisualStyleBackColor = false;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.button1);
-            this.panel4.Location = new System.Drawing.Point(4, 181);
+            this.panel4.Location = new System.Drawing.Point(4, 108);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(315, 65);
@@ -333,11 +306,12 @@ namespace Clinical_Management_System
             this.button1.Text = "  نەخۆش";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.button2);
-            this.panel6.Location = new System.Drawing.Point(4, 254);
+            this.panel6.Location = new System.Drawing.Point(4, 181);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(315, 65);
@@ -367,7 +341,7 @@ namespace Clinical_Management_System
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.flowLayoutPanel2.Controls.Add(this.panel3);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 326);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 253);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(210, 0);
             this.flowLayoutPanel2.TabIndex = 34;
@@ -394,7 +368,7 @@ namespace Clinical_Management_System
             // 
             // panel11
             // 
-            this.panel11.Location = new System.Drawing.Point(4, 333);
+            this.panel11.Location = new System.Drawing.Point(4, 260);
             this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(313, 23);
@@ -405,7 +379,7 @@ namespace Clinical_Management_System
             this.time.AutoSize = true;
             this.time.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.time.ForeColor = System.Drawing.Color.White;
-            this.time.Location = new System.Drawing.Point(4, 360);
+            this.time.Location = new System.Drawing.Point(4, 287);
             this.time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(70, 21);
@@ -415,7 +389,7 @@ namespace Clinical_Management_System
             // 
             // panel12
             // 
-            this.panel12.Location = new System.Drawing.Point(4, 385);
+            this.panel12.Location = new System.Drawing.Point(4, 312);
             this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(303, 13);
@@ -426,7 +400,7 @@ namespace Clinical_Management_System
             this.WeekDay.AutoSize = true;
             this.WeekDay.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WeekDay.ForeColor = System.Drawing.Color.White;
-            this.WeekDay.Location = new System.Drawing.Point(4, 402);
+            this.WeekDay.Location = new System.Drawing.Point(4, 329);
             this.WeekDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WeekDay.Name = "WeekDay";
             this.WeekDay.Size = new System.Drawing.Size(61, 21);
@@ -436,7 +410,7 @@ namespace Clinical_Management_System
             // 
             // panel7
             // 
-            this.panel7.Location = new System.Drawing.Point(4, 427);
+            this.panel7.Location = new System.Drawing.Point(4, 354);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(303, 13);
@@ -447,7 +421,7 @@ namespace Clinical_Management_System
             this.DayWeekYear.AutoSize = true;
             this.DayWeekYear.Font = new System.Drawing.Font("RudawRegular", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DayWeekYear.ForeColor = System.Drawing.Color.White;
-            this.DayWeekYear.Location = new System.Drawing.Point(4, 444);
+            this.DayWeekYear.Location = new System.Drawing.Point(4, 371);
             this.DayWeekYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DayWeekYear.Name = "DayWeekYear";
             this.DayWeekYear.Size = new System.Drawing.Size(54, 21);
@@ -476,16 +450,16 @@ namespace Clinical_Management_System
             this.clinicCombo.TabIndex = 56;
             this.clinicCombo.Text = "گەڕان بەپێی";
             // 
-            // textBox3
+            // pay_search_txt
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(969, 464);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox3.Size = new System.Drawing.Size(238, 35);
-            this.textBox3.TabIndex = 53;
+            this.pay_search_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_search_txt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_search_txt.Location = new System.Drawing.Point(969, 464);
+            this.pay_search_txt.Margin = new System.Windows.Forms.Padding(4);
+            this.pay_search_txt.Name = "pay_search_txt";
+            this.pay_search_txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pay_search_txt.Size = new System.Drawing.Size(238, 35);
+            this.pay_search_txt.TabIndex = 53;
             // 
             // DoctorListLbl
             // 
@@ -798,7 +772,7 @@ namespace Clinical_Management_System
             this.Adding_Doctor_Form_panel.Margin = new System.Windows.Forms.Padding(4);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(812, 631);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(812, 51);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(812, 48);
             this.Adding_Doctor_Form_panel.TabIndex = 57;
             // 
             // doctor_barcode_panel
@@ -808,11 +782,11 @@ namespace Clinical_Management_System
             this.doctor_barcode_panel.Controls.Add(this.panel15);
             this.doctor_barcode_panel.Controls.Add(this.panel16);
             this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(114, 68);
+            this.doctor_barcode_panel.Location = new System.Drawing.Point(125, 60);
             this.doctor_barcode_panel.Margin = new System.Windows.Forms.Padding(4);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(550, 607);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(550, 56);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(550, 51);
             this.doctor_barcode_panel.TabIndex = 58;
             // 
             // panel15
@@ -873,6 +847,7 @@ namespace Clinical_Management_System
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -914,24 +889,25 @@ namespace Clinical_Management_System
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // admin_show_qr_pl
             // 
-            this.admin_show_qr_pl.Controls.Add(this.pa_qr_pic);
-            this.admin_show_qr_pl.Location = new System.Drawing.Point(147, 24);
+            this.admin_show_qr_pl.Controls.Add(this.pay_qr_show_pic);
+            this.admin_show_qr_pl.Location = new System.Drawing.Point(157, 12);
             this.admin_show_qr_pl.Margin = new System.Windows.Forms.Padding(4);
             this.admin_show_qr_pl.Name = "admin_show_qr_pl";
             this.admin_show_qr_pl.Size = new System.Drawing.Size(492, 431);
             this.admin_show_qr_pl.TabIndex = 33;
             // 
-            // pa_qr_pic
+            // pay_qr_show_pic
             // 
-            this.pa_qr_pic.Location = new System.Drawing.Point(100, 63);
-            this.pa_qr_pic.Margin = new System.Windows.Forms.Padding(4);
-            this.pa_qr_pic.Name = "pa_qr_pic";
-            this.pa_qr_pic.Size = new System.Drawing.Size(245, 240);
-            this.pa_qr_pic.TabIndex = 32;
-            this.pa_qr_pic.TabStop = false;
+            this.pay_qr_show_pic.Location = new System.Drawing.Point(100, 63);
+            this.pay_qr_show_pic.Margin = new System.Windows.Forms.Padding(4);
+            this.pay_qr_show_pic.Name = "pay_qr_show_pic";
+            this.pay_qr_show_pic.Size = new System.Drawing.Size(245, 240);
+            this.pay_qr_show_pic.TabIndex = 32;
+            this.pay_qr_show_pic.TabStop = false;
             // 
             // admin_read_qr_pl
             // 
@@ -964,6 +940,7 @@ namespace Clinical_Management_System
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboBox1
             // 
@@ -1005,7 +982,7 @@ namespace Clinical_Management_System
             this.button4.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Clinical_Management_System.Properties.Resources.search_icon;
-            this.button4.Location = new System.Drawing.Point(636, 452);
+            this.button4.Location = new System.Drawing.Point(582, 452);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(127, 50);
@@ -1134,7 +1111,7 @@ namespace Clinical_Management_System
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(217, 55);
+            this.label8.Location = new System.Drawing.Point(483, 121);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1147,7 +1124,7 @@ namespace Clinical_Management_System
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(484, 218);
+            this.label9.Location = new System.Drawing.Point(117, 37);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1182,7 +1159,7 @@ namespace Clinical_Management_System
             // 
             this.pictureBox6.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
             this.pictureBox6.Image = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.pictureBox6.Location = new System.Drawing.Point(991, 34);
+            this.pictureBox6.Location = new System.Drawing.Point(981, 82);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(135, 137);
@@ -1196,7 +1173,7 @@ namespace Clinical_Management_System
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(384, 255);
+            this.label19.Location = new System.Drawing.Point(53, 88);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1209,7 +1186,7 @@ namespace Clinical_Management_System
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(74, 55);
+            this.label20.Location = new System.Drawing.Point(340, 121);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1222,7 +1199,7 @@ namespace Clinical_Management_System
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(407, 88);
+            this.label18.Location = new System.Drawing.Point(388, 51);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1309,6 +1286,28 @@ namespace Clinical_Management_System
             this.pay_openQR.Interval = 1;
             this.pay_openQR.Tick += new System.EventHandler(this.pay_openQR_Tick);
             // 
+            // qr_code_is_active_lbl
+            // 
+            this.qr_code_is_active_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.qr_code_is_active_lbl.AutoSize = true;
+            this.qr_code_is_active_lbl.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qr_code_is_active_lbl.ForeColor = System.Drawing.Color.Red;
+            this.qr_code_is_active_lbl.Location = new System.Drawing.Point(805, 25);
+            this.qr_code_is_active_lbl.Name = "qr_code_is_active_lbl";
+            this.qr_code_is_active_lbl.Size = new System.Drawing.Size(200, 23);
+            this.qr_code_is_active_lbl.TabIndex = 44;
+            this.qr_code_is_active_lbl.Text = "خوێندنەوەی کیو ئاڕ کۆد چالاکە";
+            // 
+            // run_cam_qr_timer
+            // 
+            this.run_cam_qr_timer.Interval = 1000;
+            this.run_cam_qr_timer.Tick += new System.EventHandler(this.run_cam_qr_timer_Tick);
+            // 
+            // dateTimeTimer
+            // 
+            this.dateTimeTimer.Interval = 1000;
+            this.dateTimeTimer.Tick += new System.EventHandler(this.dateTimeTimer_Tick);
+            // 
             // patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -1316,13 +1315,14 @@ namespace Clinical_Management_System
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1276, 790);
             this.ControlBox = false;
+            this.Controls.Add(this.sidebar);
             this.Controls.Add(this.Adding_Doctor_Form_panel);
+            this.Controls.Add(this.qr_code_is_active_lbl);
             this.Controls.Add(this.doctor_barcode_panel);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.sidebar);
             this.Controls.Add(this.barcodeDocBtn);
             this.Controls.Add(this.clinicCombo);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.pay_search_txt);
             this.Controls.Add(this.DoctorListLbl);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.editDocBtn);
@@ -1331,6 +1331,7 @@ namespace Clinical_Management_System
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1292, 806);
             this.Name = "patient";
@@ -1348,7 +1349,6 @@ namespace Clinical_Management_System
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -1367,7 +1367,7 @@ namespace Clinical_Management_System
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.admin_show_qr_pl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_qr_show_pic)).EndInit();
             this.admin_read_qr_pl.ResumeLayout(false);
             this.admin_read_qr_pl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).EndInit();
@@ -1392,7 +1392,6 @@ namespace Clinical_Management_System
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label time;
@@ -1405,7 +1404,7 @@ namespace Clinical_Management_System
         private System.Windows.Forms.Button editDocBtn;
         private System.Windows.Forms.Button deleteDocBtn;
         private System.Windows.Forms.ComboBox clinicCombo;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox pay_search_txt;
         private System.Windows.Forms.Label DoctorListLbl;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label32;
@@ -1424,13 +1423,12 @@ namespace Clinical_Management_System
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel admin_show_qr_pl;
-        private System.Windows.Forms.PictureBox pa_qr_pic;
+        private System.Windows.Forms.PictureBox pay_qr_show_pic;
         private System.Windows.Forms.Panel admin_read_qr_pl;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox admin_read_QR_pic;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;
@@ -1468,5 +1466,8 @@ namespace Clinical_Management_System
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label qr_code_is_active_lbl;
+        private System.Windows.Forms.Timer run_cam_qr_timer;
+        private System.Windows.Forms.Timer dateTimeTimer;
     }
 }

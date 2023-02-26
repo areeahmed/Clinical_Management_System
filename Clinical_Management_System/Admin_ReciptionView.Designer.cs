@@ -135,6 +135,8 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -1144,6 +1146,8 @@
             this.docPersonalinfoPanel.Controls.Add(this.recp_profile_pic);
             this.docPersonalinfoPanel.Controls.Add(this.print_pic_op);
             this.docPersonalinfoPanel.Controls.Add(this.picLogoPrint);
+            this.docPersonalinfoPanel.Controls.Add(this.label5);
+            this.docPersonalinfoPanel.Controls.Add(this.label4);
             this.docPersonalinfoPanel.Controls.Add(this.recp_clinic_lbl);
             this.docPersonalinfoPanel.Controls.Add(this.recp_clinic);
             this.docPersonalinfoPanel.Controls.Add(this.recp_Name_lbl);
@@ -1155,9 +1159,9 @@
             this.docPersonalinfoPanel.Controls.Add(this.recp_phone_lbl);
             this.docPersonalinfoPanel.Controls.Add(this.recp_address_lbl);
             this.docPersonalinfoPanel.Controls.Add(this.recp_lbl);
-            this.docPersonalinfoPanel.Location = new System.Drawing.Point(571, 66);
+            this.docPersonalinfoPanel.Location = new System.Drawing.Point(503, 66);
             this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
-            this.docPersonalinfoPanel.Size = new System.Drawing.Size(663, 245);
+            this.docPersonalinfoPanel.Size = new System.Drawing.Size(731, 245);
             this.docPersonalinfoPanel.TabIndex = 42;
             // 
             // print_hl_lbl
@@ -1165,7 +1169,7 @@
             this.print_hl_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.print_hl_lbl.AutoSize = true;
             this.print_hl_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_hl_lbl.Location = new System.Drawing.Point(20, -39);
+            this.print_hl_lbl.Location = new System.Drawing.Point(54, -39);
             this.print_hl_lbl.Name = "print_hl_lbl";
             this.print_hl_lbl.Size = new System.Drawing.Size(68, 30);
             this.print_hl_lbl.TabIndex = 59;
@@ -1177,7 +1181,7 @@
             this.print_cr_lbl.AutoSize = true;
             this.print_cr_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.print_cr_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.print_cr_lbl.Location = new System.Drawing.Point(87, -39);
+            this.print_cr_lbl.Location = new System.Drawing.Point(121, -39);
             this.print_cr_lbl.Name = "print_cr_lbl";
             this.print_cr_lbl.Size = new System.Drawing.Size(53, 30);
             this.print_cr_lbl.TabIndex = 60;
@@ -1188,7 +1192,7 @@
             this.print_krd_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.print_krd_lbl.AutoSize = true;
             this.print_krd_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print_krd_lbl.Location = new System.Drawing.Point(18, -66);
+            this.print_krd_lbl.Location = new System.Drawing.Point(52, -66);
             this.print_krd_lbl.Name = "print_krd_lbl";
             this.print_krd_lbl.Size = new System.Drawing.Size(125, 39);
             this.print_krd_lbl.TabIndex = 61;
@@ -1198,7 +1202,7 @@
             // 
             this.recp_profile_pic.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
             this.recp_profile_pic.Image = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
-            this.recp_profile_pic.Location = new System.Drawing.Point(486, 68);
+            this.recp_profile_pic.Location = new System.Drawing.Point(566, 64);
             this.recp_profile_pic.Name = "recp_profile_pic";
             this.recp_profile_pic.Size = new System.Drawing.Size(135, 135);
             this.recp_profile_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1211,7 +1215,7 @@
             // 
             this.print_pic_op.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
             this.print_pic_op.Image = global::Clinical_Management_System.Properties.Resources._7502672_1;
-            this.print_pic_op.Location = new System.Drawing.Point(486, 68);
+            this.print_pic_op.Location = new System.Drawing.Point(566, 64);
             this.print_pic_op.Name = "print_pic_op";
             this.print_pic_op.Size = new System.Drawing.Size(135, 135);
             this.print_pic_op.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1223,7 +1227,7 @@
             // 
             this.picLogoPrint.ErrorImage = global::Clinical_Management_System.Properties.Resources.male_unknown_picture;
             this.picLogoPrint.Image = global::Clinical_Management_System.Properties.Resources._7502672;
-            this.picLogoPrint.Location = new System.Drawing.Point(486, 68);
+            this.picLogoPrint.Location = new System.Drawing.Point(566, 64);
             this.picLogoPrint.Name = "picLogoPrint";
             this.picLogoPrint.Size = new System.Drawing.Size(135, 135);
             this.picLogoPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1236,7 +1240,7 @@
             this.recp_clinic_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_clinic_lbl.AutoSize = true;
             this.recp_clinic_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_clinic_lbl.Location = new System.Drawing.Point(333, 186);
+            this.recp_clinic_lbl.Location = new System.Drawing.Point(170, 23);
             this.recp_clinic_lbl.Name = "recp_clinic_lbl";
             this.recp_clinic_lbl.Size = new System.Drawing.Size(72, 30);
             this.recp_clinic_lbl.TabIndex = 51;
@@ -1247,7 +1251,7 @@
             this.recp_clinic.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_clinic.AutoSize = true;
             this.recp_clinic.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_clinic.Location = new System.Drawing.Point(269, 186);
+            this.recp_clinic.Location = new System.Drawing.Point(106, 23);
             this.recp_clinic.Name = "recp_clinic";
             this.recp_clinic.Size = new System.Drawing.Size(58, 30);
             this.recp_clinic.TabIndex = 52;
@@ -1258,7 +1262,7 @@
             this.recp_Name_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_Name_lbl.AutoSize = true;
             this.recp_Name_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_Name_lbl.Location = new System.Drawing.Point(333, 68);
+            this.recp_Name_lbl.Location = new System.Drawing.Point(453, 67);
             this.recp_Name_lbl.Name = "recp_Name_lbl";
             this.recp_Name_lbl.Size = new System.Drawing.Size(39, 30);
             this.recp_Name_lbl.TabIndex = 43;
@@ -1269,7 +1273,7 @@
             this.recp_address.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_address.AutoSize = true;
             this.recp_address.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_address.Location = new System.Drawing.Point(189, 148);
+            this.recp_address.Location = new System.Drawing.Point(309, 147);
             this.recp_address.Name = "recp_address";
             this.recp_address.Size = new System.Drawing.Size(138, 30);
             this.recp_address.TabIndex = 44;
@@ -1280,7 +1284,7 @@
             this.recp_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_Phone.AutoSize = true;
             this.recp_Phone.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_Phone.Location = new System.Drawing.Point(175, 111);
+            this.recp_Phone.Location = new System.Drawing.Point(295, 110);
             this.recp_Phone.Name = "recp_Phone";
             this.recp_Phone.Size = new System.Drawing.Size(152, 30);
             this.recp_Phone.TabIndex = 45;
@@ -1291,7 +1295,7 @@
             this.recp_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_ID.AutoSize = true;
             this.recp_ID.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_ID.Location = new System.Drawing.Point(303, 23);
+            this.recp_ID.Location = new System.Drawing.Point(423, 22);
             this.recp_ID.Name = "recp_ID";
             this.recp_ID.Size = new System.Drawing.Size(24, 30);
             this.recp_ID.TabIndex = 46;
@@ -1302,7 +1306,7 @@
             this.recp_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_Name.AutoSize = true;
             this.recp_Name.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_Name.Location = new System.Drawing.Point(204, 68);
+            this.recp_Name.Location = new System.Drawing.Point(324, 67);
             this.recp_Name.Name = "recp_Name";
             this.recp_Name.Size = new System.Drawing.Size(123, 30);
             this.recp_Name.TabIndex = 46;
@@ -1313,7 +1317,7 @@
             this.recp_ID_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_ID_lbl.AutoSize = true;
             this.recp_ID_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_ID_lbl.Location = new System.Drawing.Point(333, 23);
+            this.recp_ID_lbl.Location = new System.Drawing.Point(453, 22);
             this.recp_ID_lbl.Name = "recp_ID_lbl";
             this.recp_ID_lbl.Size = new System.Drawing.Size(71, 30);
             this.recp_ID_lbl.TabIndex = 47;
@@ -1324,7 +1328,7 @@
             this.recp_phone_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_phone_lbl.AutoSize = true;
             this.recp_phone_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_phone_lbl.Location = new System.Drawing.Point(333, 111);
+            this.recp_phone_lbl.Location = new System.Drawing.Point(453, 110);
             this.recp_phone_lbl.Name = "recp_phone_lbl";
             this.recp_phone_lbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.recp_phone_lbl.Size = new System.Drawing.Size(82, 30);
@@ -1336,7 +1340,7 @@
             this.recp_address_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.recp_address_lbl.AutoSize = true;
             this.recp_address_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_address_lbl.Location = new System.Drawing.Point(333, 148);
+            this.recp_address_lbl.Location = new System.Drawing.Point(453, 147);
             this.recp_address_lbl.Name = "recp_address_lbl";
             this.recp_address_lbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.recp_address_lbl.Size = new System.Drawing.Size(92, 30);
@@ -1348,7 +1352,7 @@
             this.recp_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.recp_lbl.AutoSize = true;
             this.recp_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recp_lbl.Location = new System.Drawing.Point(562, 5);
+            this.recp_lbl.Location = new System.Drawing.Point(630, 5);
             this.recp_lbl.Name = "recp_lbl";
             this.recp_lbl.Size = new System.Drawing.Size(96, 39);
             this.recp_lbl.TabIndex = 42;
@@ -1425,6 +1429,28 @@
             // 
             this.run_cam_qr_timer.Interval = 1000;
             this.run_cam_qr_timer.Tick += new System.EventHandler(this.run_cam_qr_timer_Tick);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(411, 188);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 30);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "نێر";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(453, 189);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 30);
+            this.label5.TabIndex = 51;
+            this.label5.Text = ":ڕەگەز";
             // 
             // Admin_ReciptionView
             // 
@@ -1606,5 +1632,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Timer run_cam_qr_timer;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }
