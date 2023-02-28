@@ -154,7 +154,7 @@ namespace Clinical_Management_System
 
         private void Admin_ClinicView_Load(object sender, EventArgs e)
         {
-            
+            clinic_add_new_btn.Enabled = false;
             Adding_Doctor_Form_panel.Visible = false;
             // for making it fraggable
             ControlExtension.Draggable(Adding_Doctor_Form_panel, true);
@@ -220,35 +220,35 @@ namespace Clinical_Management_System
 
 
             // ID
-            e.Graphics.DrawString(clinic_ID.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 400);
-            e.Graphics.DrawString(clinic_ID_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 400);
+            e.Graphics.DrawString(clinic_id.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 400);
+            e.Graphics.DrawString(clinic_id_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 400);
 
             // NAME
-            e.Graphics.DrawString(clinic_Name.Text, new Font("RudawRegular", 24), Brushes.Black, 480, 450);
-            e.Graphics.DrawString(clinic_Name_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 450);
+            e.Graphics.DrawString(clinic_name.Text, new Font("RudawRegular", 24), Brushes.Black, 480, 450);
+            e.Graphics.DrawString(clinic_name_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 450);
 
             // INCOME
-            e.Graphics.DrawString(Income_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 340, 550);
+            e.Graphics.DrawString(clinic_income_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 340, 550);
             // TODAY
-            e.Graphics.DrawString(today_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 650);
-            e.Graphics.DrawString(today_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 650);
+            e.Graphics.DrawString(clinic_today_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 650);
+            e.Graphics.DrawString(clinic_today_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 650);
             // TOTAL
-            e.Graphics.DrawString(total_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 700);
-            e.Graphics.DrawString(total_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 700);
+            e.Graphics.DrawString(clinic_total_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 700);
+            e.Graphics.DrawString(clinic_total_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 700);
 
 
 
             // PATIENT
-            e.Graphics.DrawString(Patient_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 550);
+            e.Graphics.DrawString(clinic_patient_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 550);
             // DONE
-            e.Graphics.DrawString(Done_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 650);
-            e.Graphics.DrawString(Done_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 650);
+            e.Graphics.DrawString(clinic_descharged_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 650);
+            e.Graphics.DrawString(clinic_descharged_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 650);
             // REMAIN
-            e.Graphics.DrawString(remain_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 700);
-            e.Graphics.DrawString(remain_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 700);
+            e.Graphics.DrawString(clinic_remain_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 700);
+            e.Graphics.DrawString(clinic_remain_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 700);
             // OTHER DAY
-            e.Graphics.DrawString(otherDay_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 750);
-            e.Graphics.DrawString(otherDay_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 750);
+            e.Graphics.DrawString(clinic_other_day_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 750);
+            e.Graphics.DrawString(clinic_other_day_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 750);
 
         }
 
@@ -265,6 +265,20 @@ namespace Clinical_Management_System
         private void Adding_Doctor_Form_panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void clinic_add_new_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            if(clinic_add_new_chk.Checked)
+            {
+                clinic_add_new_btn.Enabled = true;
+                clinic_update_btn.Enabled = false;
+            }
+            else
+            {
+                clinic_add_new_btn.Enabled = false;
+                clinic_update_btn.Enabled = true;
+            }
         }
     }
 }
