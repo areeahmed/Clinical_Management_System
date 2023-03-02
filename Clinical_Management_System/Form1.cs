@@ -26,7 +26,7 @@ namespace Clinical_Management_System
         //open eye button
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            textBox2.UseSystemPasswordChar = true;
+            password_txt.UseSystemPasswordChar = true;
             closeEye.Visible = true;
             openEye.Visible = false;
         }
@@ -35,7 +35,7 @@ namespace Clinical_Management_System
         // close eye button
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            textBox2.UseSystemPasswordChar = false;
+            password_txt.UseSystemPasswordChar = false;
             closeEye.Visible = false;
             openEye.Visible = true;
         }

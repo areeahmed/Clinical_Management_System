@@ -18,7 +18,7 @@ namespace Clinical_Management_System
     {
         private Point mouseLocation;
         private bool isMouseDown = false;
-        bool sideBarExpand = false;
+        bool isFormOpened = false;
         bool isBarcodeOpen = false;
         //
         //
@@ -37,6 +37,7 @@ namespace Clinical_Management_System
 
         private void Admin_PatientView_Load(object sender, EventArgs e)
         {
+            Adding_Doctor_Form_panel.Visible = false;  
             qr_code_is_active_lbl.Visible = false;
             // needed for reading QR Code Form Load
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
@@ -85,37 +86,9 @@ namespace Clinical_Management_System
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (sideBarExpand)
-            {
-                sidebar.Width -= 10;
-                time.Font = new Font("RudawRegular", 11);
-                WeekDay.Font = new Font("RudawRegular", 11);
-                DayWeekYear.Font = new Font("RudawRegular", 11);
-                if (sidebar.Width == sidebar.MinimumSize.Width)
-                {
-                    sideBarExpand = false;
-                    timer1.Stop();
-                }
-            }
-            else
-            {
-                sidebar.Width += 10;
-                if (sidebar.Width == sidebar.MaximumSize.Width)
-                {
-                    sideBarExpand = true;
-                    timer1.Stop();
-                    time.Font = new Font("RudawRegular", 20);
-                    WeekDay.Font = new Font("RudawRegular", 20);
-                    DayWeekYear.Font = new Font("RudawRegular", 20);
-                }
-            }
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            timer1.Start();
+            pay_openForm.Start();
         }
 
         private void Admin_PatientView_MouseDown(object sender, MouseEventArgs e)
@@ -181,9 +154,9 @@ namespace Clinical_Management_System
 
         private void dateTimeTimer_Tick(object sender, EventArgs e)
         {
-            time.Text = DateTime.Now.ToShortTimeString();
-            WeekDay.Text = DateTime.Now.DayOfWeek.ToString();
-            DayWeekYear.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
+            //time.Text = DateTime.Now.ToShortTimeString();
+            //WeekDay.Text = DateTime.Now.DayOfWeek.ToString();
+            //DayWeekYear.Text = DateTime.Now.Day.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
         }
 
         private void ReciptionButton_Click(object sender, EventArgs e)
@@ -415,6 +388,46 @@ namespace Clinical_Management_System
                 }
 
             }
+        }
+
+        private void cancel_Form_Button_Click(object sender, EventArgs e)
+        {
+            pay_openForm.Start();
+        }
+
+        private void pay_openForm_Tick(object sender, EventArgs e)
+        {
+            if (isFormOpened)
+            {
+
+                Adding_Doctor_Form_panel.Height -= 30;
+                if (Adding_Doctor_Form_panel.Height == Adding_Doctor_Form_panel.MinimumSize.Height)
+                {
+                    isFormOpened = false;
+                    Adding_Doctor_Form_panel.Visible = false;
+                    pay_openForm.Stop();
+                }
+            }
+            else
+            {
+                Adding_Doctor_Form_panel.Visible = true;
+                Adding_Doctor_Form_panel.Height += 30;
+                if (Adding_Doctor_Form_panel.Height == Adding_Doctor_Form_panel.MaximumSize.Height)
+                {
+                    isFormOpened = true;
+                    pay_openForm.Stop();
+                }
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            pay_openForm.Start();
+        }
+
+        private void cancel_Form_Button_Click_1(object sender, EventArgs e)
+        {
+            pay_openForm.Start();
         }
     }
 }

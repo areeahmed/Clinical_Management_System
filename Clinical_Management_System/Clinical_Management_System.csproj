@@ -351,5 +351,8 @@
   <ItemGroup>
     <None Include="Resources\qr-code1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recipe.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

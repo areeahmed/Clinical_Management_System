@@ -772,7 +772,7 @@ namespace Clinical_Management_System
             this.Adding_Doctor_Form_panel.Margin = new System.Windows.Forms.Padding(4);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(812, 631);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(812, 48);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(812, 57);
             this.Adding_Doctor_Form_panel.TabIndex = 57;
             // 
             // doctor_barcode_panel

@@ -52,39 +52,39 @@
             this.WeekDay = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.DayWeekYear = new System.Windows.Forms.Label();
-            this.docListDGV = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.DoctorListLbl = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.docPersonalinfoPanel = new System.Windows.Forms.Panel();
+            this.pay_list_dgv = new System.Windows.Forms.DataGridView();
+            this.pay_token_list_dgv = new System.Windows.Forms.DataGridView();
+            this.pay_list_lbl = new System.Windows.Forms.Label();
+            this.pay_token_list_lbl = new System.Windows.Forms.Label();
+            this.pay_personal_info_pnl = new System.Windows.Forms.Panel();
             this.pa_profile_pic = new System.Windows.Forms.PictureBox();
             this.print_pic_op = new System.Windows.Forms.PictureBox();
             this.picLogoPrint = new System.Windows.Forms.PictureBox();
             this.print_hl_lbl = new System.Windows.Forms.Label();
             this.print_cr_lbl = new System.Windows.Forms.Label();
             this.print_krd_lbl = new System.Windows.Forms.Label();
-            this.pa_lbl = new System.Windows.Forms.Label();
-            this.pay_Gender_lbl = new System.Windows.Forms.Label();
-            this.pay_Age_lbl = new System.Windows.Forms.Label();
-            this.pay_Address_lbl = new System.Windows.Forms.Label();
-            this.pay_Phone_lbl = new System.Windows.Forms.Label();
-            this.pay_Name_lbl = new System.Windows.Forms.Label();
-            this.pay_Address = new System.Windows.Forms.Label();
-            this.pay_Gender = new System.Windows.Forms.Label();
-            this.pay_Age = new System.Windows.Forms.Label();
-            this.pay_Phone = new System.Windows.Forms.Label();
-            this.pay_ID = new System.Windows.Forms.Label();
-            this.pay_Name = new System.Windows.Forms.Label();
-            this.pay_ID_lbl = new System.Windows.Forms.Label();
+            this.pay_lbl = new System.Windows.Forms.Label();
+            this.pay_gender_lbl = new System.Windows.Forms.Label();
+            this.pay_age_lbl = new System.Windows.Forms.Label();
+            this.pay_address_lbl = new System.Windows.Forms.Label();
+            this.pay_phone_lbl = new System.Windows.Forms.Label();
+            this.pay_name_lbl = new System.Windows.Forms.Label();
+            this.pay_address = new System.Windows.Forms.Label();
+            this.pay_gender = new System.Windows.Forms.Label();
+            this.pay_age = new System.Windows.Forms.Label();
+            this.pay_phone = new System.Windows.Forms.Label();
+            this.pay_id = new System.Windows.Forms.Label();
+            this.pay_name = new System.Windows.Forms.Label();
+            this.pay_id_lbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.docGeneralinfoPanel = new System.Windows.Forms.Panel();
+            this.pay_more_info_pnl = new System.Windows.Forms.Panel();
             this.pay_sensitivity = new System.Windows.Forms.Label();
             this.pay_sensitivity_lbl = new System.Windows.Forms.Label();
-            this.pa_MoreInfo_lbl = new System.Windows.Forms.Label();
+            this.pa_more_info_lbl = new System.Windows.Forms.Label();
             this.pay_visited_clinic = new System.Windows.Forms.Label();
             this.pay_visited_count = new System.Windows.Forms.Label();
             this.pay_visited_clinic_lbl = new System.Windows.Forms.Label();
@@ -92,27 +92,27 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.clinicCombo = new System.Windows.Forms.ComboBox();
-            this.pa_search_txt = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.barcodeDocBtn = new System.Windows.Forms.Button();
-            this.doctor_barcode_panel = new System.Windows.Forms.FlowLayoutPanel();
+            this.pay_date_time_picker = new System.Windows.Forms.DateTimePicker();
+            this.pay_search_cmb = new System.Windows.Forms.ComboBox();
+            this.pay_search_txt = new System.Windows.Forms.TextBox();
+            this.pay_search_btn = new System.Windows.Forms.Button();
+            this.pay_show_qr_pnl_btn = new System.Windows.Forms.Button();
+            this.pay_barcode_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.admin_show_qr_pl = new System.Windows.Forms.Panel();
-            this.pa_qr_pic = new System.Windows.Forms.PictureBox();
-            this.admin_read_qr_pl = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.admin_read_QR_pic = new System.Windows.Forms.PictureBox();
+            this.pay_show_qr_reader_pnl_btn = new System.Windows.Forms.Button();
+            this.pay_close_qr_pnl_btn = new System.Windows.Forms.Button();
+            this.pay_show_qr_gen_pnl = new System.Windows.Forms.Button();
+            this.pay_show_qr_pl = new System.Windows.Forms.Panel();
+            this.pay_show_qr_pic = new System.Windows.Forms.PictureBox();
+            this.pay_read_qr_pl = new System.Windows.Forms.Panel();
+            this.pay_start_reading_qr_btn = new System.Windows.Forms.Button();
+            this.pay_choose_cam_cmb = new System.Windows.Forms.ComboBox();
+            this.pay_read_qr_pic = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.barcodeTimer = new System.Windows.Forms.Timer(this.components);
-            this.copyDocBtn = new System.Windows.Forms.Button();
+            this.pay_copy_btn = new System.Windows.Forms.Button();
             this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
@@ -127,9 +127,9 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.docPersonalinfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_list_dgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_token_list_dgv)).BeginInit();
+            this.pay_personal_info_pnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pa_profile_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).BeginInit();
@@ -137,14 +137,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.docGeneralinfoPanel.SuspendLayout();
-            this.doctor_barcode_panel.SuspendLayout();
+            this.pay_more_info_pnl.SuspendLayout();
+            this.pay_barcode_panel.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.admin_show_qr_pl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).BeginInit();
-            this.admin_read_qr_pl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).BeginInit();
+            this.pay_show_qr_pl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_show_qr_pic)).BeginInit();
+            this.pay_read_qr_pl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_read_qr_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -410,74 +410,74 @@
             this.DayWeekYear.Text = "9/2/23";
             this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // docListDGV
+            // pay_list_dgv
             // 
-            this.docListDGV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.docListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.docListDGV.Location = new System.Drawing.Point(97, 446);
-            this.docListDGV.Name = "docListDGV";
-            this.docListDGV.RowHeadersWidth = 51;
-            this.docListDGV.Size = new System.Drawing.Size(495, 296);
-            this.docListDGV.TabIndex = 42;
+            this.pay_list_dgv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_list_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pay_list_dgv.Location = new System.Drawing.Point(97, 449);
+            this.pay_list_dgv.Name = "pay_list_dgv";
+            this.pay_list_dgv.RowHeadersWidth = 51;
+            this.pay_list_dgv.Size = new System.Drawing.Size(495, 293);
+            this.pay_list_dgv.TabIndex = 42;
             // 
-            // dataGridView1
+            // pay_token_list_dgv
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(760, 446);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(483, 296);
-            this.dataGridView1.TabIndex = 42;
+            this.pay_token_list_dgv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_token_list_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pay_token_list_dgv.Location = new System.Drawing.Point(760, 446);
+            this.pay_token_list_dgv.Name = "pay_token_list_dgv";
+            this.pay_token_list_dgv.RowHeadersWidth = 51;
+            this.pay_token_list_dgv.Size = new System.Drawing.Size(483, 296);
+            this.pay_token_list_dgv.TabIndex = 42;
             // 
-            // DoctorListLbl
+            // pay_list_lbl
             // 
-            this.DoctorListLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DoctorListLbl.AutoSize = true;
-            this.DoctorListLbl.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DoctorListLbl.Location = new System.Drawing.Point(422, 363);
-            this.DoctorListLbl.Name = "DoctorListLbl";
-            this.DoctorListLbl.Size = new System.Drawing.Size(207, 35);
-            this.DoctorListLbl.TabIndex = 44;
-            this.DoctorListLbl.Text = ":لیستی نەخۆشەکان";
+            this.pay_list_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_list_lbl.AutoSize = true;
+            this.pay_list_lbl.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_list_lbl.Location = new System.Drawing.Point(381, 363);
+            this.pay_list_lbl.Name = "pay_list_lbl";
+            this.pay_list_lbl.Size = new System.Drawing.Size(207, 35);
+            this.pay_list_lbl.TabIndex = 44;
+            this.pay_list_lbl.Text = ":لیستی نەخۆشەکان";
             // 
-            // label2
+            // pay_token_list_lbl
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(968, 376);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 35);
-            this.label2.TabIndex = 45;
-            this.label2.Text = ":لیستی سەردانیکردنەکانی";
+            this.pay_token_list_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_token_list_lbl.AutoSize = true;
+            this.pay_token_list_lbl.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_token_list_lbl.Location = new System.Drawing.Point(968, 371);
+            this.pay_token_list_lbl.Name = "pay_token_list_lbl";
+            this.pay_token_list_lbl.Size = new System.Drawing.Size(275, 35);
+            this.pay_token_list_lbl.TabIndex = 45;
+            this.pay_token_list_lbl.Text = ":لیستی سەردانیکردنەکانی";
             // 
-            // docPersonalinfoPanel
+            // pay_personal_info_pnl
             // 
-            this.docPersonalinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.docPersonalinfoPanel.Controls.Add(this.pa_profile_pic);
-            this.docPersonalinfoPanel.Controls.Add(this.print_pic_op);
-            this.docPersonalinfoPanel.Controls.Add(this.picLogoPrint);
-            this.docPersonalinfoPanel.Controls.Add(this.print_hl_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.print_cr_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.print_krd_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.pa_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Gender_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Age_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Address_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Phone_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Name_lbl);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Address);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Gender);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Age);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Phone);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_ID);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_Name);
-            this.docPersonalinfoPanel.Controls.Add(this.pay_ID_lbl);
-            this.docPersonalinfoPanel.Location = new System.Drawing.Point(563, 74);
-            this.docPersonalinfoPanel.Name = "docPersonalinfoPanel";
-            this.docPersonalinfoPanel.Size = new System.Drawing.Size(680, 283);
-            this.docPersonalinfoPanel.TabIndex = 46;
+            this.pay_personal_info_pnl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_personal_info_pnl.Controls.Add(this.pa_profile_pic);
+            this.pay_personal_info_pnl.Controls.Add(this.print_pic_op);
+            this.pay_personal_info_pnl.Controls.Add(this.picLogoPrint);
+            this.pay_personal_info_pnl.Controls.Add(this.print_hl_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.print_cr_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.print_krd_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_gender_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_age_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_address_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_phone_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_name_lbl);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_address);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_gender);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_age);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_phone);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_id);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_name);
+            this.pay_personal_info_pnl.Controls.Add(this.pay_id_lbl);
+            this.pay_personal_info_pnl.Location = new System.Drawing.Point(563, 74);
+            this.pay_personal_info_pnl.Name = "pay_personal_info_pnl";
+            this.pay_personal_info_pnl.Size = new System.Drawing.Size(680, 283);
+            this.pay_personal_info_pnl.TabIndex = 46;
             // 
             // pa_profile_pic
             // 
@@ -490,7 +490,6 @@
             this.pa_profile_pic.TabIndex = 42;
             this.pa_profile_pic.TabStop = false;
             this.pa_profile_pic.WaitOnLoad = true;
-            this.pa_profile_pic.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // print_pic_op
             // 
@@ -550,148 +549,148 @@
             this.print_krd_lbl.TabIndex = 61;
             this.print_krd_lbl.Text = "Kurdistan";
             // 
-            // pa_lbl
+            // pay_lbl
             // 
-            this.pa_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pa_lbl.AutoSize = true;
-            this.pa_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pa_lbl.Location = new System.Drawing.Point(568, 11);
-            this.pa_lbl.Name = "pa_lbl";
-            this.pa_lbl.Size = new System.Drawing.Size(97, 39);
-            this.pa_lbl.TabIndex = 29;
-            this.pa_lbl.Text = "نەخۆش";
+            this.pay_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pay_lbl.AutoSize = true;
+            this.pay_lbl.Font = new System.Drawing.Font("RudawRegular", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_lbl.Location = new System.Drawing.Point(568, 11);
+            this.pay_lbl.Name = "pay_lbl";
+            this.pay_lbl.Size = new System.Drawing.Size(97, 39);
+            this.pay_lbl.TabIndex = 29;
+            this.pay_lbl.Text = "نەخۆش";
             // 
-            // pay_Gender_lbl
+            // pay_gender_lbl
             // 
-            this.pay_Gender_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Gender_lbl.AutoSize = true;
-            this.pay_Gender_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Gender_lbl.Location = new System.Drawing.Point(214, 234);
-            this.pay_Gender_lbl.Name = "pay_Gender_lbl";
-            this.pay_Gender_lbl.Size = new System.Drawing.Size(65, 30);
-            this.pay_Gender_lbl.TabIndex = 30;
-            this.pay_Gender_lbl.Text = ":ڕەگەز";
+            this.pay_gender_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_gender_lbl.AutoSize = true;
+            this.pay_gender_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_gender_lbl.Location = new System.Drawing.Point(214, 234);
+            this.pay_gender_lbl.Name = "pay_gender_lbl";
+            this.pay_gender_lbl.Size = new System.Drawing.Size(65, 30);
+            this.pay_gender_lbl.TabIndex = 30;
+            this.pay_gender_lbl.Text = ":ڕەگەز";
             // 
-            // pay_Age_lbl
+            // pay_age_lbl
             // 
-            this.pay_Age_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Age_lbl.AutoSize = true;
-            this.pay_Age_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Age_lbl.Location = new System.Drawing.Point(378, 234);
-            this.pay_Age_lbl.Name = "pay_Age_lbl";
-            this.pay_Age_lbl.Size = new System.Drawing.Size(70, 30);
-            this.pay_Age_lbl.TabIndex = 31;
-            this.pay_Age_lbl.Text = ":تەمەن";
+            this.pay_age_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_age_lbl.AutoSize = true;
+            this.pay_age_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_age_lbl.Location = new System.Drawing.Point(378, 234);
+            this.pay_age_lbl.Name = "pay_age_lbl";
+            this.pay_age_lbl.Size = new System.Drawing.Size(70, 30);
+            this.pay_age_lbl.TabIndex = 31;
+            this.pay_age_lbl.Text = ":تەمەن";
             // 
-            // pay_Address_lbl
+            // pay_address_lbl
             // 
-            this.pay_Address_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Address_lbl.AutoSize = true;
-            this.pay_Address_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Address_lbl.Location = new System.Drawing.Point(377, 185);
-            this.pay_Address_lbl.Name = "pay_Address_lbl";
-            this.pay_Address_lbl.Size = new System.Drawing.Size(92, 30);
-            this.pay_Address_lbl.TabIndex = 32;
-            this.pay_Address_lbl.Text = ":ناونیشان";
+            this.pay_address_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_address_lbl.AutoSize = true;
+            this.pay_address_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_address_lbl.Location = new System.Drawing.Point(377, 185);
+            this.pay_address_lbl.Name = "pay_address_lbl";
+            this.pay_address_lbl.Size = new System.Drawing.Size(92, 30);
+            this.pay_address_lbl.TabIndex = 32;
+            this.pay_address_lbl.Text = ":ناونیشان";
             // 
-            // pay_Phone_lbl
+            // pay_phone_lbl
             // 
-            this.pay_Phone_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Phone_lbl.AutoSize = true;
-            this.pay_Phone_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Phone_lbl.Location = new System.Drawing.Point(377, 142);
-            this.pay_Phone_lbl.Name = "pay_Phone_lbl";
-            this.pay_Phone_lbl.Size = new System.Drawing.Size(82, 30);
-            this.pay_Phone_lbl.TabIndex = 33;
-            this.pay_Phone_lbl.Text = ":ژ.مۆبایل";
+            this.pay_phone_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_phone_lbl.AutoSize = true;
+            this.pay_phone_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_phone_lbl.Location = new System.Drawing.Point(377, 142);
+            this.pay_phone_lbl.Name = "pay_phone_lbl";
+            this.pay_phone_lbl.Size = new System.Drawing.Size(82, 30);
+            this.pay_phone_lbl.TabIndex = 33;
+            this.pay_phone_lbl.Text = ":ژ.مۆبایل";
             // 
-            // pay_Name_lbl
+            // pay_name_lbl
             // 
-            this.pay_Name_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Name_lbl.AutoSize = true;
-            this.pay_Name_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Name_lbl.Location = new System.Drawing.Point(377, 98);
-            this.pay_Name_lbl.Name = "pay_Name_lbl";
-            this.pay_Name_lbl.Size = new System.Drawing.Size(39, 30);
-            this.pay_Name_lbl.TabIndex = 34;
-            this.pay_Name_lbl.Text = ":ناو";
+            this.pay_name_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_name_lbl.AutoSize = true;
+            this.pay_name_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_name_lbl.Location = new System.Drawing.Point(377, 98);
+            this.pay_name_lbl.Name = "pay_name_lbl";
+            this.pay_name_lbl.Size = new System.Drawing.Size(39, 30);
+            this.pay_name_lbl.TabIndex = 34;
+            this.pay_name_lbl.Text = ":ناو";
             // 
-            // pay_Address
+            // pay_address
             // 
-            this.pay_Address.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Address.AutoSize = true;
-            this.pay_Address.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Address.Location = new System.Drawing.Point(169, 185);
-            this.pay_Address.Name = "pay_Address";
-            this.pay_Address.Size = new System.Drawing.Size(208, 30);
-            this.pay_Address.TabIndex = 35;
-            this.pay_Address.Text = "هەولێر - گەڕەکی منارە";
+            this.pay_address.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_address.AutoSize = true;
+            this.pay_address.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_address.Location = new System.Drawing.Point(169, 185);
+            this.pay_address.Name = "pay_address";
+            this.pay_address.Size = new System.Drawing.Size(208, 30);
+            this.pay_address.TabIndex = 35;
+            this.pay_address.Text = "هەولێر - گەڕەکی منارە";
             // 
-            // pay_Gender
+            // pay_gender
             // 
-            this.pay_Gender.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Gender.AutoSize = true;
-            this.pay_Gender.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Gender.Location = new System.Drawing.Point(172, 234);
-            this.pay_Gender.Name = "pay_Gender";
-            this.pay_Gender.Size = new System.Drawing.Size(36, 30);
-            this.pay_Gender.TabIndex = 36;
-            this.pay_Gender.Text = "نێر";
+            this.pay_gender.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_gender.AutoSize = true;
+            this.pay_gender.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_gender.Location = new System.Drawing.Point(172, 234);
+            this.pay_gender.Name = "pay_gender";
+            this.pay_gender.Size = new System.Drawing.Size(36, 30);
+            this.pay_gender.TabIndex = 36;
+            this.pay_gender.Text = "نێر";
             // 
-            // pay_Age
+            // pay_age
             // 
-            this.pay_Age.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Age.AutoSize = true;
-            this.pay_Age.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Age.Location = new System.Drawing.Point(351, 234);
-            this.pay_Age.Name = "pay_Age";
-            this.pay_Age.Size = new System.Drawing.Size(27, 30);
-            this.pay_Age.TabIndex = 37;
-            this.pay_Age.Text = "٢١";
+            this.pay_age.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_age.AutoSize = true;
+            this.pay_age.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_age.Location = new System.Drawing.Point(351, 234);
+            this.pay_age.Name = "pay_age";
+            this.pay_age.Size = new System.Drawing.Size(27, 30);
+            this.pay_age.TabIndex = 37;
+            this.pay_age.Text = "٢١";
             // 
-            // pay_Phone
+            // pay_phone
             // 
-            this.pay_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Phone.AutoSize = true;
-            this.pay_Phone.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Phone.Location = new System.Drawing.Point(214, 142);
-            this.pay_Phone.Name = "pay_Phone";
-            this.pay_Phone.Size = new System.Drawing.Size(154, 30);
-            this.pay_Phone.TabIndex = 38;
-            this.pay_Phone.Text = "0750 333 3434";
+            this.pay_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_phone.AutoSize = true;
+            this.pay_phone.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_phone.Location = new System.Drawing.Point(214, 142);
+            this.pay_phone.Name = "pay_phone";
+            this.pay_phone.Size = new System.Drawing.Size(154, 30);
+            this.pay_phone.TabIndex = 38;
+            this.pay_phone.Text = "0750 333 3434";
             // 
-            // pay_ID
+            // pay_id
             // 
-            this.pay_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_ID.AutoSize = true;
-            this.pay_ID.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_ID.Location = new System.Drawing.Point(347, 55);
-            this.pay_ID.Name = "pay_ID";
-            this.pay_ID.Size = new System.Drawing.Size(24, 30);
-            this.pay_ID.TabIndex = 39;
-            this.pay_ID.Text = "1";
+            this.pay_id.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_id.AutoSize = true;
+            this.pay_id.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_id.Location = new System.Drawing.Point(347, 55);
+            this.pay_id.Name = "pay_id";
+            this.pay_id.Size = new System.Drawing.Size(24, 30);
+            this.pay_id.TabIndex = 39;
+            this.pay_id.Text = "1";
             // 
-            // pay_Name
+            // pay_name
             // 
-            this.pay_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_Name.AutoSize = true;
-            this.pay_Name.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_Name.Location = new System.Drawing.Point(214, 98);
-            this.pay_Name.Name = "pay_Name";
-            this.pay_Name.Size = new System.Drawing.Size(162, 30);
-            this.pay_Name.TabIndex = 39;
-            this.pay_Name.Text = "کارزان ڕەشید عمر";
+            this.pay_name.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_name.AutoSize = true;
+            this.pay_name.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_name.Location = new System.Drawing.Point(214, 98);
+            this.pay_name.Name = "pay_name";
+            this.pay_name.Size = new System.Drawing.Size(162, 30);
+            this.pay_name.TabIndex = 39;
+            this.pay_name.Text = "کارزان ڕەشید عمر";
             // 
-            // pay_ID_lbl
+            // pay_id_lbl
             // 
-            this.pay_ID_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_ID_lbl.AutoSize = true;
-            this.pay_ID_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_ID_lbl.Location = new System.Drawing.Point(377, 55);
-            this.pay_ID_lbl.Name = "pay_ID_lbl";
-            this.pay_ID_lbl.Size = new System.Drawing.Size(71, 30);
-            this.pay_ID_lbl.TabIndex = 40;
-            this.pay_ID_lbl.Text = ":زنجیرە";
+            this.pay_id_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_id_lbl.AutoSize = true;
+            this.pay_id_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_id_lbl.Location = new System.Drawing.Point(377, 55);
+            this.pay_id_lbl.Name = "pay_id_lbl";
+            this.pay_id_lbl.Size = new System.Drawing.Size(71, 30);
+            this.pay_id_lbl.TabIndex = 40;
+            this.pay_id_lbl.Text = ":زنجیرە";
             // 
             // panel2
             // 
@@ -749,20 +748,20 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // docGeneralinfoPanel
+            // pay_more_info_pnl
             // 
-            this.docGeneralinfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.docGeneralinfoPanel.Controls.Add(this.pay_sensitivity);
-            this.docGeneralinfoPanel.Controls.Add(this.pay_sensitivity_lbl);
-            this.docGeneralinfoPanel.Controls.Add(this.pa_MoreInfo_lbl);
-            this.docGeneralinfoPanel.Controls.Add(this.pay_visited_clinic);
-            this.docGeneralinfoPanel.Controls.Add(this.pay_visited_count);
-            this.docGeneralinfoPanel.Controls.Add(this.pay_visited_clinic_lbl);
-            this.docGeneralinfoPanel.Controls.Add(this.pay_visited_count_lbl);
-            this.docGeneralinfoPanel.Location = new System.Drawing.Point(97, 74);
-            this.docGeneralinfoPanel.Name = "docGeneralinfoPanel";
-            this.docGeneralinfoPanel.Size = new System.Drawing.Size(444, 283);
-            this.docGeneralinfoPanel.TabIndex = 48;
+            this.pay_more_info_pnl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_more_info_pnl.Controls.Add(this.pay_sensitivity);
+            this.pay_more_info_pnl.Controls.Add(this.pay_sensitivity_lbl);
+            this.pay_more_info_pnl.Controls.Add(this.pa_more_info_lbl);
+            this.pay_more_info_pnl.Controls.Add(this.pay_visited_clinic);
+            this.pay_more_info_pnl.Controls.Add(this.pay_visited_count);
+            this.pay_more_info_pnl.Controls.Add(this.pay_visited_clinic_lbl);
+            this.pay_more_info_pnl.Controls.Add(this.pay_visited_count_lbl);
+            this.pay_more_info_pnl.Location = new System.Drawing.Point(97, 74);
+            this.pay_more_info_pnl.Name = "pay_more_info_pnl";
+            this.pay_more_info_pnl.Size = new System.Drawing.Size(444, 283);
+            this.pay_more_info_pnl.TabIndex = 48;
             // 
             // pay_sensitivity
             // 
@@ -786,16 +785,16 @@
             this.pay_sensitivity_lbl.TabIndex = 50;
             this.pay_sensitivity_lbl.Text = ":هەستیاری هەیە بە";
             // 
-            // pa_MoreInfo_lbl
+            // pa_more_info_lbl
             // 
-            this.pa_MoreInfo_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pa_MoreInfo_lbl.AutoSize = true;
-            this.pa_MoreInfo_lbl.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pa_MoreInfo_lbl.Location = new System.Drawing.Point(269, 62);
-            this.pa_MoreInfo_lbl.Name = "pa_MoreInfo_lbl";
-            this.pa_MoreInfo_lbl.Size = new System.Drawing.Size(147, 42);
-            this.pa_MoreInfo_lbl.TabIndex = 44;
-            this.pa_MoreInfo_lbl.Text = "زانیاری زیاتر";
+            this.pa_more_info_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pa_more_info_lbl.AutoSize = true;
+            this.pa_more_info_lbl.Font = new System.Drawing.Font("RudawRegular", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pa_more_info_lbl.Location = new System.Drawing.Point(269, 62);
+            this.pa_more_info_lbl.Name = "pa_more_info_lbl";
+            this.pa_more_info_lbl.Size = new System.Drawing.Size(147, 42);
+            this.pa_more_info_lbl.TabIndex = 44;
+            this.pa_more_info_lbl.Text = "زانیاری زیاتر";
             // 
             // pay_visited_clinic
             // 
@@ -854,21 +853,22 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // dateTimePicker1
+            // pay_date_time_picker
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(760, 414);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(300, 31);
-            this.dateTimePicker1.TabIndex = 49;
+            this.pay_date_time_picker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_date_time_picker.CalendarFont = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_date_time_picker.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_date_time_picker.Location = new System.Drawing.Point(760, 408);
+            this.pay_date_time_picker.Name = "pay_date_time_picker";
+            this.pay_date_time_picker.Size = new System.Drawing.Size(300, 26);
+            this.pay_date_time_picker.TabIndex = 49;
             // 
-            // clinicCombo
+            // pay_search_cmb
             // 
-            this.clinicCombo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clinicCombo.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clinicCombo.FormattingEnabled = true;
-            this.clinicCombo.Items.AddRange(new object[] {
+            this.pay_search_cmb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_search_cmb.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_search_cmb.FormattingEnabled = true;
+            this.pay_search_cmb.Items.AddRange(new object[] {
             "زنجیرە",
             "ناو",
             "کلینیک",
@@ -877,72 +877,72 @@
             "ڕەگەز",
             "ڕێژەی سەردانی کردن",
             "هەستیاری"});
-            this.clinicCombo.Location = new System.Drawing.Point(97, 396);
-            this.clinicCombo.Name = "clinicCombo";
-            this.clinicCombo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.clinicCombo.Size = new System.Drawing.Size(231, 43);
-            this.clinicCombo.TabIndex = 51;
-            this.clinicCombo.Text = "گەڕان بەپێی";
+            this.pay_search_cmb.Location = new System.Drawing.Point(97, 396);
+            this.pay_search_cmb.Name = "pay_search_cmb";
+            this.pay_search_cmb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pay_search_cmb.Size = new System.Drawing.Size(231, 43);
+            this.pay_search_cmb.TabIndex = 51;
+            this.pay_search_cmb.Text = "گەڕان بەپێی";
             // 
-            // pa_search_txt
+            // pay_search_txt
             // 
-            this.pa_search_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pa_search_txt.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pa_search_txt.Location = new System.Drawing.Point(334, 401);
-            this.pa_search_txt.Name = "pa_search_txt";
-            this.pa_search_txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pa_search_txt.Size = new System.Drawing.Size(258, 38);
-            this.pa_search_txt.TabIndex = 50;
+            this.pay_search_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_search_txt.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_search_txt.Location = new System.Drawing.Point(334, 401);
+            this.pay_search_txt.Name = "pay_search_txt";
+            this.pay_search_txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.pay_search_txt.Size = new System.Drawing.Size(258, 38);
+            this.pay_search_txt.TabIndex = 50;
             // 
-            // button2
+            // pay_search_btn
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Clinical_Management_System.Properties.Resources.search_icon;
-            this.button2.Location = new System.Drawing.Point(604, 551);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 50);
-            this.button2.TabIndex = 52;
-            this.button2.Text = "   گەڕان";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.pay_search_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_search_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_search_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pay_search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pay_search_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_search_btn.ForeColor = System.Drawing.Color.White;
+            this.pay_search_btn.Image = global::Clinical_Management_System.Properties.Resources.search_icon;
+            this.pay_search_btn.Location = new System.Drawing.Point(607, 422);
+            this.pay_search_btn.Name = "pay_search_btn";
+            this.pay_search_btn.Size = new System.Drawing.Size(141, 50);
+            this.pay_search_btn.TabIndex = 52;
+            this.pay_search_btn.Text = "   گەڕان";
+            this.pay_search_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pay_search_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pay_search_btn.UseVisualStyleBackColor = false;
             // 
-            // barcodeDocBtn
+            // pay_show_qr_pnl_btn
             // 
-            this.barcodeDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.barcodeDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.barcodeDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.barcodeDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.barcodeDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barcodeDocBtn.ForeColor = System.Drawing.Color.White;
-            this.barcodeDocBtn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
-            this.barcodeDocBtn.Location = new System.Drawing.Point(604, 446);
-            this.barcodeDocBtn.Name = "barcodeDocBtn";
-            this.barcodeDocBtn.Size = new System.Drawing.Size(141, 99);
-            this.barcodeDocBtn.TabIndex = 53;
-            this.barcodeDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.barcodeDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.barcodeDocBtn.UseVisualStyleBackColor = false;
-            this.barcodeDocBtn.Click += new System.EventHandler(this.barcodeDocBtn_Click);
+            this.pay_show_qr_pnl_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_show_qr_pnl_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_show_qr_pnl_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pay_show_qr_pnl_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pay_show_qr_pnl_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_show_qr_pnl_btn.ForeColor = System.Drawing.Color.White;
+            this.pay_show_qr_pnl_btn.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
+            this.pay_show_qr_pnl_btn.Location = new System.Drawing.Point(607, 530);
+            this.pay_show_qr_pnl_btn.Name = "pay_show_qr_pnl_btn";
+            this.pay_show_qr_pnl_btn.Size = new System.Drawing.Size(141, 99);
+            this.pay_show_qr_pnl_btn.TabIndex = 53;
+            this.pay_show_qr_pnl_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pay_show_qr_pnl_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pay_show_qr_pnl_btn.UseVisualStyleBackColor = false;
+            this.pay_show_qr_pnl_btn.Click += new System.EventHandler(this.barcodeDocBtn_Click);
             // 
-            // doctor_barcode_panel
+            // pay_barcode_panel
             // 
-            this.doctor_barcode_panel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.doctor_barcode_panel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.doctor_barcode_panel.Controls.Add(this.panel15);
-            this.doctor_barcode_panel.Controls.Add(this.panel16);
-            this.doctor_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.doctor_barcode_panel.Location = new System.Drawing.Point(131, 5);
-            this.doctor_barcode_panel.Margin = new System.Windows.Forms.Padding(2);
-            this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(494, 572);
-            this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(494, 48);
-            this.doctor_barcode_panel.TabIndex = 54;
+            this.pay_barcode_panel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pay_barcode_panel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_barcode_panel.Controls.Add(this.panel15);
+            this.pay_barcode_panel.Controls.Add(this.panel16);
+            this.pay_barcode_panel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.pay_barcode_panel.Location = new System.Drawing.Point(131, 5);
+            this.pay_barcode_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.pay_barcode_panel.MaximumSize = new System.Drawing.Size(494, 572);
+            this.pay_barcode_panel.Name = "pay_barcode_panel";
+            this.pay_barcode_panel.Size = new System.Drawing.Size(494, 48);
+            this.pay_barcode_panel.TabIndex = 54;
             // 
             // panel15
             // 
@@ -967,11 +967,11 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel16.Controls.Add(this.button3);
-            this.panel16.Controls.Add(this.button4);
-            this.panel16.Controls.Add(this.button7);
-            this.panel16.Controls.Add(this.admin_show_qr_pl);
-            this.panel16.Controls.Add(this.admin_read_qr_pl);
+            this.panel16.Controls.Add(this.pay_show_qr_reader_pnl_btn);
+            this.panel16.Controls.Add(this.pay_close_qr_pnl_btn);
+            this.panel16.Controls.Add(this.pay_show_qr_gen_pnl);
+            this.panel16.Controls.Add(this.pay_show_qr_pl);
+            this.panel16.Controls.Add(this.pay_read_qr_pl);
             this.panel16.Location = new System.Drawing.Point(-6, 48);
             this.panel16.MaximumSize = new System.Drawing.Size(497, 686);
             this.panel16.MinimumSize = new System.Drawing.Size(497, 0);
@@ -980,129 +980,129 @@
             this.panel16.Size = new System.Drawing.Size(497, 686);
             this.panel16.TabIndex = 28;
             // 
-            // button3
+            // pay_show_qr_reader_pnl_btn
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
-            this.button3.Location = new System.Drawing.Point(28, 452);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button3.Size = new System.Drawing.Size(133, 50);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "   خوێندنەوە";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.Show_QRcode_reader);
+            this.pay_show_qr_reader_pnl_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_show_qr_reader_pnl_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_show_qr_reader_pnl_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pay_show_qr_reader_pnl_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pay_show_qr_reader_pnl_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_show_qr_reader_pnl_btn.ForeColor = System.Drawing.Color.White;
+            this.pay_show_qr_reader_pnl_btn.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
+            this.pay_show_qr_reader_pnl_btn.Location = new System.Drawing.Point(28, 452);
+            this.pay_show_qr_reader_pnl_btn.Name = "pay_show_qr_reader_pnl_btn";
+            this.pay_show_qr_reader_pnl_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pay_show_qr_reader_pnl_btn.Size = new System.Drawing.Size(133, 50);
+            this.pay_show_qr_reader_pnl_btn.TabIndex = 35;
+            this.pay_show_qr_reader_pnl_btn.Text = "   خوێندنەوە";
+            this.pay_show_qr_reader_pnl_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pay_show_qr_reader_pnl_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pay_show_qr_reader_pnl_btn.UseVisualStyleBackColor = false;
+            this.pay_show_qr_reader_pnl_btn.Click += new System.EventHandler(this.Show_QRcode_reader);
             // 
-            // button4
+            // pay_close_qr_pnl_btn
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
-            this.button4.Location = new System.Drawing.Point(166, 452);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button4.Size = new System.Drawing.Size(121, 50);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "   تەواو";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button7_Click);
+            this.pay_close_qr_pnl_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_close_qr_pnl_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_close_qr_pnl_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pay_close_qr_pnl_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pay_close_qr_pnl_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_close_qr_pnl_btn.ForeColor = System.Drawing.Color.White;
+            this.pay_close_qr_pnl_btn.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
+            this.pay_close_qr_pnl_btn.Location = new System.Drawing.Point(166, 452);
+            this.pay_close_qr_pnl_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.pay_close_qr_pnl_btn.Name = "pay_close_qr_pnl_btn";
+            this.pay_close_qr_pnl_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pay_close_qr_pnl_btn.Size = new System.Drawing.Size(121, 50);
+            this.pay_close_qr_pnl_btn.TabIndex = 36;
+            this.pay_close_qr_pnl_btn.Text = "   تەواو";
+            this.pay_close_qr_pnl_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pay_close_qr_pnl_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pay_close_qr_pnl_btn.UseVisualStyleBackColor = false;
+            this.pay_close_qr_pnl_btn.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button7
+            // pay_show_qr_gen_pnl
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button7.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
-            this.button7.Location = new System.Drawing.Point(294, 452);
-            this.button7.Name = "button7";
-            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button7.Size = new System.Drawing.Size(127, 50);
-            this.button7.TabIndex = 37;
-            this.button7.Text = "   نیشاندان";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            this.pay_show_qr_gen_pnl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_show_qr_gen_pnl.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_show_qr_gen_pnl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pay_show_qr_gen_pnl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pay_show_qr_gen_pnl.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_show_qr_gen_pnl.ForeColor = System.Drawing.Color.White;
+            this.pay_show_qr_gen_pnl.Image = global::Clinical_Management_System.Properties.Resources.qr_code;
+            this.pay_show_qr_gen_pnl.Location = new System.Drawing.Point(294, 452);
+            this.pay_show_qr_gen_pnl.Name = "pay_show_qr_gen_pnl";
+            this.pay_show_qr_gen_pnl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pay_show_qr_gen_pnl.Size = new System.Drawing.Size(127, 50);
+            this.pay_show_qr_gen_pnl.TabIndex = 37;
+            this.pay_show_qr_gen_pnl.Text = "   نیشاندان";
+            this.pay_show_qr_gen_pnl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pay_show_qr_gen_pnl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pay_show_qr_gen_pnl.UseVisualStyleBackColor = false;
+            this.pay_show_qr_gen_pnl.Click += new System.EventHandler(this.button7_Click_1);
             // 
-            // admin_show_qr_pl
+            // pay_show_qr_pl
             // 
-            this.admin_show_qr_pl.Controls.Add(this.pa_qr_pic);
-            this.admin_show_qr_pl.Location = new System.Drawing.Point(21, 15);
-            this.admin_show_qr_pl.Name = "admin_show_qr_pl";
-            this.admin_show_qr_pl.Size = new System.Drawing.Size(451, 419);
-            this.admin_show_qr_pl.TabIndex = 33;
+            this.pay_show_qr_pl.Controls.Add(this.pay_show_qr_pic);
+            this.pay_show_qr_pl.Location = new System.Drawing.Point(20, 15);
+            this.pay_show_qr_pl.Name = "pay_show_qr_pl";
+            this.pay_show_qr_pl.Size = new System.Drawing.Size(451, 419);
+            this.pay_show_qr_pl.TabIndex = 33;
             // 
-            // pa_qr_pic
+            // pay_show_qr_pic
             // 
-            this.pa_qr_pic.Location = new System.Drawing.Point(92, 61);
-            this.pa_qr_pic.Name = "pa_qr_pic";
-            this.pa_qr_pic.Size = new System.Drawing.Size(260, 271);
-            this.pa_qr_pic.TabIndex = 32;
-            this.pa_qr_pic.TabStop = false;
+            this.pay_show_qr_pic.Location = new System.Drawing.Point(92, 61);
+            this.pay_show_qr_pic.Name = "pay_show_qr_pic";
+            this.pay_show_qr_pic.Size = new System.Drawing.Size(260, 271);
+            this.pay_show_qr_pic.TabIndex = 32;
+            this.pay_show_qr_pic.TabStop = false;
             // 
-            // admin_read_qr_pl
+            // pay_read_qr_pl
             // 
-            this.admin_read_qr_pl.Controls.Add(this.button5);
-            this.admin_read_qr_pl.Controls.Add(this.comboBox1);
-            this.admin_read_qr_pl.Controls.Add(this.admin_read_QR_pic);
-            this.admin_read_qr_pl.Controls.Add(this.label11);
-            this.admin_read_qr_pl.Location = new System.Drawing.Point(23, 17);
-            this.admin_read_qr_pl.Name = "admin_read_qr_pl";
-            this.admin_read_qr_pl.Size = new System.Drawing.Size(451, 420);
-            this.admin_read_qr_pl.TabIndex = 34;
+            this.pay_read_qr_pl.Controls.Add(this.pay_start_reading_qr_btn);
+            this.pay_read_qr_pl.Controls.Add(this.pay_choose_cam_cmb);
+            this.pay_read_qr_pl.Controls.Add(this.pay_read_qr_pic);
+            this.pay_read_qr_pl.Controls.Add(this.label11);
+            this.pay_read_qr_pl.Location = new System.Drawing.Point(23, 17);
+            this.pay_read_qr_pl.Name = "pay_read_qr_pl";
+            this.pay_read_qr_pl.Size = new System.Drawing.Size(451, 420);
+            this.pay_read_qr_pl.TabIndex = 34;
             // 
-            // button5
+            // pay_start_reading_qr_btn
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
-            this.button5.Location = new System.Drawing.Point(137, 344);
-            this.button5.Name = "button5";
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(149, 61);
-            this.button5.TabIndex = 35;
-            this.button5.Text = "   دەستپێکردن";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button3_Click);
+            this.pay_start_reading_qr_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_start_reading_qr_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_start_reading_qr_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pay_start_reading_qr_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pay_start_reading_qr_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_start_reading_qr_btn.ForeColor = System.Drawing.Color.White;
+            this.pay_start_reading_qr_btn.Image = global::Clinical_Management_System.Properties.Resources.barcode__1_;
+            this.pay_start_reading_qr_btn.Location = new System.Drawing.Point(137, 344);
+            this.pay_start_reading_qr_btn.Name = "pay_start_reading_qr_btn";
+            this.pay_start_reading_qr_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pay_start_reading_qr_btn.Size = new System.Drawing.Size(149, 61);
+            this.pay_start_reading_qr_btn.TabIndex = 35;
+            this.pay_start_reading_qr_btn.Text = "   دەستپێکردن";
+            this.pay_start_reading_qr_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pay_start_reading_qr_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pay_start_reading_qr_btn.UseVisualStyleBackColor = false;
+            this.pay_start_reading_qr_btn.Click += new System.EventHandler(this.button3_Click);
             // 
-            // comboBox1
+            // pay_choose_cam_cmb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(86, 310);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(247, 21);
-            this.comboBox1.TabIndex = 34;
+            this.pay_choose_cam_cmb.FormattingEnabled = true;
+            this.pay_choose_cam_cmb.Location = new System.Drawing.Point(86, 310);
+            this.pay_choose_cam_cmb.Name = "pay_choose_cam_cmb";
+            this.pay_choose_cam_cmb.Size = new System.Drawing.Size(247, 21);
+            this.pay_choose_cam_cmb.TabIndex = 34;
             // 
-            // admin_read_QR_pic
+            // pay_read_qr_pic
             // 
-            this.admin_read_QR_pic.Location = new System.Drawing.Point(32, 21);
-            this.admin_read_QR_pic.Name = "admin_read_QR_pic";
-            this.admin_read_QR_pic.Size = new System.Drawing.Size(393, 271);
-            this.admin_read_QR_pic.TabIndex = 33;
-            this.admin_read_QR_pic.TabStop = false;
+            this.pay_read_qr_pic.Location = new System.Drawing.Point(32, 21);
+            this.pay_read_qr_pic.Name = "pay_read_qr_pic";
+            this.pay_read_qr_pic.Size = new System.Drawing.Size(393, 271);
+            this.pay_read_qr_pic.TabIndex = 33;
+            this.pay_read_qr_pic.TabStop = false;
             // 
             // label11
             // 
@@ -1121,24 +1121,24 @@
             this.barcodeTimer.Interval = 10;
             this.barcodeTimer.Tick += new System.EventHandler(this.barcodeTimer_Tick);
             // 
-            // copyDocBtn
+            // pay_copy_btn
             // 
-            this.copyDocBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.copyDocBtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.copyDocBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.copyDocBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.copyDocBtn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copyDocBtn.ForeColor = System.Drawing.Color.White;
-            this.copyDocBtn.Image = global::Clinical_Management_System.Properties.Resources.printer;
-            this.copyDocBtn.Location = new System.Drawing.Point(604, 607);
-            this.copyDocBtn.Name = "copyDocBtn";
-            this.copyDocBtn.Size = new System.Drawing.Size(141, 48);
-            this.copyDocBtn.TabIndex = 55;
-            this.copyDocBtn.Text = "   کۆپی کردن";
-            this.copyDocBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.copyDocBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.copyDocBtn.UseVisualStyleBackColor = false;
-            this.copyDocBtn.Click += new System.EventHandler(this.copyDocBtn_Click);
+            this.pay_copy_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pay_copy_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_copy_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pay_copy_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pay_copy_btn.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_copy_btn.ForeColor = System.Drawing.Color.White;
+            this.pay_copy_btn.Image = global::Clinical_Management_System.Properties.Resources.printer;
+            this.pay_copy_btn.Location = new System.Drawing.Point(607, 478);
+            this.pay_copy_btn.Name = "pay_copy_btn";
+            this.pay_copy_btn.Size = new System.Drawing.Size(141, 48);
+            this.pay_copy_btn.TabIndex = 55;
+            this.pay_copy_btn.Text = "   کۆپی کردن";
+            this.pay_copy_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pay_copy_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pay_copy_btn.UseVisualStyleBackColor = false;
+            this.pay_copy_btn.Click += new System.EventHandler(this.copyDocBtn_Click);
             // 
             // run_cam_qr_timer
             // 
@@ -1183,26 +1183,26 @@
             this.ClientSize = new System.Drawing.Size(1276, 767);
             this.ControlBox = false;
             this.Controls.Add(this.qr_code_is_active_lbl);
-            this.Controls.Add(this.copyDocBtn);
-            this.Controls.Add(this.doctor_barcode_panel);
-            this.Controls.Add(this.barcodeDocBtn);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.pa_search_txt);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.pay_copy_btn);
+            this.Controls.Add(this.pay_barcode_panel);
+            this.Controls.Add(this.pay_show_qr_pnl_btn);
+            this.Controls.Add(this.pay_search_btn);
+            this.Controls.Add(this.pay_search_txt);
+            this.Controls.Add(this.pay_date_time_picker);
             this.Controls.Add(this.sidebar);
-            this.Controls.Add(this.docGeneralinfoPanel);
+            this.Controls.Add(this.pay_more_info_pnl);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.docPersonalinfoPanel);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.DoctorListLbl);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.docListDGV);
-            this.Controls.Add(this.clinicCombo);
+            this.Controls.Add(this.pay_personal_info_pnl);
+            this.Controls.Add(this.pay_token_list_lbl);
+            this.Controls.Add(this.pay_list_lbl);
+            this.Controls.Add(this.pay_token_list_dgv);
+            this.Controls.Add(this.pay_list_dgv);
+            this.Controls.Add(this.pay_search_cmb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1292, 782);
             this.Name = "Admin_PatientView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Patient";
+            this.Text = "s";
             this.Load += new System.EventHandler(this.Admin_PatientView_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Admin_PatientView_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Admin_PatientView_MouseMove);
@@ -1218,10 +1218,10 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.docListDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.docPersonalinfoPanel.ResumeLayout(false);
-            this.docPersonalinfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_list_dgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_token_list_dgv)).EndInit();
+            this.pay_personal_info_pnl.ResumeLayout(false);
+            this.pay_personal_info_pnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pa_profile_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.print_pic_op)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoPrint)).EndInit();
@@ -1230,17 +1230,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.docGeneralinfoPanel.ResumeLayout(false);
-            this.docGeneralinfoPanel.PerformLayout();
-            this.doctor_barcode_panel.ResumeLayout(false);
+            this.pay_more_info_pnl.ResumeLayout(false);
+            this.pay_more_info_pnl.PerformLayout();
+            this.pay_barcode_panel.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
-            this.admin_show_qr_pl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pa_qr_pic)).EndInit();
-            this.admin_read_qr_pl.ResumeLayout(false);
-            this.admin_read_qr_pl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.admin_read_QR_pic)).EndInit();
+            this.pay_show_qr_pl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pay_show_qr_pic)).EndInit();
+            this.pay_read_qr_pl.ResumeLayout(false);
+            this.pay_read_qr_pl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pay_read_qr_pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1270,61 +1270,61 @@
         private System.Windows.Forms.Label WeekDay;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label DayWeekYear;
-        private System.Windows.Forms.DataGridView docListDGV;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label DoctorListLbl;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel docPersonalinfoPanel;
+        private System.Windows.Forms.DataGridView pay_list_dgv;
+        private System.Windows.Forms.DataGridView pay_token_list_dgv;
+        private System.Windows.Forms.Label pay_list_lbl;
+        private System.Windows.Forms.Label pay_token_list_lbl;
+        private System.Windows.Forms.Panel pay_personal_info_pnl;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel docGeneralinfoPanel;
+        private System.Windows.Forms.Panel pay_more_info_pnl;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer dateTimeTimer;
-        private System.Windows.Forms.Label pa_lbl;
-        private System.Windows.Forms.Label pay_Gender_lbl;
-        private System.Windows.Forms.Label pay_Age_lbl;
-        private System.Windows.Forms.Label pay_Address_lbl;
-        private System.Windows.Forms.Label pay_Phone_lbl;
-        private System.Windows.Forms.Label pay_Name_lbl;
-        private System.Windows.Forms.Label pay_Address;
-        private System.Windows.Forms.Label pay_Gender;
-        private System.Windows.Forms.Label pay_Age;
-        private System.Windows.Forms.Label pay_Phone;
-        private System.Windows.Forms.Label pay_Name;
-        private System.Windows.Forms.Label pay_ID_lbl;
+        private System.Windows.Forms.Label pay_lbl;
+        private System.Windows.Forms.Label pay_gender_lbl;
+        private System.Windows.Forms.Label pay_age_lbl;
+        private System.Windows.Forms.Label pay_address_lbl;
+        private System.Windows.Forms.Label pay_phone_lbl;
+        private System.Windows.Forms.Label pay_name_lbl;
+        private System.Windows.Forms.Label pay_address;
+        private System.Windows.Forms.Label pay_gender;
+        private System.Windows.Forms.Label pay_age;
+        private System.Windows.Forms.Label pay_phone;
+        private System.Windows.Forms.Label pay_name;
+        private System.Windows.Forms.Label pay_id_lbl;
         private System.Windows.Forms.Label pay_sensitivity;
         private System.Windows.Forms.Label pay_sensitivity_lbl;
-        private System.Windows.Forms.Label pa_MoreInfo_lbl;
+        private System.Windows.Forms.Label pa_more_info_lbl;
         private System.Windows.Forms.Label pay_visited_clinic;
         private System.Windows.Forms.Label pay_visited_count;
         private System.Windows.Forms.Label pay_visited_clinic_lbl;
         private System.Windows.Forms.Label pay_visited_count_lbl;
         private System.Windows.Forms.PictureBox pa_profile_pic;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox clinicCombo;
-        private System.Windows.Forms.TextBox pa_search_txt;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label pay_ID;
-        private System.Windows.Forms.Button barcodeDocBtn;
-        private System.Windows.Forms.FlowLayoutPanel doctor_barcode_panel;
+        private System.Windows.Forms.DateTimePicker pay_date_time_picker;
+        private System.Windows.Forms.ComboBox pay_search_cmb;
+        private System.Windows.Forms.TextBox pay_search_txt;
+        private System.Windows.Forms.Button pay_search_btn;
+        private System.Windows.Forms.Label pay_id;
+        private System.Windows.Forms.Button pay_show_qr_pnl_btn;
+        private System.Windows.Forms.FlowLayoutPanel pay_barcode_panel;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.PictureBox pa_qr_pic;
+        private System.Windows.Forms.PictureBox pay_show_qr_pic;
         private System.Windows.Forms.Timer barcodeTimer;
-        private System.Windows.Forms.Button copyDocBtn;
-        private System.Windows.Forms.Panel admin_show_qr_pl;
-        private System.Windows.Forms.Panel admin_read_qr_pl;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox admin_read_QR_pic;
+        private System.Windows.Forms.Button pay_copy_btn;
+        private System.Windows.Forms.Panel pay_show_qr_pl;
+        private System.Windows.Forms.Panel pay_read_qr_pl;
+        private System.Windows.Forms.ComboBox pay_choose_cam_cmb;
+        private System.Windows.Forms.PictureBox pay_read_qr_pic;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button pay_show_qr_reader_pnl_btn;
+        private System.Windows.Forms.Button pay_close_qr_pnl_btn;
+        private System.Windows.Forms.Button pay_show_qr_gen_pnl;
         private System.Windows.Forms.Timer run_cam_qr_timer;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
@@ -1334,7 +1334,7 @@
         private System.Windows.Forms.Label print_krd_lbl;
         private System.Windows.Forms.PictureBox print_pic_op;
         private System.Windows.Forms.PictureBox picLogoPrint;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button pay_start_reading_qr_btn;
         private System.Windows.Forms.Label qr_code_is_active_lbl;
     }
 }

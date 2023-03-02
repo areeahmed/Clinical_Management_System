@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.username_txt = new System.Windows.Forms.TextBox();
+            this.password_txt = new System.Windows.Forms.TextBox();
+            this.role_cmb = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,7 +42,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.closeEye = new System.Windows.Forms.PictureBox();
             this.openEye = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.login_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,49 +61,49 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // username_txt
             // 
-            this.textBox1.AccessibleDescription = "سلاو";
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("RudawRegular", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox1.Location = new System.Drawing.Point(680, 271);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(348, 62);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.username_txt.AccessibleDescription = "سلاو";
+            this.username_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.username_txt.BackColor = System.Drawing.Color.White;
+            this.username_txt.Font = new System.Drawing.Font("RudawRegular", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_txt.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.username_txt.Location = new System.Drawing.Point(680, 271);
+            this.username_txt.Name = "username_txt";
+            this.username_txt.Size = new System.Drawing.Size(348, 62);
+            this.username_txt.TabIndex = 7;
+            this.username_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // password_txt
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Font = new System.Drawing.Font("RudawRegular", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox2.Location = new System.Drawing.Point(680, 350);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(348, 62);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.password_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.password_txt.BackColor = System.Drawing.Color.White;
+            this.password_txt.Font = new System.Drawing.Font("RudawRegular", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_txt.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.password_txt.Location = new System.Drawing.Point(680, 350);
+            this.password_txt.Name = "password_txt";
+            this.password_txt.Size = new System.Drawing.Size(348, 62);
+            this.password_txt.TabIndex = 8;
+            this.password_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.password_txt.UseSystemPasswordChar = true;
             // 
-            // comboBox1
+            // role_cmb
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("RudawRegular", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.role_cmb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.role_cmb.BackColor = System.Drawing.Color.White;
+            this.role_cmb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.role_cmb.Font = new System.Drawing.Font("RudawRegular", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.role_cmb.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.role_cmb.FormattingEnabled = true;
+            this.role_cmb.Items.AddRange(new object[] {
             "ئادمین",
             "دکتۆر",
             "سکرتێر"});
-            this.comboBox1.Location = new System.Drawing.Point(733, 450);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(257, 58);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "هەڵبژاردنی ڕۆڵ";
+            this.role_cmb.Location = new System.Drawing.Point(733, 450);
+            this.role_cmb.Name = "role_cmb";
+            this.role_cmb.Size = new System.Drawing.Size(257, 58);
+            this.role_cmb.TabIndex = 9;
+            this.role_cmb.Text = "هەڵبژاردنی ڕۆڵ";
             // 
             // label5
             // 
@@ -223,23 +223,23 @@
             this.openEye.TabStop = false;
             this.openEye.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // button2
+            // login_btn
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.Image = global::Clinical_Management_System.Properties.Resources.enter__3_;
-            this.button2.Location = new System.Drawing.Point(733, 539);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(257, 68);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "چوونە ژوورەوە";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.login_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.login_btn.BackColor = System.Drawing.Color.White;
+            this.login_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_btn.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.login_btn.Image = global::Clinical_Management_System.Properties.Resources.enter__3_;
+            this.login_btn.Location = new System.Drawing.Point(733, 539);
+            this.login_btn.Name = "login_btn";
+            this.login_btn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.login_btn.Size = new System.Drawing.Size(257, 68);
+            this.login_btn.TabIndex = 11;
+            this.login_btn.Text = "چوونە ژوورەوە";
+            this.login_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.login_btn.UseVisualStyleBackColor = false;
+            this.login_btn.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox2
             // 
@@ -315,12 +315,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.closeEye);
             this.Controls.Add(this.openEye);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.login_btn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.role_cmb);
+            this.Controls.Add(this.password_txt);
+            this.Controls.Add(this.username_txt);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -355,12 +355,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox username_txt;
+        private System.Windows.Forms.TextBox password_txt;
+        private System.Windows.Forms.ComboBox role_cmb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.PictureBox closeEye;
         private System.Windows.Forms.PictureBox openEye;
         private System.Windows.Forms.PictureBox pictureBox3;

@@ -114,6 +114,8 @@
             this.recp_profile_pic = new System.Windows.Forms.PictureBox();
             this.print_pic_op = new System.Windows.Forms.PictureBox();
             this.picLogoPrint = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.recp_clinic_lbl = new System.Windows.Forms.Label();
             this.recp_clinic = new System.Windows.Forms.Label();
             this.recp_Name_lbl = new System.Windows.Forms.Label();
@@ -135,8 +137,6 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -502,7 +502,7 @@
             this.Adding_Doctor_Form_panel.Location = new System.Drawing.Point(83, 5);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(500, 729);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 51);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(500, 50);
             this.Adding_Doctor_Form_panel.TabIndex = 32;
             // 
             // panel14
@@ -780,7 +780,7 @@
             this.doctor_barcode_panel.Location = new System.Drawing.Point(86, 69);
             this.doctor_barcode_panel.MaximumSize = new System.Drawing.Size(500, 565);
             this.doctor_barcode_panel.Name = "doctor_barcode_panel";
-            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 50);
+            this.doctor_barcode_panel.Size = new System.Drawing.Size(500, 47);
             this.doctor_barcode_panel.TabIndex = 33;
             // 
             // panel15
@@ -1235,6 +1235,28 @@
             this.picLogoPrint.TabStop = false;
             this.picLogoPrint.WaitOnLoad = true;
             // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(453, 189);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 30);
+            this.label5.TabIndex = 51;
+            this.label5.Text = ":ڕەگەز";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(411, 188);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 30);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "نێر";
+            // 
             // recp_clinic_lbl
             // 
             this.recp_clinic_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1429,28 +1451,6 @@
             // 
             this.run_cam_qr_timer.Interval = 1000;
             this.run_cam_qr_timer.Tick += new System.EventHandler(this.run_cam_qr_timer_Tick);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(411, 188);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 30);
-            this.label4.TabIndex = 52;
-            this.label4.Text = "نێر";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(453, 189);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 30);
-            this.label5.TabIndex = 51;
-            this.label5.Text = ":ڕەگەز";
             // 
             // Admin_ReciptionView
             // 

@@ -131,6 +131,7 @@
             this.admin_copy_btn = new System.Windows.Forms.Button();
             this.run_cam_qr_timer = new System.Windows.Forms.Timer(this.components);
             this.qr_code_is_active_lbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -672,7 +673,7 @@
             this.admin_list_dgv.Location = new System.Drawing.Point(127, 445);
             this.admin_list_dgv.Name = "admin_list_dgv";
             this.admin_list_dgv.RowHeadersWidth = 51;
-            this.admin_list_dgv.Size = new System.Drawing.Size(1123, 296);
+            this.admin_list_dgv.Size = new System.Drawing.Size(798, 296);
             this.admin_list_dgv.TabIndex = 36;
             // 
             // admin_list_lbl
@@ -680,7 +681,7 @@
             this.admin_list_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.admin_list_lbl.AutoSize = true;
             this.admin_list_lbl.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_list_lbl.Location = new System.Drawing.Point(1058, 359);
+            this.admin_list_lbl.Location = new System.Drawing.Point(734, 400);
             this.admin_list_lbl.Name = "admin_list_lbl";
             this.admin_list_lbl.Size = new System.Drawing.Size(191, 35);
             this.admin_list_lbl.TabIndex = 37;
@@ -1160,10 +1161,10 @@
             // 
             this.admin_search_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.admin_search_txt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_search_txt.Location = new System.Drawing.Point(1000, 401);
+            this.admin_search_txt.Location = new System.Drawing.Point(951, 508);
             this.admin_search_txt.Name = "admin_search_txt";
             this.admin_search_txt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.admin_search_txt.Size = new System.Drawing.Size(250, 35);
+            this.admin_search_txt.Size = new System.Drawing.Size(268, 35);
             this.admin_search_txt.TabIndex = 35;
             // 
             // openFileDialog1
@@ -1179,7 +1180,7 @@
             "زنجیرە",
             "ناو",
             "شار"});
-            this.clinic_search_cmb.Location = new System.Drawing.Point(726, 393);
+            this.clinic_search_cmb.Location = new System.Drawing.Point(951, 459);
             this.clinic_search_cmb.Name = "clinic_search_cmb";
             this.clinic_search_cmb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.clinic_search_cmb.Size = new System.Drawing.Size(268, 43);
@@ -1332,6 +1333,24 @@
             this.qr_code_is_active_lbl.Text = "خوێندنەوەی کیو ئاڕ کۆد چالاکە";
             this.qr_code_is_active_lbl.Click += new System.EventHandler(this.label28_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("RudawRegular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Clinical_Management_System.Properties.Resources.search_icon;
+            this.button1.Location = new System.Drawing.Point(1019, 574);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 70);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "   گەڕان";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Admin_AdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1347,6 +1366,7 @@
             this.Controls.Add(this.admin_search_txt);
             this.Controls.Add(this.admin_list_lbl);
             this.Controls.Add(this.admin_list_dgv);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.admin_qr_btn);
             this.Controls.Add(this.admin_edit_btn);
             this.Controls.Add(this.admin_delete_btn);
@@ -1509,5 +1529,6 @@
         private System.Windows.Forms.PictureBox admin_show_qr_pic;
         private System.Windows.Forms.Button start_qr_code;
         private System.Windows.Forms.Label qr_code_is_active_lbl;
+        private System.Windows.Forms.Button button1;
     }
 }

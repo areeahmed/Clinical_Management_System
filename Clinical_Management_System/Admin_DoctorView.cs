@@ -147,13 +147,13 @@ namespace Clinical_Management_System
         private void button6_Click(object sender, EventArgs e)
         {
             openFormTimer.Start();
-            docIDtxt.Clear();
-            docUsernameTxt.Clear();
-            docPasswordTxt.Clear();
-            docFullNameTxt.Clear();
-            docPhoneTxt.Clear();
-            docAddressTxt.Clear();
-            Adding_Doctor_Form_panel.Visible = true;
+            doc_id_txt.Clear();
+            doc_username_txt.Clear();
+            doc_password_txt.Clear();
+            doc_fullname_txt.Clear();
+            doc_phone_txt.Clear();
+            doc_address_txt.Clear();
+            doc_form_pnl.Visible = true;
         }
         
         // the functionality of showing and Hidding Adding Doctor Form 
@@ -161,8 +161,8 @@ namespace Clinical_Management_System
         {
             if(isFormOpened)
             {
-                Adding_Doctor_Form_panel.Height -= 30;
-                if (Adding_Doctor_Form_panel.Height == Adding_Doctor_Form_panel.MinimumSize.Height)
+                doc_form_pnl.Height -= 30;
+                if (doc_form_pnl.Height == doc_form_pnl.MinimumSize.Height)
                 {
                     isFormOpened = false;
                     openFormTimer.Stop();
@@ -170,8 +170,8 @@ namespace Clinical_Management_System
             }
             else
             {
-                Adding_Doctor_Form_panel.Height += 30;
-                if (Adding_Doctor_Form_panel.Height == Adding_Doctor_Form_panel.MaximumSize.Height)
+                doc_form_pnl.Height += 30;
+                if (doc_form_pnl.Height == doc_form_pnl.MaximumSize.Height)
                 {
                     isFormOpened = true;
                     openFormTimer.Stop();
@@ -183,7 +183,7 @@ namespace Clinical_Management_System
         private void button3_Click(object sender, EventArgs e)
         {
             openFormTimer.Start();
-            Adding_Doctor_Form_panel.Visible = true;
+            doc_form_pnl.Visible = true;
         }
 
 
@@ -195,8 +195,8 @@ namespace Clinical_Management_System
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
             {
-                choosing_cam_cmb.Items.Add(filterInfo.Name);
-                choosing_cam_cmb.SelectedIndex = 0;
+                doc_choosing_cam_cmb.Items.Add(filterInfo.Name);
+                doc_choosing_cam_cmb.SelectedIndex = 0;
             }
 
 
@@ -204,11 +204,11 @@ namespace Clinical_Management_System
             obj.AddEllipse(0, 0, doc_profile_pic.Width, doc_profile_pic.Height);
             Region region = new Region(obj);
             doc_profile_pic.Region = region;
-            Adding_Doctor_Form_panel.Visible = false;
-            doctor_barcode_panel.Visible = false;
+            doc_form_pnl.Visible = false;
+            doc_qr_pnl.Visible = false;
             // for making it fraggable
-            ControlExtension.Draggable(doctor_barcode_panel, true);
-            ControlExtension.Draggable(Adding_Doctor_Form_panel, true);
+            ControlExtension.Draggable(doc_qr_pnl, true);
+            ControlExtension.Draggable(doc_form_pnl, true);
             dateTimeTimer.Start();
         }
 
@@ -217,8 +217,8 @@ namespace Clinical_Management_System
         {
             if (isBarcodeOpen)
             {
-                doctor_barcode_panel.Height -= 30;
-                if (doctor_barcode_panel.Height == doctor_barcode_panel.MinimumSize.Height)
+                doc_qr_pnl.Height -= 30;
+                if (doc_qr_pnl.Height == doc_qr_pnl.MinimumSize.Height)
                 {
                     isBarcodeOpen = false;
                     barcodeTimer.Stop();
@@ -226,8 +226,8 @@ namespace Clinical_Management_System
             }
             else
             {
-                doctor_barcode_panel.Height += 30;
-                if (doctor_barcode_panel.Height == doctor_barcode_panel.MaximumSize.Height)
+                doc_qr_pnl.Height += 30;
+                if (doc_qr_pnl.Height == doc_qr_pnl.MaximumSize.Height)
                 {
                     isBarcodeOpen = true;
                     barcodeTimer.Stop();
@@ -244,7 +244,7 @@ namespace Clinical_Management_System
             {
                 CaptureDevice.Stop();
             }
-            if (doc_ID.Text == "#")
+            if (doc_id.Text == "#")
             {
                 MessageBox.Show("ببورە نتوانم هیچ بارکۆدێک پەخش بکەم چونکە هیچ بەکارهێنەرێکت دەستنیشان نەکردووە", "بەکارهێنان", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
@@ -252,10 +252,10 @@ namespace Clinical_Management_System
             {
                 doc_qr_show_pic.SizeMode = PictureBoxSizeMode.AutoSize;
                 Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                doc_qr_show_pic.Image = codeQr.Draw(doc_ID.Text, 200);
+                doc_qr_show_pic.Image = codeQr.Draw(doc_id.Text, 200);
 
                 barcodeTimer.Start();
-                doctor_barcode_panel.Visible = true;
+                doc_qr_pnl.Visible = true;
             }
         }
 
@@ -269,7 +269,7 @@ namespace Clinical_Management_System
                 CaptureDevice.Stop();
             }
             barcodeTimer.Start();
-            doctor_barcode_panel.Visible = true;
+            doc_qr_pnl.Visible = true;
         }
 
         private void dateTimeTimer_Tick(object sender, EventArgs e)
@@ -344,23 +344,23 @@ namespace Clinical_Management_System
 
             // ID
             // ID res
-            e.Graphics.DrawString(doc_ID.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 450);
+            e.Graphics.DrawString(doc_id.Text, new Font("RudawRegular", 24), Brushes.Black, 630, 450);
             // ID lbl
-            e.Graphics.DrawString(doc_ID_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 450);
+            e.Graphics.DrawString(doc_id_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 450);
 
             // NAME
             // Name res
-            e.Graphics.DrawString(doc_Name.Text, new Font("RudawRegular", 24), Brushes.Black, 480, 500);
+            e.Graphics.DrawString(doc_name.Text, new Font("RudawRegular", 24), Brushes.Black, 480, 500);
             // Name lbl
-            e.Graphics.DrawString(doc_Name_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 500);
+            e.Graphics.DrawString(doc_name_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 500);
 
             // PROFITIONALLITY
-            e.Graphics.DrawString(doc_Prof.Text, new Font("RudawRegular", 24), Brushes.Black, 560, 550);
-            e.Graphics.DrawString(doc_Prof_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 550);
+            e.Graphics.DrawString(doc_profile.Text, new Font("RudawRegular", 24), Brushes.Black, 560, 550);
+            e.Graphics.DrawString(doc_profile_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 550);
 
             // CERTIFICATE
-            e.Graphics.DrawString(doc_Certify.Text, new Font("RudawRegular", 24), Brushes.Black, 560, 600);
-            e.Graphics.DrawString(doc_Certify_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 600);
+            e.Graphics.DrawString(doc_certify.Text, new Font("RudawRegular", 24), Brushes.Black, 560, 600);
+            e.Graphics.DrawString(doc_certify_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 600);
 
             // CLINIC
             e.Graphics.DrawString(doc_clinic.Text, new Font("RudawRegular", 24), Brushes.Black, 560, 650);
@@ -373,32 +373,32 @@ namespace Clinical_Management_System
             // INCOME
             e.Graphics.DrawString(Income_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 340, 750);
             // TODAY
-            e.Graphics.DrawString(today_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 850);
-            e.Graphics.DrawString(today_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 850);
+            e.Graphics.DrawString(doc_today_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 850);
+            e.Graphics.DrawString(doc_today_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 850);
             // TOTAL
-            e.Graphics.DrawString(total_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 900);
-            e.Graphics.DrawString(total_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 900);
+            e.Graphics.DrawString(doc_total_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 900);
+            e.Graphics.DrawString(doc_total_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 900);
 
 
 
             // PATIENT
             e.Graphics.DrawString(Patient_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 750);
             // DONE
-            e.Graphics.DrawString(Done_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 850);
-            e.Graphics.DrawString(Done_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 850);
+            e.Graphics.DrawString(doc_descharged_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 850);
+            e.Graphics.DrawString(doc_descharged_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 850);
             // REMAIN
-            e.Graphics.DrawString(remain_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 900);
-            e.Graphics.DrawString(remain_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 900);
+            e.Graphics.DrawString(doc_remain_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 900);
+            e.Graphics.DrawString(cremain_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 900);
             // OTHER DAY
-            e.Graphics.DrawString(otherDay_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 950);
-            e.Graphics.DrawString(otherDay_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 950);
+            e.Graphics.DrawString(doc_other_day_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 950);
+            e.Graphics.DrawString(doc_other_day_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 950);
         }
 
         private void copyDocBtn_Click(object sender, EventArgs e)
         {
             doc_qr_show_pic.SizeMode = PictureBoxSizeMode.AutoSize;
             Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            doc_qr_show_pic.Image = codeQr.Draw(doc_ID.Text, 200);
+            doc_qr_show_pic.Image = codeQr.Draw(doc_id.Text, 200);
             if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
                 printDocument1.Print();
@@ -409,7 +409,7 @@ namespace Clinical_Management_System
         {
             doc_qr_show_pic.SizeMode = PictureBoxSizeMode.AutoSize;
             Zen.Barcode.CodeQrBarcodeDraw codeQr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            doc_qr_show_pic.Image = codeQr.Draw(doc_ID.Text, 200);
+            doc_qr_show_pic.Image = codeQr.Draw(doc_id.Text, 200);
             doc_qr_show_pl.Visible = true;
             doc_qr_read_pl.Visible = false;
         }
@@ -453,7 +453,7 @@ namespace Clinical_Management_System
             if (!capDev)
             {
                 qr_code_is_active_lbl.Visible = true;
-                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[choosing_cam_cmb.SelectedIndex].MonikerString);
+                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[doc_choosing_cam_cmb.SelectedIndex].MonikerString);
                 CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();
                 run_cam_qr_timer.Start();
