@@ -52,6 +52,8 @@
             this.WeekDay = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.DayWeekYear = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.pay_list_dgv = new System.Windows.Forms.DataGridView();
             this.pay_token_list_dgv = new System.Windows.Forms.DataGridView();
             this.pay_list_lbl = new System.Windows.Forms.Label();
@@ -82,8 +84,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pay_more_info_pnl = new System.Windows.Forms.Panel();
-            this.pay_sensitivity = new System.Windows.Forms.Label();
-            this.pay_sensitivity_lbl = new System.Windows.Forms.Label();
             this.pa_more_info_lbl = new System.Windows.Forms.Label();
             this.pay_visited_clinic = new System.Windows.Forms.Label();
             this.pay_visited_count = new System.Windows.Forms.Label();
@@ -127,6 +127,7 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pay_list_dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pay_token_list_dgv)).BeginInit();
             this.pay_personal_info_pnl.SuspendLayout();
@@ -163,6 +164,7 @@
             this.sidebar.Controls.Add(this.WeekDay);
             this.sidebar.Controls.Add(this.panel12);
             this.sidebar.Controls.Add(this.DayWeekYear);
+            this.sidebar.Controls.Add(this.panel8);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(230, 1080);
@@ -409,6 +411,31 @@
             this.DayWeekYear.TabIndex = 31;
             this.DayWeekYear.Text = "9/2/23";
             this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.button2);
+            this.panel8.Location = new System.Drawing.Point(3, 684);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(227, 63);
+            this.panel8.TabIndex = 37;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Clinical_Management_System.Properties.Resources.logout1;
+            this.button2.Location = new System.Drawing.Point(-2, -10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(245, 82);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "   چوونەدەرەوە";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pay_list_dgv
             // 
@@ -751,8 +778,6 @@
             // pay_more_info_pnl
             // 
             this.pay_more_info_pnl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_more_info_pnl.Controls.Add(this.pay_sensitivity);
-            this.pay_more_info_pnl.Controls.Add(this.pay_sensitivity_lbl);
             this.pay_more_info_pnl.Controls.Add(this.pa_more_info_lbl);
             this.pay_more_info_pnl.Controls.Add(this.pay_visited_clinic);
             this.pay_more_info_pnl.Controls.Add(this.pay_visited_count);
@@ -762,28 +787,6 @@
             this.pay_more_info_pnl.Name = "pay_more_info_pnl";
             this.pay_more_info_pnl.Size = new System.Drawing.Size(444, 283);
             this.pay_more_info_pnl.TabIndex = 48;
-            // 
-            // pay_sensitivity
-            // 
-            this.pay_sensitivity.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_sensitivity.AutoSize = true;
-            this.pay_sensitivity.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_sensitivity.Location = new System.Drawing.Point(144, 192);
-            this.pay_sensitivity.Name = "pay_sensitivity";
-            this.pay_sensitivity.Size = new System.Drawing.Size(87, 27);
-            this.pay_sensitivity.TabIndex = 49;
-            this.pay_sensitivity.Text = "ئەنسۆلین";
-            // 
-            // pay_sensitivity_lbl
-            // 
-            this.pay_sensitivity_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pay_sensitivity_lbl.AutoSize = true;
-            this.pay_sensitivity_lbl.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_sensitivity_lbl.Location = new System.Drawing.Point(237, 190);
-            this.pay_sensitivity_lbl.Name = "pay_sensitivity_lbl";
-            this.pay_sensitivity_lbl.Size = new System.Drawing.Size(175, 30);
-            this.pay_sensitivity_lbl.TabIndex = 50;
-            this.pay_sensitivity_lbl.Text = ":هەستیاری هەیە بە";
             // 
             // pa_more_info_lbl
             // 
@@ -871,7 +874,7 @@
             this.pay_search_cmb.Items.AddRange(new object[] {
             "زنجیرە",
             "ناو",
-            "کلینیک",
+            "نۆرینگە",
             "ناونیشان",
             "تەمەن",
             "ڕەگەز",
@@ -1218,6 +1221,7 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pay_list_dgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pay_token_list_dgv)).EndInit();
             this.pay_personal_info_pnl.ResumeLayout(false);
@@ -1295,8 +1299,6 @@
         private System.Windows.Forms.Label pay_phone;
         private System.Windows.Forms.Label pay_name;
         private System.Windows.Forms.Label pay_id_lbl;
-        private System.Windows.Forms.Label pay_sensitivity;
-        private System.Windows.Forms.Label pay_sensitivity_lbl;
         private System.Windows.Forms.Label pa_more_info_lbl;
         private System.Windows.Forms.Label pay_visited_clinic;
         private System.Windows.Forms.Label pay_visited_count;
@@ -1336,5 +1338,7 @@
         private System.Windows.Forms.PictureBox picLogoPrint;
         private System.Windows.Forms.Button pay_start_reading_qr_btn;
         private System.Windows.Forms.Label qr_code_is_active_lbl;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button button2;
     }
 }

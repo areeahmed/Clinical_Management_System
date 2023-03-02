@@ -57,6 +57,8 @@
             this.WeekDay = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.DayWeekYear = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
@@ -88,12 +90,12 @@
             this.label27 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dateTimeTimer = new System.Windows.Forms.Timer(this.components);
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -107,6 +109,7 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -187,6 +190,7 @@
             this.sidebar.Controls.Add(this.WeekDay);
             this.sidebar.Controls.Add(this.panel12);
             this.sidebar.Controls.Add(this.DayWeekYear);
+            this.sidebar.Controls.Add(this.panel14);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(230, 1080);
@@ -433,6 +437,31 @@
             this.DayWeekYear.TabIndex = 31;
             this.DayWeekYear.Text = "9/2/23";
             this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.button2);
+            this.panel14.Location = new System.Drawing.Point(3, 684);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(227, 63);
+            this.panel14.TabIndex = 37;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Clinical_Management_System.Properties.Resources.logout1;
+            this.button2.Location = new System.Drawing.Point(-2, -10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(245, 82);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "   چوونەدەرەوە";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // timer1
             // 
@@ -781,6 +810,27 @@
             this.panel8.Size = new System.Drawing.Size(271, 231);
             this.panel8.TabIndex = 23;
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(136, 157);
+            this.label30.Name = "label30";
+            this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label30.Size = new System.Drawing.Size(36, 30);
+            this.label30.TabIndex = 13;
+            this.label30.Text = "نێر";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(178, 154);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(75, 35);
+            this.label29.TabIndex = 10;
+            this.label29.Text = ":ڕەگەز";
+            // 
             // dataGridView2
             // 
             this.dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -811,27 +861,6 @@
             // dateTimeTimer
             // 
             this.dateTimeTimer.Tick += new System.EventHandler(this.dateTimeTimer_Tick);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(178, 154);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(75, 35);
-            this.label29.TabIndex = 10;
-            this.label29.Text = ":ڕەگەز";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(136, 157);
-            this.label30.Name = "label30";
-            this.label30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label30.Size = new System.Drawing.Size(36, 30);
-            this.label30.TabIndex = 13;
-            this.label30.Text = "نێر";
             // 
             // AdminDashboard
             // 
@@ -877,6 +906,7 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -956,5 +986,7 @@
         private System.Windows.Forms.Timer dateTimeTimer;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Button button2;
     }
 }

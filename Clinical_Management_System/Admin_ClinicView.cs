@@ -250,6 +250,10 @@ namespace Clinical_Management_System
             e.Graphics.DrawString(clinic_other_day_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 750);
             e.Graphics.DrawString(clinic_other_day_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 750);
 
+            e.Graphics.DrawString(WeekDay.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1000);
+            e.Graphics.DrawString(time.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 970);
+            e.Graphics.DrawString(DayWeekYear.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1030);
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -279,6 +283,13 @@ namespace Clinical_Management_System
                 clinic_add_new_btn.Enabled = false;
                 clinic_update_btn.Enabled = true;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
         }
     }
 }

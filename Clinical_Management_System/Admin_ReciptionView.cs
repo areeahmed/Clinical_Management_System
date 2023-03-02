@@ -158,6 +158,8 @@ namespace Clinical_Management_System
 
         private void Admin_ReciptionView_Load(object sender, EventArgs e)
         {
+            recp_add_user_btn.Enabled = false;
+
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
             {
@@ -333,6 +335,10 @@ namespace Clinical_Management_System
             // ADDRESS
             e.Graphics.DrawString(recp_address.Text, new Font("RudawRegular", 24), Brushes.Black, 450, 700);
             e.Graphics.DrawString(recp_address_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 700);
+
+            e.Graphics.DrawString(WeekDay.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1000);
+            e.Graphics.DrawString(time.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 970);
+            e.Graphics.DrawString(DayWeekYear.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1030);
         }
 
         private void recp_profile_pic_Click(object sender, EventArgs e)
@@ -402,6 +408,27 @@ namespace Clinical_Management_System
                     CaptureDevice.Start();
                 }
             }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+            {
+                recp_add_user_btn.Enabled = true;
+                recp_edit_user_btn.Enabled = false;
+            }
+            else
+            {
+                recp_edit_user_btn.Enabled = true;
+                recp_add_user_btn.Enabled = false;
+            }    
         }
     }
 }

@@ -190,6 +190,8 @@ namespace Clinical_Management_System
         // form load
         private void Admin_DoctorView_Load(object sender, EventArgs e)
         {
+            doc_add_user_btn.Enabled = false;
+
             qr_code_is_active_lbl.Visible = false;
             // needed for reading QR Code Form Load
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
@@ -371,27 +373,32 @@ namespace Clinical_Management_System
 
 
             // INCOME
-            e.Graphics.DrawString(Income_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 340, 750);
+            e.Graphics.DrawString(Income_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 340, 720);
             // TODAY
-            e.Graphics.DrawString(doc_today_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 850);
-            e.Graphics.DrawString(doc_today_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 850);
+            e.Graphics.DrawString(doc_today_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 820);
+            e.Graphics.DrawString(doc_today_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 820);
             // TOTAL
-            e.Graphics.DrawString(doc_total_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 900);
-            e.Graphics.DrawString(doc_total_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 900);
+            e.Graphics.DrawString(doc_total_income_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 240, 870);
+            e.Graphics.DrawString(doc_total_income.Text, new Font("RudawRegular", 22), Brushes.Black, 90, 870);
 
 
 
             // PATIENT
-            e.Graphics.DrawString(Patient_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 750);
+            e.Graphics.DrawString(Patient_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 720);
             // DONE
-            e.Graphics.DrawString(doc_descharged_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 850);
-            e.Graphics.DrawString(doc_descharged_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 850);
+            e.Graphics.DrawString(doc_descharged_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 820);
+            e.Graphics.DrawString(doc_descharged_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 820);
             // REMAIN
-            e.Graphics.DrawString(doc_remain_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 900);
-            e.Graphics.DrawString(cremain_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 900);
+            e.Graphics.DrawString(doc_remain_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 870);
+            e.Graphics.DrawString(cremain_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 870);
             // OTHER DAY
-            e.Graphics.DrawString(doc_other_day_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 950);
-            e.Graphics.DrawString(doc_other_day_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 950);
+            e.Graphics.DrawString(doc_other_day_pt.Text, new Font("RudawRegular", 22), Brushes.Black, 640, 920);
+            e.Graphics.DrawString(doc_other_day_pt_lbl.Text, new Font("RudawRegular", 22), Brushes.Black, 680, 920);
+
+
+            e.Graphics.DrawString(WeekDay.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1000);
+            e.Graphics.DrawString(time.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 970);
+            e.Graphics.DrawString(DayWeekYear.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1030);
         }
 
         private void copyDocBtn_Click(object sender, EventArgs e)
@@ -458,6 +465,27 @@ namespace Clinical_Management_System
                 CaptureDevice.Start();
                 run_cam_qr_timer.Start();
                 capDev = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
+        }
+
+        private void doc_add_user_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            if(doc_add_user_chk.Checked)
+            {
+                doc_add_user_btn.Enabled = true;
+                doc_edit_user_btn.Enabled = false;
+            }
+            else
+            {
+                doc_add_user_btn.Enabled = false;
+                doc_edit_user_btn.Enabled = true;
             }
         }
     }

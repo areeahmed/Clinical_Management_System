@@ -137,6 +137,8 @@ namespace Clinical_Management_System
 
         private void patient_Load(object sender, EventArgs e)
         {
+            pay_add_user_btn.Enabled = false;
+
             dateTimeTimer.Start();
             qr_code_is_active_lbl.Visible = false;
             // for reading barcode
@@ -344,6 +346,27 @@ namespace Clinical_Management_System
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("فۆڕمەکە کرایتەوە", "ئاگاداری", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
+        }
+
+        private void add_new_user_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            if(add_new_user_chk.Checked)
+            {
+                pay_add_user_btn.Enabled = true;
+                pay_edit_user_btn.Enabled = false;
+            }
+            else
+            {
+                pay_edit_user_btn.Enabled = true;
+                pay_add_user_btn.Enabled = false;
+            }
         }
     }
 }

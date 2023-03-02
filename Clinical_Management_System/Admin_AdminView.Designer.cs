@@ -52,6 +52,8 @@
             this.WeekDay = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.DayWeekYear = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.AppExit = new System.Windows.Forms.PictureBox();
             this.Maximize = new System.Windows.Forms.PictureBox();
@@ -95,9 +97,9 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
             this.Adding_Doctor_Form_panel1 = new System.Windows.Forms.Panel();
+            this.admin_gender_cmb = new System.Windows.Forms.ComboBox();
             this.add_new_user_chk = new System.Windows.Forms.CheckBox();
             this.admin_address_txt = new System.Windows.Forms.TextBox();
-            this.admin_gender_txt = new System.Windows.Forms.TextBox();
             this.admin_phone_txt = new System.Windows.Forms.TextBox();
             this.cancel_form_btn = new System.Windows.Forms.Button();
             this.edit_user_btn = new System.Windows.Forms.Button();
@@ -106,7 +108,6 @@
             this.admin_fullname_txt = new System.Windows.Forms.TextBox();
             this.admin_username_txt = new System.Windows.Forms.TextBox();
             this.admin_id_txt = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -141,6 +142,7 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AppExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximize)).BeginInit();
@@ -179,6 +181,7 @@
             this.sidebar.Controls.Add(this.WeekDay);
             this.sidebar.Controls.Add(this.panel11);
             this.sidebar.Controls.Add(this.DayWeekYear);
+            this.sidebar.Controls.Add(this.panel8);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(230, 1080);
@@ -419,6 +422,31 @@
             this.DayWeekYear.TabIndex = 31;
             this.DayWeekYear.Text = "9/2/23";
             this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.button2);
+            this.panel8.Location = new System.Drawing.Point(3, 684);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(227, 63);
+            this.panel8.TabIndex = 37;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Clinical_Management_System.Properties.Resources.logout1;
+            this.button2.Location = new System.Drawing.Point(-2, -10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(245, 82);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "   چوونەدەرەوە";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
@@ -912,9 +940,9 @@
             // Adding_Doctor_Form_panel1
             // 
             this.Adding_Doctor_Form_panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Adding_Doctor_Form_panel1.Controls.Add(this.admin_gender_cmb);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.add_new_user_chk);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.admin_address_txt);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.admin_gender_txt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.admin_phone_txt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.cancel_form_btn);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.edit_user_btn);
@@ -923,7 +951,6 @@
             this.Adding_Doctor_Form_panel1.Controls.Add(this.admin_fullname_txt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.admin_username_txt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.admin_id_txt);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.label5);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label31);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label30);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label29);
@@ -936,6 +963,21 @@
             this.Adding_Doctor_Form_panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Adding_Doctor_Form_panel1.Size = new System.Drawing.Size(497, 686);
             this.Adding_Doctor_Form_panel1.TabIndex = 28;
+            // 
+            // admin_gender_cmb
+            // 
+            this.admin_gender_cmb.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.admin_gender_cmb.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_gender_cmb.FormattingEnabled = true;
+            this.admin_gender_cmb.Items.AddRange(new object[] {
+            "نێر",
+            "مێ"});
+            this.admin_gender_cmb.Location = new System.Drawing.Point(84, 312);
+            this.admin_gender_cmb.Name = "admin_gender_cmb";
+            this.admin_gender_cmb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.admin_gender_cmb.Size = new System.Drawing.Size(298, 43);
+            this.admin_gender_cmb.TabIndex = 38;
+            this.admin_gender_cmb.Text = "         ڕەگەز";
             // 
             // add_new_user_chk
             // 
@@ -957,14 +999,6 @@
             this.admin_address_txt.Name = "admin_address_txt";
             this.admin_address_txt.Size = new System.Drawing.Size(394, 103);
             this.admin_address_txt.TabIndex = 0;
-            // 
-            // admin_gender_txt
-            // 
-            this.admin_gender_txt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_gender_txt.Location = new System.Drawing.Point(67, 306);
-            this.admin_gender_txt.Name = "admin_gender_txt";
-            this.admin_gender_txt.Size = new System.Drawing.Size(298, 35);
-            this.admin_gender_txt.TabIndex = 0;
             // 
             // admin_phone_txt
             // 
@@ -1057,18 +1091,6 @@
             this.admin_id_txt.ReadOnly = true;
             this.admin_id_txt.Size = new System.Drawing.Size(324, 35);
             this.admin_id_txt.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(371, 313);
-            this.label5.Name = "label5";
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(65, 30);
-            this.label5.TabIndex = 27;
-            this.label5.Text = ":ڕەگەز";
             // 
             // label31
             // 
@@ -1396,6 +1418,7 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AppExit)).EndInit();
@@ -1494,8 +1517,6 @@
         private System.Windows.Forms.Label admin_Name;
         private System.Windows.Forms.Label admin_ID_lbl;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TextBox admin_gender_txt;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox clinic_search_cmb;
         private System.Windows.Forms.CheckBox add_new_user_chk;
         private System.Windows.Forms.Label admin_ID;
@@ -1530,5 +1551,8 @@
         private System.Windows.Forms.Button start_qr_code;
         private System.Windows.Forms.Label qr_code_is_active_lbl;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox admin_gender_cmb;
     }
 }

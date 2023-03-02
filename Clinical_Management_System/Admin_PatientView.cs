@@ -387,6 +387,11 @@ namespace Clinical_Management_System
 
             // QR Code
             e.Graphics.DrawImage(pay_show_qr_pic.Image, 350, 900, 150, 150);
+
+
+            e.Graphics.DrawString(WeekDay.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1000);
+            e.Graphics.DrawString(time.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 970);
+            e.Graphics.DrawString(DayWeekYear.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1030);
         }
 
         // Timmer tick for capturing the QR Code and returning data to search txt
@@ -407,6 +412,13 @@ namespace Clinical_Management_System
                 }
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
         }
     }
 }

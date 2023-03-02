@@ -44,6 +44,8 @@ namespace Clinical_Management_System
 
         private void appointment_Load(object sender, EventArgs e)
         {
+            token_add_user_btn.Enabled = false;
+
             dateTimeTimer.Start();
             Adding_Doctor_Form_panel.Visible = false;
             doctor_barcode_panel.Visible = false;
@@ -277,6 +279,27 @@ namespace Clinical_Management_System
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
+        }
+
+        private void add_new_user_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            if(add_new_user_chk.Checked)
+            {
+                token_add_user_btn.Enabled = true;
+                token_edit_user_btn.Enabled = false;
+            }
+            else
+            {
+                token_add_user_btn.Enabled = false;
+                token_edit_user_btn.Enabled = true;
+            }
         }
     }
 }

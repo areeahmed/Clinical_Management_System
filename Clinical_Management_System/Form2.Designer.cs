@@ -54,20 +54,21 @@ namespace Clinical_Management_System
             this.WeekDay = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.DayWeekYear = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.clinicCombo = new System.Windows.Forms.ComboBox();
             this.pay_search_txt = new System.Windows.Forms.TextBox();
             this.DoctorListLbl = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.Adding_Doctor_Form_panel1 = new System.Windows.Forms.Panel();
+            this.add_new_user_chk = new System.Windows.Forms.CheckBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.pa_profile_pic = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.docAddressTxt = new System.Windows.Forms.TextBox();
             this.docPhoneTxt = new System.Windows.Forms.TextBox();
             this.docUsernameTxt = new System.Windows.Forms.TextBox();
@@ -76,9 +77,9 @@ namespace Clinical_Management_System
             this.label30 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.cancel_Form_Button = new System.Windows.Forms.Button();
-            this.edit_user_button = new System.Windows.Forms.Button();
-            this.Add_user_button = new System.Windows.Forms.Button();
+            this.pay_cancel_form_btn = new System.Windows.Forms.Button();
+            this.pay_edit_user_btn = new System.Windows.Forms.Button();
+            this.pay_add_user_btn = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.Adding_Doctor_Form_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.doctor_barcode_panel = new System.Windows.Forms.FlowLayoutPanel();
@@ -109,8 +110,6 @@ namespace Clinical_Management_System
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.pay_ID = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.pay_Phone = new System.Windows.Forms.Label();
@@ -133,9 +132,9 @@ namespace Clinical_Management_System
             this.flowLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel5.SuspendLayout();
             this.Adding_Doctor_Form_panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pa_profile_pic)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.panel14.SuspendLayout();
             this.Adding_Doctor_Form_panel.SuspendLayout();
             this.doctor_barcode_panel.SuspendLayout();
@@ -235,6 +234,7 @@ namespace Clinical_Management_System
             this.sidebar.Controls.Add(this.WeekDay);
             this.sidebar.Controls.Add(this.panel7);
             this.sidebar.Controls.Add(this.DayWeekYear);
+            this.sidebar.Controls.Add(this.panel5);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(228, 2000);
@@ -429,6 +429,31 @@ namespace Clinical_Management_System
             this.DayWeekYear.Text = "9/2/23";
             this.DayWeekYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button8);
+            this.panel5.Location = new System.Drawing.Point(3, 395);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(227, 63);
+            this.panel5.TabIndex = 50;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("RudawRegular", 16F);
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = global::Clinical_Management_System.Properties.Resources.logout1;
+            this.button8.Location = new System.Drawing.Point(-2, -10);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(245, 82);
+            this.button8.TabIndex = 33;
+            this.button8.Text = "   چوونەدەرەوە";
+            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // timer1
             // 
             this.timer1.Interval = 10;
@@ -490,12 +515,13 @@ namespace Clinical_Management_System
             // Adding_Doctor_Form_panel1
             // 
             this.Adding_Doctor_Form_panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Adding_Doctor_Form_panel1.Controls.Add(this.add_new_user_chk);
+            this.Adding_Doctor_Form_panel1.Controls.Add(this.comboBox3);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.pa_profile_pic);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.textBox2);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label2);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.textBox1);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label1);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.groupBox1);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.docAddressTxt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.docPhoneTxt);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.docUsernameTxt);
@@ -504,9 +530,9 @@ namespace Clinical_Management_System
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label30);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label26);
             this.Adding_Doctor_Form_panel1.Controls.Add(this.label24);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.cancel_Form_Button);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.edit_user_button);
-            this.Adding_Doctor_Form_panel1.Controls.Add(this.Add_user_button);
+            this.Adding_Doctor_Form_panel1.Controls.Add(this.pay_cancel_form_btn);
+            this.Adding_Doctor_Form_panel1.Controls.Add(this.pay_edit_user_btn);
+            this.Adding_Doctor_Form_panel1.Controls.Add(this.pay_add_user_btn);
             this.Adding_Doctor_Form_panel1.ForeColor = System.Drawing.Color.Black;
             this.Adding_Doctor_Form_panel1.Location = new System.Drawing.Point(0, 60);
             this.Adding_Doctor_Form_panel1.Margin = new System.Windows.Forms.Padding(4);
@@ -515,6 +541,33 @@ namespace Clinical_Management_System
             this.Adding_Doctor_Form_panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Adding_Doctor_Form_panel1.Size = new System.Drawing.Size(808, 794);
             this.Adding_Doctor_Form_panel1.TabIndex = 28;
+            // 
+            // add_new_user_chk
+            // 
+            this.add_new_user_chk.AutoSize = true;
+            this.add_new_user_chk.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_new_user_chk.Location = new System.Drawing.Point(293, 457);
+            this.add_new_user_chk.Name = "add_new_user_chk";
+            this.add_new_user_chk.Size = new System.Drawing.Size(227, 34);
+            this.add_new_user_chk.TabIndex = 55;
+            this.add_new_user_chk.Text = "زیاد کردنی زانیاری نوێ";
+            this.add_new_user_chk.UseVisualStyleBackColor = true;
+            this.add_new_user_chk.CheckedChanged += new System.EventHandler(this.add_new_user_chk_CheckedChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox3.Font = new System.Drawing.Font("RudawRegular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "نێر",
+            "مێ"});
+            this.comboBox3.Location = new System.Drawing.Point(194, 205);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox3.Size = new System.Drawing.Size(272, 43);
+            this.comboBox3.TabIndex = 54;
+            this.comboBox3.Text = "         ڕەگەز";
             // 
             // pa_profile_pic
             // 
@@ -533,11 +586,11 @@ namespace Clinical_Management_System
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(99, 391);
+            this.textBox2.Location = new System.Drawing.Point(194, 353);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(516, 78);
+            this.textBox2.Size = new System.Drawing.Size(421, 78);
             this.textBox2.TabIndex = 52;
             // 
             // label2
@@ -545,18 +598,18 @@ namespace Clinical_Management_System
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(629, 400);
+            this.label2.Location = new System.Drawing.Point(620, 361);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(100, 30);
+            this.label2.Size = new System.Drawing.Size(184, 30);
             this.label2.TabIndex = 53;
-            this.label2.Text = ":هەستیاری";
+            this.label2.Text = ":نەخۆشی درێژخایەن";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(262, 219);
+            this.textBox1.Location = new System.Drawing.Point(494, 211);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 35);
@@ -568,7 +621,7 @@ namespace Clinical_Management_System
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(410, 219);
+            this.label1.Location = new System.Drawing.Point(642, 211);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -576,50 +629,14 @@ namespace Clinical_Management_System
             this.label1.TabIndex = 51;
             this.label1.Text = ":تەمەن";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("RudawRegular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(571, 199);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(175, 92);
-            this.groupBox1.TabIndex = 49;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "رەگەز";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(103, 49);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(53, 33);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "نێر";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(33, 49);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(57, 33);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "مێ";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // docAddressTxt
             // 
             this.docAddressTxt.Font = new System.Drawing.Font("RudawRegular", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docAddressTxt.Location = new System.Drawing.Point(99, 304);
+            this.docAddressTxt.Location = new System.Drawing.Point(194, 266);
             this.docAddressTxt.Margin = new System.Windows.Forms.Padding(4);
             this.docAddressTxt.Multiline = true;
             this.docAddressTxt.Name = "docAddressTxt";
-            this.docAddressTxt.Size = new System.Drawing.Size(516, 78);
+            this.docAddressTxt.Size = new System.Drawing.Size(421, 78);
             this.docAddressTxt.TabIndex = 41;
             // 
             // docPhoneTxt
@@ -654,7 +671,7 @@ namespace Clinical_Management_System
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(629, 316);
+            this.label31.Location = new System.Drawing.Point(629, 278);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -703,54 +720,54 @@ namespace Clinical_Management_System
             this.label24.TabIndex = 48;
             this.label24.Text = ":زنجیرە";
             // 
-            // cancel_Form_Button
+            // pay_cancel_form_btn
             // 
-            this.cancel_Form_Button.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.cancel_Form_Button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cancel_Form_Button.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_Form_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancel_Form_Button.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
-            this.cancel_Form_Button.Location = new System.Drawing.Point(473, 480);
-            this.cancel_Form_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cancel_Form_Button.Name = "cancel_Form_Button";
-            this.cancel_Form_Button.Size = new System.Drawing.Size(127, 50);
-            this.cancel_Form_Button.TabIndex = 33;
-            this.cancel_Form_Button.Text = " نەخێر  ";
-            this.cancel_Form_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.cancel_Form_Button.UseVisualStyleBackColor = false;
-            this.cancel_Form_Button.Click += new System.EventHandler(this.cancel_Form_Button_Click);
+            this.pay_cancel_form_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_cancel_form_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pay_cancel_form_btn.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_cancel_form_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pay_cancel_form_btn.Image = global::Clinical_Management_System.Properties.Resources.close__3_;
+            this.pay_cancel_form_btn.Location = new System.Drawing.Point(473, 502);
+            this.pay_cancel_form_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pay_cancel_form_btn.Name = "pay_cancel_form_btn";
+            this.pay_cancel_form_btn.Size = new System.Drawing.Size(127, 50);
+            this.pay_cancel_form_btn.TabIndex = 33;
+            this.pay_cancel_form_btn.Text = " نەخێر  ";
+            this.pay_cancel_form_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.pay_cancel_form_btn.UseVisualStyleBackColor = false;
+            this.pay_cancel_form_btn.Click += new System.EventHandler(this.cancel_Form_Button_Click);
             // 
-            // edit_user_button
+            // pay_edit_user_btn
             // 
-            this.edit_user_button.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.edit_user_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.edit_user_button.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edit_user_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.edit_user_button.Image = global::Clinical_Management_System.Properties.Resources.updating;
-            this.edit_user_button.Location = new System.Drawing.Point(339, 480);
-            this.edit_user_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.edit_user_button.Name = "edit_user_button";
-            this.edit_user_button.Size = new System.Drawing.Size(127, 50);
-            this.edit_user_button.TabIndex = 34;
-            this.edit_user_button.Text = " گۆڕین ";
-            this.edit_user_button.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.edit_user_button.UseVisualStyleBackColor = false;
+            this.pay_edit_user_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_edit_user_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pay_edit_user_btn.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_edit_user_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pay_edit_user_btn.Image = global::Clinical_Management_System.Properties.Resources.updating;
+            this.pay_edit_user_btn.Location = new System.Drawing.Point(339, 502);
+            this.pay_edit_user_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pay_edit_user_btn.Name = "pay_edit_user_btn";
+            this.pay_edit_user_btn.Size = new System.Drawing.Size(127, 50);
+            this.pay_edit_user_btn.TabIndex = 34;
+            this.pay_edit_user_btn.Text = " گۆڕین ";
+            this.pay_edit_user_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.pay_edit_user_btn.UseVisualStyleBackColor = false;
             // 
-            // Add_user_button
+            // pay_add_user_btn
             // 
-            this.Add_user_button.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Add_user_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Add_user_button.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_user_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Add_user_button.Image = global::Clinical_Management_System.Properties.Resources.check_mark;
-            this.Add_user_button.Location = new System.Drawing.Point(201, 480);
-            this.Add_user_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Add_user_button.Name = "Add_user_button";
-            this.Add_user_button.Size = new System.Drawing.Size(132, 50);
-            this.Add_user_button.TabIndex = 35;
-            this.Add_user_button.Text = "زیادکردن";
-            this.Add_user_button.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.Add_user_button.UseVisualStyleBackColor = false;
+            this.pay_add_user_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pay_add_user_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pay_add_user_btn.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_add_user_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pay_add_user_btn.Image = global::Clinical_Management_System.Properties.Resources.check_mark;
+            this.pay_add_user_btn.Location = new System.Drawing.Point(201, 502);
+            this.pay_add_user_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pay_add_user_btn.Name = "pay_add_user_btn";
+            this.pay_add_user_btn.Size = new System.Drawing.Size(132, 50);
+            this.pay_add_user_btn.TabIndex = 35;
+            this.pay_add_user_btn.Text = "زیادکردن";
+            this.pay_add_user_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.pay_add_user_btn.UseVisualStyleBackColor = false;
             // 
             // panel14
             // 
@@ -772,7 +789,7 @@ namespace Clinical_Management_System
             this.Adding_Doctor_Form_panel.Margin = new System.Windows.Forms.Padding(4);
             this.Adding_Doctor_Form_panel.MaximumSize = new System.Drawing.Size(812, 631);
             this.Adding_Doctor_Form_panel.Name = "Adding_Doctor_Form_panel";
-            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(812, 57);
+            this.Adding_Doctor_Form_panel.Size = new System.Drawing.Size(812, 47);
             this.Adding_Doctor_Form_panel.TabIndex = 57;
             // 
             // doctor_barcode_panel
@@ -1111,7 +1128,7 @@ namespace Clinical_Management_System
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(483, 121);
+            this.label8.Location = new System.Drawing.Point(383, 104);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1124,7 +1141,7 @@ namespace Clinical_Management_System
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(117, 37);
+            this.label9.Location = new System.Drawing.Point(384, 37);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1138,8 +1155,6 @@ namespace Clinical_Management_System
             this.panel8.Controls.Add(this.pictureBox6);
             this.panel8.Controls.Add(this.label19);
             this.panel8.Controls.Add(this.label20);
-            this.panel8.Controls.Add(this.label18);
-            this.panel8.Controls.Add(this.label13);
             this.panel8.Controls.Add(this.pay_ID);
             this.panel8.Controls.Add(this.pay_ID_lbl);
             this.panel8.Controls.Add(this.label17);
@@ -1173,7 +1188,7 @@ namespace Clinical_Management_System
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(53, 88);
+            this.label19.Location = new System.Drawing.Point(172, 38);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1186,39 +1201,13 @@ namespace Clinical_Management_System
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(340, 121);
+            this.label20.Location = new System.Drawing.Point(240, 104);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label20.Size = new System.Drawing.Size(135, 30);
             this.label20.TabIndex = 40;
             this.label20.Text = "هەولێر- ئازادی";
-            // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(388, 51);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label18.Size = new System.Drawing.Size(97, 30);
-            this.label18.TabIndex = 40;
-            this.label18.Text = "ئەنسۆلین";
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("RudawRegular", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(484, 50);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label13.Size = new System.Drawing.Size(100, 30);
-            this.label13.TabIndex = 40;
-            this.label13.Text = ":هەستیاری";
             // 
             // pay_ID
             // 
@@ -1354,11 +1343,10 @@ namespace Clinical_Management_System
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.Adding_Doctor_Form_panel1.ResumeLayout(false);
             this.Adding_Doctor_Form_panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pa_profile_pic)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.Adding_Doctor_Form_panel.ResumeLayout(false);
@@ -1408,9 +1396,9 @@ namespace Clinical_Management_System
         private System.Windows.Forms.Label DoctorListLbl;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Button Add_user_button;
-        private System.Windows.Forms.Button edit_user_button;
-        private System.Windows.Forms.Button cancel_Form_Button;
+        private System.Windows.Forms.Button pay_add_user_btn;
+        private System.Windows.Forms.Button pay_edit_user_btn;
+        private System.Windows.Forms.Button pay_cancel_form_btn;
         private System.Windows.Forms.Panel Adding_Doctor_Form_panel1;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.FlowLayoutPanel Adding_Doctor_Form_panel;
@@ -1442,8 +1430,6 @@ namespace Clinical_Management_System
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label pay_ID;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label pay_Phone;
@@ -1454,9 +1440,6 @@ namespace Clinical_Management_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.TextBox docAddressTxt;
         private System.Windows.Forms.TextBox docPhoneTxt;
         private System.Windows.Forms.TextBox docUsernameTxt;
@@ -1469,5 +1452,9 @@ namespace Clinical_Management_System
         private System.Windows.Forms.Label qr_code_is_active_lbl;
         private System.Windows.Forms.Timer run_cam_qr_timer;
         private System.Windows.Forms.Timer dateTimeTimer;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.CheckBox add_new_user_chk;
     }
 }

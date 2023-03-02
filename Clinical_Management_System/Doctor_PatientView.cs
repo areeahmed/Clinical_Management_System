@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace Clinical_Management_System
 {
@@ -37,6 +38,7 @@ namespace Clinical_Management_System
 
         private void Admin_PatientView_Load(object sender, EventArgs e)
         {
+            pay_add_paper_btn.Enabled = false;
             Adding_Doctor_Form_panel.Visible = false;  
             qr_code_is_active_lbl.Visible = false;
             // needed for reading QR Code Form Load
@@ -183,10 +185,7 @@ namespace Clinical_Management_System
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                pa_profile_pic.ImageLocation = openFileDialog1.FileNames[0];
-            }
+
         }
 
         // First Button Clicked to Open Barcode
@@ -368,6 +367,11 @@ namespace Clinical_Management_System
 
             // QR Code
             e.Graphics.DrawImage(pa_qr_pic.Image, 350, 900, 150, 150);
+
+            e.Graphics.DrawString(DateTime.Now.DayOfWeek.ToString(), new Font("RudawRegular", 14), Brushes.Black, 680, 1000);
+            string time = DateTime.Now.ToShortTimeString();
+            e.Graphics.DrawString(time, new Font("RudawRegular", 14), Brushes.Black, 680, 970);
+            e.Graphics.DrawString(DateTime.Now.Date.ToString("yyyy/MM/dd"), new Font("RudawRegular", 14), Brushes.Black, 680, 1030);
         }
 
         // Timmer tick for capturing the QR Code and returning data to search txt
@@ -428,6 +432,27 @@ namespace Clinical_Management_System
         private void cancel_Form_Button_Click_1(object sender, EventArgs e)
         {
             pay_openForm.Start();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
+        }
+
+        private void add_new_user_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            if(add_new_user_chk.Checked)
+            {
+                pay_add_paper_btn.Enabled = true;
+                pay_edit_paper_btn.Enabled = false;
+            }
+            else
+            {
+                pay_add_paper_btn.Enabled = false;
+                pay_edit_paper_btn.Enabled = true;
+            }
         }
     }
 }

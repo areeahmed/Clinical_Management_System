@@ -715,6 +715,10 @@ namespace Clinical_Management_System
             e.Graphics.DrawString(admin_Address.Text, new Font("RudawRegular", 24), Brushes.Black, 450, 700);
             // address lbl
             e.Graphics.DrawString(admin_Address_lbl.Text, new Font("RudawRegular", 24), Brushes.Black, 680, 700);
+
+            e.Graphics.DrawString(WeekDay.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1000);
+            e.Graphics.DrawString(time.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 970);
+            e.Graphics.DrawString(DayWeekYear.Text, new Font("RudawRegular", 14), Brushes.Black, 680, 1030);
         }
 
         private void PatientButton_Click(object sender, EventArgs e)
@@ -795,6 +799,13 @@ namespace Clinical_Management_System
                 edit_user_btn.Enabled = true;
                 add_user_btn.Enabled = false;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
         }
 
         ///

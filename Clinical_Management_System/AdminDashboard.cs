@@ -151,5 +151,12 @@ namespace Clinical_Management_System
             admin_ClinicView.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Login_Form login_Form = new Login_Form();
+            login_Form.Show();
+            this.Hide();
+        }
     }
 }
